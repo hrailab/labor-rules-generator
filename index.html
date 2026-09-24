@@ -216,15 +216,15 @@ a{color:inherit}
       </div>
       <div class="hero-meta">
         <span class="meta-pill"><span class="dot"></span>9월 시범운영</span>
-        <span class="meta-pill" id="baseDateBadge">기준일 —</span>
-        <span class="meta-pill" id="cycleBadge">회차 —</span>
+        <span class="meta-pill" id="baseDateBadge">기준 —</span>
+        <span class="meta-pill" id="cycleBadge">다음 갱신 —</span>
       </div>
     </div>
     <h1>정부정책 동향 <span>리포트</span></h1>
     <p class="hero-sub">
-      <b>공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보</b>하기 위한 격주 모니터링 리포트입니다.<br>
+      <b>공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보</b>하기 위한 상시 모니터링 리포트입니다.<br>
       기획재정처·교육부·과학기술정보통신부·중소벤처기업부 소관 정책·재정지원사업 동향과<br>
-      <b>경쟁대학 추진 현황</b>을 담당자별로 정리하여 전략기획팀 → 처장 → 총장 보고 체계로 운영합니다.
+      <b>경쟁대학 추진 현황</b>을 담당자별로 정리하며, <b>현재 기준 최근 14일</b>의 동향을 <b>매일 정오·자정</b> 기준으로 갱신합니다.
     </p>
     <div class="kpi-row" id="kpiRow"></div>
   </div>
@@ -261,8 +261,8 @@ a{color:inherit}
   <section id="trends">
     <div class="section-head">
       <div>
-        <div class="section-title">전체 동향 <span class="sub">이번 회차 신규 등록 항목</span></div>
-        <div class="section-desc">월 2회(첫째·셋째 주) 산출 — 전체 동향은 1페이지 목록으로 작성</div>
+        <div class="section-title">전체 동향 <span class="sub">최근 14일 등록 항목</span></div>
+        <div class="section-desc" id="trendsRangeDesc">조회 기간 계산 중…</div>
       </div>
     </div>
     <div class="filter-bar">
@@ -362,7 +362,8 @@ a{color:inherit}
 <footer class="site-footer">
   <p style="font-weight:600;color:var(--ink-3);margin-bottom:4px">전략기획팀 · 정부정책 동향 리포트</p>
   <p>본 페이지는 데모 목적의 목업 데이터로 구성되어 있으며, 실제 정부 정책·예산·경쟁대학 동향과 무관합니다.</p>
-  <p style="margin-top:2px">시행: 9월 시범 운영(팀 내부 검토) → 10월 정식 시행 · 산출 주기: 월 2회(첫째·셋째 주)</p>
+  <p style="margin-top:2px">시행: 9월 시범 운영(팀 내부 검토) → 10월 정식 시행 · 정식 보고 산출: 월 2회(첫째·셋째 주)</p>
+  <p id="footerRefreshNote" style="margin-top:2px"></p>
 </footer>
 
 <script>
@@ -383,16 +384,16 @@ const OWNERS = [
 ];
 
 const TRENDS = [
-  {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', date:'09.24', due:'회신 10.10'},
-  {dept:'교육부', owner:'백승엽', status:'확대', priority:'높음', name:'대학혁신지원사업 3주기 기본계획', desc:'평가지표 개편안 초안 공개. 산학협력·지역연계 배점 확대 방향.', date:'09.22', due:'설명회 10.02'},
-  {dept:'교육부', owner:'서원석', status:'신규', priority:'중간', name:'글로컬대학 후속 재정지원사업', desc:'선정 대학 대상 후속 지원 트랙 신설 검토. 비선정 대학 대상 별도 프로그램 논의.', date:'09.19', due:'공고 예정 11월'},
-  {dept:'교육부', owner:'서원석', status:'계속', priority:'낮음', name:'대학 시설 안전관리 실태점검', desc:'정기 실태점검 계획 통보. 전년 대비 점검항목 변동 없음.', date:'09.15', due:'제출 10.20'},
-  {dept:'과기정통부', owner:'이수연', status:'신규', priority:'높음', name:'대학 ICT 연구인프라 고도화 사업', desc:'AI·반도체 분야 연구장비 공동활용 인프라 구축 지원. 컨소시엄 구성 요건 확인 필요.', date:'09.20', due:'접수 10.15'},
-  {dept:'과기정통부', owner:'이수연', status:'모니터링', priority:'중간', name:'이공계 대학원생 연구생활장려금 확대', desc:'지원 단가 인상 및 대상 인원 확대 논의 중. 확정 시 학생 지원 정책과 연계 검토.', date:'09.18', due:'확정 미정'},
-  {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', date:'09.23', due:'공고 10.05'},
-  {dept:'중기부', owner:'정주원', status:'신규', priority:'중간', name:'경력창업지원사업', desc:'창업보육센터·1인창조기업 지원센터 연계 신규 트랙. 고경력자 대상 프로그램.', date:'09.17', due:'접수 11.01'},
-  {dept:'농식품부', owner:'서원석', status:'계속', priority:'낮음', name:'수의과대학 실습기자재 지원사업', desc:'노후 실습장비 교체 지원. 전년 대비 예산 소폭 증액.', date:'09.10', due:'신청 10.30'},
-  {dept:'기획예산처', owner:'백승엽', status:'모니터링', priority:'중간', name:'공공기관 대학 연계 채용형 인턴제', desc:'지역 국립대 우선 배정 검토안 논의. 사립대 참여 여부 미정.', date:'09.16', due:'가이드라인 11월'},
+  {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', daysAgo:0, due:'회신 10.10'},
+  {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05'},
+  {dept:'교육부', owner:'백승엽', status:'확대', priority:'높음', name:'대학혁신지원사업 3주기 기본계획', desc:'평가지표 개편안 초안 공개. 산학협력·지역연계 배점 확대 방향.', daysAgo:2, due:'설명회 10.02'},
+  {dept:'과기정통부', owner:'이수연', status:'신규', priority:'높음', name:'대학 ICT 연구인프라 고도화 사업', desc:'AI·반도체 분야 연구장비 공동활용 인프라 구축 지원. 컨소시엄 구성 요건 확인 필요.', daysAgo:4, due:'접수 10.15'},
+  {dept:'교육부', owner:'서원석', status:'신규', priority:'중간', name:'글로컬대학 후속 재정지원사업', desc:'선정 대학 대상 후속 지원 트랙 신설 검토. 비선정 대학 대상 별도 프로그램 논의.', daysAgo:5, due:'공고 예정 11월'},
+  {dept:'과기정통부', owner:'이수연', status:'모니터링', priority:'중간', name:'이공계 대학원생 연구생활장려금 확대', desc:'지원 단가 인상 및 대상 인원 확대 논의 중. 확정 시 학생 지원 정책과 연계 검토.', daysAgo:6, due:'확정 미정'},
+  {dept:'중기부', owner:'정주원', status:'신규', priority:'중간', name:'경력창업지원사업', desc:'창업보육센터·1인창조기업 지원센터 연계 신규 트랙. 고경력자 대상 프로그램.', daysAgo:7, due:'접수 11.01'},
+  {dept:'기획예산처', owner:'백승엽', status:'모니터링', priority:'중간', name:'공공기관 대학 연계 채용형 인턴제', desc:'지역 국립대 우선 배정 검토안 논의. 사립대 참여 여부 미정.', daysAgo:8, due:'가이드라인 11월'},
+  {dept:'교육부', owner:'서원석', status:'계속', priority:'낮음', name:'대학 시설 안전관리 실태점검', desc:'정기 실태점검 계획 통보. 전년 대비 점검항목 변동 없음.', daysAgo:9, due:'제출 10.20'},
+  {dept:'농식품부', owner:'서원석', status:'계속', priority:'낮음', name:'수의과대학 실습기자재 지원사업', desc:'노후 실습장비 교체 지원. 전년 대비 예산 소폭 증액.', daysAgo:13, due:'신청 10.30'},
 ];
 
 const ISSUES = [
@@ -435,9 +436,45 @@ const PROCESS = [
 ];
 
 /* ───────────────────────── RENDER ───────────────────────── */
-const TODAY = new Date();
-document.getElementById('baseDateBadge').textContent = '기준일 ' + TODAY.toLocaleDateString('ko-KR',{year:'numeric',month:'2-digit',day:'2-digit'});
-document.getElementById('cycleBadge').textContent = '2026년 9월 3주차 회차';
+const WINDOW_DAYS = 14; // 항상 "현재 시점 ~ 과거 13일"(총 14일)을 조회 대상으로 삼음
+
+function pad2(n){ return String(n).padStart(2,'0'); }
+function fmtDate(d){ return d.getFullYear()+'.'+pad2(d.getMonth()+1)+'.'+pad2(d.getDate()); }
+function fmtDateTime(d){ return fmtDate(d)+' '+pad2(d.getHours())+':00'; }
+
+// 데이터 갱신 기준시점 = 가장 최근에 지난 정오(12:00) 또는 자정(00:00)
+// 서버 크론 없이도, 페이지를 여는 시각과 무관하게 하루 2번(정오/자정) 단위로만 기준이 바뀜
+function getBatchAnchor(now){
+  const h = now.getHours() >= 12 ? 12 : 0;
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, 0, 0, 0);
+}
+function getNextAnchor(anchor){
+  const next = new Date(anchor);
+  if(anchor.getHours() === 0){ next.setHours(12); }
+  else { next.setDate(next.getDate()+1); next.setHours(0); }
+  return next;
+}
+
+const ANCHOR = getBatchAnchor(new Date());
+const NEXT_ANCHOR = getNextAnchor(ANCHOR);
+const WINDOW_START = new Date(ANCHOR);
+WINDOW_START.setDate(WINDOW_START.getDate() - (WINDOW_DAYS - 1));
+
+document.getElementById('baseDateBadge').textContent = '기준 ' + fmtDateTime(ANCHOR);
+document.getElementById('cycleBadge').textContent = '다음 갱신 ' + fmtDateTime(NEXT_ANCHOR);
+document.getElementById('trendsRangeDesc').textContent =
+  '조회 기간 ' + fmtDate(WINDOW_START) + ' ~ ' + fmtDate(ANCHOR) + ' (현재 기준 최근 14일) · 매일 정오·자정 갱신';
+document.getElementById('footerRefreshNote').textContent =
+  '데이터 갱신: 매일 정오(12:00)·자정(00:00) 2회 · 조회 대상: 현재 기준 최근 14일 롤링';
+
+function trendDate(t){
+  const d = new Date(ANCHOR);
+  d.setDate(d.getDate() - t.daysAgo);
+  return d;
+}
+function inWindow(t){
+  return t.daysAgo >= 0 && t.daysAgo <= WINDOW_DAYS - 1;
+}
 
 function deptDot(d){ return '<span class="d" style="background:'+((DEPTS[d]||{}).color||'#a3a2a8')+'"></span>'; }
 function statusClass(s){ return {'신규':'s-new','확대':'s-expand','계속':'s-cont','모니터링':'s-watch'}[s]||'s-cont'; }
@@ -445,10 +482,11 @@ function priorityClass(p){ return {'높음':'b-high','중간':'b-mid','낮음':'
 
 // KPI
 function renderKpi(){
-  const highCount = TRENDS.filter(t=>t.priority==='높음').length;
-  const newCount = TRENDS.filter(t=>t.status==='신규').length;
+  const windowTrends = TRENDS.filter(inWindow);
+  const highCount = windowTrends.filter(t=>t.priority==='높음').length;
+  const newCount = windowTrends.filter(t=>t.status==='신규').length;
   const kpis = [
-    {label:'이번 회차 전체 동향', value:TRENDS.length+'건', delta:'직전 회차 대비 +2건', up:true},
+    {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'직전 갱신 대비 +2건', up:true},
     {label:'대응 우선순위 높음', value:highCount+'건', delta:'즉시 검토 필요', up:true},
     {label:'신규 등록', value:newCount+'건', delta:'주요사안 '+ISSUES.length+'건 포함', up:true},
     {label:'경쟁대학 포착 건수', value:COMPETITORS.length+'건', delta:'6개교 모니터링 중', up:false},
@@ -468,7 +506,7 @@ function renderMatrix(){
     +'<div class="matrix-tags">'+o.depts.map(d=>'<span class="tag">'+d+'</span>').join('')+'</div>'
     +'<div class="matrix-label">담당 경쟁대학</div>'
     +'<div class="matrix-tags">'+o.schools.map(s=>'<span class="tag">'+s+'</span>').join('')+'</div>'
-    +'<div class="matrix-count"><div>담당 동향<b>'+TRENDS.filter(t=>o.name.startsWith(t.owner)).length+'건</b></div><div>부처 수<b>'+o.depts.length+'개</b></div></div>'
+    +'<div class="matrix-count"><div>담당 동향<b>'+TRENDS.filter(t=>inWindow(t)&&o.name.startsWith(t.owner)).length+'건</b></div><div>부처 수<b>'+o.depts.length+'개</b></div></div>'
     +'</div>'
   ).join('');
 }
@@ -489,6 +527,7 @@ function renderChips(){
 }
 function renderTrends(){
   const list = TRENDS.filter(t=>
+    inWindow(t) &&
     (activeDept==='전체'||t.dept===activeDept) &&
     (activeStatus==='전체'||t.status===activeStatus) &&
     (t.name.includes(searchTerm)||t.desc.includes(searchTerm))
@@ -502,7 +541,7 @@ function renderTrends(){
     +'</div>'
     +'<div class="trend-name">'+t.name+'</div>'
     +'<div class="trend-desc">'+t.desc+'</div>'
-    +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+t.date+'</span><span>'+t.due+'</span></div>'
+    +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+t.due+'</span></div>'
     +'</div>'
   ).join('') || '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-4);font-size:13px">조건에 맞는 동향이 없습니다.</div>';
 }
