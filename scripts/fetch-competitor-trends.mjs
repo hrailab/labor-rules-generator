@@ -221,14 +221,17 @@ async function main() {
   const previous = await loadPrevious();
 
   const collected = [];
+  const sourceSummary = []; // 학교별 성공/실패 요약 — GITHUB_STEP_SUMMARY에 기록해 유지보수 시 한눈에 확인
   for (const school of SCHOOLS) {
     console.log(`Fetching ${school.name}...`);
     try {
       const items = await school.parse(today);
       console.log(`  -> ${items.length} relevant items found`);
       collected.push(...items.map(it => ({ ...it, owner: school.owner })));
+      sourceSummary.push(`| ${school.name} | ✅ 성공 | ${items.length}건 |`);
     } catch (e) {
       console.error(`[WARN] ${school.name} fetch failed:`, e.message);
+      sourceSummary.push(`| ${school.name} | ❌ 실패 | ${e.message} |`);
     }
     await new Promise(r => setTimeout(r, 500));
   }
@@ -251,6 +254,18 @@ async function main() {
   }, null, 2) + '\n');
 
   console.log(`\nWrote ${merged.length} items (within last ${WINDOW_DAYS} days) to ${OUT_PATH}`);
+
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const summary = [
+      '## 경쟁대학 동향 수집 결과',
+      `수집 시각: ${today.toISOString()} · 총 ${merged.length}건 (최근 ${WINDOW_DAYS}일)`,
+      '',
+      '| 학교 | 상태 | 결과 |',
+      '|---|---|---|',
+      ...sourceSummary,
+    ].join('\n') + '\n';
+    await writeFile(process.env.GITHUB_STEP_SUMMARY, summary, { flag: 'a' });
+  }
 }
 
 main().catch(err => {

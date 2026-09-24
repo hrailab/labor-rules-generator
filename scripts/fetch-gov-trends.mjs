@@ -1,10 +1,12 @@
 // 정부정책 동향 자동 수집 스크립트
-// 대상: 대한민국 정책브리핑(korea.kr) 부처별 뉴스/보도자료 목록
+// 대상: 대한민국 정책브리핑(korea.kr) 부처별 뉴스/보도자료 목록(5개 명시 부처)
+//      + 전체 정책뉴스 통합 피드(그 외 모든 부처, '기타부처'로 태깅 — fetchUnifiedPolicyNews 참고)
 // 실행: 매일 00:00 / 12:00 (KST) — .github/workflows/fetch-gov-trends.yml
 //
 // 자동 수집되는 항목: 부처, 제목, 요약(lead), 날짜, 링크, 신규/계속 여부(직전 실행 대비 diff)
-// 사람 판단이 필요한 항목(우선순위, 대응전략, 본교 영향 등)은 이 스크립트가 채우지 않음 —
-// data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
+// 사람 판단이 필요한 항목(우선순위, 대응전략, 본교 영향, 소관 부처 재확인 등)은 이 스크립트가
+// 채우지 않음 — data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
+// (다만 PRIORITY_KEYWORDS에 해당하는 신규 항목은 우선순위 '높음'을 잠정 자동 태깅한다.)
 //
 // 수집 범위: 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
 // RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고).
@@ -44,10 +46,23 @@ const RELEVANT_KEYWORDS = [
   'BK21', '라이즈', 'RISE', '글로컬대학', '지역혁신',
   '입시', '대입', '수시모집', '정시모집', '학생부',
   '정원', '학사구조', '대학평가', '대학기본역량진단', '등록금심의',
+  '직업훈련', 'K-디지털트레이닝', '평생교육', '재직자', '고등직업교육',
 ];
 function isRelevant(item) {
   const text = item.title + ' ' + item.desc;
   return RELEVANT_KEYWORDS.some(k => text.includes(k));
+}
+
+// 전략적 파급력이 큰 사업·정책일수록 우선 검토가 필요하므로, 아래 키워드가 제목에 포함된
+// "신규" 항목은 우선순위를 '높음'으로 자동 태깅해 주요사안 상세에 곧바로 노출한다.
+// 이미 담당자가 우선순위를 수기로 지정한 기존 항목은 절대 덮어쓰지 않는다(merge 단계에서 prev 우선).
+const PRIORITY_KEYWORDS = [
+  'RISE', '라이즈', '글로컬대학', '대학혁신지원사업', 'LINC', '링크사업',
+  '첨단인재', '산학협력', '무전공', '자율전공', '직업훈련', '정원 감축', '정원감축',
+  '기본계획', '재정지원', '국가장학',
+];
+function isPriorityCandidate(item) {
+  return PRIORITY_KEYWORDS.some(k => item.title.includes(k));
 }
 
 function stripTags(s) {
@@ -84,11 +99,56 @@ async function fetchMinistryItems(dept) {
     items.push({
       id: `${dept.repCode}-${newsId}`,
       dept: dept.name,
+      category: '정책예고',
       title,
       desc: (lead && lead !== title) ? lead : '',
       date,
       url: href.startsWith('http') ? href : `https://www.korea.kr${href}`,
       owner: dept.name === '교육부' ? classifyEduOwner(title) : dept.owner,
+    });
+  }
+  return items;
+}
+
+// 정책브리핑 전체 정책뉴스 통합 피드 — 5개 명시 부처 외에 고용노동부·여성가족부·산업통상자원부 등
+// 그 외 모든 부처의 보도자료가 섞여 나온다. 목록/상세 페이지 어디에도 출처 부처명이 파싱 가능한
+// 형태로 노출되지 않아(정책브리핑 자체 출처 표기만 있음) 자동으로 정확한 소관 부처를 특정할 수 없다.
+// 그래서 dept를 '기타부처'로, owner를 '미배정'으로 잠정 태깅해 수집 범위를 넓히고,
+// 담당자가 원문을 확인해 실제 소관 부처·담당자를 수동으로 배정하도록 한다(우선순위 등과 동일한 패턴).
+async function fetchUnifiedPolicyNews(knownNewsIds) {
+  const url = `https://www.korea.kr/news/policyNewsList.do`;
+  const res = await fetch(url, { headers: { 'User-Agent': UA } });
+  if (!res.ok) {
+    console.error(`[WARN] 기타부처(통합피드) fetch failed: HTTP ${res.status}`);
+    return [];
+  }
+  const html = await res.text();
+
+  const ITEM_RE = /<a\s+href="([^"]+)"\s+onclick="goDetailView\([^)]*\);return false;"\s*>([\s\S]*?)<\/a>\s*<\/li>/g;
+  const items = [];
+  let m;
+  while ((m = ITEM_RE.exec(html)) !== null) {
+    const href = m[1].replace(/&amp;/g, '&');
+    const inner = m[2];
+
+    const titleMatch = inner.match(/<strong>([\s\S]*?)<\/strong>/);
+    const leadMatch = inner.match(/<span class="lead">([\s\S]*?)<\/span>/);
+    const dateMatch = inner.match(/<span class="source">\s*<span>(\d{4}-\d{2}-\d{2})<\/span>/);
+    if (!titleMatch || !dateMatch) continue;
+
+    const newsIdMatch = href.match(/newsId=(\d+)/);
+    const newsId = newsIdMatch ? newsIdMatch[1] : href;
+    if (knownNewsIds.has(newsId)) continue; // 이미 5개 명시 부처에서 수집된 항목은 중복 제외
+
+    items.push({
+      id: `etc-${newsId}`,
+      dept: '기타부처',
+      category: '정책예고',
+      title: stripTags(titleMatch[1]),
+      desc: (() => { const lead = leadMatch ? stripTags(leadMatch[1]) : ''; return lead !== stripTags(titleMatch[1]) ? lead : ''; })(),
+      date: dateMatch[1],
+      url: href.startsWith('http') ? href : `https://www.korea.kr${href}`,
+      owner: '미배정',
     });
   }
   return items;
@@ -114,12 +174,34 @@ async function main() {
   const previous = await loadPrevious();
 
   const collected = [];
+  const sourceSummary = []; // 소스별 성공/실패 요약 — GITHUB_STEP_SUMMARY에 기록해 유지보수 시 한눈에 확인
   for (const dept of DEPTS) {
     console.log(`Fetching ${dept.name} (${dept.repCode})...`);
-    const items = await fetchMinistryItems(dept);
-    console.log(`  -> ${items.length} items found`);
-    collected.push(...items);
+    try {
+      // 한 부처의 사이트 구조 변경·일시 장애로 전체 수집이 중단되지 않도록 소스별로 독립 격리한다 —
+      // 여기서 실패해도 나머지 부처는 계속 수집되고, 이번 실행에선 해당 부처만 이전 결과가 유지된다.
+      const items = await fetchMinistryItems(dept);
+      console.log(`  -> ${items.length} items found`);
+      collected.push(...items);
+      sourceSummary.push(`| ${dept.name} | ✅ 성공 | ${items.length}건 |`);
+    } catch (e) {
+      console.error(`[WARN] ${dept.name} 수집 실패:`, e.message);
+      sourceSummary.push(`| ${dept.name} | ❌ 실패 | ${e.message} |`);
+    }
     await new Promise(r => setTimeout(r, 400)); // 사이트 부하 방지용 딜레이
+  }
+
+  // 5개 명시 부처 외 나머지 부처를 훑어 수집 범위를 넓히는 통합 피드 — 이미 수집된 newsId는 제외.
+  console.log('Fetching 기타부처 (통합 피드)...');
+  try {
+    const knownNewsIds = new Set(collected.map(t => t.id.split('-').pop()));
+    const etcItems = await fetchUnifiedPolicyNews(knownNewsIds);
+    console.log(`  -> ${etcItems.length} items found`);
+    collected.push(...etcItems);
+    sourceSummary.push(`| 기타부처(통합피드) | ✅ 성공 | ${etcItems.length}건 |`);
+  } catch (e) {
+    console.error('[WARN] 기타부처(통합피드) 수집 실패:', e.message);
+    sourceSummary.push(`| 기타부처(통합피드) | ❌ 실패 | ${e.message} |`);
   }
 
   const relevant = collected.filter(isRelevant);
@@ -128,14 +210,20 @@ async function main() {
 
   // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·주요사안 분석(배경/내용/시사점/본교영향/대응전략) 등
   // 사람 판단이 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
+  // 다만 신규 항목 중 전략적 파급력이 큰 키워드(PRIORITY_KEYWORDS)가 제목에 포함된 경우에는
+  // 담당자가 놓치지 않도록 우선순위를 '높음'으로 미리 태깅해 주요사안 상세에 바로 노출되게 한다
+  // (담당자가 이후 수기로 값을 바꾸면 그 값이 항상 우선한다).
   const prevById = new Map(previous.map(t => [t.id, t]));
   const merged = windowed.map(t => {
     const prev = prevById.get(t.id);
     return {
       ...t,
       status: prev ? (prev.status || '계속') : '신규',
-      priority: prev?.priority ?? null,
+      priority: prev ? (prev.priority ?? null) : (isPriorityCandidate(t) ? '높음' : null),
       due: prev?.due ?? null,
+      // 접수 마감일(YYYY-MM-DD, 정확한 날짜가 확인된 경우에만) — 프런트엔드에서 D-day 배지 계산에 사용.
+      // 보도자료 원문만으로는 자동 추출이 어려워 담당자가 직접 채워 넣는 값.
+      deadline: prev?.deadline ?? null,
       bg: prev?.bg ?? null,
       body: prev?.body ?? null,
       implication: prev?.implication ?? null,
@@ -154,6 +242,20 @@ async function main() {
   }, null, 2) + '\n');
 
   console.log(`\nWrote ${merged.length} items (within last ${WINDOW_DAYS} days) to ${OUT_PATH}`);
+
+  // GitHub Actions 실행 요약 화면에 소스별 성공/실패를 표로 남겨, 특정 부처 수집이
+  // 조용히 실패한 채로 방치되지 않도록 한다(로컬 실행 시에는 GITHUB_STEP_SUMMARY가 없어 조용히 스킵).
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const summary = [
+      '## 정부정책 동향 수집 결과',
+      `수집 시각: ${today.toISOString()} · 총 ${merged.length}건 (최근 ${WINDOW_DAYS}일)`,
+      '',
+      '| 부처 | 상태 | 결과 |',
+      '|---|---|---|',
+      ...sourceSummary,
+    ].join('\n') + '\n';
+    await writeFile(process.env.GITHUB_STEP_SUMMARY, summary, { flag: 'a' });
+  }
 }
 
 main().catch(err => {
