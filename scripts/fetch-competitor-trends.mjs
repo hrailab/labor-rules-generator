@@ -17,14 +17,19 @@ const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const WINDOW_DAYS = 14;
 const OUT_PATH = 'data/competitors.json';
 
-const COMPETITOR_KEYWORDS = [
-  '재정지원', '지원사업', '산학협력', '산학연', '기술이전', '창업', '창업보육',
-  '국제', '글로벌', '해외', '유학생', '외국인', '교환학생', '협정대학',
-  'MOU', '협약', '자매결연', '교류',
-  '대외협력', '발전기금', '동문', '기부',
+// 분야 분류 — 순서대로 검사해 먼저 걸리는 분야로 태깅한다.
+// 프런트엔드(index.html의 compCatClass)와 분야명 문자열이 정확히 일치해야 한다.
+const CATEGORY_RULES = [
+  { name: '재정지원', keywords: ['재정지원', '지원사업'] },
+  { name: '산학협력', keywords: ['산학협력', '산학연', '기술이전', '창업', '창업보육'] },
+  { name: '국제', keywords: ['국제', '글로벌', '해외', '유학생', '외국인', '교환학생', '협정대학', 'MOU', '자매결연', '교류'] },
+  { name: '대외협력', keywords: ['대외협력', '발전기금', '동문', '기부', '협약'] },
 ];
-function isRelevant(title) {
-  return COMPETITOR_KEYWORDS.some(k => title.includes(k));
+function categorize(title) {
+  for (const rule of CATEGORY_RULES) {
+    if (rule.keywords.some(k => title.includes(k))) return rule.name;
+  }
+  return null;
 }
 
 function stripTags(s) {
@@ -56,9 +61,10 @@ async function parseSKKU(fetchedAt) {
     const dateM = block.match(/<li>(\d{4}-\d{2}-\d{2})<\/li>/);
     if (!m || !dateM) continue;
     const title = stripTags(m[3]);
-    if (!isRelevant(title)) continue;
+    const category = categorize(title);
+    if (!category) continue;
     items.push({
-      id: `skku-${m[2]}`, school: '성균관대', title,
+      id: `skku-${m[2]}`, school: '성균관대', title, category,
       url: `https://www.skku.edu/skku/campus/skk_comm/notice01.do${m[1].replace(/&amp;/g, '&')}`,
       date: dateM[1],
     });
@@ -78,8 +84,9 @@ async function parseCAU(fetchedAt) {
     const titleM = block.match(/<span class="b-title">\s*([\s\S]*?)\s*<\/span>/);
     const dateM = block.match(/<p class="b-date"><span>([\d.]+)<\/span><\/p>/);
     if (!noM || !titleM || !dateM) continue;
+    const title = stripTags(titleM[1]);
     items.push({
-      id: `cau-${noM[1]}`, school: '중앙대', title: stripTags(titleM[1]),
+      id: `cau-${noM[1]}`, school: '중앙대', title, category: categorize(title) || '국제',
       url: `https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=${noM[1]}`,
       date: normDate(dateM[1]),
     });
@@ -100,8 +107,9 @@ async function parseDongguk(fetchedAt) {
     const idM = href.match(/\/(\d+)$/);
     const titleM = block.match(/<p class="tit">\s*([\s\S]*?)\s*<\/p>/);
     if (!idM || !titleM) continue;
+    const title = stripTags(titleM[1]);
     items.push({
-      id: `dgu-${idM[1]}`, school: '동국대', title: stripTags(titleM[1]),
+      id: `dgu-${idM[1]}`, school: '동국대', title, category: categorize(title) || '국제',
       url: `https://www.dongguk.edu${href}`,
       date: todayStr(fetchedAt),
     });
@@ -122,9 +130,10 @@ async function parseHanyang(fetchedAt) {
     const titleM = block.match(/<strong class="auto-titles[^"]*">\s*([\s\S]*?)\s*<\/strong>/);
     if (!titleM) continue;
     const title = stripTags(titleM[1]);
-    if (!isRelevant(title)) continue;
+    const category = categorize(title);
+    if (!category) continue;
     items.push({
-      id: `hyu-${b[2]}`, school: '한양대', title,
+      id: `hyu-${b[2]}`, school: '한양대', title, category,
       url: `https://www.newshyu.com${b[1]}`,
       date: todayStr(fetchedAt),
     });
@@ -141,11 +150,12 @@ async function parseKHU(fetchedAt) {
   const items = [];
   for (const m of html.matchAll(re)) {
     const title = stripTags(m[3]);
-    if (!isRelevant(title)) continue;
+    const category = categorize(title);
+    if (!category) continue;
     const tail = html.slice(m.index, m.index + 400);
     const dateM = tail.match(/(\d{4}-\d{2}-\d{2}|\d{4}\.\d{2}\.\d{2})/);
     items.push({
-      id: `khu-${m[2]}`, school: '경희대', title,
+      id: `khu-${m[2]}`, school: '경희대', title, category,
       url: `https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do${m[1].replace(/&amp;/g, '&')}`,
       date: dateM ? normDate(dateM[1]) : todayStr(fetchedAt),
     });
@@ -168,11 +178,13 @@ async function parseEwha(fetchedAt) {
     if (seen.has(m[2])) continue;
     seen.add(m[2]);
     const title = stripTags(m[3]);
-    if (!title || !isRelevant(title)) continue;
+    if (!title) continue;
+    const category = categorize(title);
+    if (!category) continue;
     const tail = html.slice(m.index, m.index + 400);
     const dateM = tail.match(/(\d{4}-\d{2}-\d{2}|\d{4}\.\d{2}\.\d{2})/);
     items.push({
-      id: `ewha-${m[2]}`, school: '이화여대', title,
+      id: `ewha-${m[2]}`, school: '이화여대', title, category,
       url: `https://www.ewha.ac.kr/ewha/news/ewha-news.do${m[1].replace(/&amp;/g, '&')}`,
       date: dateM ? normDate(dateM[1]) : todayStr(fetchedAt),
     });

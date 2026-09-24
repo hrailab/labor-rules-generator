@@ -100,8 +100,10 @@ a{color:inherit}
 
 /* TREND CARDS */
 .trend-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.trend-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .15s,border-color .15s}
+.trend-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .15s,border-color .15s;text-decoration:none;color:inherit}
+a.trend-card{cursor:pointer}
 .trend-card:hover{box-shadow:0 6px 20px rgba(30,29,32,.08);border-color:var(--border-2)}
+.ext-arrow{color:var(--ink-4);font-weight:400}
 .trend-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .badge{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.01em}
 .badge.b-high{background:var(--orange-light);color:var(--orange)}
@@ -156,11 +158,22 @@ a{color:inherit}
 /* COMPETITOR */
 .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .comp-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:16px 18px}
-.comp-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.comp-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .comp-name{font-size:14.5px;font-weight:800;color:var(--ink)}
 .comp-owner{font-size:10.5px;font-weight:700;color:var(--green);background:var(--green-light);padding:2px 8px;border-radius:99px}
-.comp-desc{font-size:12.5px;color:var(--ink-3);line-height:1.7;margin-bottom:8px}
-.comp-date{font-size:11px;color:var(--ink-4)}
+.comp-items{display:flex;flex-direction:column;gap:4px}
+.comp-item{display:flex;align-items:center;gap:8px;padding:7px 8px;margin:0 -8px;border-radius:8px;text-decoration:none;color:inherit;transition:background .15s}
+a.comp-item{cursor:pointer}
+.comp-item:hover{background:var(--surface-2)}
+.comp-item-cat{flex-shrink:0;font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;white-space:nowrap}
+.comp-item-title{flex:1;min-width:0;font-size:12px;color:var(--ink-2);line-height:1.5}
+.comp-item-date{flex-shrink:0;font-size:10.5px;color:var(--ink-4);white-space:nowrap}
+.comp-empty{font-size:12px;color:var(--ink-4);padding:8px 0}
+.cat-fin{background:var(--green-light);color:var(--green)}
+.cat-ind{background:var(--blue-light);color:var(--blue)}
+.cat-intl{background:var(--purple-light);color:var(--purple)}
+.cat-ext{background:var(--orange-light);color:var(--orange)}
+.cat-etc{background:var(--slate-light);color:var(--slate)}
 
 /* PROCESS TIMELINE */
 .process-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 26px}
@@ -377,6 +390,15 @@ const DEPTS = {
   '농식품부':   {color:'#8b8d93'},
 };
 
+// 목업 동향 항목에는 실제 url이 없으므로, 카드 전체 클릭 시 이동할 부처별 출처 페이지(정책브리핑)로 대체
+const DEPT_SOURCE_URL = {
+  '기획예산처': 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00040&pWiseMinistry=ministryNews',
+  '교육부': 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00002&pWiseMinistry=ministryNews',
+  '과기정통부': 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00033&pWiseMinistry=ministryNews',
+  '중기부': 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00032&pWiseMinistry=ministryNews',
+  '농식품부': 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00008&pWiseMinistry=ministryNews',
+};
+
 const OWNERS = [
   {name:'백승엽 팀장', role:'담당자', depts:['기획예산처','교육부(정책·법령·기본계획)'], schools:['대학 전반 동향','지방국립대 포함'], bar:'#007645'},
   {name:'서원석 과장', role:'담당자', depts:['교육부(재정지원사업)','농식품부(수의·동물의료 한정)'], schools:['성균관대','한양대'], bar:'#3e93be'},
@@ -423,13 +445,33 @@ const ISSUES = [
 ];
 
 // 실데이터(data/competitors.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
+// 실데이터(data/competitors.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
+// 학교 1곳당 카드 1장, 카드 안에 분야별(재정지원/산학협력/국제/대외협력) 항목을 나열
 const MOCK_COMPETITORS = [
-  {name:'성균관대', owner:'서원석', desc:'교육부 재정지원사업 3건 동시 신청 준비 중인 것으로 파악. 산학협력단 인력 충원 진행.', date:'09.20 확인'},
-  {name:'한양대', owner:'서원석', desc:'중기부 창업 인프라 관련 자체 예산 확대 편성 논의. 딥테크 특화 트랙 대응 움직임.', date:'09.18 확인'},
-  {name:'경희대', owner:'이수연', desc:'과기정통부 ICT 연구인프라 사업 컨소시엄 주관기관 참여 검토 중.', date:'09.21 확인'},
-  {name:'동국대', owner:'이수연', desc:'이공계 대학원생 지원 확대안 관련 학내 공청회 개최 예정.', date:'09.19 확인'},
-  {name:'중앙대', owner:'정주원', desc:'창업중심대학 후속 지원 대응 TF 구성. 딥테크 분야 실적 정리 착수.', date:'09.22 확인'},
-  {name:'이화여대', owner:'정주원', desc:'경력창업지원사업 관련 창업보육센터 개편 검토 중.', date:'09.17 확인'},
+  {name:'성균관대', owner:'서원석', items:[
+    {category:'재정지원', title:'교육부 재정지원사업 3건 동시 신청 준비 중인 것으로 파악', date:'09.20', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do'},
+    {category:'산학협력', title:'산학협력단 인력 충원, 기업연계 프로그램 확대', date:'09.18', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do'},
+  ]},
+  {name:'한양대', owner:'서원석', items:[
+    {category:'산학협력', title:'중기부 창업 인프라 연계 예산 확대 편성 논의', date:'09.18', url:'https://www.newshyu.com/'},
+    {category:'국제', title:'AI반도체 국책사업 수주로 국제 공동연구 확대', date:'09.16', url:'https://www.newshyu.com/'},
+  ]},
+  {name:'경희대', owner:'이수연', items:[
+    {category:'국제', title:'국제교류처, 유럽권 협정대학 3곳과 신규 MOU 체결', date:'09.21', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'},
+    {category:'산학협력', title:'과기정통부 ICT 연구인프라 컨소시엄 참여 검토', date:'09.19', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'},
+  ]},
+  {name:'동국대', owner:'이수연', items:[
+    {category:'국제', title:'외국인 유학생 대상 장학 프로그램 안내', date:'09.19', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
+    {category:'대외협력', title:'지역기관과 사회공헌 업무협약(MOU) 체결', date:'09.17', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
+  ]},
+  {name:'중앙대', owner:'정주원', items:[
+    {category:'국제', title:'2027학년도 순수외국인전형 원서접수 안내', date:'09.22', url:'https://oias.cau.ac.kr/cauoie/under/notice.do'},
+    {category:'산학협력', title:'창업중심대학 후속 지원 대응 TF 구성', date:'09.20', url:'https://oias.cau.ac.kr/cauoie/under/notice.do'},
+  ]},
+  {name:'이화여대', owner:'정주원', items:[
+    {category:'산학협력', title:'경력창업지원사업 관련 창업보육센터 개편 검토', date:'09.17', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
+    {category:'대외협력', title:'발전기금 캠페인 — 동문 기부 프로그램 확대', date:'09.15', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
+  ]},
 ];
 
 let COMPETITORS = MOCK_COMPETITORS;
@@ -534,14 +576,24 @@ async function loadTrends(){
   }
 }
 
-function normalizeRealCompetitor(raw){
-  return {
-    name: raw.school,
-    owner: raw.owner,
-    desc: raw.title,
-    date: raw.date.replace(/-/g,'.')+' 확인',
-    url: raw.url || null,
-  };
+const SCHOOL_ORDER = ['성균관대','한양대','경희대','동국대','중앙대','이화여대'];
+
+// 학교당 카드 1장으로 묶고, 카드 안에는 분야(카테고리)별 항목을 나열할 수 있도록 그룹핑한다.
+function groupCompetitorsBySchool(flatItems){
+  const map = new Map();
+  flatItems.forEach(it=>{
+    if(!map.has(it.school)) map.set(it.school, {name:it.school, owner:it.owner, items:[]});
+    map.get(it.school).items.push({
+      category: it.category || '기타',
+      title: it.title,
+      date: it.date.replace(/-/g,'.'),
+      url: it.url || null,
+    });
+  });
+  const schools = SCHOOL_ORDER.filter(s=>map.has(s)).map(s=>map.get(s));
+  // SCHOOL_ORDER에 없는 학교가 데이터에 있으면 뒤에 붙인다(향후 학교 추가 대비)
+  map.forEach((v,k)=>{ if(!SCHOOL_ORDER.includes(k)) schools.push(v); });
+  return schools;
 }
 
 // data/competitors.json은 scripts/fetch-competitor-trends.mjs가 매일 정오·자정 자동 갱신함
@@ -552,9 +604,9 @@ async function loadCompetitors(){
     const res = await fetch('data/competitors.json', {cache:'no-store'});
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
-    const items = (data.items||[]).map(normalizeRealCompetitor);
+    const items = data.items || [];
     if(items.length === 0) throw new Error('empty dataset — not yet collected');
-    COMPETITORS = items;
+    COMPETITORS = groupCompetitorsBySchool(items);
     COMPETITORS_USING_MOCK = false;
   }catch(e){
     COMPETITORS = MOCK_COMPETITORS;
@@ -589,7 +641,7 @@ function renderKpi(){
     {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'직전 갱신 대비 +2건', up:true},
     {label:'대응 우선순위 높음', value:highCount+'건', delta:'즉시 검토 필요', up:true},
     {label:'신규 등록', value:newCount+'건', delta:'주요사안 '+ISSUES.length+'건 포함', up:true},
-    {label:'경쟁대학 포착 건수', value:COMPETITORS.length+'건', delta:'6개교 모니터링 중', up:false},
+    {label:'경쟁대학 포착 건수', value:COMPETITORS.reduce((a,s)=>a+s.items.length,0)+'건', delta:COMPETITORS.length+'개교 모니터링 중', up:false},
   ];
   document.getElementById('kpiRow').innerHTML = kpis.map(k=>
     '<div class="kpi-card"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.value+'</div><div class="kpi-delta '+(k.up?'up':'flat')+'">'+(k.up?'▲ ':'· ')+k.delta+'</div></div>'
@@ -632,18 +684,21 @@ function renderTrends(){
     (activeStatus==='전체'||t.status===activeStatus) &&
     (t.name.includes(searchTerm)||(t.desc||'').includes(searchTerm))
   );
-  document.getElementById('trendGrid').innerHTML = list.map(t=>
-    '<div class="trend-card">'
-    +'<div class="trend-top">'
-    +'<span class="badge '+(t.priority?priorityClass(t.priority):'b-unset')+'">'+priorityLabel(t.priority)+'</span>'
-    +'<span class="badge '+statusClass(t.status)+'">'+t.status+'</span>'
-    +'<span class="dept-tag">'+deptDot(t.dept)+t.dept+'</span>'
-    +'</div>'
-    +'<div class="trend-name">'+(t.url ? '<a href="'+t.url+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">'+t.name+' <span style="color:var(--ink-4);font-weight:400">↗</span></a>' : t.name)+'</div>'
-    +(t.desc ? '<div class="trend-desc">'+t.desc+'</div>' : '')
-    +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+(t.due||'-')+'</span></div>'
-    +'</div>'
-  ).join('') || '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-4);font-size:13px">조건에 맞는 동향이 없습니다.</div>';
+  document.getElementById('trendGrid').innerHTML = list.map(t=>{
+    const link = t.url || DEPT_SOURCE_URL[t.dept] || null;
+    const tag = link ? 'a' : 'div';
+    const attrs = link ? ' href="'+link+'" target="_blank" rel="noopener" class="trend-card"' : ' class="trend-card"';
+    return '<'+tag+attrs+'>'
+      +'<div class="trend-top">'
+      +'<span class="badge '+(t.priority?priorityClass(t.priority):'b-unset')+'">'+priorityLabel(t.priority)+'</span>'
+      +'<span class="badge '+statusClass(t.status)+'">'+t.status+'</span>'
+      +'<span class="dept-tag">'+deptDot(t.dept)+t.dept+'</span>'
+      +'</div>'
+      +'<div class="trend-name">'+t.name+(link?' <span class="ext-arrow">↗</span>':'')+'</div>'
+      +(t.desc ? '<div class="trend-desc">'+t.desc+'</div>' : '')
+      +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+(t.due||'-')+'</span></div>'
+      +'</'+tag+'>';
+  }).join('') || '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-4);font-size:13px">조건에 맞는 동향이 없습니다.</div>';
 }
 document.getElementById('trendSearch').addEventListener('input', function(){ searchTerm=this.value.trim(); renderTrends(); });
 
@@ -669,12 +724,24 @@ function renderIssues(){
 function toggleIssue(i){ document.getElementById('issue'+i).classList.toggle('open'); }
 
 // Competitors
+function compCatClass(cat){
+  return {'재정지원':'cat-fin','산학협력':'cat-ind','국제':'cat-intl','대외협력':'cat-ext'}[cat] || 'cat-etc';
+}
+
 function renderCompetitors(){
-  document.getElementById('compGrid').innerHTML = COMPETITORS.map(c=>
-    '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner">'+c.owner+' 담당</div></div>'
-    +'<div class="comp-desc">'+(c.url ? '<a href="'+c.url+'" target="_blank" rel="noopener" style="color:inherit">'+c.desc+' <span style="color:var(--ink-4)">↗</span></a>' : c.desc)+'</div>'
-    +'<div class="comp-date">'+c.date+'</div></div>'
-  ).join('');
+  document.getElementById('compGrid').innerHTML = COMPETITORS.map(c=>{
+    const itemsHtml = c.items.length ? c.items.map(it=>{
+      const tag = it.url ? 'a' : 'div';
+      const attrs = it.url ? ' href="'+it.url+'" target="_blank" rel="noopener"' : '';
+      return '<'+tag+' class="comp-item"'+attrs+'>'
+        +'<span class="comp-item-cat '+compCatClass(it.category)+'">'+it.category+'</span>'
+        +'<span class="comp-item-title">'+it.title+'</span>'
+        +'<span class="comp-item-date">'+it.date+'</span>'
+        +'</'+tag+'>';
+    }).join('') : '<div class="comp-empty">최근 14일 내 수집된 동향이 없습니다.</div>';
+    return '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner">'+c.owner+' 담당</div></div>'
+      +'<div class="comp-items">'+itemsHtml+'</div></div>';
+  }).join('');
 }
 
 // Process timeline
@@ -795,7 +862,7 @@ function renderCharts(){
     {label:'실태점검·모니터링', value:1, color:'#c97a2e'},
   ]);
 
-  renderBarChart('compChart', COMPETITORS.map(c=>c.name), [5,4,3,3,4,2], '#007645');
+  renderBarChart('compChart', COMPETITORS.map(c=>c.name), COMPETITORS.map(c=>c.items.length), '#007645');
 }
 
 // Scroll-spy for subnav
