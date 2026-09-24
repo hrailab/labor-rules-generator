@@ -178,17 +178,6 @@ a.comp-item{cursor:pointer}
 .cat-ext{background:var(--orange-light);color:var(--orange)}
 .cat-etc{background:var(--slate-light);color:var(--slate)}
 
-/* PROCESS TIMELINE */
-.process-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px 26px}
-.timeline{display:flex;align-items:stretch;gap:0}
-.tl-step{flex:1;text-align:center;position:relative;padding:0 8px}
-.tl-num{width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin:0 auto 12px}
-.tl-day{font-size:11px;font-weight:700;color:var(--green);letter-spacing:.04em;margin-bottom:4px}
-.tl-title{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
-.tl-desc{font-size:11.5px;color:var(--ink-4);line-height:1.6}
-.tl-line{position:absolute;top:19px;left:calc(-50% + 19px);right:calc(50% + 19px);height:2px;background:var(--border-2)}
-.tl-step:first-child .tl-line{display:none}
-
 /* SOURCES */
 .source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .source-card{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 15px;text-decoration:none;transition:border-color .15s}
@@ -205,10 +194,6 @@ a.comp-item{cursor:pointer}
   .matrix-grid{grid-template-columns:1fr 1fr}
   .trend-grid,.chart-grid,.comp-grid,.source-grid{grid-template-columns:1fr}
   .issue-grid{grid-template-columns:1fr}
-  .timeline{flex-direction:column;gap:18px;text-align:left}
-  .tl-step{display:flex;align-items:center;gap:14px;text-align:left;padding:0}
-  .tl-num{margin:0;flex-shrink:0}
-  .tl-line{display:none}
 }
 @media(max-width:640px){
   .hero-inner,.subnav,.main{padding-left:16px;padding-right:16px}
@@ -248,26 +233,25 @@ a.comp-item{cursor:pointer}
 
 <div class="subnav-wrap">
   <nav class="subnav" id="subnav">
-    <a href="#matrix" class="active">담당 매트릭스</a>
+    <a href="#issues" class="active">주요사안 상세</a>
     <a href="#trends">전체 동향</a>
-    <a href="#issues">주요사안 상세</a>
-    <a href="#charts">동향 차트</a>
     <a href="#competitors">경쟁대학 동향</a>
-    <a href="#process">보고 프로세스</a>
+    <a href="#charts">동향 차트</a>
+    <a href="#matrix">담당 매트릭스</a>
     <a href="#sources">출처</a>
   </nav>
 </div>
 
 <main class="main">
 
-  <!-- 담당-부처-경쟁대학 매트릭스 -->
-  <section id="matrix">
+  <!-- 주요사안 상세 -->
+  <section id="issues">
     <div class="section-head">
       <div>
-        <div class="section-title">담당자 · 부처 · 경쟁대학 매트릭스</div>
+        <div class="section-title">주요사안 상세</div>
       </div>
     </div>
-    <div class="matrix-grid" id="matrixGrid"></div>
+    <div class="issue-list" id="issueList"></div>
   </section>
 
   <!-- 전체 동향 -->
@@ -286,14 +270,15 @@ a.comp-item{cursor:pointer}
     <div class="trend-grid" id="trendGrid"></div>
   </section>
 
-  <!-- 주요사안 상세 -->
-  <section id="issues">
+  <!-- 경쟁대학 -->
+  <section id="competitors">
     <div class="section-head">
       <div>
-        <div class="section-title">주요사안 상세</div>
+        <div class="section-title">경쟁대학 동향</div>
+        <div class="section-desc">담당자별 배정 경쟁대학의 재정지원사업·산학협력·국제·대외협력 분야 최근 동향</div>
       </div>
     </div>
-    <div class="issue-list" id="issueList"></div>
+    <div class="comp-grid" id="compGrid"></div>
   </section>
 
   <!-- 차트 -->
@@ -329,28 +314,14 @@ a.comp-item{cursor:pointer}
     </div>
   </section>
 
-  <!-- 경쟁대학 -->
-  <section id="competitors">
+  <!-- 담당-부처-경쟁대학 매트릭스 -->
+  <section id="matrix">
     <div class="section-head">
       <div>
-        <div class="section-title">경쟁대학 동향</div>
-        <div class="section-desc">담당자별 배정 경쟁대학의 재정지원사업·산학협력·국제·대외협력 분야 최근 동향</div>
+        <div class="section-title">담당자 · 부처 · 경쟁대학 매트릭스</div>
       </div>
     </div>
-    <div class="comp-grid" id="compGrid"></div>
-  </section>
-
-  <!-- 보고 프로세스 -->
-  <section id="process">
-    <div class="section-head">
-      <div>
-        <div class="section-title">보고 프로세스</div>
-        <div class="section-desc">담당자 작성부터 총장 보고까지의 주간 흐름</div>
-      </div>
-    </div>
-    <div class="process-wrap">
-      <div class="timeline" id="timeline"></div>
-    </div>
+    <div class="matrix-grid" id="matrixGrid"></div>
   </section>
 
   <!-- 출처 -->
@@ -468,13 +439,6 @@ const SOURCES = [
   {label:'동국대 교류공지', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
   {label:'중앙대 국제처 공지', url:'https://oias.cau.ac.kr/cauoie/under/notice.do'},
   {label:'이화여대 이화뉴스', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
-];
-
-const PROCESS = [
-  {num:1, day:'화 (첫째·셋째 주)', title:'담당자 작성', desc:'담당 부처·경쟁대학 동향을 원페이지 양식으로 작성'},
-  {num:2, day:'수', title:'취합·팀 검토', desc:'전략기획팀 전체 취합 및 1차 검토'},
-  {num:3, day:'목', title:'처장 검토', desc:'처장 보고 및 방향성 점검'},
-  {num:4, day:'금', title:'총장 보고', desc:'즉시 과제화 및 유관 부서 이관 경로 확정'},
 ];
 
 /* ───────────────────────── RENDER ───────────────────────── */
@@ -735,13 +699,6 @@ function renderCompetitors(){
   }).join('');
 }
 
-// Process timeline
-function renderProcess(){
-  document.getElementById('timeline').innerHTML = PROCESS.map(p=>
-    '<div class="tl-step"><div class="tl-line"></div><div class="tl-num">'+p.num+'</div><div><div class="tl-day">'+p.day+'</div><div class="tl-title">'+p.title+'</div><div class="tl-desc">'+p.desc+'</div></div></div>'
-  ).join('');
-}
-
 // Sources
 function renderSources(){
   document.getElementById('sourceGrid').innerHTML = SOURCES.map((s,i)=>
@@ -871,14 +828,13 @@ function initScrollSpy(){
   await Promise.all([loadTrends(), loadCompetitors()]);
   renderDisclaimer();
   renderKpi();
-  renderMatrix();
+  renderIssues();
   renderChips();
   renderTrends();
-  renderIssues();
   renderCompetitors();
-  renderProcess();
-  renderSources();
   renderCharts();
+  renderMatrix();
+  renderSources();
   initScrollSpy();
 })();
 </script>
