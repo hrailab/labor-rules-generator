@@ -103,7 +103,8 @@ a{color:inherit}
 .trend-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .15s,border-color .15s,background .15s;text-decoration:none;color:inherit}
 a.trend-card{cursor:pointer}
 .trend-card:hover{background:var(--green-light);box-shadow:0 6px 20px rgba(30,29,32,.08);border-color:var(--green)}
-.ext-arrow{color:var(--ink-4);font-weight:400}
+.ext-arrow{color:var(--ink-4);font-weight:400;text-decoration:none}
+a.ext-arrow:hover{color:var(--green)}
 .trend-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .badge{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.01em}
 .badge.b-high{background:var(--orange-light);color:var(--orange)}
@@ -368,28 +369,34 @@ const OWNERS = [
   {name:'정주원 주임', role:'담당자', depts:['중소벤처기업부'], schools:['중앙대','이화여대'], bar:'#c97a2e'},
 ];
 
-// 실데이터(data/trends.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
+// 부처별 repCode(정책브리핑 URL 파라미터) — scripts/fetch-gov-trends.mjs의 DEPTS와 동일
+const REP_CODE = {'기획예산처':'A00040','교육부':'A00002','과기정통부':'A00033','중기부':'A00032','농식품부':'A00008'};
+// 정책브리핑(korea.kr) 상세페이지의 실제 URL 형식(policyNewsView.do?newsId=...)을 그대로 따르되,
+// 목업 항목이라 newsId만 가상의 값을 사용한다 — 부처 목록 페이지가 아닌 항목별 개별 링크.
+function mockGovUrl(dept, newsId){
+  return 'https://www.korea.kr/news/policyNewsView.do?newsId='+newsId+'&repCode='+REP_CODE[dept]+'&repCodeType=정부부처&pWiseMinistry=ministryNews';
+}
 const MOCK_TRENDS = [
-  {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', daysAgo:0, due:'회신 10.10'},
-  {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05 · 접수 마감 11.10(예상)',
+  {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', daysAgo:0, due:'회신 10.10', url:mockGovUrl('기획예산처','148991042')},
+  {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05 · 접수 마감 11.10(예상)', url:mockGovUrl('중기부','148988817'),
     bg:'중기부가 창업중심대학 지원 예산을 883억원에서 1,083억원으로 확대하고, 딥테크 분야 중심으로 개편하는 방향으로 미래대응기금을 재원으로 활용할 계획.',
     body:'기존 선정 대학의 후속 지원과 신규 대학 추가 선정을 동시에 진행할 예정이며, 딥테크(반도체·AI·바이오) 분야 특화 트랙이 신설될 전망.',
     implication:'딥테크 분야 창업 인프라를 보유한 대학이 유리하며, 경쟁대학인 중앙대·이화여대의 사전 준비 동향 파악이 중요함.',
     impact:'본교 창업지원단의 딥테크 분야 실적 정리가 필요하며, 컨소시엄 구성 시 기업 매칭 실적이 핵심 요건이 될 가능성이 높음.',
     strategy:'창업지원단과 사전 협의체 구성, 딥테크 분야 실적 자료를 10월 공고 전까지 정리하여 신청 준비기간 확보.'},
-  {dept:'교육부', owner:'백승엽', status:'확대', priority:'높음', name:'대학혁신지원사업 3주기 기본계획', desc:'평가지표 개편안 초안 공개. 산학협력·지역연계 배점 확대 방향.', daysAgo:2, due:'설명회 10.02 · 공고 11월 예정',
+  {dept:'교육부', owner:'백승엽', status:'확대', priority:'높음', name:'대학혁신지원사업 3주기 기본계획', desc:'평가지표 개편안 초안 공개. 산학협력·지역연계 배점 확대 방향.', daysAgo:2, due:'설명회 10.02 · 공고 11월 예정', url:mockGovUrl('교육부','148984529'),
     bg:'2026년으로 2주기가 종료됨에 따라 교육부가 3주기(2027~2029) 기본계획 초안을 마련 중이며, 평가지표 체계를 전면 개편하는 방향으로 논의되고 있음.',
     body:'산학협력 실적과 지역연계 성과 배점이 기존 대비 확대되고, 정원 감축 실적이 핵심 지표로 신규 반영될 전망. 대학 자율 혁신 계획서 분량도 축소되어 정성평가 비중이 높아짐.',
     implication:'정원 감축·산학협력 실적이 미흡한 대학은 선정 등급 하락 가능성이 있으며, 사전 실적 축적이 어려운 대학은 대응기간이 부족할 수 있음.',
     impact:'본교는 산학협력 실적은 양호하나 정원 감축 계획이 미확정 상태로, 3주기 대응을 위한 정원 정책 조기 수립이 필요함.',
     strategy:'10월 설명회 참석 후 세부 배점안 확보 → 정원 정책 초안을 11월 공고 전까지 마련하여 선제적으로 대응.'},
-  {dept:'과기정통부', owner:'이수연', status:'신규', priority:'높음', name:'대학 ICT 연구인프라 고도화 사업', desc:'AI·반도체 분야 연구장비 공동활용 인프라 구축 지원. 컨소시엄 구성 요건 확인 필요.', daysAgo:4, due:'접수 10.15'},
-  {dept:'교육부', owner:'서원석', status:'신규', priority:'중간', name:'글로컬대학 후속 재정지원사업', desc:'선정 대학 대상 후속 지원 트랙 신설 검토. 비선정 대학 대상 별도 프로그램 논의.', daysAgo:5, due:'공고 예정 11월'},
-  {dept:'과기정통부', owner:'이수연', status:'모니터링', priority:'중간', name:'이공계 대학원생 연구생활장려금 확대', desc:'지원 단가 인상 및 대상 인원 확대 논의 중. 확정 시 학생 지원 정책과 연계 검토.', daysAgo:6, due:'확정 미정'},
-  {dept:'중기부', owner:'정주원', status:'신규', priority:'중간', name:'경력창업지원사업', desc:'창업보육센터·1인창조기업 지원센터 연계 신규 트랙. 고경력자 대상 프로그램.', daysAgo:7, due:'접수 11.01'},
-  {dept:'기획예산처', owner:'백승엽', status:'모니터링', priority:'중간', name:'공공기관 대학 연계 채용형 인턴제', desc:'지역 국립대 우선 배정 검토안 논의. 사립대 참여 여부 미정.', daysAgo:8, due:'가이드라인 11월'},
-  {dept:'교육부', owner:'서원석', status:'계속', priority:'낮음', name:'대학 시설 안전관리 실태점검', desc:'정기 실태점검 계획 통보. 전년 대비 점검항목 변동 없음.', daysAgo:9, due:'제출 10.20'},
-  {dept:'농식품부', owner:'서원석', status:'계속', priority:'낮음', name:'수의과대학 실습기자재 지원사업', desc:'노후 실습장비 교체 지원. 전년 대비 예산 소폭 증액.', daysAgo:13, due:'신청 10.30'},
+  {dept:'과기정통부', owner:'이수연', status:'신규', priority:'높음', name:'대학 ICT 연구인프라 고도화 사업', desc:'AI·반도체 분야 연구장비 공동활용 인프라 구축 지원. 컨소시엄 구성 요건 확인 필요.', daysAgo:4, due:'접수 10.15', url:mockGovUrl('과기정통부','148979204')},
+  {dept:'교육부', owner:'서원석', status:'신규', priority:'중간', name:'글로컬대학 후속 재정지원사업', desc:'선정 대학 대상 후속 지원 트랙 신설 검토. 비선정 대학 대상 별도 프로그램 논의.', daysAgo:5, due:'공고 예정 11월', url:mockGovUrl('교육부','148975891')},
+  {dept:'과기정통부', owner:'이수연', status:'모니터링', priority:'중간', name:'이공계 대학원생 연구생활장려금 확대', desc:'지원 단가 인상 및 대상 인원 확대 논의 중. 확정 시 학생 지원 정책과 연계 검토.', daysAgo:6, due:'확정 미정', url:mockGovUrl('과기정통부','148972637')},
+  {dept:'중기부', owner:'정주원', status:'신규', priority:'중간', name:'경력창업지원사업', desc:'창업보육센터·1인창조기업 지원센터 연계 신규 트랙. 고경력자 대상 프로그램.', daysAgo:7, due:'접수 11.01', url:mockGovUrl('중기부','148968350')},
+  {dept:'기획예산처', owner:'백승엽', status:'모니터링', priority:'중간', name:'공공기관 대학 연계 채용형 인턴제', desc:'지역 국립대 우선 배정 검토안 논의. 사립대 참여 여부 미정.', daysAgo:8, due:'가이드라인 11월', url:mockGovUrl('기획예산처','148964112')},
+  {dept:'교육부', owner:'서원석', status:'계속', priority:'낮음', name:'대학 시설 안전관리 실태점검', desc:'정기 실태점검 계획 통보. 전년 대비 점검항목 변동 없음.', daysAgo:9, due:'제출 10.20', url:mockGovUrl('교육부','148959877')},
+  {dept:'농식품부', owner:'서원석', status:'계속', priority:'낮음', name:'수의과대학 실습기자재 지원사업', desc:'노후 실습장비 교체 지원. 전년 대비 예산 소폭 증액.', daysAgo:13, due:'신청 10.30', url:mockGovUrl('농식품부','148942930')},
 ];
 
 let TRENDS = MOCK_TRENDS;
@@ -397,30 +404,32 @@ let USING_MOCK = true;
 
 // 실데이터(data/competitors.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
 // 학교 1곳당 카드 1장, 카드 안에 분야별(재정지원/산학협력/국제/대외협력) 항목을 나열
+// 각 url은 학교별 실제 상세페이지 URL 형식(scripts/fetch-competitor-trends.mjs의 파서 패턴)을 그대로 따르되,
+// 목업 항목이라 게시글 번호(articleNo/idxno 등)만 가상의 값을 사용한다 — 게시판 목록이 아닌 항목별 개별 링크.
 const MOCK_COMPETITORS = [
   {name:'성균관대', owner:'서원석', items:[
-    {category:'재정지원', title:'교육부 재정지원사업 3건 동시 신청 준비 중인 것으로 파악', date:'09.20', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do'},
-    {category:'산학협력', title:'산학협력단 인력 충원, 기업연계 프로그램 확대', date:'09.18', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do'},
+    {category:'재정지원', title:'교육부 재정지원사업 3건 동시 신청 준비 중인 것으로 파악', date:'09.20', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=482910'},
+    {category:'산학협력', title:'산학협력단 인력 충원, 기업연계 프로그램 확대', date:'09.18', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=482887'},
   ]},
   {name:'한양대', owner:'서원석', items:[
-    {category:'산학협력', title:'중기부 창업 인프라 연계 예산 확대 편성 논의', date:'09.18', url:'https://www.newshyu.com/'},
-    {category:'국제', title:'AI반도체 국책사업 수주로 국제 공동연구 확대', date:'09.16', url:'https://www.newshyu.com/'},
+    {category:'산학협력', title:'중기부 창업 인프라 연계 예산 확대 편성 논의', date:'09.18', url:'https://www.newshyu.com/news/articleView.html?idxno=612044'},
+    {category:'국제', title:'AI반도체 국책사업 수주로 국제 공동연구 확대', date:'09.16', url:'https://www.newshyu.com/news/articleView.html?idxno=611982'},
   ]},
   {name:'경희대', owner:'이수연', items:[
-    {category:'국제', title:'국제교류처, 유럽권 협정대학 3곳과 신규 MOU 체결', date:'09.21', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'},
-    {category:'산학협력', title:'과기정통부 ICT 연구인프라 컨소시엄 참여 검토', date:'09.19', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'},
+    {category:'국제', title:'국제교류처, 유럽권 협정대학 3곳과 신규 MOU 체결', date:'09.21', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=305671'},
+    {category:'산학협력', title:'과기정통부 ICT 연구인프라 컨소시엄 참여 검토', date:'09.19', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=305648'},
   ]},
   {name:'동국대', owner:'이수연', items:[
-    {category:'국제', title:'외국인 유학생 대상 장학 프로그램 안내', date:'09.19', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
-    {category:'대외협력', title:'지역기관과 사회공헌 업무협약(MOU) 체결', date:'09.17', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
+    {category:'국제', title:'외국인 유학생 대상 장학 프로그램 안내', date:'09.19', url:'https://www.dongguk.edu/article/INTEXNOTICE/view/98214'},
+    {category:'대외협력', title:'지역기관과 사회공헌 업무협약(MOU) 체결', date:'09.17', url:'https://www.dongguk.edu/article/INTEXNOTICE/view/98177'},
   ]},
   {name:'중앙대', owner:'정주원', items:[
-    {category:'국제', title:'2027학년도 순수외국인전형 원서접수 안내', date:'09.22', url:'https://oias.cau.ac.kr/cauoie/under/notice.do'},
-    {category:'산학협력', title:'창업중심대학 후속 지원 대응 TF 구성', date:'09.20', url:'https://oias.cau.ac.kr/cauoie/under/notice.do'},
+    {category:'국제', title:'2027학년도 순수외국인전형 원서접수 안내', date:'09.22', url:'https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=71230'},
+    {category:'산학협력', title:'창업중심대학 후속 지원 대응 TF 구성', date:'09.20', url:'https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=71198'},
   ]},
   {name:'이화여대', owner:'정주원', items:[
-    {category:'산학협력', title:'경력창업지원사업 관련 창업보육센터 개편 검토', date:'09.17', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
-    {category:'대외협력', title:'발전기금 캠페인 — 동문 기부 프로그램 확대', date:'09.15', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
+    {category:'산학협력', title:'경력창업지원사업 관련 창업보육센터 개편 검토', date:'09.17', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=154302'},
+    {category:'대외협력', title:'발전기금 캠페인 — 동문 기부 프로그램 확대', date:'09.15', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=154266'},
   ]},
 ];
 
@@ -659,7 +668,7 @@ function renderIssues(){
     '<div class="issue-card'+(i===0?' open':'')+'" id="issue'+i+'">'
     +'<div class="issue-head" onclick="toggleIssue('+i+')">'
     +'<div class="issue-idx">'+(i+1)+'</div>'
-    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
+    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
     +'<div class="issue-chevron">▾</div>'
     +'</div>'
     +'<div class="issue-body">'
