@@ -4,20 +4,24 @@ function stripTags(s) {
   return s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 }
 
-const url = 'https://www.korea.kr/news/policyNewsList.do';
+const url = 'https://www.korea.kr/news/policyNewsView.do?newsId=148972533';
 const res = await fetch(url, { headers: { 'User-Agent': UA } });
 const html = await res.text();
 console.log('status:', res.status, 'length:', html.length);
 
-const ITEM_RE = /<a\s+href="([^"]+)"\s+onclick="goDetailView\([^)]*\);return false;"\s*>([\s\S]*?)<\/a>\s*<\/li>/g;
-let m, count = 0;
-while ((m = ITEM_RE.exec(html)) !== null && count < 8) {
-  const inner = m[2];
-  const titleMatch = inner.match(/<strong>([\s\S]*?)<\/strong>/);
-  console.log('---');
-  console.log('href:', m[1]);
-  console.log('title:', titleMatch ? stripTags(titleMatch[1]) : 'N/A');
-  const deptMatches = [...inner.matchAll(/class="[^"]*(?:dept|source|category|tag)[^"]*"[^>]*>([\s\S]{1,40}?)</gi)];
-  deptMatches.forEach(dm => console.log('  dept-candidate:', stripTags(dm[1])));
-  count++;
+const patterns = [
+  /담당\s*부처[^<]*<[^>]*>([\s\S]{1,30}?)</,
+  /발표\s*기관[^<]*<[^>]*>([\s\S]{1,30}?)</,
+  /class="[^"]*dept[^"]*"[^>]*>([\s\S]{1,40}?)</gi,
+  /class="[^"]*source[^"]*"[^>]*>([\s\S]{1,80}?)<\/(?:span|div|p)>/gi,
+  /class="[^"]*write[^"]*"[^>]*>([\s\S]{1,120}?)<\/(?:span|div|p)>/gi,
+];
+for (const p of patterns) {
+  const matches = [...html.matchAll(new RegExp(p, p.flags.includes('g') ? p.flags : p.flags + 'g'))];
+  console.log('pattern', p.source.slice(0,30), '-> ', matches.length, 'matches');
+  matches.slice(0,3).forEach(mm => console.log('   ', stripTags(mm[1])));
 }
+
+const metaMatches = [...html.matchAll(/<meta[^>]+(?:section|department|author)[^>]+>/gi)];
+console.log('\nmeta candidates:');
+metaMatches.forEach(mm => console.log('  ', mm[0]));
