@@ -1,25 +1,20 @@
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
 
-async function inspect(label, url, markers) {
-  console.log('='.repeat(20), label, '='.repeat(20));
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'ko-KR,ko;q=0.9' } });
-    console.log('status:', res.status);
-    const html = await res.text();
-    console.log('length:', html.length);
-    for (const marker of markers) {
-      const idx = html.indexOf(marker);
-      console.log(`marker "${marker}":`, idx === -1 ? 'NOT FOUND' : `found at ${idx}`);
-      if (idx !== -1) {
-        console.log(html.slice(Math.max(0, idx - 200), idx + 1200));
-        console.log('---');
-      }
-    }
-  } catch (e) {
-    console.log('ERROR:', e.message);
-  }
+async function checkRepCode(code) {
+  const url = `https://www.korea.kr/news/ministryNewsList.do?repCode=${code}&pWiseMinistry=ministryNews`;
+  const res = await fetch(url, { headers: { 'User-Agent': UA } });
+  const html = await res.text();
+  const titleM = html.match(/<title>([\s\S]*?)<\/title>/);
+  const activeM = html.match(/<a[^>]*class="[^"]*on[^"]*"[^>]*>([\s\S]{1,30}?)<\/a>/);
+  const breadM = html.match(/<div class="loc"[^>]*>([\s\S]{1,300}?)<\/div>/);
+  console.log(`repCode=${code}`);
+  console.log('  <title>:', titleM ? titleM[1].trim() : 'N/A');
+  console.log('  active tab guess:', activeM ? activeM[1].trim() : 'N/A');
+  console.log('  breadcrumb guess:', breadM ? breadM[1].replace(/<[^>]+>/g,'|').trim() : 'N/A');
   console.log();
 }
 
-await inspect('NRF list', 'https://www.nrf.re.kr/biz/notice/list?menu_no=362&biz_not_gubn=guide', ['nts_no', 'biz_no', '<tbody', '<table', 'class="tit']);
-await inspect('IRIS list', 'https://www.iris.go.kr/contents/retrieveBsnsAncmBtinSituListView.do', ['ancmId', '<tbody', '<table', 'class="tit', 'ancmNm']);
+for (const code of ['A00012', 'A00002', 'A00040']) {
+  await checkRepCode(code);
+  await new Promise(r => setTimeout(r, 300));
+}
