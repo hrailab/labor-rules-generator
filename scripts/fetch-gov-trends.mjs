@@ -5,6 +5,9 @@
 // 자동 수집되는 항목: 부처, 제목, 요약(lead), 날짜, 링크, 신규/계속 여부(직전 실행 대비 diff)
 // 사람 판단이 필요한 항목(우선순위, 대응전략, 본교 영향 등)은 이 스크립트가 채우지 않음 —
 // data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
+//
+// 수집 범위: 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
+// RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고).
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
@@ -26,6 +29,25 @@ const DEPTS = [
 function classifyEduOwner(title) {
   const policyKeywords = ['법령', '시행령', '시행규칙', '개정', '기본계획', '국무회의', '고시', '훈령'];
   return policyKeywords.some(k => title.includes(k)) ? '백승엽' : '서원석';
+}
+
+// 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기기 위한 키워드 필터.
+// 제목·요약에 아래 키워드가 하나도 없으면 (일반 국정·산업·농정 뉴스 등으로 판단해) 제외한다.
+// 완벽한 의미 분류는 아니며, 1차 스크리닝 목적 — 애매하게 걸러진 항목은 담당자가 원문 링크로 확인.
+const RELEVANT_KEYWORDS = [
+  '대학', '대학교', '사립대', '국공립대', '전문대', '대학원', '캠퍼스',
+  '교원', '교수', '강사', '겸임', '연구자', '연구원', '연구교수',
+  '학생', '재학생', '대학생', '대학원생', '유학생', '조교',
+  '등록금', '장학금', '학자금', '국가장학',
+  '산학협력', '산학연', '창업', '창업지원', '창업보육',
+  '연구개발', 'R&D', '연구비', '연구지원', '학술연구', '기초연구', '국책연구',
+  'BK21', '라이즈', 'RISE', '글로컬대학', '지역혁신',
+  '입시', '대입', '수시모집', '정시모집', '학생부',
+  '정원', '학사구조', '대학평가', '대학기본역량진단', '등록금심의',
+];
+function isRelevant(item) {
+  const text = item.title + ' ' + item.desc;
+  return RELEVANT_KEYWORDS.some(k => text.includes(k));
 }
 
 function stripTags(s) {
@@ -100,7 +122,9 @@ async function main() {
     await new Promise(r => setTimeout(r, 400)); // 사이트 부하 방지용 딜레이
   }
 
-  const windowed = collected.filter(t => inWindow(t.date, today));
+  const relevant = collected.filter(isRelevant);
+  console.log(`\nRelevance filter: ${relevant.length}/${collected.length} items kept`);
+  const windowed = relevant.filter(t => inWindow(t.date, today));
 
   // 직전 실행 대비 신규/계속 판정. 우선순위·마감일 등 사람 판단이 필요한 값은 자동 산출하지 않고,
   // 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
