@@ -107,6 +107,7 @@ a{color:inherit}
 .badge.b-high{background:var(--orange-light);color:var(--orange)}
 .badge.b-mid{background:var(--purple-light);color:var(--purple)}
 .badge.b-low{background:var(--slate-light);color:var(--slate)}
+.badge.b-unset{background:transparent;color:var(--ink-4);border:1px dashed var(--border-2)}
 .badge.s-new{background:var(--green-light);color:var(--green)}
 .badge.s-expand{background:var(--blue-light);color:var(--blue)}
 .badge.s-cont{background:var(--slate-light);color:var(--slate)}
@@ -230,7 +231,7 @@ a{color:inherit}
   </div>
 </header>
 
-<div class="disclaimer-bar">⚠️ 본 페이지는 리포트 형식 데모이며, 표시된 정책·예산·경쟁대학 데이터는 실제가 아닌 목업(mock) 데이터입니다.</div>
+<div class="disclaimer-bar" id="disclaimerBar">⚠️ 본 페이지는 리포트 형식 데모이며, 표시된 정책·예산·경쟁대학 데이터는 실제가 아닌 목업(mock) 데이터입니다.</div>
 
 <div class="subnav-wrap">
   <nav class="subnav" id="subnav">
@@ -383,7 +384,8 @@ const OWNERS = [
   {name:'정주원 주임', role:'담당자', depts:['중소벤처기업부'], schools:['중앙대','이화여대'], bar:'#c97a2e'},
 ];
 
-const TRENDS = [
+// 실데이터(data/trends.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
+const MOCK_TRENDS = [
   {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', daysAgo:0, due:'회신 10.10'},
   {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05'},
   {dept:'교육부', owner:'백승엽', status:'확대', priority:'높음', name:'대학혁신지원사업 3주기 기본계획', desc:'평가지표 개편안 초안 공개. 산학협력·지역연계 배점 확대 방향.', daysAgo:2, due:'설명회 10.02'},
@@ -395,6 +397,9 @@ const TRENDS = [
   {dept:'교육부', owner:'서원석', status:'계속', priority:'낮음', name:'대학 시설 안전관리 실태점검', desc:'정기 실태점검 계획 통보. 전년 대비 점검항목 변동 없음.', daysAgo:9, due:'제출 10.20'},
   {dept:'농식품부', owner:'서원석', status:'계속', priority:'낮음', name:'수의과대학 실습기자재 지원사업', desc:'노후 실습장비 교체 지원. 전년 대비 예산 소폭 증액.', daysAgo:13, due:'신청 10.30'},
 ];
+
+let TRENDS = MOCK_TRENDS;
+let USING_MOCK = true;
 
 const ISSUES = [
   {
@@ -426,7 +431,14 @@ const COMPETITORS = [
   {name:'이화여대', owner:'정주원', desc:'경력창업지원사업 관련 창업보육센터 개편 검토 중.', date:'09.17 확인'},
 ];
 
-const SOURCES = ['기획재정부 2027년 예산안 및 국가재정운용계획','교육부 대학혁신지원사업 3주기 기본계획(안) 브리핑','과학기술정보통신부 R&D 중장기 투자전략','중소벤처기업부 창업중심대학 사업 개편(안)','농림축산식품부 수의과대학 지원사업 공고','각 경쟁대학 홈페이지 공지사항'];
+const SOURCES = [
+  {label:'기획예산처 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00040&pWiseMinistry=ministryNews'},
+  {label:'교육부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00002&pWiseMinistry=ministryNews'},
+  {label:'과학기술정보통신부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00033&pWiseMinistry=ministryNews'},
+  {label:'중소벤처기업부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00032&pWiseMinistry=ministryNews'},
+  {label:'농림축산식품부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00008&pWiseMinistry=ministryNews'},
+  {label:'각 경쟁대학 홈페이지 공지사항 (목업 — 자동 수집 미연동)', url:null},
+];
 
 const PROCESS = [
   {num:1, day:'화 (첫째·셋째 주)', title:'담당자 작성', desc:'담당 부처·경쟁대학 동향을 원페이지 양식으로 작성'},
@@ -476,9 +488,52 @@ function inWindow(t){
   return t.daysAgo >= 0 && t.daysAgo <= WINDOW_DAYS - 1;
 }
 
+function normalizeRealTrend(raw){
+  const d = new Date(raw.date + 'T00:00:00+09:00');
+  const daysAgo = Math.round((ANCHOR - d) / 86400000);
+  return {
+    dept: raw.dept,
+    owner: raw.owner,
+    status: raw.status || '신규',
+    priority: raw.priority || null,
+    name: raw.title,
+    desc: raw.desc || '',
+    daysAgo,
+    due: raw.due || null,
+    url: raw.url || null,
+  };
+}
+
+// data/trends.json은 scripts/fetch-gov-trends.mjs가 매일 정오·자정 자동 갱신함(.github/workflows/fetch-gov-trends.yml).
+// 아직 첫 실행 전이거나 fetch에 실패하면 MOCK_TRENDS로 폴백한다.
+async function loadTrends(){
+  try{
+    const res = await fetch('data/trends.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    const items = (data.items||[]).map(normalizeRealTrend);
+    if(items.length === 0) throw new Error('empty dataset — not yet collected');
+    TRENDS = items;
+    USING_MOCK = false;
+  }catch(e){
+    TRENDS = MOCK_TRENDS;
+    USING_MOCK = true;
+  }
+}
+
+function renderDisclaimer(){
+  const el = document.getElementById('disclaimerBar');
+  if(USING_MOCK){
+    el.textContent = '⚠️ 본 페이지는 리포트 형식 데모이며, 표시된 정책·예산·경쟁대학 데이터는 실제가 아닌 목업(mock) 데이터입니다.';
+  }else{
+    el.textContent = '✓ 정부부처 동향은 정책브리핑(korea.kr)에서 자동 수집됩니다(매일 정오·자정 갱신). 경쟁대학 동향은 아직 목업(mock) 데이터입니다.';
+  }
+}
+
 function deptDot(d){ return '<span class="d" style="background:'+((DEPTS[d]||{}).color||'#a3a2a8')+'"></span>'; }
 function statusClass(s){ return {'신규':'s-new','확대':'s-expand','계속':'s-cont','모니터링':'s-watch'}[s]||'s-cont'; }
 function priorityClass(p){ return {'높음':'b-high','중간':'b-mid','낮음':'b-low'}[p]||'b-low'; }
+function priorityLabel(p){ return p || '미지정'; }
 
 // KPI
 function renderKpi(){
@@ -530,18 +585,18 @@ function renderTrends(){
     inWindow(t) &&
     (activeDept==='전체'||t.dept===activeDept) &&
     (activeStatus==='전체'||t.status===activeStatus) &&
-    (t.name.includes(searchTerm)||t.desc.includes(searchTerm))
+    (t.name.includes(searchTerm)||(t.desc||'').includes(searchTerm))
   );
   document.getElementById('trendGrid').innerHTML = list.map(t=>
     '<div class="trend-card">'
     +'<div class="trend-top">'
-    +'<span class="badge '+priorityClass(t.priority)+'">'+t.priority+'</span>'
+    +'<span class="badge '+(t.priority?priorityClass(t.priority):'b-unset')+'">'+priorityLabel(t.priority)+'</span>'
     +'<span class="badge '+statusClass(t.status)+'">'+t.status+'</span>'
     +'<span class="dept-tag">'+deptDot(t.dept)+t.dept+'</span>'
     +'</div>'
-    +'<div class="trend-name">'+t.name+'</div>'
-    +'<div class="trend-desc">'+t.desc+'</div>'
-    +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+t.due+'</span></div>'
+    +'<div class="trend-name">'+(t.url ? '<a href="'+t.url+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">'+t.name+' <span style="color:var(--ink-4);font-weight:400">↗</span></a>' : t.name)+'</div>'
+    +(t.desc ? '<div class="trend-desc">'+t.desc+'</div>' : '')
+    +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+(t.due||'-')+'</span></div>'
     +'</div>'
   ).join('') || '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-4);font-size:13px">조건에 맞는 동향이 없습니다.</div>';
 }
@@ -586,7 +641,9 @@ function renderProcess(){
 // Sources
 function renderSources(){
   document.getElementById('sourceGrid').innerHTML = SOURCES.map((s,i)=>
-    '<div class="source-card"><div class="source-num">'+(i+1)+'</div><div class="source-text">'+s+'</div><div class="source-arrow">↗</div></div>'
+    (s.url
+      ? '<a class="source-card" href="'+s.url+'" target="_blank" rel="noopener"><div class="source-num">'+(i+1)+'</div><div class="source-text">'+s.label+'</div><div class="source-arrow">↗</div></a>'
+      : '<div class="source-card" style="cursor:default"><div class="source-num">'+(i+1)+'</div><div class="source-text">'+s.label+'</div></div>')
   ).join('');
 }
 
@@ -706,16 +763,20 @@ function initScrollSpy(){
   });
 }
 
-renderKpi();
-renderMatrix();
-renderChips();
-renderTrends();
-renderIssues();
-renderCompetitors();
-renderProcess();
-renderSources();
-renderCharts();
-initScrollSpy();
+(async function init(){
+  await loadTrends();
+  renderDisclaimer();
+  renderKpi();
+  renderMatrix();
+  renderChips();
+  renderTrends();
+  renderIssues();
+  renderCompetitors();
+  renderProcess();
+  renderSources();
+  renderCharts();
+  initScrollSpy();
+})();
 </script>
 </body>
 </html>
