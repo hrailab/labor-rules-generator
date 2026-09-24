@@ -19,8 +19,8 @@ async function sample(code) {
   }
 }
 
-const codes = ['A00001','A00003','A00004','A00005','A00006','A00007','A00009','A00010','A00011','A00013','A00014','A00015','A00016','A00017','A00018'];
+const codes = ['A00019','A00020','A00021','A00022','A00023','A00024','A00025','A00026','A00027','A00028','A00029','A00030','A00031','A00034','A00035','A00036','A00037','A00038','A00039'];
 for (const c of codes) {
   await sample(c);
-  await new Promise(r => setTimeout(r, 250));
+  await new Promise(r => setTimeout(r, 200));
 }
