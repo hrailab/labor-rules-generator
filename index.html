@@ -323,7 +323,7 @@ a{color:inherit}
     <div class="section-head">
       <div>
         <div class="section-title">경쟁대학 동향</div>
-        <div class="section-desc">담당자별 배정 경쟁대학의 최근 추진 현황</div>
+        <div class="section-desc">담당자별 배정 경쟁대학의 재정지원사업·산학협력·국제·대외협력 분야 최근 동향</div>
       </div>
     </div>
     <div class="comp-grid" id="compGrid"></div>
@@ -422,7 +422,8 @@ const ISSUES = [
   },
 ];
 
-const COMPETITORS = [
+// 실데이터(data/competitors.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
+const MOCK_COMPETITORS = [
   {name:'성균관대', owner:'서원석', desc:'교육부 재정지원사업 3건 동시 신청 준비 중인 것으로 파악. 산학협력단 인력 충원 진행.', date:'09.20 확인'},
   {name:'한양대', owner:'서원석', desc:'중기부 창업 인프라 관련 자체 예산 확대 편성 논의. 딥테크 특화 트랙 대응 움직임.', date:'09.18 확인'},
   {name:'경희대', owner:'이수연', desc:'과기정통부 ICT 연구인프라 사업 컨소시엄 주관기관 참여 검토 중.', date:'09.21 확인'},
@@ -431,13 +432,21 @@ const COMPETITORS = [
   {name:'이화여대', owner:'정주원', desc:'경력창업지원사업 관련 창업보육센터 개편 검토 중.', date:'09.17 확인'},
 ];
 
+let COMPETITORS = MOCK_COMPETITORS;
+let COMPETITORS_USING_MOCK = true;
+
 const SOURCES = [
   {label:'기획예산처 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00040&pWiseMinistry=ministryNews'},
   {label:'교육부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00002&pWiseMinistry=ministryNews'},
   {label:'과학기술정보통신부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00033&pWiseMinistry=ministryNews'},
   {label:'중소벤처기업부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00032&pWiseMinistry=ministryNews'},
   {label:'농림축산식품부 뉴스·보도자료 (정책브리핑)', url:'https://www.korea.kr/news/ministryNewsList.do?repCode=A00008&pWiseMinistry=ministryNews'},
-  {label:'각 경쟁대학 홈페이지 공지사항 (목업 — 자동 수집 미연동)', url:null},
+  {label:'성균관대 공지사항', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do'},
+  {label:'한양대 한양뉴스포털', url:'https://www.newshyu.com/'},
+  {label:'경희대 공지사항 (수집 구조 확인 중)', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'},
+  {label:'동국대 교류공지', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
+  {label:'중앙대 국제처 공지', url:'https://oias.cau.ac.kr/cauoie/under/notice.do'},
+  {label:'이화여대 이화뉴스', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
 ];
 
 const PROCESS = [
@@ -450,27 +459,30 @@ const PROCESS = [
 /* ───────────────────────── RENDER ───────────────────────── */
 const WINDOW_DAYS = 14; // 항상 "현재 시점 ~ 과거 13일"(총 14일)을 조회 대상으로 삼음
 
+// 방문자 브라우저·서버의 실제 타임존과 무관하게 "항상 KST 기준"으로 계산하기 위해,
+// 현재 시각에 +9시간을 더한 뒤 UTC getter/setter로 읽고 쓴다(= UTC 필드를 KST 필드처럼 사용).
+function nowKST(){ return new Date(Date.now() + 9*3600*1000); }
 function pad2(n){ return String(n).padStart(2,'0'); }
-function fmtDate(d){ return d.getFullYear()+'.'+pad2(d.getMonth()+1)+'.'+pad2(d.getDate()); }
-function fmtDateTime(d){ return fmtDate(d)+' '+pad2(d.getHours())+':00'; }
+function fmtDate(d){ return d.getUTCFullYear()+'.'+pad2(d.getUTCMonth()+1)+'.'+pad2(d.getUTCDate()); }
+function fmtDateTime(d){ return fmtDate(d)+' '+pad2(d.getUTCHours())+':00'; }
 
-// 데이터 갱신 기준시점 = 가장 최근에 지난 정오(12:00) 또는 자정(00:00)
+// 데이터 갱신 기준시점 = 가장 최근에 지난 정오(12:00) 또는 자정(00:00), KST 기준
 // 서버 크론 없이도, 페이지를 여는 시각과 무관하게 하루 2번(정오/자정) 단위로만 기준이 바뀜
 function getBatchAnchor(now){
-  const h = now.getHours() >= 12 ? 12 : 0;
-  return new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, 0, 0, 0);
+  const h = now.getUTCHours() >= 12 ? 12 : 0;
+  return new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, 0, 0, 0));
 }
 function getNextAnchor(anchor){
   const next = new Date(anchor);
-  if(anchor.getHours() === 0){ next.setHours(12); }
-  else { next.setDate(next.getDate()+1); next.setHours(0); }
+  if(anchor.getUTCHours() === 0){ next.setUTCHours(12); }
+  else { next.setUTCDate(next.getUTCDate()+1); next.setUTCHours(0); }
   return next;
 }
 
-const ANCHOR = getBatchAnchor(new Date());
+const ANCHOR = getBatchAnchor(nowKST());
 const NEXT_ANCHOR = getNextAnchor(ANCHOR);
 const WINDOW_START = new Date(ANCHOR);
-WINDOW_START.setDate(WINDOW_START.getDate() - (WINDOW_DAYS - 1));
+WINDOW_START.setUTCDate(WINDOW_START.getUTCDate() - (WINDOW_DAYS - 1));
 
 document.getElementById('baseDateBadge').textContent = '기준 ' + fmtDateTime(ANCHOR);
 document.getElementById('cycleBadge').textContent = '다음 갱신 ' + fmtDateTime(NEXT_ANCHOR);
@@ -481,7 +493,7 @@ document.getElementById('footerRefreshNote').textContent =
 
 function trendDate(t){
   const d = new Date(ANCHOR);
-  d.setDate(d.getDate() - t.daysAgo);
+  d.setUTCDate(d.getUTCDate() - t.daysAgo);
   return d;
 }
 function inWindow(t){
@@ -489,7 +501,8 @@ function inWindow(t){
 }
 
 function normalizeRealTrend(raw){
-  const d = new Date(raw.date + 'T00:00:00+09:00');
+  // raw.date는 KST 기준 날짜 문자열(YYYY-MM-DD) — "가짜 UTC=KST" 체계에 맞춰 UTC 자정으로 파싱
+  const d = new Date(raw.date + 'T00:00:00Z');
   const daysAgo = Math.round((ANCHOR - d) / 86400000);
   return {
     dept: raw.dept,
@@ -521,12 +534,44 @@ async function loadTrends(){
   }
 }
 
+function normalizeRealCompetitor(raw){
+  return {
+    name: raw.school,
+    owner: raw.owner,
+    desc: raw.title,
+    date: raw.date.replace(/-/g,'.')+' 확인',
+    url: raw.url || null,
+  };
+}
+
+// data/competitors.json은 scripts/fetch-competitor-trends.mjs가 매일 정오·자정 자동 갱신함
+// (.github/workflows/fetch-competitor-trends.yml). 아직 첫 실행 전이거나 fetch에 실패하면
+// MOCK_COMPETITORS로 폴백한다.
+async function loadCompetitors(){
+  try{
+    const res = await fetch('data/competitors.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    const items = (data.items||[]).map(normalizeRealCompetitor);
+    if(items.length === 0) throw new Error('empty dataset — not yet collected');
+    COMPETITORS = items;
+    COMPETITORS_USING_MOCK = false;
+  }catch(e){
+    COMPETITORS = MOCK_COMPETITORS;
+    COMPETITORS_USING_MOCK = true;
+  }
+}
+
 function renderDisclaimer(){
   const el = document.getElementById('disclaimerBar');
-  if(USING_MOCK){
+  if(USING_MOCK && COMPETITORS_USING_MOCK){
     el.textContent = '⚠️ 본 페이지는 리포트 형식 데모이며, 표시된 정책·예산·경쟁대학 데이터는 실제가 아닌 목업(mock) 데이터입니다.';
-  }else{
+  }else if(!USING_MOCK && !COMPETITORS_USING_MOCK){
+    el.textContent = '✓ 정부부처·경쟁대학 동향 모두 정책브리핑(korea.kr) 및 각 대학 홈페이지에서 자동 수집됩니다(매일 정오·자정 갱신).';
+  }else if(!USING_MOCK){
     el.textContent = '✓ 정부부처 동향은 정책브리핑(korea.kr)에서 자동 수집됩니다(매일 정오·자정 갱신). 경쟁대학 동향은 아직 목업(mock) 데이터입니다.';
+  }else{
+    el.textContent = '✓ 경쟁대학 동향은 각 대학 홈페이지에서 자동 수집됩니다(매일 정오·자정 갱신). 정부부처 동향은 아직 목업(mock) 데이터입니다.';
   }
 }
 
@@ -627,7 +672,8 @@ function toggleIssue(i){ document.getElementById('issue'+i).classList.toggle('op
 function renderCompetitors(){
   document.getElementById('compGrid').innerHTML = COMPETITORS.map(c=>
     '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner">'+c.owner+' 담당</div></div>'
-    +'<div class="comp-desc">'+c.desc+'</div><div class="comp-date">'+c.date+'</div></div>'
+    +'<div class="comp-desc">'+(c.url ? '<a href="'+c.url+'" target="_blank" rel="noopener" style="color:inherit">'+c.desc+' <span style="color:var(--ink-4)">↗</span></a>' : c.desc)+'</div>'
+    +'<div class="comp-date">'+c.date+'</div></div>'
   ).join('');
 }
 
@@ -764,7 +810,7 @@ function initScrollSpy(){
 }
 
 (async function init(){
-  await loadTrends();
+  await Promise.all([loadTrends(), loadCompetitors()]);
   renderDisclaimer();
   renderKpi();
   renderMatrix();
