@@ -100,9 +100,9 @@ a{color:inherit}
 
 /* TREND CARDS */
 .trend-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.trend-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .15s,border-color .15s;text-decoration:none;color:inherit}
+.trend-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .15s,border-color .15s,background .15s;text-decoration:none;color:inherit}
 a.trend-card{cursor:pointer}
-.trend-card:hover{box-shadow:0 6px 20px rgba(30,29,32,.08);border-color:var(--border-2)}
+.trend-card:hover{background:var(--green-light);box-shadow:0 6px 20px rgba(30,29,32,.08);border-color:var(--green)}
 .ext-arrow{color:var(--ink-4);font-weight:400}
 .trend-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .badge{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;letter-spacing:.01em}
@@ -117,7 +117,7 @@ a.trend-card{cursor:pointer}
 .dept-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--ink-3);margin-left:auto}
 .dept-tag .d{width:7px;height:7px;border-radius:50%}
 .trend-name{font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.4}
-.trend-desc{font-size:12.5px;color:var(--ink-3);line-height:1.7;margin-bottom:12px}
+.trend-desc{font-size:12.5px;color:var(--ink-2);line-height:1.7;margin-bottom:12px;background:var(--surface-3);padding:9px 12px;border-radius:8px}
 .trend-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:10px;font-size:11.5px;color:var(--ink-4)}
 .trend-foot b{color:var(--ink-2);font-weight:700}
 
@@ -185,8 +185,6 @@ a.comp-item{cursor:pointer}
 .tl-desc{font-size:11.5px;color:var(--ink-4);line-height:1.6}
 .tl-line{position:absolute;top:19px;left:calc(-50% + 19px);right:calc(50% + 19px);height:2px;background:var(--border-2)}
 .tl-step:first-child .tl-line{display:none}
-.process-note{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;border-top:1px solid var(--border);padding-top:18px}
-.process-note .tag{background:var(--orange-light);color:var(--orange)}
 
 /* SOURCES */
 .source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
@@ -229,7 +227,6 @@ a.comp-item{cursor:pointer}
         </div>
       </div>
       <div class="hero-meta">
-        <span class="meta-pill"><span class="dot"></span>9월 시범운영</span>
         <span class="meta-pill" id="baseDateBadge">기준 —</span>
         <span class="meta-pill" id="cycleBadge">다음 갱신 —</span>
       </div>
@@ -265,7 +262,6 @@ a.comp-item{cursor:pointer}
     <div class="section-head">
       <div>
         <div class="section-title">담당자 · 부처 · 경쟁대학 매트릭스</div>
-        <div class="section-desc">담당자 소관 업무와 연계하여 부처를 배정 — 운영 경과에 따라 대상 부처 확대 검토</div>
       </div>
     </div>
     <div class="matrix-grid" id="matrixGrid"></div>
@@ -292,7 +288,6 @@ a.comp-item{cursor:pointer}
     <div class="section-head">
       <div>
         <div class="section-title">주요사안 상세</div>
-        <div class="section-desc">주요사안에 한하여 별도 1페이지 상세 작성 — 배경·내용·시사점·본교 영향·대응전략</div>
       </div>
     </div>
     <div class="issue-list" id="issueList"></div>
@@ -352,11 +347,6 @@ a.comp-item{cursor:pointer}
     </div>
     <div class="process-wrap">
       <div class="timeline" id="timeline"></div>
-      <div class="process-note">
-        <span class="tag">보고 사항 없는 경우 "해당없음"으로 기재</span>
-        <span class="tag">처장·총장 일정에 따라 조정 가능, 차기 회차와 병합 불가</span>
-        <span class="tag">총장 지시사항은 전략기획팀 구체화 후 유관 부서 이관·추진</span>
-      </div>
     </div>
   </section>
 
@@ -365,7 +355,6 @@ a.comp-item{cursor:pointer}
     <div class="section-head">
       <div>
         <div class="section-title">출처</div>
-        <div class="section-desc">데모용 참고 출처 목록 (실제 링크 아님)</div>
       </div>
     </div>
     <div class="source-grid" id="sourceGrid"></div>
@@ -376,7 +365,6 @@ a.comp-item{cursor:pointer}
 <footer class="site-footer">
   <p style="font-weight:600;color:var(--ink-3);margin-bottom:4px">전략기획팀 · 정부정책 동향 리포트</p>
   <p>본 페이지는 데모 목적의 목업 데이터로 구성되어 있으며, 실제 정부 정책·예산·경쟁대학 동향과 무관합니다.</p>
-  <p style="margin-top:2px">시행: 9월 시범 운영(팀 내부 검토) → 10월 정식 시행 · 정식 보고 산출: 월 2회(첫째·셋째 주)</p>
   <p id="footerRefreshNote" style="margin-top:2px"></p>
 </footer>
 
