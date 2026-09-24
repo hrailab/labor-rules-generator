@@ -126,8 +126,8 @@ async function main() {
   console.log(`\nRelevance filter: ${relevant.length}/${collected.length} items kept`);
   const windowed = relevant.filter(t => inWindow(t.date, today));
 
-  // 직전 실행 대비 신규/계속 판정. 우선순위·마감일 등 사람 판단이 필요한 값은 자동 산출하지 않고,
-  // 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
+  // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·주요사안 분석(배경/내용/시사점/본교영향/대응전략) 등
+  // 사람 판단이 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
   const prevById = new Map(previous.map(t => [t.id, t]));
   const merged = windowed.map(t => {
     const prev = prevById.get(t.id);
@@ -136,6 +136,11 @@ async function main() {
       status: prev ? (prev.status || '계속') : '신규',
       priority: prev?.priority ?? null,
       due: prev?.due ?? null,
+      bg: prev?.bg ?? null,
+      body: prev?.body ?? null,
+      implication: prev?.implication ?? null,
+      impact: prev?.impact ?? null,
+      strategy: prev?.strategy ?? null,
     };
   });
 
