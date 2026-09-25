@@ -153,8 +153,7 @@ a.ext-arrow:hover{color:var(--green)}
 .issue-strategy{grid-column:1/-1;background:var(--green-light);border-radius:var(--r-sm);padding:14px 16px;margin-top:2px}
 .issue-strategy h4{color:var(--green-dark)}
 .issue-strategy p{color:var(--ink)}
-.issue-pending{margin-top:16px;padding:14px 16px;background:var(--surface-3);border-radius:var(--r-sm);font-size:12.5px;color:var(--ink-3);line-height:1.7}
-.issue-pending a{color:var(--green);font-weight:600;text-decoration:none}
+.field-tbd{color:var(--ink-4)!important;font-style:italic}
 .issue-empty{padding:40px;text-align:center;color:var(--ink-4);font-size:13px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg)}
 
 /* CHARTS */
@@ -250,7 +249,7 @@ a.comp-item{cursor:pointer}
 
 <div class="subnav-wrap">
   <nav class="subnav" id="subnav">
-    <a href="#issues" class="active">주요사안 상세</a>
+    <a href="#issues" class="active">신규 정부정책</a>
     <a href="#trends">전체 동향</a>
     <a href="#competitors">경쟁대학 동향</a>
     <a href="#charts">동향 차트</a>
@@ -261,11 +260,11 @@ a.comp-item{cursor:pointer}
 
 <main class="main">
 
-  <!-- 주요사안 상세 -->
+  <!-- 신규 정부정책 -->
   <section id="issues">
     <div class="section-head">
       <div>
-        <div class="section-title">주요사안 상세</div>
+        <div class="section-title">신규 정부정책</div>
       </div>
     </div>
     <div class="issue-list" id="issueList"></div>
@@ -397,7 +396,7 @@ function mockGovUrl(dept, newsId){
 }
 // 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것(hero-sub 참고)
 // — 즉 아직 결과가 확정되지 않아 우리가 준비할 시간이 있는 사안을 조기에 포착하는 것이 핵심이다.
-// 우선순위 '높음'(주요사안 상세에 노출)은 그래서 '전략적으로 중요한 주제'만으로는 부족하고,
+// 우선순위 '높음'("신규 정부정책" 섹션에 노출)은 그래서 '전략적으로 중요한 주제'만으로는 부족하고,
 // 사립대학이 실제로 취할 수 있는 대응(접수·공고·설명회 등 향후 일정)이 남아 있는 사안이어야 한다.
 // 이미 결과가 확정·발표된 사안(예: 특정 대학 선정 완료)은 더 이상 대응 여지가 없으므로 '중간' 이하로
 // 낮춰 참고용 경쟁환경 정보로만 다룬다 — scripts/fetch-gov-trends.mjs의 isPriorityCandidate()도 동일 기준으로 수정.
@@ -414,9 +413,8 @@ const MOCK_TRENDS = [
     bg:"교육부가 지방국립대를 지역 성장의 거점이자 지산학연 협력 플랫폼으로 육성하기 위해 '서울대 10개 만들기' 패키지 지원대학 선정을 추진했으며, 부산대학교·전남대학교·충남대학교를 2026년 지원대학으로 선정해 발표했다.",
     body:"선정 대학에는 5극3특 성장엔진(전략산업)과 AI 분야를 패키지로 묶어 학부부터 대학원·연구소까지 지원한다. 대규모 투자에 따라 교육부는 별도 성과관리위원회를 구성해 선정 대학·지방정부·민간이 참여하는 공동 핵심성과지표로 성과를 관리할 계획이다.",
     budget:"'5극3특 공유대학' 지원까지 더하면 올해 교당 약 700억원 규모로 시작해 2030년까지 5년간 지원된다.",
-    // implication·impact·strategy는 위 사실을 바탕으로 한 사립대 일반 관점의 추정(AI 초안) — 본교 고유 현황 미반영
+    // implication·strategy는 위 사실을 바탕으로 한 사립대 일반 관점의 추정(AI 초안) — 본교 고유 현황 미반영
     implication:'지방거점국립대에 대규모·장기 재정지원이 집중되는 흐름이 이어지면서, 국가균형성장 전략과 직접 연계되지 않은 사립대학의 상대적 재정지원 비중이 축소될 가능성이 있음.',
-    impact:'사립대학 입장에서는 국립대 중심 거점대학 육성 정책이 강화될수록 관련 재정지원사업에서 상대적으로 소외될 우려가 있으며, 지역 전략산업 연계 실적이 부족한 사립대는 유사한 패키지형 지원사업 신청 시 경쟁력 확보가 더 어려워질 수 있음.',
     strategy:'이 사안 자체는 이미 대학이 확정되어 본교가 직접 신청·대응할 수단은 없음. 다만 지방거점국립대 중심 재정지원 확대 흐름이 향후 사립대 대상 프로그램으로 이어질 가능성을 계속 모니터링하고, 지역 전략산업·AI 분야 특성화 실적을 미리 축적해 두는 정도의 장기 대응이 필요함.'},
   {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05 · 접수 마감 11.10(예상)', deadline:'2026-11-10',
     bg:'중기부가 창업중심대학 지원 예산을 883억원에서 1,083억원으로 확대하고, 딥테크 분야 중심으로 개편하는 방향으로 미래대응기금을 재원으로 활용할 계획.',
@@ -424,13 +422,11 @@ const MOCK_TRENDS = [
     eligibility:'기존 선정 대학(후속 지원 대상)과 신규 대학(딥테크 분야 특화 트랙 신청 대상)으로 구분됨.',
     budget:'총 1,083억원(883억원에서 확대).',
     implication:'딥테크 분야 창업 인프라를 보유한 대학이 유리하며, 경쟁대학인 중앙대·이화여대의 사전 준비 동향 파악이 중요함.',
-    impact:'본교 창업지원단의 딥테크 분야 실적 정리가 필요하며, 컨소시엄 구성 시 기업 매칭 실적이 핵심 요건이 될 가능성이 높음.',
     strategy:'창업지원단과 사전 협의체 구성, 딥테크 분야 실적 자료를 10월 공고 전까지 정리하여 신청 준비기간 확보.'},
   {dept:'교육부', owner:'백승엽', status:'확대', priority:'높음', name:'대학혁신지원사업 3주기 기본계획', desc:'평가지표 개편안 초안 공개. 산학협력·지역연계 배점 확대 방향.', daysAgo:2, due:'설명회 10.02 · 공고 11월 예정',
     bg:'2026년으로 2주기가 종료됨에 따라 교육부가 3주기(2027~2029) 기본계획 초안을 마련 중이며, 평가지표 체계를 전면 개편하는 방향으로 논의되고 있음.',
     body:'산학협력 실적과 지역연계 성과 배점이 기존 대비 확대되고, 정원 감축 실적이 핵심 지표로 신규 반영될 전망. 대학 자율 혁신 계획서 분량도 축소되어 정성평가 비중이 높아짐.',
     implication:'정원 감축·산학협력 실적이 미흡한 대학은 선정 등급 하락 가능성이 있으며, 사전 실적 축적이 어려운 대학은 대응기간이 부족할 수 있음.',
-    impact:'본교는 산학협력 실적은 양호하나 정원 감축 계획이 미확정 상태로, 3주기 대응을 위한 정원 정책 조기 수립이 필요함.',
     strategy:'10월 설명회 참석 후 세부 배점안 확보 → 정원 정책 초안을 11월 공고 전까지 마련하여 선제적으로 대응.'},
   {dept:'과기정통부', owner:'이수연', status:'신규', priority:'높음', name:'AI중심대학 사업 대폭 확대(18개교→67개교)', desc:'2027년도 예산안에 AI중심대학 확대 포함. AI 포용사회 조성 예산 1조 1,707억원 편성, 국회 심의 중.', daysAgo:4, due:'2027년도 예산안 국회 심의 중', url:mockGovUrl('과기정통부','148971010'),
     aiGenerated:true,
@@ -438,10 +434,9 @@ const MOCK_TRENDS = [
     bg:'과기정통부가 AI 대전환과 미래 첨단기술 확보를 뒷받침하기 위해 2027년도 예산안을 올해보다 24.5% 늘어난 29조 6,000억원 규모로 편성해 9월 1일 발표했다. 이 가운데 AI 포용사회 조성에 1조 1,707억원이 배정됐다.',
     body:'AI중심대학을 올해 18개교에서 내년 67개교로 대폭 확대하고, 산학협력 기반의 AX대학원 신설 등 AI 인재 양성을 강화한다는 계획이 예산안에 포함됐다. 4대 과학기술원의 AI 단과대 확대, 개인기초연구 예산 확대(2조 2,657억원→2조 4,421억원) 등도 함께 추진된다. 해당 예산안은 국회 심의를 거쳐 확정될 예정이다.',
     budget:'AI 포용사회 조성 예산 1조 1,707억원(AI중심대학 확대 포함) — 2027년도 예산안 편성 기준, 국회 심의로 변동 가능.',
-    // implication·impact·strategy는 위 사실을 바탕으로 한 사립대 일반 관점의 추정(AI 초안) — 본교가 AI중심대학으로
+    // implication·strategy는 위 사실을 바탕으로 한 사립대 일반 관점의 추정(AI 초안) — 본교가 AI중심대학으로
     // 기지정됐는지 여부 등 본교 고유 현황은 알 수 없으므로 단정하지 않음
     implication:'AI중심대학 지정 규모가 기존 18개교에서 67개교로 약 3.7배 확대되면서, 그동안 지정받지 못했던 다수의 대학에도 신규 지정 기회가 열릴 가능성이 높음.',
-    impact:'본교가 아직 AI중심대학으로 지정되지 않았다면 이번 대규모 확대는 실질적인 신규 지정 기회가 될 수 있음. 다만 예산안이 국회 심의 중인 단계로 세부 선정 기준·일정은 아직 공개되지 않았음.',
     strategy:'국회 예산 심의 경과 및 과기정통부의 후속 공고를 지속 모니터링하고, AI중심대학 신청에 필요한 교육과정·인프라 현황을 사전에 점검해 공고 즉시 대응할 수 있도록 준비.'},
   {dept:'교육부', owner:'서원석', status:'신규', priority:'중간', name:'글로컬대학 후속 재정지원사업', desc:'선정 대학 대상 후속 지원 트랙 신설 검토. 비선정 대학 대상 별도 프로그램 논의.', daysAgo:5, due:'공고 예정 11월'},
   {dept:'과기정통부', owner:'이수연', status:'모니터링', priority:'중간', name:'이공계 대학원생 연구생활장려금 확대', desc:'지원 단가 인상 및 대상 인원 확대 논의 중. 확정 시 학생 지원 정책과 연계 검토.', daysAgo:6, due:'확정 미정'},
@@ -571,7 +566,7 @@ function normalizeRealTrend(raw){
     due: raw.due || null,
     deadline: raw.deadline || null,
     url: raw.url || null,
-    // 우선순위 '높음'으로 표시된 주요사안의 상세 분석 — 담당자가 data/trends.json에 직접 채워 넣거나
+    // 우선순위 '높음'으로 표시된 "신규 정부정책"의 상세 분석 — 담당자가 data/trends.json에 직접 채워 넣거나
     // (aiGenerated:true인 경우) fetch-gov-trends.mjs가 기사 본문을 읽어 Claude API로 초안을 생성한 값.
     // AI 초안은 본교 고유 현황을 알지 못한 채 작성된 추정이므로 담당자 검토가 반드시 필요하다.
     bg: raw.bg || null,
@@ -579,7 +574,6 @@ function normalizeRealTrend(raw){
     eligibility: raw.eligibility || null,
     budget: raw.budget || null,
     implication: raw.implication || null,
-    impact: raw.impact || null,
     strategy: raw.strategy || null,
     aiGenerated: raw.aiGenerated || false,
   };
@@ -736,7 +730,7 @@ function renderKpi(){
   const kpis = [
     {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'직전 갱신 대비 +2건', up:true},
     {label:'대응 우선순위 높음', value:highCount+'건', delta:'즉시 검토 필요', up:true},
-    {label:'신규 등록', value:newCount+'건', delta:'주요사안 '+highCount+'건 포함', up:true},
+    {label:'신규 등록', value:newCount+'건', delta:'신규 정부정책 '+highCount+'건 포함', up:true},
     {label:'경쟁대학 포착 건수', value:compTotal+'건', delta:compDelta, up:false},
   ];
   document.getElementById('kpiRow').innerHTML = kpis.map(k=>
@@ -795,34 +789,34 @@ function renderTrends(){
 }
 document.getElementById('trendSearch').addEventListener('input', function(){ searchTerm=this.value.trim(); renderTrends(); });
 
-// Issues (accordion) — 전체 동향 중 우선순위 '높음'인 항목에서 자동 생성.
+// Issues (accordion) — 전체 동향 중 우선순위 '높음'인 항목에서 자동 생성("신규 정부정책" 섹션).
 // 배경·시사점 등 분석 필드는 담당자가 data/trends.json에 직접 채워 넣거나, fetch-gov-trends.mjs가
-// Claude API로 초안을 자동 생성한 값(aiGenerated:true)이다. 둘 다 없으면 "분석 대기" 상태로 보여준다.
+// Claude API로 초안을 자동 생성한 값(aiGenerated:true)이다. 항목은 항상 6개 구분(추진배경/주요내용/
+// 지원자격/사업규모/시사점/대응전략)을 모두 보여주며, 개별 필드를 확인할 수 없으면 "별도 추가 확인
+// 필요"로 표시한다('본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수 있어 필드 자체를 두지 않음).
 function renderIssues(){
   const list = TRENDS.filter(t => inWindow(t) && t.priority === '높음');
+  const issueField = v => v ? '<p>'+v+'</p>' : '<p class="field-tbd">별도 추가 확인 필요</p>';
   document.getElementById('issueList').innerHTML = list.map((iss,i)=>
     '<div class="issue-card'+(i===0?' open':'')+'" id="issue'+i+'">'
     +'<div class="issue-head" onclick="toggleIssue('+i+')">'
     +'<div class="issue-idx">'+(i+1)+'</div>'
-    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+(iss.bg && iss.aiGenerated ? ' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>' : '')+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
+    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+(iss.aiGenerated ? ' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>' : '')+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
     +'<div class="issue-chevron">▾</div>'
     +'</div>'
     +'<div class="issue-body">'
-    +(iss.bg
-      ? '<div class="issue-grid">'
-        +'<div class="issue-block"><h4>추진 배경</h4><p>'+iss.bg+'</p></div>'
-        +'<div class="issue-block"><h4>주요 내용</h4><p>'+(iss.body||'-')+'</p></div>'
-        +(iss.eligibility ? '<div class="issue-block"><h4>지원자격</h4><p>'+iss.eligibility+'</p></div>' : '')
-        +(iss.budget ? '<div class="issue-block"><h4>사업규모</h4><p>'+iss.budget+'</p></div>' : '')
-        +'<div class="issue-block"><h4>시사점</h4><p>'+(iss.implication||'-')+'</p></div>'
-        +'<div class="issue-block"><h4>본교 영향</h4><p>'+(iss.impact||'-')+'</p></div>'
-        +'<div class="issue-strategy"><h4>대응 전략</h4><p>'+(iss.strategy||'-')+'</p></div>'
-        +'</div>'
-      : '<div class="issue-pending">아직 상세 분석이 입력되지 않았습니다.'+(iss.url ? ' <a href="'+iss.url+'" target="_blank" rel="noopener">원문 보기 ↗</a>' : '')+'</div>')
+    +'<div class="issue-grid">'
+      +'<div class="issue-block"><h4>추진 배경</h4>'+issueField(iss.bg)+'</div>'
+      +'<div class="issue-block"><h4>주요 내용</h4>'+issueField(iss.body)+'</div>'
+      +'<div class="issue-block"><h4>지원자격</h4>'+issueField(iss.eligibility)+'</div>'
+      +'<div class="issue-block"><h4>사업규모</h4>'+issueField(iss.budget)+'</div>'
+      +'<div class="issue-block"><h4>시사점</h4>'+issueField(iss.implication)+'</div>'
+      +'<div class="issue-strategy"><h4>대응 전략</h4>'+issueField(iss.strategy)+'</div>'
+      +'</div>'
     +'<div class="issue-deptmatch"><b>유관부서</b>'+matchDepts(iss.name+' '+(iss.desc||'')).map(d=>'<span class="dept-match" style="margin-right:5px">'+d+'</span>').join('')+'</div>'
     +'</div>'
     +'</div>'
-  ).join('') || '<div class="issue-empty">현재 우선순위 \'높음\'으로 분류된 주요사안이 없습니다.</div>';
+  ).join('') || '<div class="issue-empty">현재 우선순위 \'높음\'으로 분류된 신규 정부정책이 없습니다.</div>';
 }
 function toggleIssue(i){ document.getElementById('issue'+i).classList.toggle('open'); }
 
@@ -1028,39 +1022,27 @@ async function generateWordReport(){
     const compBreakdownText = compBreakdown.map(c=>`${c.category} ${c.count}건`).join(', ') || `${COMPETITORS.length}개교 모니터링`;
     children.push(bullet(`경쟁대학 포착 건수: ${compCount}건 (${compBreakdownText})`));
 
-    // 2. 주요사안 상세
-    children.push(H('2. 주요사안 상세', HeadingLevel.HEADING_1));
+    // 2. 신규 정부정책
+    children.push(H('2. 신규 정부정책', HeadingLevel.HEADING_1));
     if(highItems.length === 0){
-      children.push(P('현재 우선순위 \'높음\'으로 분류된 주요사안이 없습니다.'));
+      children.push(P('현재 우선순위 \'높음\'으로 분류된 신규 정부정책이 없습니다.'));
     }
     highItems.forEach((iss,i)=>{
       children.push(H(`2.${i+1}. ${iss.name}`, HeadingLevel.HEADING_2));
       children.push(P(`${iss.dept} · 담당 ${iss.owner} · ${iss.due||'-'}`, { color:'666666', size:18 }));
       children.push(P(`유관부서: ${matchDepts(iss.name+' '+(iss.desc||'')).join(' · ')}`, { color:'2e7ea6', size:18 }));
       if(iss.url) children.push(link('원문 보기 ↗', iss.url));
-      if(iss.bg){
-        children.push(P('추진 배경', { bold:true, size:20 }));
-        children.push(P(iss.bg));
-        children.push(P('주요 내용', { bold:true, size:20 }));
-        children.push(P(iss.body||'-'));
-        if(iss.eligibility){
-          children.push(P('지원자격', { bold:true, size:20 }));
-          children.push(P(iss.eligibility));
-        }
-        if(iss.budget){
-          children.push(P('사업규모', { bold:true, size:20 }));
-          children.push(P(iss.budget));
-        }
-        children.push(P('시사점', { bold:true, size:20 }));
-        children.push(P(iss.implication||'-'));
-        children.push(P('본교 영향', { bold:true, size:20 }));
-        children.push(P(iss.impact||'-'));
-        children.push(P('대응 전략', { bold:true, size:20, color:'045c37' }));
-        children.push(P(iss.strategy||'-', { color:'045c37' }));
-        if(iss.aiGenerated) children.push(P('※ AI 초안 — 담당자 검토 필요', { italics:true, color:'b5691e', size:16 }));
-      } else {
-        children.push(P('아직 상세 분석이 입력되지 않았습니다.', { italics:true, color:'999999' }));
-      }
+      const field = (label, val, opts={}) => {
+        children.push(P(label, { bold:true, size:20 }));
+        children.push(val ? P(val, opts) : P('별도 추가 확인 필요', { italics:true, color:'999999' }));
+      };
+      field('추진 배경', iss.bg);
+      field('주요 내용', iss.body);
+      field('지원자격', iss.eligibility);
+      field('사업규모', iss.budget);
+      field('시사점', iss.implication);
+      field('대응 전략', iss.strategy, { color:'045c37' });
+      if(iss.aiGenerated) children.push(P('※ AI 초안 — 담당자 검토 필요', { italics:true, color:'b5691e', size:16 }));
     });
 
     // 3. 전체 동향

@@ -4,11 +4,13 @@
 // 실행: 매일 00:00 / 12:00 (KST) — .github/workflows/fetch-gov-trends.yml
 //
 // 자동 수집되는 항목: 부처, 제목, 요약(lead), 날짜, 링크, 신규/계속 여부(직전 실행 대비 diff)
-// 우선순위 '높음'이고 아직 분석이 없는 신규 항목은 기사 본문을 읽어 주요사안 상세 5개 필드
-// (배경/주요내용/시사점/본교영향/대응전략) 초안을 Claude API로 자동 생성한다(generateAnalysis 참고).
-// '시사점/본교 영향/대응 전략'은 본교 고유의 내부 사정을 알지 못한 채 기사 내용만으로 추정한
-// 것이므로 aiGenerated:true로 표시되며, 담당자가 반드시 검토·보완해야 한다. ANTHROPIC_API_KEY가
-// 설정되지 않았거나 호출이 실패하면 조용히 건너뛰고 기존처럼 "분석 대기" 상태로 남는다.
+// 우선순위 '높음'이고 아직 분석이 없는 신규 항목은 기사 본문을 읽어 "신규 정부정책" 섹션의 6개 필드
+// (추진배경/주요내용/지원자격/사업규모/시사점/대응전략) 초안을 Claude API로 자동 생성한다(generateAnalysis 참고).
+// '본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수 있어 필드 자체를 두지 않는다 — '시사점/대응 전략'은
+// 본교 고유의 내부 사정을 알지 못한 채 기사 내용만으로 추정한 것이므로 aiGenerated:true로 표시되며,
+// 담당자가 반드시 검토·보완해야 한다. 개별 필드를 본문에서 확인할 수 없으면 null로 남기고, 프런트엔드가
+// 이를 "별도 추가 확인 필요"로 표시한다. ANTHROPIC_API_KEY가 설정되지 않았거나 호출이 실패하면
+// 조용히 건너뛰고 기존처럼 모든 필드가 비어 있는 상태로 남는다.
 // 소관 부처 재확인 등 그 외 사람 판단이 필요한 항목은 이 스크립트가 채우지 않음 —
 // data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
 // (PRIORITY_KEYWORDS에 해당하는 신규 항목은 우선순위 '높음'을 잠정 자동 태깅한다.)
@@ -60,13 +62,13 @@ function isRelevant(item) {
 }
 
 // 전략적 파급력이 큰 사업·정책일수록 우선 검토가 필요하므로, 아래 키워드가 제목에 포함된
-// "신규" 항목은 우선순위를 '높음'으로 자동 태깅해 주요사안 상세에 곧바로 노출한다.
+// "신규" 항목은 우선순위를 '높음'으로 자동 태깅해 "신규 정부정책" 섹션에 곧바로 노출한다.
 // 이미 담당자가 우선순위를 수기로 지정한 기존 항목은 절대 덮어쓰지 않는다(merge 단계에서 prev 우선).
 //
 // 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것이다
 // (index.html의 hero-sub 참고) — 즉 아직 확정되지 않은, 우리가 준비할 시간이 있는 사안을
 // 조기에 포착하는 것이 핵심이다. 따라서 전략적 키워드가 맞더라도, 이미 결과가 확정·발표된
-// 사안(예: 선정 결과 발표, 이미 종료된 공모의 사후 조치)은 "주요사안 상세"에 올릴 필요가 없다
+// 사안(예: 선정 결과 발표, 이미 종료된 공모의 사후 조치)은 "신규 정부정책"에 올릴 필요가 없다
 // — 사립대학이 더 이상 취할 수 있는 대응이 없기 때문이다. 그래서 전략적 키워드에 더해
 // ACTIONABLE_KEYWORDS(공모·접수·시행 예정 등 향후 대응 여지를 시사하는 표현)가 함께 있어야만
 // 우선순위 '높음'으로 자동 태깅한다.
@@ -207,11 +209,12 @@ function getAnthropicClient() {
   return anthropicClient;
 }
 
-// 우선순위 '높음'이면서 아직 분석(배경 등)이 없는 항목에 한해, 기사 본문을 읽고 주요사안 상세
-// 5개 필드의 초안을 생성한다. '추진 배경'/'주요 내용'은 기사 본문에 실제로 명시된 사실만 근거로
-// 작성하도록 프롬프트에서 강제하고(지어내기 금지), 본교(건국대) 내부 실적·현황은 알 수 없으므로
-// '시사점/본교 영향/대응 전략'은 그 사실을 바탕으로 한 사립대학 일반 관점의 추정임 —
-// 반드시 담당자 검토가 필요하다(aiGenerated 플래그).
+// 우선순위 '높음'이면서 아직 분석(배경 등)이 없는 항목에 한해, 기사 본문을 읽고 "신규 정부정책"
+// 섹션의 6개 필드 초안을 생성한다. '추진 배경'/'주요 내용'은 기사 본문에 실제로 명시된 사실만
+// 근거로 작성하도록 프롬프트에서 강제하고(지어내기 금지), 본교(건국대) 내부 실적·현황은 알 수
+// 없으므로 '시사점/대응 전략'은 그 사실을 바탕으로 한 사립대학 일반 관점의 추정임 — 반드시 담당자
+// 검토가 필요하다(aiGenerated 플래그). '본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수
+// 있는 항목이라 필드 자체를 두지 않는다.
 async function generateAnalysis(item) {
   const client = getAnthropicClient();
   if (!client || !item.url) return null;
@@ -220,7 +223,7 @@ async function generateAnalysis(item) {
   if (!bodyText) return null;
 
   const prompt = `다음은 대한민국 정부 부처의 보도자료다. 이 정책이 사립대학(건국대학교)에 미치는 영향을 분석하는
-전략기획팀 보고서에 넣을 7개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
+전략기획팀 보고서에 넣을 6개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
 
 [사실 기반 필드 — bg, body, eligibility, budget]
 아래 [본문]에 실제로 명시된 사실(숫자·기관명·일정·경위 등)만 근거로 작성하라. 본문에 없는 내용은
@@ -234,18 +237,19 @@ async function generateAnalysis(item) {
 - "budget": 사업규모·사업비 — 총예산·지원금액·지원 규모·지원 기간 (본문에 명시된 사실만, 1~2문장).
   본문에 사업규모 관련 내용이 없으면 반드시 null로 답하라(지어내지 마라).
 
-[분석 필드 — implication, impact, strategy]
+[분석 필드 — implication, strategy]
 본교(건국대학교)의 실제 내부 실적·현황은 알 수 없으므로, 위 사실을 근거로 한 사립대학 일반
-관점의 합리적 추정으로 작성하되, 본문에 없는 구체적 수치나 사실을 새로 지어내지는 마라.
-- "implication": 정책적 시사점 (2~3문장)
-- "impact": 사립대학 일반에 대한 예상 영향 (2~3문장, 본교 고유 현황은 알 수 없으므로 사립대 전반 관점에서 서술)
+관점의 합리적 추정으로 작성하되, 본문에 없는 구체적 수치나 사실을 새로 지어내지는 마라. 본교
+고유의 현황을 알아야만 판단할 수 있는 내용(예: 본교의 기존 실적·정원·재정 현황과 직접 비교하는
+서술)은 다루지 마라 — 그런 판단은 본교 담당자가 직접 채워야 할 몫이다.
+- "implication": 정책적 시사점 (2~3문장, 사립대 전반 관점)
 - "strategy": 사립대학이 취할 수 있는 일반적 대응 방향 (2~3문장). 단, 본문 내용이 이미 결과가
   확정·발표되어 더 이상 신청·지원 등 직접적인 대응 수단이 없는 사안(예: 특정 기관 선정 결과 발표,
   이미 마감된 공모의 사후 조치)이라면, 억지로 "준비·대응하라"는 식의 조언을 지어내지 말고
   "이 사안은 결과가 확정되어 직접 대응은 어려우며, [구체적으로 어떤 관점에서] 모니터링이 필요하다"는
   식으로 정직하게 작성하라.
 
-{"bg": "...", "body": "...", "eligibility": "...", "budget": "...", "implication": "...", "impact": "...", "strategy": "..."}
+{"bg": "...", "body": "...", "eligibility": "...", "budget": "...", "implication": "...", "strategy": "..."}
 
 [제목]
 ${item.title}
@@ -264,14 +268,13 @@ ${bodyText.slice(0, 4000)}`;
     const jsonMatch = textBlock.text.match(/\{[\s\S]*\}/);
     if (!jsonMatch) return null;
     const parsed = JSON.parse(jsonMatch[0]);
-    if (!parsed.bg || !parsed.body || !parsed.implication || !parsed.impact || !parsed.strategy) return null;
+    if (!parsed.bg || !parsed.body || !parsed.implication || !parsed.strategy) return null;
     return {
       bg: parsed.bg,
       body: parsed.body,
       eligibility: parsed.eligibility || null,
       budget: parsed.budget || null,
       implication: parsed.implication,
-      impact: parsed.impact,
       strategy: parsed.strategy,
     };
   } catch (e) {
@@ -334,10 +337,10 @@ async function main() {
   console.log(`\nRelevance filter: ${relevant.length}/${collected.length} items kept`);
   const windowed = relevant.filter(t => inWindow(t.date, today));
 
-  // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·주요사안 분석(배경/내용/시사점/본교영향/대응전략) 등
+  // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·정책 분석(배경/내용/시사점/대응전략) 등
   // 사람 판단이 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
   // 다만 신규 항목 중 전략적 파급력이 큰 키워드(PRIORITY_KEYWORDS)가 제목에 포함된 경우에는
-  // 담당자가 놓치지 않도록 우선순위를 '높음'으로 미리 태깅해 주요사안 상세에 바로 노출되게 한다
+  // 담당자가 놓치지 않도록 우선순위를 '높음'으로 미리 태깅해 신규 정부정책에 바로 노출되게 한다
   // (담당자가 이후 수기로 값을 바꾸면 그 값이 항상 우선한다).
   const prevById = new Map(previous.map(t => [t.id, t]));
   const merged = windowed.map(t => {
@@ -355,7 +358,6 @@ async function main() {
       eligibility: prev?.eligibility ?? null,
       budget: prev?.budget ?? null,
       implication: prev?.implication ?? null,
-      impact: prev?.impact ?? null,
       strategy: prev?.strategy ?? null,
       // AI가 생성한 초안인지 여부 — true인 동안은 프런트엔드에 "AI 초안 · 검토 필요"로 표시된다.
       // 담당자가 검토 후 내용을 수정하면 이 값도 false로 바꿔 검토 완료를 표시해야 한다.
