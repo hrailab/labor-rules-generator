@@ -126,6 +126,10 @@ a.ext-arrow:hover{color:var(--green)}
 .ai-draft-flag{display:inline-block;font-size:10.5px;font-weight:700;color:var(--purple);background:var(--purple-light);padding:2px 8px;border-radius:99px;vertical-align:middle;margin-left:6px}
 .dept-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--ink-3);margin-left:auto}
 .dept-tag .d{width:7px;height:7px;border-radius:50%}
+.dept-match{display:inline-block;font-size:10.5px;font-weight:700;color:var(--blue);background:var(--blue-light);padding:2px 8px;border-radius:6px}
+.issue-deptmatch{margin-top:12px;font-size:12px;color:var(--ink-3)}
+.issue-deptmatch b{color:var(--ink-2);font-weight:700;margin-right:4px}
+.comp-item-dept{flex-shrink:0;font-size:10px;color:var(--blue);font-weight:700;white-space:nowrap}
 .trend-name{font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.4}
 .trend-desc{font-size:12.5px;color:var(--ink-2);line-height:1.7;margin-bottom:12px;background:var(--surface-3);padding:9px 12px;border-radius:8px}
 .trend-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:10px;font-size:11.5px;color:var(--ink-4)}
@@ -637,6 +641,50 @@ function ddayInfo(deadline){
   return {label:'D-'+days, cls:'b-dday'};
 }
 
+// 정부정책·경쟁대학 동향에 대응할 본교(건국대) 유관 부서 매칭
+// 근거: 사무분장요강(2026.9.15. 개정) — 각 부서의 실제 분장 사무를 키워드로 매핑했다.
+// 예) "창업"→창업지원본부(제61조: 창업지원사업 발굴·기획·유치), "산학협력·기술이전"→산학협력단(제58조),
+//     "국제·유학생"→국제처(제26·27조), "재정지원·예산"→전략기획팀·예산팀(제4조16호·제5조7호) 등.
+// 제목/설명에 등장하는 키워드로 매칭하며, 아무 규칙도 걸리지 않으면 전략기획팀을 기본값으로 한다
+// (제4조 7호 "각 부처(부서)간 업무조정" — 전략기획팀 스스로가 조정 총괄 부서이기 때문).
+const DEPT_RULES = [
+  // 사업 성격을 가장 강하게 드러내는 규칙(정부재정지원사업 여부, 창업 등)을 먼저 두어,
+  // 뒤에서 badge 개수를 4개로 제한할 때 핵심 유관부서가 먼저 채택되도록 한다.
+  { keywords: ['재정지원', '국고지원', '지원사업', '혁신지원사업', '예산'], depts: ['전략기획팀', '예산팀'] },
+  { keywords: ['창업'], depts: ['창업지원본부'] },
+  { keywords: ['혁신지원사업'], depts: ['혁신지원사업센터'] },
+  { keywords: ['산학협력', '기술이전', '특허', '기술사업화', '지식재산'], depts: ['산학협력단'] },
+  { keywords: ['국제', '글로벌', '해외', '유학생', '교환학생', '자매결연', 'MOU'], depts: ['국제처'] },
+  { keywords: ['장학', '등록금', '학자금'], depts: ['장학복지팀'] },
+  { keywords: ['정원', '학사조직', '편제'], depts: ['전략기획팀', '교무팀'] },
+  { keywords: ['연구비', 'BK21', '연구인프라', '연구장비', '공동기기', '연구실적', '장려금'], depts: ['연구전략혁신팀'] },
+  { keywords: ['안전', '재난', '위험'], depts: ['안전관리팀'] },
+  { keywords: ['시설', '건축', '증축', '공사'], depts: ['시설팀'] },
+  { keywords: ['평가', '인증', '성과관리', '통계', '공시'], depts: ['IR미래전략실'] },
+  { keywords: ['입학', '전형', '모집요강'], depts: ['입학처'] },
+  { keywords: ['진로', '취업', '인턴', '현장실습'], depts: ['진로취업센터'] },
+  { keywords: ['발전기금', '동문'], depts: ['대외협력처'] },
+  { keywords: ['평생교육', '직업훈련', 'K-디지털', '학점은행'], depts: ['미래지식교육원'] },
+  { keywords: ['수의', '동물병원'], depts: ['수의학교육실'] },
+];
+function matchDepts(text){
+  const found = [];
+  DEPT_RULES.forEach(rule=>{
+    if(rule.keywords.some(k=>text.includes(k))){
+      rule.depts.forEach(d=>{ if(!found.includes(d)) found.push(d); });
+    }
+  });
+  return (found.length ? found : ['전략기획팀']).slice(0,4);
+}
+// 경쟁대학 동향은 이미 분야(category)가 분류돼 있으므로 키워드 매칭 대신 직접 매핑한다
+const CATEGORY_DEPT = {
+  '재정지원': ['전략기획팀', '예산팀'],
+  '산학협력': ['산학협력단', '창업지원본부'],
+  '국제': ['국제처'],
+  '대외협력': ['대외협력처'],
+  '기타': ['전략기획팀'],
+};
+
 // 경쟁대학 동향을 분야(카테고리)별로 집계 — CAT_ORDER 순서대로, 데이터에 존재하는 분야만 반환
 const CAT_ORDER = ['재정지원','산학협력','국제','대외협력','기타'];
 function competitorCategoryCounts(){
@@ -712,6 +760,7 @@ function renderTrends(){
       +'<div class="trend-name">'+t.name+(link?' <span class="ext-arrow">↗</span>':'')+(t.daysAgo===0?' <span class="new-flag">NEW</span>':'')+'</div>'
       +(t.desc ? '<div class="trend-desc">'+t.desc+'</div>' : '')
       +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+(t.due||'-')+'</span></div>'
+      +'<div style="margin-top:8px;font-size:10.5px;color:var(--ink-4)">유관부서 <b style="color:var(--ink-2)">'+matchDepts(t.name+' '+(t.desc||'')).join('·')+'</b></div>'
       +'</'+tag+'>';
   }).join('') || '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-4);font-size:13px">조건에 맞는 동향이 없습니다.</div>';
 }
@@ -739,6 +788,7 @@ function renderIssues(){
         +'<div class="issue-strategy"><h4>대응 전략</h4><p>'+(iss.strategy||'-')+'</p></div>'
         +'</div>'
       : '<div class="issue-pending">아직 상세 분석이 입력되지 않았습니다.'+(iss.url ? ' <a href="'+iss.url+'" target="_blank" rel="noopener">원문 보기 ↗</a>' : '')+'</div>')
+    +'<div class="issue-deptmatch"><b>유관부서</b>'+matchDepts(iss.name+' '+(iss.desc||'')).map(d=>'<span class="dept-match" style="margin-right:5px">'+d+'</span>').join('')+'</div>'
     +'</div>'
     +'</div>'
   ).join('') || '<div class="issue-empty">현재 우선순위 \'높음\'으로 분류된 주요사안이 없습니다.</div>';
@@ -758,6 +808,7 @@ function renderCompetitors(){
       return '<'+tag+' class="comp-item"'+attrs+'>'
         +'<span class="comp-item-cat '+compCatClass(it.category)+'">'+it.category+'</span>'
         +'<span class="comp-item-title">'+it.title+'</span>'
+        +'<span class="comp-item-dept">→ '+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</span>'
         +'<span class="comp-item-date">'+it.date+'</span>'
         +'</'+tag+'>';
     }).join('') : '<div class="comp-empty">최근 14일 내 수집된 동향이 없습니다.</div>';
@@ -953,6 +1004,7 @@ async function generateWordReport(){
     highItems.forEach((iss,i)=>{
       children.push(H(`2.${i+1}. ${iss.name}`, HeadingLevel.HEADING_2));
       children.push(P(`${iss.dept} · 담당 ${iss.owner} · ${iss.due||'-'}`, { color:'666666', size:18 }));
+      children.push(P(`유관부서: ${matchDepts(iss.name+' '+(iss.desc||'')).join(' · ')}`, { color:'2e7ea6', size:18 }));
       if(iss.url) children.push(link('원문 보기 ↗', iss.url));
       if(iss.bg){
         children.push(P('추진 배경', { bold:true, size:20 }));
@@ -974,12 +1026,13 @@ async function generateWordReport(){
     // 3. 전체 동향
     children.push(H('3. 전체 동향 (최근 14일)', HeadingLevel.HEADING_1));
     const trendHeader = new TableRow({ tableHeader:true, children:[
-      cell('부처', { bold:true, width:14 }), cell('사업명', { bold:true, width:34 }), cell('우선순위', { bold:true, width:12 }),
-      cell('상태', { bold:true, width:12 }), cell('등록일', { bold:true, width:14 }), cell('비고', { bold:true, width:14 }),
+      cell('부처', { bold:true, width:12 }), cell('사업명', { bold:true, width:26 }), cell('우선순위', { bold:true, width:10 }),
+      cell('상태', { bold:true, width:10 }), cell('등록일', { bold:true, width:12 }), cell('유관부서', { bold:true, width:18 }), cell('비고', { bold:true, width:12 }),
     ]});
     const trendRows = windowTrends.map(t => new TableRow({ children:[
-      cell(t.dept, { width:14 }), cell(t.name, { width:34 }), cell(priorityLabel(t.priority), { width:12 }),
-      cell(t.status, { width:12 }), cell(fmtDate(trendDate(t)), { width:14 }), cell(t.due||'-', { width:14 }),
+      cell(t.dept, { width:12 }), cell(t.name, { width:26 }), cell(priorityLabel(t.priority), { width:10 }),
+      cell(t.status, { width:10 }), cell(fmtDate(trendDate(t)), { width:12 }),
+      cell(matchDepts(t.name+' '+(t.desc||'')).join('·'), { width:18 }), cell(t.due||'-', { width:12 }),
     ]}));
     children.push(new Table({ width:{ size:100, type:WidthType.PERCENTAGE }, rows:[trendHeader, ...trendRows] }));
 
@@ -991,7 +1044,8 @@ async function generateWordReport(){
         children.push(P('최근 14일 내 수집된 동향이 없습니다.', { italics:true, color:'999999' }));
       } else {
         school.items.forEach(it=>{
-          const text = `[${it.category}] ${it.title} — ${it.date}`;
+          const deptText = (CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·');
+          const text = `[${it.category}] ${it.title} — ${it.date} (유관부서: ${deptText})`;
           children.push(it.url ? link(text, it.url) : P(text));
         });
       }
