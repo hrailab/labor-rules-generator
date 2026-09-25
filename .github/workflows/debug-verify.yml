@@ -1,4 +1,4 @@
-name: debug-search-ict
+name: debug-verify-gov-articles
 on:
   workflow_dispatch:
 jobs:
@@ -9,4 +9,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/debug-search-ict.mjs
+      - run: node scripts/debug-verify-gov-articles.mjs
