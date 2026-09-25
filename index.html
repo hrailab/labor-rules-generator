@@ -45,6 +45,10 @@ a{color:inherit}
 .meta-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:99px;padding:6px 13px;font-size:11.5px;font-weight:600;color:#e6e3da}
 .meta-pill .dot{width:6px;height:6px;border-radius:50%;background:#efb886;animation:blink 2s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.btn-report{display:flex;align-items:center;gap:7px;background:var(--green);color:#fff;border:none;border-radius:99px;padding:8px 16px 8px 14px;font-size:12px;font-weight:700;font-family:inherit;cursor:pointer;transition:background .15s,transform .1s;box-shadow:0 4px 14px rgba(0,118,69,.35)}
+.btn-report:hover{background:var(--green-dark)}
+.btn-report:active{transform:scale(.97)}
+.btn-report:disabled{opacity:.65;cursor:default;transform:none}
 .hero h1{font-size:clamp(26px,3.6vw,38px);font-weight:800;color:#f8f7f4;letter-spacing:-.03em;margin-bottom:10px}
 .hero h1 span{color:#4ecb93}
 .hero-sub{font-size:14.5px;color:#b4b1a8;max-width:660px;line-height:1.85;margin-bottom:26px}
@@ -223,6 +227,7 @@ a.comp-item{cursor:pointer}
       <div class="hero-meta">
         <span class="meta-pill" id="baseDateBadge">기준 —</span>
         <span class="meta-pill" id="cycleBadge">다음 갱신 —</span>
+        <button class="btn-report" id="reportBtn" onclick="generateWordReport()">📄 보고서 초안 발행 (Word)</button>
       </div>
     </div>
     <h1>정부정책 동향 <span>리포트</span></h1>
@@ -347,6 +352,8 @@ a.comp-item{cursor:pointer}
   <p id="footerRefreshNote" style="margin-top:2px"></p>
 </footer>
 
+<!-- Word(.docx) 보고서 생성용 — 클라이언트에서 순수 JS로 .docx 파일을 조립해 다운로드한다(서버 불필요) -->
+<script src="https://cdn.jsdelivr.net/npm/docx@9.7.2/dist/index.iife.js"></script>
 <script>
 /* ───────────────────────── DATA ───────────────────────── */
 const DEPTS = {
@@ -865,6 +872,127 @@ function initScrollSpy(){
     sections.forEach((s,i)=>{ if(s && window.scrollY + 90 >= s.offsetTop) idx = i; });
     links.forEach((l,i)=>l.classList.toggle('active', i===idx));
   });
+}
+
+// 최종 결정권자(총장 등) 보고용 Word(.docx) 초안을 클라이언트에서 직접 조립해 다운로드한다.
+// 서버 없이 브라우저에서 바로 실행되며, 현재 화면에 표시된 것과 동일한 데이터(실데이터 또는
+// 목업 폴백)를 그대로 사용한다 — 즉 화면이 실데이터를 보여주고 있으면 보고서도 실데이터 기준.
+async function generateWordReport(){
+  const btn = document.getElementById('reportBtn');
+  const originalLabel = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = '⏳ 생성 중…';
+  try{
+    const { Document, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell, WidthType, Packer, ExternalHyperlink, AlignmentType } = docx;
+
+    const windowTrends = TRENDS.filter(inWindow);
+    const highItems = windowTrends.filter(t=>t.priority==='높음');
+    const newCount = windowTrends.filter(t=>t.status==='신규').length;
+    const compCount = COMPETITORS.reduce((a,s)=>a+s.items.length,0);
+
+    const H = (text, level) => new Paragraph({ text, heading: level, spacing:{ before:280, after:120 } });
+    const P = (text, opts={}) => new Paragraph({ children:[ new TextRun({ text, ...opts }) ], spacing:{ after:80 } });
+    const bullet = (text, opts={}) => new Paragraph({ children:[ new TextRun({ text, ...opts }) ], bullet:{ level:0 }, spacing:{ after:60 } });
+    const link = (text, url) => new Paragraph({ children:[ new ExternalHyperlink({ link:url, children:[ new TextRun({ text, style:'Hyperlink' }) ] }) ], spacing:{ after:80 } });
+    const cell = (text, opts={}) => new TableCell({ width:{ size:opts.width||20, type:WidthType.PERCENTAGE }, children:[ new Paragraph({ children:[ new TextRun({ text:String(text||'-'), bold:!!opts.bold, size:opts.size||18 }) ] }) ] });
+
+    const children = [];
+
+    // 표지
+    children.push(new Paragraph({ text:'정부정책 동향 보고서 (초안)', heading:HeadingLevel.TITLE, alignment:AlignmentType.CENTER, spacing:{ after:120 } }));
+    children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:'전략기획팀 · 정부정책 동향 모니터링', color:'666666', size:22 }) ], spacing:{ after:60 } }));
+    children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:`기준 ${fmtDateTime(ANCHOR)} · 조회기간 ${fmtDate(WINDOW_START)} ~ ${fmtDate(ANCHOR)} (최근 14일)`, color:'999999', size:18 }) ], spacing:{ after:200 } }));
+    const dataNote = (USING_MOCK && COMPETITORS_USING_MOCK) ? '⚠ 본 보고서는 목업(mock) 데이터를 기반으로 생성된 데모입니다.'
+      : (!USING_MOCK && !COMPETITORS_USING_MOCK) ? '정부부처·경쟁대학 동향 모두 자동 수집된 실데이터를 기반으로 생성되었습니다.'
+      : '일부 데이터는 아직 자동 수집 전이라 목업으로 대체되어 있습니다.';
+    children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:dataNote, italics:true, color:'b5691e', size:18 }) ], spacing:{ after:300 } }));
+
+    // 1. 요약
+    children.push(H('1. 요약', HeadingLevel.HEADING_1));
+    children.push(bullet(`최근 14일 전체 동향: ${windowTrends.length}건`));
+    children.push(bullet(`대응 우선순위 '높음': ${highItems.length}건 (즉시 검토 필요)`));
+    children.push(bullet(`신규 등록: ${newCount}건`));
+    children.push(bullet(`경쟁대학 포착 건수: ${compCount}건 (${COMPETITORS.length}개교 모니터링)`));
+
+    // 2. 주요사안 상세
+    children.push(H('2. 주요사안 상세', HeadingLevel.HEADING_1));
+    if(highItems.length === 0){
+      children.push(P('현재 우선순위 \'높음\'으로 분류된 주요사안이 없습니다.'));
+    }
+    highItems.forEach((iss,i)=>{
+      children.push(H(`2.${i+1}. ${iss.name}`, HeadingLevel.HEADING_2));
+      children.push(P(`${iss.dept} · 담당 ${iss.owner} · ${iss.due||'-'}`, { color:'666666', size:18 }));
+      if(iss.url) children.push(link('원문 보기 ↗', iss.url));
+      if(iss.bg){
+        children.push(P('추진 배경', { bold:true, size:20 }));
+        children.push(P(iss.bg));
+        children.push(P('주요 내용', { bold:true, size:20 }));
+        children.push(P(iss.body||'-'));
+        children.push(P('시사점', { bold:true, size:20 }));
+        children.push(P(iss.implication||'-'));
+        children.push(P('본교 영향', { bold:true, size:20 }));
+        children.push(P(iss.impact||'-'));
+        children.push(P('대응 전략', { bold:true, size:20, color:'045c37' }));
+        children.push(P(iss.strategy||'-', { color:'045c37' }));
+        if(iss.aiGenerated) children.push(P('※ AI 초안 — 담당자 검토 필요', { italics:true, color:'b5691e', size:16 }));
+      } else {
+        children.push(P('아직 상세 분석이 입력되지 않았습니다.', { italics:true, color:'999999' }));
+      }
+    });
+
+    // 3. 전체 동향
+    children.push(H('3. 전체 동향 (최근 14일)', HeadingLevel.HEADING_1));
+    const trendHeader = new TableRow({ tableHeader:true, children:[
+      cell('부처', { bold:true, width:14 }), cell('사업명', { bold:true, width:34 }), cell('우선순위', { bold:true, width:12 }),
+      cell('상태', { bold:true, width:12 }), cell('등록일', { bold:true, width:14 }), cell('비고', { bold:true, width:14 }),
+    ]});
+    const trendRows = windowTrends.map(t => new TableRow({ children:[
+      cell(t.dept, { width:14 }), cell(t.name, { width:34 }), cell(priorityLabel(t.priority), { width:12 }),
+      cell(t.status, { width:12 }), cell(fmtDate(trendDate(t)), { width:14 }), cell(t.due||'-', { width:14 }),
+    ]}));
+    children.push(new Table({ width:{ size:100, type:WidthType.PERCENTAGE }, rows:[trendHeader, ...trendRows] }));
+
+    // 4. 경쟁대학 동향
+    children.push(H('4. 경쟁대학 동향', HeadingLevel.HEADING_1));
+    COMPETITORS.forEach(school=>{
+      children.push(H(`${school.name} (담당 ${school.owner})`, HeadingLevel.HEADING_3));
+      if(school.items.length === 0){
+        children.push(P('최근 14일 내 수집된 동향이 없습니다.', { italics:true, color:'999999' }));
+      } else {
+        school.items.forEach(it=>{
+          const text = `[${it.category}] ${it.title} — ${it.date}`;
+          children.push(it.url ? link(text, it.url) : P(text));
+        });
+      }
+    });
+
+    // 5. 출처
+    children.push(H('5. 출처', HeadingLevel.HEADING_1));
+    SOURCES.forEach(s=>{
+      children.push(s.url ? link(s.label, s.url) : P(s.label));
+    });
+
+    children.push(new Paragraph({ text:'', spacing:{ before:300 } }));
+    children.push(new Paragraph({ children:[ new TextRun({ text:`본 문서는 ${fmtDateTime(nowKST())} 기준 웹페이지 데이터를 바탕으로 자동 생성된 초안입니다. AI가 작성한 분석 내용(표기됨)은 반드시 담당자 검토를 거쳐야 합니다.`, italics:true, color:'999999', size:16 }) ] }));
+
+    const doc = new Document({ sections:[{ properties:{}, children }] });
+    const blob = await Packer.toBlob(doc);
+
+    const fileName = `정부정책_동향_보고서_초안_${fmtDate(ANCHOR).replace(/\./g,'')}.docx`;
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  } catch(e){
+    console.error('Word 보고서 생성 실패:', e);
+    alert('보고서 생성 중 오류가 발생했습니다. 콘솔을 확인해주세요.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalLabel;
+  }
 }
 
 (async function init(){
