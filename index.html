@@ -129,7 +129,6 @@ a.ext-arrow:hover{color:var(--green)}
 .dept-match{display:inline-block;font-size:10.5px;font-weight:700;color:var(--blue);background:var(--blue-light);padding:2px 8px;border-radius:6px}
 .issue-deptmatch{margin-top:12px;font-size:12px;color:var(--ink-3)}
 .issue-deptmatch b{color:var(--ink-2);font-weight:700;margin-right:4px}
-.comp-item-dept{flex-shrink:0;font-size:10px;color:var(--blue);font-weight:700;white-space:nowrap}
 .trend-name{font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.4}
 .trend-desc{font-size:12.5px;color:var(--ink-2);line-height:1.7;margin-bottom:12px;background:var(--surface-3);padding:9px 12px;border-radius:8px}
 .trend-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:10px;font-size:11.5px;color:var(--ink-4)}
@@ -179,12 +178,15 @@ a.ext-arrow:hover{color:var(--green)}
 .comp-name{font-size:14.5px;font-weight:800;color:var(--ink)}
 .comp-owner{font-size:10.5px;font-weight:700;color:var(--green);background:var(--green-light);padding:2px 8px;border-radius:99px}
 .comp-items{display:flex;flex-direction:column;gap:4px}
-.comp-item{display:flex;align-items:center;gap:8px;padding:7px 8px;margin:0 -8px;border-radius:8px;text-decoration:none;color:inherit;transition:background .15s}
+.comp-item{display:flex;flex-direction:column;gap:5px;padding:8px;margin:0 -8px;border-radius:8px;text-decoration:none;color:inherit;transition:background .15s}
 a.comp-item{cursor:pointer}
 .comp-item:hover{background:var(--surface-2)}
-.comp-item-cat{flex-shrink:0;font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;white-space:nowrap}
+.comp-item-top{display:flex;align-items:flex-start;gap:8px}
+.comp-item-cat{flex-shrink:0;font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;white-space:nowrap;margin-top:2px}
 .comp-item-title{flex:1;min-width:0;font-size:12px;color:var(--ink-2);line-height:1.5}
-.comp-item-date{flex-shrink:0;font-size:10.5px;color:var(--ink-4);white-space:nowrap}
+.comp-item-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:10.5px}
+.comp-item-dept{color:var(--blue);font-weight:700}
+.comp-item-date{flex-shrink:0;color:var(--ink-4);white-space:nowrap}
 .comp-empty{font-size:12px;color:var(--ink-4);padding:8px 0}
 .cat-fin{background:var(--green-light);color:var(--green)}
 .cat-ind{background:var(--blue-light);color:var(--blue)}
@@ -825,10 +827,11 @@ function renderCompetitors(){
       const tag = it.url ? 'a' : 'div';
       const attrs = it.url ? ' href="'+it.url+'" target="_blank" rel="noopener"' : '';
       return '<'+tag+' class="comp-item"'+attrs+'>'
+        +'<div class="comp-item-top">'
         +'<span class="comp-item-cat '+compCatClass(it.category)+'">'+it.category+'</span>'
         +'<span class="comp-item-title">'+it.title+'</span>'
-        +'<span class="comp-item-dept">→ '+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</span>'
-        +'<span class="comp-item-date">'+it.date+'</span>'
+        +'</div>'
+        +'<div class="comp-item-meta"><span class="comp-item-dept">→ '+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</span><span class="comp-item-date">'+it.date+'</span></div>'
         +'</'+tag+'>';
     }).join('') : '<div class="comp-empty">최근 14일 내 수집된 동향이 없습니다.</div>';
     return '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner">'+c.owner+' 담당</div></div>'
