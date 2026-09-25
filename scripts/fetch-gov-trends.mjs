@@ -17,6 +17,9 @@
 //
 // 수집 범위: 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
 // RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고).
+// 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것이므로,
+// 이미 결과가 확정·발표되어 더 이상 직접 대응할 수 없는 사안(예: 특정 대학 선정 결과 발표)은
+// "전체 동향" 데이터셋 자체에서 제외한다 (isConfirmedOutcome 함수 참고).
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import Anthropic from '@anthropic-ai/sdk';
@@ -87,6 +90,24 @@ function isActionable(item) {
 }
 function isPriorityCandidate(item) {
   return PRIORITY_KEYWORDS.some(k => item.title.includes(k)) && isActionable(item);
+}
+
+// "전체 동향" 자체가 위 목적(아직 확정되지 않아 대응을 준비할 수 있는 사안)에 집중해야 하므로,
+// 우선순위 태깅뿐 아니라 수집 대상 포함 여부도 걸러낸다. 이미 결과가 확정·발표되어 더 이상
+// 직접 대응할 수단이 없는 사안(예: 특정 대학 선정 결과 발표)은 정부 "정책"이라기보다 그 대학
+// 자체의 동향에 가까우므로 이 데이터셋에서 제외한다 — 자동으로 어느 경쟁대학 항목인지까지 정확히
+// 분류하기는 어려우므로, 제외만 하고 필요 시 담당자가 data/competitors.json에 수동으로 옮겨 담는다
+// (index.html MOCK_COMPETITORS의 '기타대학' 카드가 그 사람 손을 거친 결과의 예시).
+const CONFIRMED_OUTCOME_KEYWORDS = [
+  '선정 완료', '선정 발표', '최종 선정', '선정 결과', '지정 완료',
+  '수상작 발표', '수상자 발표', '합격자 발표', '결과 발표',
+];
+function isConfirmedOutcome(item) {
+  const text = item.title + ' ' + item.desc;
+  if (CONFIRMED_OUTCOME_KEYWORDS.some(k => text.includes(k))) return true;
+  // '선정'을 언급하면서도 향후 대응 여지를 시사하는 표현(ACTIONABLE_KEYWORDS)이 전혀 없다면,
+  // 이미 선정이 끝난 사후 보도일 가능성이 높다고 보수적으로 판단한다.
+  return text.includes('선정') && !isActionable(item);
 }
 
 function stripTags(s) {
@@ -335,7 +356,13 @@ async function main() {
 
   const relevant = collected.filter(isRelevant);
   console.log(`\nRelevance filter: ${relevant.length}/${collected.length} items kept`);
-  const windowed = relevant.filter(t => inWindow(t.date, today));
+  const inWindowItems = relevant.filter(t => inWindow(t.date, today));
+  const confirmedOutcomes = inWindowItems.filter(isConfirmedOutcome);
+  const windowed = inWindowItems.filter(t => !isConfirmedOutcome(t));
+  if (confirmedOutcomes.length) {
+    console.log(`Confirmed-outcome filter: ${confirmedOutcomes.length}건 제외(이미 결과 확정 — "전체 동향"에서 다룰 실익 없음, 필요 시 경쟁대학 동향으로 수동 이관):`);
+    confirmedOutcomes.forEach(t => console.log(`  - [${t.dept}] ${t.title}`));
+  }
 
   // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·정책 분석(배경/내용/시사점/대응전략) 등
   // 사람 판단이 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
@@ -405,6 +432,13 @@ async function main() {
       '| 부처 | 상태 | 결과 |',
       '|---|---|---|',
       ...sourceSummary,
+      '',
+      ...(confirmedOutcomes.length ? [
+        `### 결과 확정으로 제외된 항목 (${confirmedOutcomes.length}건)`,
+        '이미 결과가 확정·발표되어 "전체 동향"에서 제외됨. 특정 대학과 관련이 있다면 경쟁대학 동향에 수동 반영 검토 필요.',
+        '',
+        ...confirmedOutcomes.map(t => `- [${t.dept}] ${t.title}`),
+      ] : []),
     ].join('\n') + '\n';
     await writeFile(process.env.GITHUB_STEP_SUMMARY, summary, { flag: 'a' });
   }
