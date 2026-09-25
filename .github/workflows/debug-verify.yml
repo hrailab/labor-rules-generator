@@ -9,4 +9,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/debug-verify-comp-urls.mjs
+      - run: node scripts/debug-list-comp-items.mjs
