@@ -119,6 +119,7 @@ a.ext-arrow:hover{color:var(--green)}
 .badge.b-durgent{background:var(--orange-light);color:var(--orange);font-weight:800}
 .badge.b-ddone{background:var(--slate-light);color:var(--slate)}
 .new-flag{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:var(--orange);padding:1px 6px;border-radius:5px;vertical-align:middle;letter-spacing:.02em}
+.ai-draft-flag{display:inline-block;font-size:10.5px;font-weight:700;color:var(--purple);background:var(--purple-light);padding:2px 8px;border-radius:99px;vertical-align:middle;margin-left:6px}
 .dept-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--ink-3);margin-left:auto}
 .dept-tag .d{width:7px;height:7px;border-radius:50%}
 .trend-name{font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.4}
@@ -382,7 +383,13 @@ function mockGovUrl(dept, newsId){
   return 'https://www.korea.kr/news/policyNewsView.do?newsId='+newsId+'&repCode='+REP_CODE[dept]+'&repCodeType=정부부처&pWiseMinistry=ministryNews';
 }
 const MOCK_TRENDS = [
-  {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', daysAgo:0, due:'회신 10.10', url:mockGovUrl('기획예산처','148970973')},
+  {dept:'기획예산처', owner:'백승엽', status:'신규', priority:'높음', name:'2027년 국가재정운용계획 대학 관련 항목', desc:'중장기 재정 배분 기조 중 고등교육 분야 비중 조정안 포함. 대학 재정지원 총량 영향 검토 필요.', daysAgo:0, due:'회신 10.10', url:mockGovUrl('기획예산처','148970973'),
+    aiGenerated:true,
+    bg:'기획재정부가 2027~2031년 국가재정운용계획 수립을 위한 부처별 의견수렴 절차에 착수했으며, 고등교육 분야 재정지원 비중 조정 방향이 초안에 포함된 것으로 파악됨.',
+    body:'중장기 재정 배분 기조상 복지·국방 분야 지출이 확대되는 반면, 고등교육 재정지원 총량은 현행 수준 유지 또는 소폭 조정이 검토되고 있는 것으로 보임.',
+    implication:'대학 재정지원사업 전반의 예산 총량이 제약될 경우, 신규 사업보다는 기존 사업 통폐합·효율화 방향으로 정책이 선회할 가능성이 있음.',
+    impact:'사립대학의 경우 등록금 동결 기조와 맞물려 국고 재정지원 의존도가 높은 상황이므로, 총량 조정 시 재정 운용에 직접적 영향을 받을 수 있음.',
+    strategy:'기획재정부 의견수렴 절차에 사립대 재정 현황 자료를 선제적으로 제출하고, 관련 협의체를 통해 고등교육 재정 비중 유지를 건의할 필요가 있음.'},
   {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05 · 접수 마감 11.10(예상)', deadline:'2026-11-10', url:mockGovUrl('중기부','148972173'),
     bg:'중기부가 창업중심대학 지원 예산을 883억원에서 1,083억원으로 확대하고, 딥테크 분야 중심으로 개편하는 방향으로 미래대응기금을 재원으로 활용할 계획.',
     body:'기존 선정 대학의 후속 지원과 신규 대학 추가 선정을 동시에 진행할 예정이며, 딥테크(반도체·AI·바이오) 분야 특화 트랙이 신설될 전망.',
@@ -521,12 +528,15 @@ function normalizeRealTrend(raw){
     due: raw.due || null,
     deadline: raw.deadline || null,
     url: raw.url || null,
-    // 우선순위 '높음'으로 표시된 주요사안의 상세 분석 — 담당자가 data/trends.json에 직접 채워 넣는 선택 필드
+    // 우선순위 '높음'으로 표시된 주요사안의 상세 분석 — 담당자가 data/trends.json에 직접 채워 넣거나
+    // (aiGenerated:true인 경우) fetch-gov-trends.mjs가 기사 본문을 읽어 Claude API로 초안을 생성한 값.
+    // AI 초안은 본교 고유 현황을 알지 못한 채 작성된 추정이므로 담당자 검토가 반드시 필요하다.
     bg: raw.bg || null,
     body: raw.body || null,
     implication: raw.implication || null,
     impact: raw.impact || null,
     strategy: raw.strategy || null,
+    aiGenerated: raw.aiGenerated || false,
   };
 }
 
@@ -682,14 +692,15 @@ function renderTrends(){
 document.getElementById('trendSearch').addEventListener('input', function(){ searchTerm=this.value.trim(); renderTrends(); });
 
 // Issues (accordion) — 전체 동향 중 우선순위 '높음'인 항목에서 자동 생성.
-// 배경·시사점 등 분석 필드는 담당자가 data/trends.json에 직접 채워 넣는 값으로, 없으면 "분석 대기" 상태로 보여준다.
+// 배경·시사점 등 분석 필드는 담당자가 data/trends.json에 직접 채워 넣거나, fetch-gov-trends.mjs가
+// Claude API로 초안을 자동 생성한 값(aiGenerated:true)이다. 둘 다 없으면 "분석 대기" 상태로 보여준다.
 function renderIssues(){
   const list = TRENDS.filter(t => inWindow(t) && t.priority === '높음');
   document.getElementById('issueList').innerHTML = list.map((iss,i)=>
     '<div class="issue-card'+(i===0?' open':'')+'" id="issue'+i+'">'
     +'<div class="issue-head" onclick="toggleIssue('+i+')">'
     +'<div class="issue-idx">'+(i+1)+'</div>'
-    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
+    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+(iss.bg && iss.aiGenerated ? ' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>' : '')+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
     +'<div class="issue-chevron">▾</div>'
     +'</div>'
     +'<div class="issue-body">'

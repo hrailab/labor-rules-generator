@@ -4,14 +4,20 @@
 // 실행: 매일 00:00 / 12:00 (KST) — .github/workflows/fetch-gov-trends.yml
 //
 // 자동 수집되는 항목: 부처, 제목, 요약(lead), 날짜, 링크, 신규/계속 여부(직전 실행 대비 diff)
-// 사람 판단이 필요한 항목(우선순위, 대응전략, 본교 영향, 소관 부처 재확인 등)은 이 스크립트가
-// 채우지 않음 — data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
-// (다만 PRIORITY_KEYWORDS에 해당하는 신규 항목은 우선순위 '높음'을 잠정 자동 태깅한다.)
+// 우선순위 '높음'이고 아직 분석이 없는 신규 항목은 기사 본문을 읽어 주요사안 상세 5개 필드
+// (배경/주요내용/시사점/본교영향/대응전략) 초안을 Claude API로 자동 생성한다(generateAnalysis 참고).
+// '시사점/본교 영향/대응 전략'은 본교 고유의 내부 사정을 알지 못한 채 기사 내용만으로 추정한
+// 것이므로 aiGenerated:true로 표시되며, 담당자가 반드시 검토·보완해야 한다. ANTHROPIC_API_KEY가
+// 설정되지 않았거나 호출이 실패하면 조용히 건너뛰고 기존처럼 "분석 대기" 상태로 남는다.
+// 소관 부처 재확인 등 그 외 사람 판단이 필요한 항목은 이 스크립트가 채우지 않음 —
+// data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
+// (PRIORITY_KEYWORDS에 해당하는 신규 항목은 우선순위 '높음'을 잠정 자동 태깅한다.)
 //
 // 수집 범위: 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
 // RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고).
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import Anthropic from '@anthropic-ai/sdk';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
 const WINDOW_DAYS = 14;
@@ -154,6 +160,83 @@ async function fetchUnifiedPolicyNews(knownNewsIds) {
   return items;
 }
 
+// 기사 상세페이지에서 본문 텍스트를 추출한다(<div class="article_body">...<div class="article_footer">).
+// GitHub Actions 러너로 실제 페이지 구조를 확인해 확정한 선택자 — 사이트 구조가 바뀌면
+// generateAnalysis()가 조용히 null을 반환하고 "분석 대기" 상태로 남을 뿐, 파이프라인은 계속 동작한다.
+async function fetchArticleBody(url) {
+  try {
+    const res = await fetch(url, { headers: { 'User-Agent': UA } });
+    if (!res.ok) return null;
+    const html = await res.text();
+    const m = html.match(/<div class="article_body"[^>]*>([\s\S]*?)<div class="article_footer"/);
+    if (!m) return null;
+    const text = m[1]
+      .replace(/<script[\s\S]*?<\/script>/g, '')
+      .replace(/<[^>]+>/g, '\n')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/\n{2,}/g, '\n')
+      .trim();
+    return text || null;
+  } catch {
+    return null;
+  }
+}
+
+const ANALYSIS_MODEL = 'claude-opus-5';
+let anthropicClient;
+// ANTHROPIC_API_KEY가 없으면 null을 반환해 AI 분석 생성 전체를 건너뛴다(로컬 실행·키 미설정 시 안전한 기본값).
+function getAnthropicClient() {
+  if (!process.env.ANTHROPIC_API_KEY) return null;
+  if (anthropicClient === undefined) anthropicClient = new Anthropic();
+  return anthropicClient;
+}
+
+// 우선순위 '높음'이면서 아직 분석(배경 등)이 없는 항목에 한해, 기사 본문을 읽고 주요사안 상세
+// 5개 필드의 초안을 생성한다. 본교(건국대) 내부 실적·현황은 알 수 없으므로 '시사점/본교 영향/
+// 대응 전략'은 사립대학 일반 관점의 추정에 불과함 — 반드시 담당자 검토가 필요하다(aiGenerated 플래그).
+async function generateAnalysis(item) {
+  const client = getAnthropicClient();
+  if (!client || !item.url) return null;
+
+  const bodyText = await fetchArticleBody(item.url);
+  if (!bodyText) return null;
+
+  const prompt = `다음은 대한민국 정부 부처의 보도자료다. 이 정책이 사립대학(건국대학교)에 미치는 영향을 분석하는
+전략기획팀 보고서에 넣을 5개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
+
+{"bg": "추진 배경 (2~3문장)", "body": "주요 내용 (2~3문장)", "implication": "정책적 시사점 (2~3문장)", "impact": "사립대학 일반에 대한 예상 영향 (2~3문장, 본교 고유 현황은 알 수 없으므로 사립대 전반 관점에서 서술)", "strategy": "사립대학이 취할 수 있는 일반적 대응 방향 (2~3문장)"}
+
+[제목]
+${item.title}
+
+[본문]
+${bodyText.slice(0, 4000)}`;
+
+  try {
+    const response = await client.messages.create({
+      model: ANALYSIS_MODEL,
+      max_tokens: 2000,
+      messages: [{ role: 'user', content: prompt }],
+    });
+    const textBlock = response.content.find(b => b.type === 'text');
+    if (!textBlock) return null;
+    const jsonMatch = textBlock.text.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) return null;
+    const parsed = JSON.parse(jsonMatch[0]);
+    if (!parsed.bg || !parsed.body || !parsed.implication || !parsed.impact || !parsed.strategy) return null;
+    return {
+      bg: parsed.bg,
+      body: parsed.body,
+      implication: parsed.implication,
+      impact: parsed.impact,
+      strategy: parsed.strategy,
+    };
+  } catch (e) {
+    console.error(`[WARN] AI 분석 생성 실패 (${item.title}):`, e.message);
+    return null;
+  }
+}
+
 function inWindow(dateStr, today) {
   const d = new Date(dateStr + 'T00:00:00+09:00');
   const diffDays = Math.floor((today - d) / 86400000);
@@ -229,8 +312,30 @@ async function main() {
       implication: prev?.implication ?? null,
       impact: prev?.impact ?? null,
       strategy: prev?.strategy ?? null,
+      // AI가 생성한 초안인지 여부 — true인 동안은 프런트엔드에 "AI 초안 · 검토 필요"로 표시된다.
+      // 담당자가 검토 후 내용을 수정하면 이 값도 false로 바꿔 검토 완료를 표시해야 한다.
+      aiGenerated: prev?.aiGenerated ?? false,
     };
   });
+
+  // 우선순위 '높음'이면서 아직 분석이 없는 항목에 한해 AI 초안 생성을 시도한다.
+  // ANTHROPIC_API_KEY가 없으면 getAnthropicClient()가 null을 반환해 전체를 건너뛴다.
+  if (getAnthropicClient()) {
+    const pending = merged.filter(t => t.priority === '높음' && !t.bg);
+    console.log(`\nGenerating AI draft analysis for ${pending.length} high-priority item(s) without existing analysis...`);
+    for (const item of pending) {
+      const analysis = await generateAnalysis(item);
+      if (analysis) {
+        Object.assign(item, analysis, { aiGenerated: true });
+        console.log(`  -> AI 초안 생성됨: ${item.title}`);
+      } else {
+        console.log(`  -> AI 초안 생성 실패/스킵(분석 대기로 유지): ${item.title}`);
+      }
+      await new Promise(r => setTimeout(r, 500));
+    }
+  } else {
+    console.log('\n[INFO] ANTHROPIC_API_KEY가 설정되지 않아 AI 분석 생성을 건너뜁니다(기존처럼 "분석 대기" 상태로 유지).');
+  }
 
   merged.sort((a, b) => b.date.localeCompare(a.date));
 
