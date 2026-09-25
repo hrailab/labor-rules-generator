@@ -429,18 +429,21 @@ let USING_MOCK = true;
 // 학교 1곳당 카드 1장, 카드 안에 분야별(재정지원/산학협력/국제/대외협력) 항목을 나열
 // 각 url은 학교별 실제 상세페이지 URL 형식(scripts/fetch-competitor-trends.mjs의 파서 패턴)을 그대로 따르되,
 // 목업 항목이라 게시글 번호(articleNo/idxno 등)만 가상의 값을 사용한다 — 게시판 목록이 아닌 항목별 개별 링크.
-// 성균관대·한양대·중앙대는 실제 존재하는 게시글 URL(GitHub Actions 러너로 직접 조회해 확인)을 사용한다.
+// 성균관대·한양대·중앙대는 scripts/fetch-competitor-trends.mjs의 실제 파서 로직을 GitHub Actions
+// 러너에서 그대로 실행해 얻은 결과(게시글 제목·분류·URL이 서로 일치하는 실제 항목)를 사용한다.
+// (이전에는 URL만 실존을 확인하고 제목은 임의로 지어내, 제목과 실제 게시글 내용이 서로 다른
+// 문제가 있었음 — 이제는 파서가 반환한 제목을 그대로 사용해 제목·URL이 항상 일치하도록 함.)
 // 경희대·동국대·이화여대는 파서가 현재 0건을 반환해(목록 페이지 구조 변경 추정, 재확인 필요)
 // 실제 개별 게시글 URL을 확보하지 못했으므로, 존재하지 않는 URL을 지어내는 대신 실제로 존재하는
 // 해당 학교 공지 게시판(목록) 페이지로 연결한다 — scripts/fetch-competitor-trends.mjs 참고.
 const MOCK_COMPETITORS = [
   {name:'성균관대', owner:'서원석', items:[
-    {category:'재정지원', title:'교육부 재정지원사업 3건 동시 신청 준비 중인 것으로 파악', date:'09.20', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140164'},
-    {category:'산학협력', title:'산학협력단 인력 충원, 기업연계 프로그램 확대', date:'09.18', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140158'},
+    {category:'산학협력', title:'[창업지원단/실험실창업혁신단] 2026 SKKU 프리 텍스코어 참가자 모집', date:'09.23', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140119'},
+    {category:'국제', title:'[AI중심대학사업단] 글로벌 IT전문가와 킹고인의 만남 시즌2 여든세 번째 만남', date:'09.23', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140157'},
   ]},
   {name:'한양대', owner:'서원석', items:[
-    {category:'산학협력', title:'중기부 창업 인프라 연계 예산 확대 편성 논의', date:'09.18', url:'https://www.newshyu.com/news/articleView.html?idxno=1026403'},
-    {category:'국제', title:'AI반도체 국책사업 수주로 국제 공동연구 확대', date:'09.16', url:'https://www.newshyu.com/news/articleView.html?idxno=1026380'},
+    {category:'산학협력', title:'한양대, 현장실습 기반 실용교육과 산학협력으로 취업 경쟁률 독보적 성과 입증', date:'09.25', url:'https://www.newshyu.com/news/articleView.html?idxno=1026393'},
+    {category:'국제', title:'한양대 ERICA 학생팀, \'제임스 다이슨 어워드 2026\' 한국 Top 3 선정…국제전 심사 진출', date:'09.25', url:'https://www.newshyu.com/news/articleView.html?idxno=1026402'},
   ]},
   {name:'경희대', owner:'이수연', items:[
     {category:'국제', title:'국제교류처, 유럽권 협정대학 3곳과 신규 MOU 체결', date:'09.21', url:'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'},
@@ -451,8 +454,8 @@ const MOCK_COMPETITORS = [
     {category:'대외협력', title:'지역기관과 사회공헌 업무협약(MOU) 체결', date:'09.17', url:'https://www.dongguk.edu/article/INTEXNOTICE/list'},
   ]},
   {name:'중앙대', owner:'정주원', items:[
-    {category:'국제', title:'2027학년도 순수외국인전형 원서접수 안내', date:'09.22', url:'https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51079'},
-    {category:'산학협력', title:'창업중심대학 후속 지원 대응 TF 구성', date:'09.20', url:'https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=46498'},
+    {category:'국제', title:'[학부] 2027학년도 전반기 1차(3월 입학) 학부 순수외국인전형 원서접수', date:'08.28', url:'https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51079'},
+    {category:'국제', title:'2026학년도 2학기 학부 신/편입 외국인 유학생 오리엔테이션', date:'08.13', url:'https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51042'},
   ]},
   {name:'이화여대', owner:'정주원', items:[
     {category:'산학협력', title:'경력창업지원사업 관련 창업보육센터 개편 검토', date:'09.17', url:'https://www.ewha.ac.kr/ewha/news/ewha-news.do'},
