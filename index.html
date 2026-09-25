@@ -401,7 +401,7 @@ const MOCK_TRENDS = [
     strategy:'사립대학도 지역 전략산업·AI 분야와 연계한 특성화 학과·연구소 실적을 축적해, 향후 유사한 패키지형 지원사업이 사립대로 확대될 경우를 대비한 사전 준비가 필요함.'},
   {dept:'중기부', owner:'정주원', status:'확대', priority:'높음', name:'창업중심대학 지원사업', desc:'선정 대학 지원금 883억→1,083억 확대. 딥테크 중심 개편, 미래대응기금 재원 활용.', daysAgo:1, due:'공고 10.05 · 접수 마감 11.10(예상)', deadline:'2026-11-10', url:mockGovUrl('중기부','148972173'),
     bg:'중기부가 창업중심대학 지원 예산을 883억원에서 1,083억원으로 확대하고, 딥테크 분야 중심으로 개편하는 방향으로 미래대응기금을 재원으로 활용할 계획.',
-    body:'기존 선정 대학의 후속 지원과 신규 대학 추가 선정을 동시에 진행할 예정이며, 딥테크(반도체·AI·바이오) 분야 특화 트랙이 신설될 전망.',
+    body:'지원자격은 기존 선정 대학(후속 지원 대상)과 신규 대학(딥테크 분야 특화 트랙 신청 대상)으로 구분되며, 딥테크(반도체·AI·바이오) 분야 특화 트랙이 신설될 전망. 사업규모는 총 1,083억원(883억원에서 확대)이며, 접수기간은 10월 5일 공고, 11월 10일 접수 마감(예상)이다.',
     implication:'딥테크 분야 창업 인프라를 보유한 대학이 유리하며, 경쟁대학인 중앙대·이화여대의 사전 준비 동향 파악이 중요함.',
     impact:'본교 창업지원단의 딥테크 분야 실적 정리가 필요하며, 컨소시엄 구성 시 기업 매칭 실적이 핵심 요건이 될 가능성이 높음.',
     strategy:'창업지원단과 사전 협의체 구성, 딥테크 분야 실적 자료를 10월 공고 전까지 정리하여 신청 준비기간 확보.'},
@@ -634,16 +634,30 @@ function ddayInfo(deadline){
   return {label:'D-'+days, cls:'b-dday'};
 }
 
+// 경쟁대학 동향을 분야(카테고리)별로 집계 — CAT_ORDER 순서대로, 데이터에 존재하는 분야만 반환
+const CAT_ORDER = ['재정지원','산학협력','국제','대외협력','기타'];
+function competitorCategoryCounts(){
+  const counts = {};
+  COMPETITORS.forEach(s=>s.items.forEach(it=>{
+    const cat = it.category || '기타';
+    counts[cat] = (counts[cat]||0) + 1;
+  }));
+  return CAT_ORDER.filter(c=>counts[c]).map(c=>({category:c, count:counts[c]}));
+}
+
 // KPI
 function renderKpi(){
   const windowTrends = TRENDS.filter(inWindow);
   const highCount = windowTrends.filter(t=>t.priority==='높음').length;
   const newCount = windowTrends.filter(t=>t.status==='신규').length;
+  const compBreakdown = competitorCategoryCounts();
+  const compTotal = compBreakdown.reduce((a,c)=>a+c.count,0);
+  const compDelta = compBreakdown.map(c=>c.category+' '+c.count).join(' · ') || COMPETITORS.length+'개교 모니터링 중';
   const kpis = [
     {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'직전 갱신 대비 +2건', up:true},
     {label:'대응 우선순위 높음', value:highCount+'건', delta:'즉시 검토 필요', up:true},
     {label:'신규 등록', value:newCount+'건', delta:'주요사안 '+highCount+'건 포함', up:true},
-    {label:'경쟁대학 포착 건수', value:COMPETITORS.reduce((a,s)=>a+s.items.length,0)+'건', delta:COMPETITORS.length+'개교 모니터링 중', up:false},
+    {label:'경쟁대학 포착 건수', value:compTotal+'건', delta:compDelta, up:false},
   ];
   document.getElementById('kpiRow').innerHTML = kpis.map(k=>
     '<div class="kpi-card"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.value+'</div><div class="kpi-delta '+(k.up?'up':'flat')+'">'+(k.up?'▲ ':'· ')+k.delta+'</div></div>'
@@ -888,7 +902,8 @@ async function generateWordReport(){
     const windowTrends = TRENDS.filter(inWindow);
     const highItems = windowTrends.filter(t=>t.priority==='높음');
     const newCount = windowTrends.filter(t=>t.status==='신규').length;
-    const compCount = COMPETITORS.reduce((a,s)=>a+s.items.length,0);
+    const compBreakdown = competitorCategoryCounts();
+    const compCount = compBreakdown.reduce((a,c)=>a+c.count,0);
 
     const H = (text, level) => new Paragraph({ text, heading: level, spacing:{ before:280, after:120 } });
     const P = (text, opts={}) => new Paragraph({ children:[ new TextRun({ text, ...opts }) ], spacing:{ after:80 } });
@@ -912,7 +927,8 @@ async function generateWordReport(){
     children.push(bullet(`최근 14일 전체 동향: ${windowTrends.length}건`));
     children.push(bullet(`대응 우선순위 '높음': ${highItems.length}건 (즉시 검토 필요)`));
     children.push(bullet(`신규 등록: ${newCount}건`));
-    children.push(bullet(`경쟁대학 포착 건수: ${compCount}건 (${COMPETITORS.length}개교 모니터링)`));
+    const compBreakdownText = compBreakdown.map(c=>`${c.category} ${c.count}건`).join(', ') || `${COMPETITORS.length}개교 모니터링`;
+    children.push(bullet(`경쟁대학 포착 건수: ${compCount}건 (${compBreakdownText})`));
 
     // 2. 주요사안 상세
     children.push(H('2. 주요사안 상세', HeadingLevel.HEADING_1));
