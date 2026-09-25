@@ -50,22 +50,19 @@ const results = {};
 
 for (const dept of DEPTS) {
   console.log(`=== ${dept.name} (${dept.repCode}) ===`);
-  const all = [];
-  // fetch first 3 pages to get more historical coverage
-  for (let page = 1; page <= 3; page++) {
-    const url = `https://www.korea.kr/news/ministryNewsList.do?repCode=${dept.repCode}&pWiseMinistry=ministryNews&pageIndex=${page}`;
-    try {
-      const r = await fetchListing(url);
-      if (r.error) { console.log(`  page ${page}: ${r.error}`); continue; }
-      console.log(`  page ${page}: ${r.items.length} items`);
-      all.push(...r.items);
-    } catch (e) {
-      console.log(`  page ${page}: fetch failed - ${e.message}`);
+  const url = `https://www.korea.kr/news/ministryNewsList.do?repCode=${dept.repCode}&pWiseMinistry=ministryNews`;
+  try {
+    const r = await fetchListing(url);
+    if (r.error) { console.log(`  ${r.error}`); }
+    else {
+      console.log(`  ${r.items.length} items`);
+      results[dept.name] = r.items;
+      r.items.forEach(it => console.log(`  [${it.date}] ${it.title} (newsId=${it.newsId})`));
     }
-    await new Promise(r => setTimeout(r, 300));
+  } catch (e) {
+    console.log(`  fetch failed - ${e.message}`);
   }
-  results[dept.name] = all;
-  all.forEach(it => console.log(`  [${it.date}] ${it.title} (newsId=${it.newsId})`));
+  await new Promise(r => setTimeout(r, 400));
 }
 
 console.log('\n=== 기타부처 (통합피드) ===');
