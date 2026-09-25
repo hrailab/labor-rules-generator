@@ -307,8 +307,8 @@ a.comp-item{cursor:pointer}
         <div class="chart-legend" id="trendLegend"></div>
       </div>
       <div class="chart-card">
-        <h3>사업 유형 구성비</h3>
-        <div class="u">이번 회차 누적 기준</div>
+        <h3>대응 우선순위별 동향 분포</h3>
+        <div class="u">최근 14일 등록 항목 기준</div>
         <div class="donut-wrap">
           <div class="chart-svg-wrap" id="typeChart"></div>
           <div class="chart-legend" id="typeLegend" style="flex-direction:column;gap:8px"></div>
@@ -317,8 +317,8 @@ a.comp-item{cursor:pointer}
     </div>
     <div class="chart-grid" style="margin-top:14px">
       <div class="chart-card" style="grid-column:1/-1">
-        <h3>경쟁대학별 동향 포착 건수</h3>
-        <div class="u">단위: 건 · 최근 3개 회차 누적</div>
+        <h3>경쟁대학 동향 분야별 건수</h3>
+        <div class="u">단위: 건 · 현재 조회 시점 기준</div>
         <div class="chart-svg-wrap" id="compChart"></div>
       </div>
     </div>
@@ -853,7 +853,7 @@ function renderBarChart(containerId, labels, values, color){
     const bh = (v/maxVal)*plotH;
     const x = padL + i*(barW+gap);
     const y = H-padB-bh;
-    svg += svgEl('rect',{x:x,y:y,width:barW,height:bh,rx:6,fill:color});
+    svg += svgEl('rect',{x:x,y:y,width:barW,height:bh,rx:6,fill:Array.isArray(color)?color[i]:color});
     svg += '<text x="'+(x+barW/2)+'" y="'+(y-6)+'" font-size="11" font-weight="700" fill="#1e1d20" text-anchor="middle" font-family="Noto Sans KR,sans-serif">'+v+'</text>';
     svg += '<text x="'+(x+barW/2)+'" y="'+(H-8)+'" font-size="10.5" fill="#75747a" text-anchor="middle" font-family="Noto Sans KR,sans-serif">'+labels[i]+'</text>';
   });
@@ -870,14 +870,26 @@ function renderCharts(){
     {label:'기획예산처', data:[2,3,3,4,4], color:'#007645'},
   ]);
 
-  renderDonutChart('typeChart','typeLegend', [
-    {label:'재정지원사업', value:4, color:'#007645'},
-    {label:'정책·법령·기본계획', value:3, color:'#3e93be'},
-    {label:'공모·인프라사업', value:2, color:'#7a72b8'},
-    {label:'실태점검·모니터링', value:1, color:'#c97a2e'},
-  ]);
+  // 대응 우선순위별 동향 분포 — 조회 기간(최근 14일) 내 실제 TRENDS 데이터를 그대로 집계한 값
+  // (이전에는 이 자리에 TRENDS와 무관한 임의의 '사업 유형' 숫자가 하드코딩되어 있었음)
+  const windowTrends = TRENDS.filter(inWindow);
+  const PRIORITY_STYLE = {'높음':'#b5691e', '중간':'#6c63a6', '낮음':'#75747a', '미지정':'#a3a2a8'};
+  const priorityCounts = {};
+  windowTrends.forEach(t=>{
+    const key = t.priority || '미지정';
+    priorityCounts[key] = (priorityCounts[key]||0) + 1;
+  });
+  const priorityData = Object.keys(PRIORITY_STYLE)
+    .filter(p=>priorityCounts[p])
+    .map(p=>({label:p, value:priorityCounts[p], color:PRIORITY_STYLE[p]}));
+  renderDonutChart('typeChart','typeLegend', priorityData);
 
-  renderBarChart('compChart', COMPETITORS.map(c=>c.name), COMPETITORS.map(c=>c.items.length), '#007645');
+  // 경쟁대학 동향 분야별 건수 — KPI·Word 보고서와 동일한 competitorCategoryCounts() 집계를 재사용
+  // (이전에는 학교별 건수를 사용했는데, 목업 데이터상 모든 학교가 항상 2건으로 고정되어 있어
+  // 막대 높이가 전부 동일하게 나오는 무의미한 차트였음)
+  const compBreakdown = competitorCategoryCounts();
+  const CAT_COLOR = {'재정지원':'#007645', '산학협력':'#2e7ea6', '국제':'#6c63a6', '대외협력':'#b5691e', '기타':'#75747a'};
+  renderBarChart('compChart', compBreakdown.map(c=>c.category), compBreakdown.map(c=>c.count), compBreakdown.map(c=>CAT_COLOR[c.category]));
 }
 
 // Scroll-spy for subnav
