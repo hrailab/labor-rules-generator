@@ -62,13 +62,29 @@ function isRelevant(item) {
 // 전략적 파급력이 큰 사업·정책일수록 우선 검토가 필요하므로, 아래 키워드가 제목에 포함된
 // "신규" 항목은 우선순위를 '높음'으로 자동 태깅해 주요사안 상세에 곧바로 노출한다.
 // 이미 담당자가 우선순위를 수기로 지정한 기존 항목은 절대 덮어쓰지 않는다(merge 단계에서 prev 우선).
+//
+// 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것이다
+// (index.html의 hero-sub 참고) — 즉 아직 확정되지 않은, 우리가 준비할 시간이 있는 사안을
+// 조기에 포착하는 것이 핵심이다. 따라서 전략적 키워드가 맞더라도, 이미 결과가 확정·발표된
+// 사안(예: 선정 결과 발표, 이미 종료된 공모의 사후 조치)은 "주요사안 상세"에 올릴 필요가 없다
+// — 사립대학이 더 이상 취할 수 있는 대응이 없기 때문이다. 그래서 전략적 키워드에 더해
+// ACTIONABLE_KEYWORDS(공모·접수·시행 예정 등 향후 대응 여지를 시사하는 표현)가 함께 있어야만
+// 우선순위 '높음'으로 자동 태깅한다.
 const PRIORITY_KEYWORDS = [
   'RISE', '라이즈', '글로컬대학', '대학혁신지원사업', 'LINC', '링크사업',
   '첨단인재', '산학협력', '무전공', '자율전공', '직업훈련', '정원 감축', '정원감축',
   '기본계획', '재정지원', '국가장학',
 ];
+const ACTIONABLE_KEYWORDS = [
+  '공모', '모집', '접수', '신청', '설명회', '공고', '입법예고', '의견수렴',
+  '시행 예정', '도입 예정', '추진 예정', '확대', '추가 선정', '개편안', '검토', '계획',
+];
+function isActionable(item) {
+  const text = item.title + ' ' + item.desc;
+  return ACTIONABLE_KEYWORDS.some(k => text.includes(k));
+}
 function isPriorityCandidate(item) {
-  return PRIORITY_KEYWORDS.some(k => item.title.includes(k));
+  return PRIORITY_KEYWORDS.some(k => item.title.includes(k)) && isActionable(item);
 }
 
 function stripTags(s) {
@@ -220,7 +236,11 @@ async function generateAnalysis(item) {
 관점의 합리적 추정으로 작성하되, 본문에 없는 구체적 수치나 사실을 새로 지어내지는 마라.
 - "implication": 정책적 시사점 (2~3문장)
 - "impact": 사립대학 일반에 대한 예상 영향 (2~3문장, 본교 고유 현황은 알 수 없으므로 사립대 전반 관점에서 서술)
-- "strategy": 사립대학이 취할 수 있는 일반적 대응 방향 (2~3문장)
+- "strategy": 사립대학이 취할 수 있는 일반적 대응 방향 (2~3문장). 단, 본문 내용이 이미 결과가
+  확정·발표되어 더 이상 신청·지원 등 직접적인 대응 수단이 없는 사안(예: 특정 기관 선정 결과 발표,
+  이미 마감된 공모의 사후 조치)이라면, 억지로 "준비·대응하라"는 식의 조언을 지어내지 말고
+  "이 사안은 결과가 확정되어 직접 대응은 어려우며, [구체적으로 어떤 관점에서] 모니터링이 필요하다"는
+  식으로 정직하게 작성하라.
 
 {"bg": "...", "body": "...", "implication": "...", "impact": "...", "strategy": "..."}
 
