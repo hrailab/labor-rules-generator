@@ -220,16 +220,19 @@ async function generateAnalysis(item) {
   if (!bodyText) return null;
 
   const prompt = `다음은 대한민국 정부 부처의 보도자료다. 이 정책이 사립대학(건국대학교)에 미치는 영향을 분석하는
-전략기획팀 보고서에 넣을 5개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
+전략기획팀 보고서에 넣을 7개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
 
-[사실 기반 필드 — bg, body]
+[사실 기반 필드 — bg, body, eligibility, budget]
 아래 [본문]에 실제로 명시된 사실(숫자·기관명·일정·경위 등)만 근거로 작성하라. 본문에 없는 내용은
 절대 추측하거나 지어내지 말고, 본문에 나온 표현·수치를 최대한 그대로 활용해 요약하라.
 - "bg": 이 정책·사업이 추진된 배경·경위 (본문에 명시된 사실만, 2~3문장)
-- "body": 보도자료의 핵심 내용 (본문에 명시된 사실만). 특히 아래 세 가지가 본문에 명시되어 있으면
-  절대 누락하지 말고 반드시 포함하라(문장 안에 자연스럽게 녹이거나, 구체적 수치·기간을 그대로 인용):
-  ① 접수기간(공고일·접수 마감일·신청 기간 등 일정), ② 지원자격(신청 대상·자격 요건·선정 방식),
-  ③ 사업규모·사업비(총예산·지원금액·지원 규모·지원 기간). 본문에 해당 내용이 없으면 억지로 만들지 말고 생략하라.
+- "body": 보도자료의 핵심 내용 (본문에 명시된 사실만 — 대상·규모의 개괄, 추진 경과 등). 접수기간
+  (공고일·접수 마감일·신청 기간 등 일정)이 본문에 명시되어 있으면 반드시 포함하라. 지원자격과
+  사업규모·사업비는 아래 별도 필드(eligibility, budget)에서 다루므로 body에서 다시 반복하지 마라.
+- "eligibility": 지원자격 — 신청 대상·자격 요건·선정 방식 (본문에 명시된 사실만, 1~2문장).
+  본문에 지원자격 관련 내용이 없으면 반드시 null로 답하라(지어내지 마라).
+- "budget": 사업규모·사업비 — 총예산·지원금액·지원 규모·지원 기간 (본문에 명시된 사실만, 1~2문장).
+  본문에 사업규모 관련 내용이 없으면 반드시 null로 답하라(지어내지 마라).
 
 [분석 필드 — implication, impact, strategy]
 본교(건국대학교)의 실제 내부 실적·현황은 알 수 없으므로, 위 사실을 근거로 한 사립대학 일반
@@ -242,7 +245,7 @@ async function generateAnalysis(item) {
   "이 사안은 결과가 확정되어 직접 대응은 어려우며, [구체적으로 어떤 관점에서] 모니터링이 필요하다"는
   식으로 정직하게 작성하라.
 
-{"bg": "...", "body": "...", "implication": "...", "impact": "...", "strategy": "..."}
+{"bg": "...", "body": "...", "eligibility": "...", "budget": "...", "implication": "...", "impact": "...", "strategy": "..."}
 
 [제목]
 ${item.title}
@@ -265,6 +268,8 @@ ${bodyText.slice(0, 4000)}`;
     return {
       bg: parsed.bg,
       body: parsed.body,
+      eligibility: parsed.eligibility || null,
+      budget: parsed.budget || null,
       implication: parsed.implication,
       impact: parsed.impact,
       strategy: parsed.strategy,
@@ -347,6 +352,8 @@ async function main() {
       deadline: prev?.deadline ?? null,
       bg: prev?.bg ?? null,
       body: prev?.body ?? null,
+      eligibility: prev?.eligibility ?? null,
+      budget: prev?.budget ?? null,
       implication: prev?.implication ?? null,
       impact: prev?.impact ?? null,
       strategy: prev?.strategy ?? null,
