@@ -5,13 +5,11 @@ const res = await fetch(url, { headers: { 'User-Agent': UA } });
 const html = await res.text();
 console.log('length:', html.length);
 
-let idx = -1;
-const positions = [];
-while ((idx = html.indexOf('유아 입학', idx + 1)) !== -1) positions.push(idx);
-console.log('occurrences at:', positions);
-
-if (positions.length) {
-  const last = positions[positions.length - 1];
-  console.log('\n--- around LAST occurrence ---');
-  console.log(html.slice(Math.max(0, last - 800), last + 3000));
+const classRe = /class="([^"]*(?:view|cont|text|article|txt|body|news)[^"]*)"/gi;
+const seen = new Set();
+let m;
+while ((m = classRe.exec(html)) !== null) {
+  const cls = m[1];
+  if (!seen.has(cls)) { seen.add(cls); }
 }
+console.log('candidate classes:', [...seen].join(' | '));
