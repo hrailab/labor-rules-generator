@@ -176,7 +176,7 @@ a.ext-arrow:hover{color:var(--green)}
 .comp-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:16px 18px}
 .comp-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .comp-name{font-size:14.5px;font-weight:800;color:var(--ink)}
-.comp-owner{font-size:10.5px;font-weight:700;color:var(--green);background:var(--green-light);padding:2px 8px;border-radius:99px}
+.comp-owner{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px}
 .comp-items{display:flex;flex-direction:column;gap:4px}
 .comp-item{display:flex;flex-direction:column;gap:5px;padding:8px;margin:0 -8px;border-radius:8px;text-decoration:none;color:inherit;transition:background .15s}
 a.comp-item{cursor:pointer}
@@ -185,7 +185,8 @@ a.comp-item{cursor:pointer}
 .comp-item-cat{flex-shrink:0;font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;white-space:nowrap;margin-top:2px}
 .comp-item-title{flex:1;min-width:0;font-size:12px;color:var(--ink-2);line-height:1.5}
 .comp-item-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:10.5px}
-.comp-item-dept{color:var(--blue);font-weight:700}
+.comp-item-dept{color:var(--ink-4)}
+.comp-item-dept b{color:var(--blue);font-weight:700}
 .comp-item-date{flex-shrink:0;color:var(--ink-4);white-space:nowrap}
 .comp-empty{font-size:12px;color:var(--ink-4);padding:8px 0}
 .cat-fin{background:var(--green-light);color:var(--green)}
@@ -387,6 +388,9 @@ const OWNERS = [
   {name:'이수연 계장', role:'담당자', depts:['과학기술정보통신부'], schools:['경희대','동국대'], bar:'#7a72b8'},
   {name:'정주원 주임', role:'담당자', depts:['중소벤처기업부'], schools:['중앙대','이화여대'], bar:'#c97a2e'},
 ];
+// 담당자 이름별 색상(위 OWNERS의 bar 색상 재사용) — 경쟁대학 카드의 '담당' 배지를 담당자별로 구분해 표시하는 데 사용
+const OWNER_COLOR = {};
+OWNERS.forEach(o=>{ OWNER_COLOR[o.name.split(' ')[0]] = o.bar; });
 
 // 부처별 repCode(정책브리핑 URL 파라미터) — scripts/fetch-gov-trends.mjs의 DEPTS와 동일
 const REP_CODE = {'기획예산처':'A00040','교육부':'A00002','과기정통부':'A00033','중기부':'A00032','농식품부':'A00008'};
@@ -871,10 +875,11 @@ function renderCompetitors(){
         +'<span class="comp-item-cat '+compCatClass(it.category)+'">'+it.category+'</span>'
         +'<span class="comp-item-title">'+it.title+'</span>'
         +'</div>'
-        +'<div class="comp-item-meta"><span class="comp-item-dept">→ '+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</span><span class="comp-item-date">'+it.date+'</span></div>'
+        +'<div class="comp-item-meta"><span class="comp-item-dept">유관부서 <b>'+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</b></span><span class="comp-item-date">'+it.date+'</span></div>'
         +'</'+tag+'>';
     }).join('') : '<div class="comp-empty">최근 14일 내 수집된 동향이 없습니다.</div>';
-    return '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner">'+c.owner+' 담당</div></div>'
+    const ownerColor = OWNER_COLOR[c.owner] || '#75747a';
+    return '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner" style="color:'+ownerColor+';background:'+ownerColor+'1a">'+c.owner+' 담당</div></div>'
       +'<div class="comp-items">'+itemsHtml+'</div></div>';
   }).join('');
 }
