@@ -31,17 +31,17 @@ const OUT_PATH = 'data/trends.json';
 // 담당자 소관 매핑 (전략기획팀 정부정책 동향 리포트 담당 매트릭스 기준)
 const DEPTS = [
   { name: '기획예산처', repCode: 'A00040', owner: '백승엽' },
-  { name: '교육부', repCode: 'A00002', owner: '서원석' }, // 세부 owner는 아래 classifyEduOwner()로 보정
+  { name: '교육부', repCode: 'A00002', owner: '정주원' }, // 세부 owner는 아래 classifyEduOwner()로 보정
   { name: '과기정통부', repCode: 'A00033', owner: '이수연' },
-  { name: '중기부', repCode: 'A00032', owner: '정주원' },
+  { name: '중기부', repCode: 'A00032', owner: '서원석' },
   { name: '농식품부', repCode: 'A00008', owner: '서원석' },
 ];
 
-// 교육부는 담당자가 백승엽(정책·법령·기본계획) / 서원석(재정지원사업)으로 나뉘어 있어
-// 제목의 키워드로 1차 분류. 애매한 건은 서원석(재정지원사업) 기본값.
+// 교육부는 담당자가 백승엽(정책·법령·기본계획) / 정주원(재정지원사업)으로 나뉘어 있어
+// 제목의 키워드로 1차 분류. 애매한 건은 정주원(재정지원사업) 기본값.
 function classifyEduOwner(title) {
   const policyKeywords = ['법령', '시행령', '시행규칙', '개정', '기본계획', '국무회의', '고시', '훈령'];
-  return policyKeywords.some(k => title.includes(k)) ? '백승엽' : '서원석';
+  return policyKeywords.some(k => title.includes(k)) ? '백승엽' : '정주원';
 }
 
 // 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기기 위한 키워드 필터.
