@@ -1,0 +1,48 @@
+name: debug-verify-gov-articles
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch real government policy trends
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/fetch-gov-trends.mjs
+
+      - name: Fetch real competitor university trends
+        run: node scripts/fetch-competitor-trends.mjs
+
+      - name: Show resulting data files
+        run: |
+          echo "=== data/trends.json ==="
+          cat data/trends.json
+          echo "=== data/competitors.json ==="
+          cat data/competitors.json
+
+      - name: Commit and push real data to this diagnostic branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/trends.json data/competitors.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: real data run output"
+            git push origin HEAD:diag-real-fetch-run
+          fi
