@@ -422,6 +422,12 @@ function mockGovUrl(dept, newsId){
 // ('미래대응기금 신설'·'제5차 중소기업 인력지원 기본계획')으로 교체했다. 이 페이지의 네트워크
 // 정책상 접근 불가한 korea.kr 검증은 모두 GitHub Actions 러너에서 수행했다(임시 진단 스크립트는
 // 작업 후 제거). 이제 아래 6개 항목 전부가 개별 기사로 직접 연결되는 검증된 url을 가진다.
+//
+// '접수기간' 필드: GitHub Actions 러너로 위 6개 항목의 기사 전문(요약이 아닌 전체 본문)을 다시
+// 가져와 접수·신청·마감 관련 키워드를 전수 검색했으나 단 한 건도 매치되지 않았다 — 전부 2027년도
+// 예산안이 국회 심의 중인 단계의 보도라 아직 구체적인 접수기간이 공개되지 않았기 때문이다(지어내지
+// 않고 모두 null로 유지, "별도 추가 확인 필요"로 표시). 실제 세부 공고가 나오면 담당자가
+// data/trends.json에 직접 채워 넣거나 fetch-gov-trends.mjs가 자동으로 채운다.
 const MOCK_TRENDS = [
   {dept:'중기부', owner:'서원석', status:'신규', priority:'높음', name:'창업중심대학 지원사업', desc:'2027년도 예산안에 딥테크 중심 창업중심대학 확대 포함, 1,083억원 편성. 국회 심의 중.', daysAgo:3, due:'2027년도 예산안 국회 심의 중', url:mockGovUrl('중기부','148970979'),
     aiGenerated:true,
@@ -607,6 +613,7 @@ function normalizeRealTrend(raw){
     body: raw.body || null,
     eligibility: raw.eligibility || null,
     budget: raw.budget || null,
+    period: raw.period || null,
     implication: raw.implication || null,
     strategy: raw.strategy || null,
     aiGenerated: raw.aiGenerated || false,
@@ -832,9 +839,9 @@ document.getElementById('trendSearch').addEventListener('input', function(){ sea
 
 // Issues (accordion) — 전체 동향 중 우선순위 '높음'인 항목에서 자동 생성("실시간 주요 정책 및 사업 현황" 섹션).
 // 배경·시사점 등 분석 필드는 담당자가 data/trends.json에 직접 채워 넣거나, fetch-gov-trends.mjs가
-// Claude API로 초안을 자동 생성한 값(aiGenerated:true)이다. 항목은 항상 6개 구분(추진배경/주요내용/
-// 지원자격/사업규모/시사점/대응전략)을 모두 보여주며, 개별 필드를 확인할 수 없으면 "별도 추가 확인
-// 필요"로 표시한다('본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수 있어 필드 자체를 두지 않음).
+// Claude API로 초안을 자동 생성한 값(aiGenerated:true)이다. 항목은 항상 7개 구분(추진배경/주요내용/
+// 지원자격/사업규모/접수기간/시사점/대응전략)을 모두 보여주며, 개별 필드를 확인할 수 없으면 "별도 추가
+// 확인 필요"로 표시한다('본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수 있어 필드 자체를 두지 않음).
 function renderIssues(){
   const list = TRENDS.filter(t => inWindow(t) && t.priority === '높음');
   const issueField = v => v ? '<p>'+v+'</p>' : '<p class="field-tbd">별도 추가 확인 필요</p>';
@@ -851,6 +858,7 @@ function renderIssues(){
       +'<div class="issue-block"><h4>주요 내용</h4>'+issueField(iss.body)+'</div>'
       +'<div class="issue-block"><h4>지원자격</h4>'+issueField(iss.eligibility)+'</div>'
       +'<div class="issue-block"><h4>사업규모</h4>'+issueField(iss.budget)+'</div>'
+      +'<div class="issue-block"><h4>접수기간</h4>'+issueField(iss.period)+'</div>'
       +'<div class="issue-block"><h4>시사점</h4>'+issueField(iss.implication)+'</div>'
       +'<div class="issue-strategy"><h4>대응 전략</h4>'+issueField(iss.strategy)+'</div>'
       +'</div>'
@@ -1082,6 +1090,7 @@ async function generateWordReport(){
       field('주요 내용', iss.body);
       field('지원자격', iss.eligibility);
       field('사업규모', iss.budget);
+      field('접수기간', iss.period);
       field('시사점', iss.implication);
       field('대응 전략', iss.strategy, { color:'045c37' });
       if(iss.aiGenerated) children.push(P('※ AI 초안 — 담당자 검토 필요', { italics:true, color:'b5691e', size:16 }));

@@ -4,8 +4,8 @@
 // 실행: 매일 00:00 / 12:00 (KST) — .github/workflows/fetch-gov-trends.yml
 //
 // 자동 수집되는 항목: 부처, 제목, 요약(lead), 날짜, 링크, 신규/계속 여부(직전 실행 대비 diff)
-// 우선순위 '높음'이고 아직 분석이 없는 신규 항목은 기사 본문을 읽어 "실시간 주요 정책 및 사업 현황" 섹션의 6개 필드
-// (추진배경/주요내용/지원자격/사업규모/시사점/대응전략) 초안을 Claude API로 자동 생성한다(generateAnalysis 참고).
+// 우선순위 '높음'이고 아직 분석이 없는 신규 항목은 기사 본문을 읽어 "실시간 주요 정책 및 사업 현황" 섹션의 7개 필드
+// (추진배경/주요내용/지원자격/사업규모/접수기간/시사점/대응전략) 초안을 Claude API로 자동 생성한다(generateAnalysis 참고).
 // '본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수 있어 필드 자체를 두지 않는다 — '시사점/대응 전략'은
 // 본교 고유의 내부 사정을 알지 못한 채 기사 내용만으로 추정한 것이므로 aiGenerated:true로 표시되며,
 // 담당자가 반드시 검토·보완해야 한다. 개별 필드를 본문에서 확인할 수 없으면 null로 남기고, 프런트엔드가
@@ -231,11 +231,12 @@ function getAnthropicClient() {
 }
 
 // 우선순위 '높음'이면서 아직 분석(배경 등)이 없는 항목에 한해, 기사 본문을 읽고 "실시간 주요 정책 및 사업 현황"
-// 섹션의 6개 필드 초안을 생성한다. '추진 배경'/'주요 내용'은 기사 본문에 실제로 명시된 사실만
+// 섹션의 7개 필드 초안을 생성한다. '추진 배경'/'주요 내용'은 기사 본문에 실제로 명시된 사실만
 // 근거로 작성하도록 프롬프트에서 강제하고(지어내기 금지), 본교(건국대) 내부 실적·현황은 알 수
 // 없으므로 '시사점/대응 전략'은 그 사실을 바탕으로 한 사립대학 일반 관점의 추정임 — 반드시 담당자
 // 검토가 필요하다(aiGenerated 플래그). '본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수
-// 있는 항목이라 필드 자체를 두지 않는다.
+// 있는 항목이라 필드 자체를 두지 않는다. '접수기간'은 이전에는 body 문단 안에 묻혀 있었으나,
+// 신청 준비에 중요한 정보라 지원자격·사업규모와 같은 수준의 독립 필드로 분리했다.
 async function generateAnalysis(item) {
   const client = getAnthropicClient();
   if (!client || !item.url) return null;
@@ -244,19 +245,20 @@ async function generateAnalysis(item) {
   if (!bodyText) return null;
 
   const prompt = `다음은 대한민국 정부 부처의 보도자료다. 이 정책이 사립대학(건국대학교)에 미치는 영향을 분석하는
-전략기획팀 보고서에 넣을 6개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
+전략기획팀 보고서에 넣을 7개 항목의 초안을 작성하라. 반드시 아래 JSON 형식으로만 답하고, 다른 텍스트는 절대 포함하지 마라.
 
-[사실 기반 필드 — bg, body, eligibility, budget]
+[사실 기반 필드 — bg, body, eligibility, budget, period]
 아래 [본문]에 실제로 명시된 사실(숫자·기관명·일정·경위 등)만 근거로 작성하라. 본문에 없는 내용은
 절대 추측하거나 지어내지 말고, 본문에 나온 표현·수치를 최대한 그대로 활용해 요약하라.
 - "bg": 이 정책·사업이 추진된 배경·경위 (본문에 명시된 사실만, 2~3문장)
-- "body": 보도자료의 핵심 내용 (본문에 명시된 사실만 — 대상·규모의 개괄, 추진 경과 등). 접수기간
-  (공고일·접수 마감일·신청 기간 등 일정)이 본문에 명시되어 있으면 반드시 포함하라. 지원자격과
-  사업규모·사업비는 아래 별도 필드(eligibility, budget)에서 다루므로 body에서 다시 반복하지 마라.
+- "body": 보도자료의 핵심 내용 (본문에 명시된 사실만 — 대상·규모의 개괄, 추진 경과 등). 지원자격·
+  사업규모·접수기간은 아래 별도 필드(eligibility, budget, period)에서 다루므로 body에서 다시 반복하지 마라.
 - "eligibility": 지원자격 — 신청 대상·자격 요건·선정 방식 (본문에 명시된 사실만, 1~2문장).
   본문에 지원자격 관련 내용이 없으면 반드시 null로 답하라(지어내지 마라).
 - "budget": 사업규모·사업비 — 총예산·지원금액·지원 규모·지원 기간 (본문에 명시된 사실만, 1~2문장).
   본문에 사업규모 관련 내용이 없으면 반드시 null로 답하라(지어내지 마라).
+- "period": 접수기간 — 공고일·접수 시작일·접수 마감일·신청 기간 등 신청·접수와 관련된 일정
+  (본문에 명시된 사실만, 1문장). 본문에 접수기간 관련 내용이 없으면 반드시 null로 답하라(지어내지 마라).
 
 [분석 필드 — implication, strategy]
 본교(건국대학교)의 실제 내부 실적·현황은 알 수 없으므로, 위 사실을 근거로 한 사립대학 일반
@@ -270,7 +272,7 @@ async function generateAnalysis(item) {
   "이 사안은 결과가 확정되어 직접 대응은 어려우며, [구체적으로 어떤 관점에서] 모니터링이 필요하다"는
   식으로 정직하게 작성하라.
 
-{"bg": "...", "body": "...", "eligibility": "...", "budget": "...", "implication": "...", "strategy": "..."}
+{"bg": "...", "body": "...", "eligibility": "...", "budget": "...", "period": "...", "implication": "...", "strategy": "..."}
 
 [제목]
 ${item.title}
@@ -295,6 +297,7 @@ ${bodyText.slice(0, 4000)}`;
       body: parsed.body,
       eligibility: parsed.eligibility || null,
       budget: parsed.budget || null,
+      period: parsed.period || null,
       implication: parsed.implication,
       strategy: parsed.strategy,
     };
@@ -384,6 +387,7 @@ async function main() {
       body: prev?.body ?? null,
       eligibility: prev?.eligibility ?? null,
       budget: prev?.budget ?? null,
+      period: prev?.period ?? null,
       implication: prev?.implication ?? null,
       strategy: prev?.strategy ?? null,
       // AI가 생성한 초안인지 여부 — true인 동안은 프런트엔드에 "AI 초안 · 검토 필요"로 표시된다.
