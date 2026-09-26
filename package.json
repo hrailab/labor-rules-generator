@@ -1,0 +1,9 @@
+{
+  "name": "gov-policy-report-scripts",
+  "private": true,
+  "type": "module",
+  "description": "정부정책/경쟁대학 동향 자동 수집 스크립트 (scripts/) 의 의존성",
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  }
+}
