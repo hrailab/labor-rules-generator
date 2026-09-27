@@ -554,6 +554,17 @@ const WINDOW_DAYS = 14; // 항상 "현재 시점 ~ 과거 13일"(총 14일)을 �
 // 방문자 브라우저·서버의 실제 타임존과 무관하게 "항상 KST 기준"으로 계산하기 위해,
 // 현재 시각에 +9시간을 더한 뒤 UTC getter/setter로 읽고 쓴다(= UTC 필드를 KST 필드처럼 사용).
 function nowKST(){ return new Date(Date.now() + 9*3600*1000); }
+// 정부부처·경쟁대학 사이트에서 그대로 가져온 제목·요약·AI 분석 문구를 innerHTML에 넣기 전
+// 반드시 이 함수로 이스케이프한다 — 출처가 공식 기관 사이트라도 그 사이트의 게시물 제목에
+// 스크립트가 섞여 들어올 가능성을 코드 차원에서 원천 차단하기 위함(저장형 XSS 방지).
+// "&"는 일부러 이스케이프하지 않는다 — 스크래핑한 제목에 이미 "&#xFF62;" 같은 실제 HTML
+// 엔티티가 원문 그대로 들어있는 경우가 있어(korea.kr 등 출처 사이트가 자체적으로 이렇게
+// 인코딩해둠), &까지 이스케이프하면 이중 인코딩되어 브라우저가 더 이상 정상적으로 디코드하지
+// 못하고 "&amp;#xFF62;"라는 글자 그대로 노출된다. 태그 주입을 막는 데는 <, >만 막아도
+// 충분하므로(엔티티는 &로 시작하지 태그를 열지 않음) 이 둘만 이스케이프한다.
+function escapeHtml(s){
+  return String(s == null ? '' : s).replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
 function pad2(n){ return String(n).padStart(2,'0'); }
 function fmtDate(d){ return d.getUTCFullYear()+'.'+pad2(d.getUTCMonth()+1)+'.'+pad2(d.getUTCDate()); }
 function fmtDateTime(d){ return fmtDate(d)+' '+pad2(d.getUTCHours())+':00'; }
@@ -834,8 +845,8 @@ function renderTrends(){
       +(dd ? '<span class="badge '+dd.cls+'">'+dd.label+'</span>' : '')
       +'<span class="dept-tag">'+deptDot(t.dept)+t.dept+'</span>'
       +'</div>'
-      +'<div class="trend-name">'+t.name+(verifiedLink?' <span class="ext-arrow">↗</span>':'')+(t.daysAgo===0?' <span class="new-flag">NEW</span>':'')+(t.aiGenerated?' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>':'')+'</div>'
-      +(t.desc ? '<div class="trend-desc">'+t.desc+'</div>' : '')
+      +'<div class="trend-name">'+escapeHtml(t.name)+(verifiedLink?' <span class="ext-arrow">↗</span>':'')+(t.daysAgo===0?' <span class="new-flag">NEW</span>':'')+(t.aiGenerated?' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>':'')+'</div>'
+      +(t.desc ? '<div class="trend-desc">'+escapeHtml(t.desc)+'</div>' : '')
       +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+(t.due||'-')+'</span></div>'
       +(fallbackLink ? '<div class="trend-fallback-note">원문 미검증 · 클릭 시 '+t.dept+' 뉴스 목록으로 이동</div>' : '')
       +'<div style="margin-top:8px;font-size:10.5px;color:var(--ink-4)">유관부서 <b style="color:var(--ink-2)">'+matchDepts(t.name+' '+(t.desc||'')).join('·')+'</b></div>'
@@ -851,12 +862,12 @@ document.getElementById('trendSearch').addEventListener('input', function(){ sea
 // 확인 필요"로 표시한다('본교 영향'은 본교 고유 현황을 알아야 정확히 기재할 수 있어 필드 자체를 두지 않음).
 function renderIssues(){
   const list = TRENDS.filter(t => inWindow(t) && t.priority === '높음');
-  const issueField = v => v ? '<p>'+v+'</p>' : '<p class="field-tbd">별도 추가 확인 필요</p>';
+  const issueField = v => v ? '<p>'+escapeHtml(v)+'</p>' : '<p class="field-tbd">별도 추가 확인 필요</p>';
   document.getElementById('issueList').innerHTML = list.map((iss,i)=>
     '<div class="issue-card'+(i===0?' open':'')+'" id="issue'+i+'">'
     +'<div class="issue-head" onclick="toggleIssue('+i+')">'
     +'<div class="issue-idx">'+(i+1)+'</div>'
-    +'<div class="issue-head-text"><div class="issue-title">'+iss.name+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+(iss.aiGenerated ? ' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>' : '')+'</div><div class="issue-meta">'+iss.dept+' · 담당 '+iss.owner+' · '+(iss.due||'-')+'</div></div>'
+    +'<div class="issue-head-text"><div class="issue-title">'+escapeHtml(iss.name)+(iss.url ? ' <a class="ext-arrow" href="'+iss.url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="원문 보기">↗</a>' : '')+(iss.aiGenerated ? ' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>' : '')+'</div><div class="issue-meta">'+escapeHtml(iss.dept)+' · 담당 '+escapeHtml(iss.owner)+' · '+escapeHtml(iss.due||'-')+'</div></div>'
     +'<div class="issue-chevron">▾</div>'
     +'</div>'
     +'<div class="issue-body">'
@@ -889,7 +900,7 @@ function renderCompetitors(){
       return '<'+tag+' class="comp-item"'+attrs+'>'
         +'<div class="comp-item-top">'
         +'<span class="comp-item-cat '+compCatClass(it.category)+'">'+it.category+'</span>'
-        +'<span class="comp-item-title">'+it.title+'</span>'
+        +'<span class="comp-item-title">'+escapeHtml(it.title)+'</span>'
         +'</div>'
         +'<div class="comp-item-meta"><span class="comp-item-dept">유관부서 <b>'+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</b></span><span class="comp-item-date">'+it.date+'</span></div>'
         +'</'+tag+'>';
