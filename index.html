@@ -1000,7 +1000,7 @@ function renderCompetitors(){
         +'</div>'
         +'<div class="comp-item-meta"><span class="comp-item-dept">유관부서 <b>'+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</b></span><span class="comp-item-date">'+it.date+'</span></div>'
         +'</'+tag+'>';
-    }).join('') : '<div class="comp-empty">최근 14일 내 수집된 동향이 없습니다.</div>';
+    }).join('') : '<div class="comp-empty">최근 14일 내 수집된 주요 동향이 없습니다.</div>';
     const ownerColor = OWNER_COLOR[c.owner] || '#75747a';
     return '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner" style="color:'+ownerColor+';background:'+ownerColor+'1a">'+c.owner+' 담당</div></div>'
       +'<div class="comp-items">'+itemsHtml+'</div></div>';
@@ -1228,7 +1228,7 @@ async function generateWordReport(){
     COMPETITORS.forEach(school=>{
       children.push(H(`${school.name} (담당 ${school.owner})`, HeadingLevel.HEADING_3));
       if(school.items.length === 0){
-        children.push(P('최근 14일 내 수집된 동향이 없습니다.', { italics:true, color:'999999' }));
+        children.push(P('최근 14일 내 수집된 주요 동향이 없습니다.', { italics:true, color:'999999' }));
       } else {
         school.items.forEach(it=>{
           const deptText = (CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·');

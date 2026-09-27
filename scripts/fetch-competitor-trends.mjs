@@ -4,7 +4,10 @@
 //
 // 수집 범위: 재정지원사업, 산학협력, 국제, 대외협력 분야 관련 항목만.
 // 국제처/국제교류 전용 게시판(중앙대·동국대)은 그 자체로 범위에 맞으므로 그대로 수집하고,
-// 일반 공지·뉴스 게시판(성균관대·한양대·경희대·이화여대)은 COMPETITOR_KEYWORDS로 걸러낸다.
+// 일반 공지·뉴스 게시판(성균관대·한양대·경희대·이화여대)은 CATEGORY_RULES 키워드로 걸러낸다.
+// 채용·아르바이트·행사 도우미 등 구인 공고는 학교를 가리지 않고 RECRUITMENT_KEYWORDS로 별도
+// 제외한다(isRecruitment 함수 참고) — 국제교류 전용 게시판도 구인 공고를 올릴 수 있어 카테고리
+// 필터와 별개로 항상 적용한다.
 //
 // 각 대학이 서로 다른 웹사이트 CMS를 쓰고 있어 학교별로 별도 파서가 필요하다.
 // 이 세션은 egress 정책상 각 대학 사이트에 직접 접근할 수 없어, GitHub Actions 러너로
@@ -36,6 +39,19 @@ function categorize(title) {
     if (rule.keywords.some(k => title.includes(k))) return rule.name;
   }
   return null;
+}
+
+// "경쟁대학 동향"의 목적은 재정지원사업·산학협력·국제·대외협력 실적/활동을 파악하는 것이지,
+// 그 학교의 채용·아르바이트·행사 도우미 등 구인 공고까지 담을 필요는 없다(전략적으로 참고할
+// 가치가 없는 노이즈). '채용'은 거의 예외 없이 고용 관련 공고에만 쓰이므로 단독으로도 안전하게
+// 걸러낼 수 있지만, '모집'만으로는 예비창업자 모집·교환학생 모집처럼 구인이 아닌 정상 프로그램
+// 공지까지 걸러낼 위험이 있어 구인 성격이 뚜렷한 조합 키워드만 매칭한다.
+const RECRUITMENT_KEYWORDS = [
+  '채용', '도우미 모집', '서포터즈 모집', '참가자 모집', '봉사자 모집',
+  '인턴 모집', '근로학생 모집', '근로장학생 모집', '아르바이트',
+];
+function isRecruitment(title) {
+  return RECRUITMENT_KEYWORDS.some(k => title.includes(k));
 }
 
 function stripTags(s) {
@@ -296,7 +312,13 @@ async function main() {
     return;
   }
 
-  const windowed = collected.filter(t => inWindow(t.date, today));
+  const inWindowItems = collected.filter(t => inWindow(t.date, today));
+  const recruitmentItems = inWindowItems.filter(t => isRecruitment(t.title));
+  const windowed = inWindowItems.filter(t => !isRecruitment(t.title));
+  if (recruitmentItems.length) {
+    console.log(`Recruitment filter: ${recruitmentItems.length}건 제외(채용·모집 등 구인 공고 — "경쟁대학 동향"에서 다룰 실익 없음):`);
+    recruitmentItems.forEach(t => console.log(`  - [${t.school}] ${t.title}`));
+  }
 
   const prevById = new Map(previous.map(t => [t.id, t]));
   const merged = windowed.map(t => {
