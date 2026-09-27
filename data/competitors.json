@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T09:42:24.401Z",
+  "generatedAt": "2026-09-27T18:57:28.896Z",
   "windowDays": 14,
   "items": [
     {
@@ -63,62 +63,12 @@
       "status": "신규"
     },
     {
-      "id": "skku-140119",
-      "school": "성균관대",
-      "title": "[창업지원단/실험실창업혁신단] 2026 SKKU 프리 텍스코어(10/13~14) 참가자 모집(라마다 호텔 수원, 총상금 350만원)",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140119&article.offset=0&articleLimit=10",
-      "date": "2026-09-23",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140157",
-      "school": "성균관대",
-      "title": "[AI중심대학사업단] 글로벌 IT전문가와 킹고인의 만남 시즌2 여든세 번째 만남 (9/30, 수, 12시)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140157&article.offset=0&articleLimit=10",
-      "date": "2026-09-23",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "khu-322928",
-      "school": "경희대",
-      "title": "★수정★ [국제교육원] 2026 가을 정규 한국어 도우미 모집",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=322928&menuNo=200316",
-      "date": "2026-09-23",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323175",
-      "school": "경희대",
-      "title": "[국제교육원] 이희건 한일교류재단 일본인 유학생 한국문화체험 한국인 도우미 모집",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323175&menuNo=200316",
-      "date": "2026-09-22",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
       "id": "khu-323167",
       "school": "경희대",
       "title": "[창업교육센터] CEO TALK SHOW 안내",
       "category": "산학협력",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323167&menuNo=200316",
       "date": "2026-09-22",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766294",
-      "school": "동국대",
-      "title": "2026-2학기 Language Exchange Program 참가자 모집",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766294",
-      "date": "2026-09-18",
       "owner": "이수연",
       "status": "신규"
     },
