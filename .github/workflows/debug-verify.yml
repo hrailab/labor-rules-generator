@@ -1,0 +1,25 @@
+name: debug-verify-gov-articles
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run diagnostic
+        run: node scripts/diag-fix.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: diag-html
+          path: |
+            *.html
+          retention-days: 3
