@@ -415,6 +415,21 @@ async function main() {
     confirmedOutcomes.forEach(t => console.log(`  - [${t.dept}] ${t.title}`));
   }
 
+  // isRelevant()/isConfirmedOutcome()은 둘 다 "1차 스크리닝"일 뿐 완벽하지 않은데(각 함수 주석 참고),
+  // 지금까지는 걸러진 항목이 조용히 사라져 담당자가 오탐·누락 여부를 확인할 방법이 없었다.
+  // "전체 동향"과 같은 14일 창 안에서 걸러진 항목만 골라 별도로 남겨, 프런트엔드가 "제외된 항목도
+  // 보기" 토글로 노출하고 담당자가 직접 눈으로 필터 정확도를 검증할 수 있게 한다(수집 대상 자체를
+  // 넓히는 것이 아니라 이미 수집된 것 중 걸러진 항목의 사유만 투명하게 공개하는 것).
+  const excludedByRelevance = collected.filter(t => !isRelevant(t) && inWindow(t.date, today));
+  const excludedItems = [
+    ...excludedByRelevance.map(t => ({ dept: t.dept, title: t.title, desc: t.desc, date: t.date, url: t.url, reason: 'relevance' })),
+    ...confirmedOutcomes.map(t => ({ dept: t.dept, title: t.title, desc: t.desc, date: t.date, url: t.url, reason: 'confirmed_outcome' })),
+  ].sort((a, b) => b.date.localeCompare(a.date));
+  if (excludedByRelevance.length) {
+    console.log(`Relevance filter(창 내부): ${excludedByRelevance.length}건이 대학 관련 키워드 미매칭으로 제외됨 (excludedItems로 기록):`);
+    excludedByRelevance.forEach(t => console.log(`  - [${t.dept}] ${t.title}`));
+  }
+
   // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·정책 분석(배경/내용/시사점/대응전략) 등
   // 사람 판단이 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
   // 다만 신규 항목 중 전략적 파급력이 큰 키워드(PRIORITY_KEYWORDS)가 제목에 포함된 경우에는
@@ -475,9 +490,10 @@ async function main() {
     generatedAt: today.toISOString(),
     windowDays: WINDOW_DAYS,
     items: merged,
+    excludedItems,
   }, null, 2) + '\n');
 
-  console.log(`\nWrote ${merged.length} items (within last ${WINDOW_DAYS} days) to ${OUT_PATH}`);
+  console.log(`\nWrote ${merged.length} items (within last ${WINDOW_DAYS} days) to ${OUT_PATH}, ${excludedItems.length} excluded item(s) recorded for transparency`);
 
   // GitHub Actions 실행 요약 화면에 소스별 성공/실패를 표로 남겨, 특정 부처 수집이
   // 조용히 실패한 채로 방치되지 않도록 한다(로컬 실행 시에는 GITHUB_STEP_SUMMARY가 없어 조용히 스킵).

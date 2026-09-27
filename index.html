@@ -138,6 +138,18 @@ a.ext-arrow:hover{color:var(--green)}
 .trend-foot b{color:var(--ink-2);font-weight:700}
 .trend-fallback-note{margin-top:8px;font-size:10.5px;color:var(--ink-4);font-style:italic}
 
+/* EXCLUDED ITEMS TOGGLE */
+.excluded-toggle{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--ink-3);cursor:pointer;margin-top:14px}
+.excluded-panel{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+.excluded-note{font-size:11.5px;color:var(--ink-4);line-height:1.6}
+.excluded-card{display:block;background:var(--surface-2);border:1.5px dashed var(--border-2);border-radius:var(--r-md);padding:14px 16px;text-decoration:none;color:inherit;transition:border-color .15s}
+a.excluded-card:hover{border-color:var(--ink-4)}
+.excluded-reason{font-size:10.5px;font-weight:700;color:var(--ink-4);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.excluded-name{font-size:13px;font-weight:700;color:var(--ink-2);margin-bottom:4px;line-height:1.4}
+.excluded-desc{font-size:12px;color:var(--ink-3);line-height:1.6;margin-bottom:8px}
+.excluded-foot{font-size:11px;color:var(--ink-4)}
+.excluded-empty{font-size:12px;color:var(--ink-4);padding:20px 0;text-align:center}
+
 /* ISSUE DETAIL */
 .issue-list{display:flex;flex-direction:column;gap:14px}
 .issue-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden}
@@ -291,6 +303,8 @@ a.comp-item{cursor:pointer}
       <div class="chip-row" id="statusChips"></div>
     </div>
     <div class="trend-grid" id="trendGrid"></div>
+    <label class="excluded-toggle"><input type="checkbox" id="excludedToggle"> 제외된 항목도 보기 (대학 관련 키워드 미매칭·이미 결과 확정 등으로 1차 필터에서 제외된 항목)</label>
+    <div class="excluded-panel" id="excludedPanel" style="display:none"></div>
   </section>
 
   <!-- 경쟁대학 -->
@@ -486,8 +500,20 @@ const MOCK_TRENDS = [
     strategy:'AI 특화 계약학과 신설 공모 및 중소기업 취업 연계 장학금 사업 공고를 모니터링하고, 중소기업과의 계약학과 협력 가능성을 사전에 검토.'},
 ];
 
+// "전체 동향"에 실리지 않고 걸러진 항목 — scripts/fetch-gov-trends.mjs의 isRelevant()(대학 관련
+// 키워드 미매칭)/isConfirmedOutcome()(이미 결과 확정·사후 보도) 필터가 조용히 제외해온 항목을,
+// "제외된 항목도 보기" 토글로 노출해 담당자가 필터 정확도를 직접 검증할 수 있게 한다. 아래 두 건은
+// 실제로 필터에 걸렸던 사례를 예시로 재현한 것(가루쌀 건은 대학 키워드 자체가 없는 일반 농정 뉴스,
+// '2차 모두의 창업' 건은 fetch-gov-trends.mjs의 isConfirmedOutcome() 검증에 쓰인 실제 운영 데이터
+// 문구를 그대로 사용 — scripts/fetch-gov-trends.mjs의 CONFIRMED_OUTCOME_KEYWORDS 관련 커밋 참고).
+const MOCK_EXCLUDED_TRENDS = [
+  {dept:'농식품부', name:'2027년산 가루쌀 수매 단가 인상 및 신제품 개발 지원 확대', desc:'가루쌀 재배 농가의 소득 안정을 위해 수매 단가를 전년 대비 인상하고, 가루쌀 활용 신제품 개발 지원을 확대한다.', daysAgo:7, url:null, reason:'relevance'},
+  {dept:'중기부', name:"'2차 모두의 창업' 9만 2838명 신청…1차보다 3만 명 늘어", desc:'예비창업패키지 2차 접수 결과 총 9만 2838명이 신청해 1차 대비 약 3만 명 늘었다.', daysAgo:8, url:null, reason:'confirmed_outcome'},
+];
+
 let TRENDS = MOCK_TRENDS;
 let USING_MOCK = true;
+let EXCLUDED_TRENDS = MOCK_EXCLUDED_TRENDS;
 
 // 실데이터(data/competitors.json) 로드 실패 시(또는 아직 수집 전) 보여줄 폴백 데모 데이터
 // 학교 1곳당 카드 1장, 카드 안에 분야별(재정지원/산학협력/국제/대외협력) 항목을 나열
@@ -638,8 +664,17 @@ function normalizeRealTrend(raw){
   };
 }
 
+// scripts/fetch-gov-trends.mjs가 isRelevant()/isConfirmedOutcome() 필터로 제외한 항목(excludedItems)을
+// "제외된 항목도 보기" 토글에서 보여주기 위한 최소 형태로 변환한다 — 우선순위·마감일 등 사람 판단이
+// 필요한 필드는 애초에 없다(전체 동향에 실리지 않았으므로 담당자가 채워 넣을 이유가 없었음).
+function normalizeExcludedTrend(raw){
+  const d = new Date(raw.date + 'T00:00:00Z');
+  const daysAgo = Math.round((ANCHOR - d) / 86400000);
+  return { dept: raw.dept, name: raw.title, desc: raw.desc || '', daysAgo, url: raw.url || null, reason: raw.reason };
+}
+
 // data/trends.json은 scripts/fetch-gov-trends.mjs가 매일 정오·자정 자동 갱신함(.github/workflows/fetch-gov-trends.yml).
-// 아직 첫 실행 전이거나 fetch에 실패하면 MOCK_TRENDS로 폴백한다.
+// 아직 첫 실행 전이거나 fetch에 실패하면 MOCK_TRENDS/MOCK_EXCLUDED_TRENDS로 폴백한다.
 async function loadTrends(){
   try{
     const res = await fetch('data/trends.json', {cache:'no-store'});
@@ -649,9 +684,11 @@ async function loadTrends(){
     if(items.length === 0) throw new Error('empty dataset — not yet collected');
     TRENDS = items;
     USING_MOCK = false;
+    EXCLUDED_TRENDS = (data.excludedItems||[]).map(normalizeExcludedTrend);
   }catch(e){
     TRENDS = MOCK_TRENDS;
     USING_MOCK = true;
+    EXCLUDED_TRENDS = MOCK_EXCLUDED_TRENDS;
   }
 }
 
@@ -876,6 +913,36 @@ function renderTrends(){
   }).join('') || '<div style="grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-4);font-size:13px">조건에 맞는 동향이 없습니다.</div>';
 }
 document.getElementById('trendSearch').addEventListener('input', function(){ searchTerm=this.value.trim(); renderTrends(); });
+
+// 걸러진 항목 — 부처·상태 칩/검색어와 무관하게, "제외된 항목도 보기"가 켜져 있는 동안 항상 전체를
+// 보여준다(검토용 감사 로그 성격이라 본문 필터 상호작용에 얽매이지 않는 편이 담당자가 훑어보기 쉬움).
+function excludedReasonLabel(r){
+  return r === 'relevance'
+    ? '1차 필터 제외 · 대학 관련 키워드 없음'
+    : '1차 필터 제외 · 이미 결과 확정 또는 이미 벌어진 일의 사후 보도';
+}
+function renderExcluded(){
+  const list = EXCLUDED_TRENDS.filter(inWindow);
+  const el = document.getElementById('excludedPanel');
+  if(!list.length){
+    el.innerHTML = '<div class="excluded-empty">현재 조회 기간(최근 14일) 내 1차 필터로 제외된 항목이 없습니다.</div>';
+    return;
+  }
+  el.innerHTML = '<div class="excluded-note">담당자가 필터 기준이 잘못됐다고 판단되면 scripts/fetch-gov-trends.mjs의 RELEVANT_KEYWORDS·CONFIRMED_OUTCOME_KEYWORDS 조정을 요청해 주세요.</div>'
+    + list.map(t=>{
+      const tag = t.url ? 'a' : 'div';
+      const attrs = t.url ? ' href="'+t.url+'" target="_blank" rel="noopener" class="excluded-card"' : ' class="excluded-card"';
+      return '<'+tag+attrs+'>'
+        +'<div class="excluded-reason">'+excludedReasonLabel(t.reason)+'</div>'
+        +'<div class="excluded-name">'+escapeHtml(t.name)+(t.url?' <span class="ext-arrow">↗</span>':'')+'</div>'
+        +(t.desc ? '<div class="excluded-desc">'+escapeHtml(t.desc)+'</div>' : '')
+        +'<div class="excluded-foot">'+escapeHtml(t.dept)+' · 등록 '+fmtDate(trendDate(t))+'</div>'
+        +'</'+tag+'>';
+    }).join('');
+}
+document.getElementById('excludedToggle').addEventListener('change', function(){
+  document.getElementById('excludedPanel').style.display = this.checked ? 'flex' : 'none';
+});
 
 // Issues (accordion) — 전체 동향 중 우선순위 '높음'인 항목에서 자동 생성("실시간 주요 정책 및 사업 현황" 섹션).
 // 배경·시사점 등 분석 필드는 담당자가 data/trends.json에 직접 채워 넣거나, fetch-gov-trends.mjs가
@@ -1201,6 +1268,7 @@ async function generateWordReport(){
   renderChips();
   renderStatusChips();
   renderTrends();
+  renderExcluded();
   renderCompetitors();
   renderCharts();
   renderMatrix();
