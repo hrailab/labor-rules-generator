@@ -15,11 +15,16 @@
 // data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
 // (PRIORITY_KEYWORDS에 해당하는 신규 항목은 우선순위 '높음'을 잠정 자동 태깅한다.)
 //
-// 수집 범위: 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
-// RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고).
+// 수집 범위: 대학·대학 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
+// RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고). 본교는 사립대이므로
+// '국공립대'는 이 목록에서 뺐다 — 국공립대만 콕 집어 언급하는 기사가 다른 관련 키워드
+// (대학·교수·학생 등) 없이 그 단어 하나만으로 걸러지는 일은 막되, 국공립·사립을 가리지 않고
+// 대학 전반에 적용되는 일반 고등교육 정책까지 걸러내는 것은 아니다(그런 정책은 대개 '대학'
+// 등 다른 키워드로도 함께 걸린다).
 // 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것이므로,
-// 이미 결과가 확정·발표되어 더 이상 직접 대응할 수 없는 사안(예: 특정 대학 선정 결과 발표)은
-// "전체 동향" 데이터셋 자체에서 제외한다 (isConfirmedOutcome 함수 참고).
+// 이미 결과가 확정·발표됐거나 이미 벌어진 일을 사후 보고하는 성격의 보도자료(예: 특정 대학
+// 선정 결과 발표, 신청·접수가 이미 마감된 뒤의 집계 결과, 민원에 대한 해명)는 더 이상 직접
+// 대응할 수 없는 사안이므로 "전체 동향" 데이터셋 자체에서 제외한다 (isConfirmedOutcome 함수 참고).
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import Anthropic from '@anthropic-ai/sdk';
@@ -44,11 +49,13 @@ function classifyEduOwner(title) {
   return policyKeywords.some(k => title.includes(k)) ? '백승엽' : '정주원';
 }
 
-// 사립대학·사립대 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기기 위한 키워드 필터.
+// 대학·대학 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기기 위한 키워드 필터.
 // 제목·요약에 아래 키워드가 하나도 없으면 (일반 국정·산업·농정 뉴스 등으로 판단해) 제외한다.
+// 본교는 사립대이므로 '국공립대'는 넣지 않는다(국공립대 전용 사안이 다른 키워드 없이 그
+// 단어 하나만으로 걸러지는 것을 막기 위함 — 위 주석 참고).
 // 완벽한 의미 분류는 아니며, 1차 스크리닝 목적 — 애매하게 걸러진 항목은 담당자가 원문 링크로 확인.
 const RELEVANT_KEYWORDS = [
-  '대학', '대학교', '사립대', '국공립대', '전문대', '대학원', '캠퍼스',
+  '대학', '대학교', '사립대', '전문대', '대학원', '캠퍼스',
   '교원', '교수', '강사', '겸임', '연구자', '연구원', '연구교수',
   '학생', '재학생', '대학생', '대학원생', '유학생', '조교',
   '등록금', '장학금', '학자금', '국가장학',
@@ -93,18 +100,29 @@ function isPriorityCandidate(item) {
 }
 
 // "전체 동향" 자체가 위 목적(아직 확정되지 않아 대응을 준비할 수 있는 사안)에 집중해야 하므로,
-// 우선순위 태깅뿐 아니라 수집 대상 포함 여부도 걸러낸다. 이미 결과가 확정·발표되어 더 이상
-// 직접 대응할 수단이 없는 사안(예: 특정 대학 선정 결과 발표)은 정부 "정책"이라기보다 그 대학
-// 자체의 동향에 가까우므로 이 데이터셋에서 제외한다 — 자동으로 어느 경쟁대학 항목인지까지 정확히
-// 분류하기는 어려우므로, 제외만 하고 필요 시 담당자가 data/competitors.json에 수동으로 옮겨 담는다
+// 우선순위 태깅뿐 아니라 수집 대상 포함 여부도 걸러낸다. 이미 결과가 확정·발표되었거나 이미
+// 벌어진 일(신청·접수 마감 후 집계, 이미 처리된 민원에 대한 최종 구제 인원 발표, 사실관계
+// 해명 등)을 사후 보고하는 성격의 보도자료는 정부 "정책"이라기보다 이미 종료된 사안의 기록에
+// 가까우므로(사립대학이 더 이상 취할 수 있는 직접적인 대응이 없음) 이 데이터셋에서 제외한다 —
+// 특정 대학 선정 결과처럼 자동으로 어느 경쟁대학 항목인지까지 정확히 분류하기는 어려우므로,
+// 제외만 하고 필요 시 담당자가 data/competitors.json에 수동으로 옮겨 담는다
 // (index.html MOCK_COMPETITORS의 '기타대학' 카드가 그 사람 손을 거친 결과의 예시).
 const CONFIRMED_OUTCOME_KEYWORDS = [
   '선정 완료', '선정 발표', '최종 선정', '선정 결과', '지정 완료',
   '수상작 발표', '수상자 발표', '합격자 발표', '결과 발표',
+  '신청 마감', '접수 마감', '모집 마감', '집계 결과',
+  '운영하고 있습니다', '사실과 다릅니다',
 ];
 function isConfirmedOutcome(item) {
   const text = item.title + ' ' + item.desc;
   if (CONFIRMED_OUTCOME_KEYWORDS.some(k => text.includes(k))) return true;
+  // "1차보다 3만 명 늘어"처럼 이전 회차 대비 증감을 보고하는 문장 — 이미 마감된 신청·접수
+  // 결과를 사후 보도하는 것이므로, 그 안에 '접수'·'신청' 같은 ACTIONABLE_KEYWORDS 단어가
+  // 함께 있어도(이미 끝난 접수를 가리키는 것일 뿐 새로 열린 접수가 아니므로) 예외 없이 제외한다.
+  if (text.includes('보다') && /(늘어|줄어|증가했|감소했)/.test(text)) return true;
+  // "최종 354명 구제"처럼 이미 완료된 조치의 최종 인원·건수를 보고하는 문장 — 위와 같은 이유로
+  // ACTIONABLE_KEYWORDS 매칭 여부와 무관하게 제외한다.
+  if (text.includes('최종') && /(구제|선정|합격|당첨)/.test(text)) return true;
   // '선정'을 언급하면서도 향후 대응 여지를 시사하는 표현(ACTIONABLE_KEYWORDS)이 전혀 없다면,
   // 이미 선정이 끝난 사후 보도일 가능성이 높다고 보수적으로 판단한다.
   return text.includes('선정') && !isActionable(item);
@@ -393,7 +411,7 @@ async function main() {
   const confirmedOutcomes = inWindowItems.filter(isConfirmedOutcome);
   const windowed = inWindowItems.filter(t => !isConfirmedOutcome(t));
   if (confirmedOutcomes.length) {
-    console.log(`Confirmed-outcome filter: ${confirmedOutcomes.length}건 제외(이미 결과 확정 — "전체 동향"에서 다룰 실익 없음, 필요 시 경쟁대학 동향으로 수동 이관):`);
+    console.log(`Confirmed-outcome filter: ${confirmedOutcomes.length}건 제외(이미 결과가 확정됐거나 이미 벌어진 일의 사후 보도 — "전체 동향"에서 다룰 실익 없음, 필요 시 경쟁대학 동향으로 수동 이관):`);
     confirmedOutcomes.forEach(t => console.log(`  - [${t.dept}] ${t.title}`));
   }
 
@@ -468,8 +486,8 @@ async function main() {
       ...sourceSummary,
       '',
       ...(confirmedOutcomes.length ? [
-        `### 결과 확정으로 제외된 항목 (${confirmedOutcomes.length}건)`,
-        '이미 결과가 확정·발표되어 "전체 동향"에서 제외됨. 특정 대학과 관련이 있다면 경쟁대학 동향에 수동 반영 검토 필요.',
+        `### 결과 확정·사후 보도로 제외된 항목 (${confirmedOutcomes.length}건)`,
+        '이미 결과가 확정·발표됐거나 이미 벌어진 일을 사후 보도하는 내용이라 "전체 동향"에서 제외됨. 특정 대학과 관련이 있다면 경쟁대학 동향에 수동 반영 검토 필요.',
         '',
         ...confirmedOutcomes.map(t => `- [${t.dept}] ${t.title}`),
       ] : []),
