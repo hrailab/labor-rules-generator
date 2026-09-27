@@ -114,14 +114,28 @@ function stripTags(s) {
   return s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 }
 
+// korea.kr이 간헐적으로 빈 응답/타임아웃을 반환하는 경우가 확인되어(같은 URL을 잠시 후
+// 다시 요청하면 정상 응답함 — 일시적 네트워크 장애로 추정), 최대 3회까지 짧은 대기 후 재시도한다.
+async function fetchHtmlWithRetry(url, tries = 3) {
+  let lastErr;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': UA } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const text = await res.text();
+      if (text.length < 500) throw new Error('empty/short response');
+      return text;
+    } catch (e) {
+      lastErr = e;
+      if (i < tries - 1) await new Promise(r => setTimeout(r, 1500 * (i + 1)));
+    }
+  }
+  throw lastErr;
+}
+
 async function fetchMinistryItems(dept) {
   const url = `https://www.korea.kr/news/ministryNewsList.do?repCode=${dept.repCode}&pWiseMinistry=ministryNews`;
-  const res = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!res.ok) {
-    console.error(`[WARN] ${dept.name} (${dept.repCode}) fetch failed: HTTP ${res.status}`);
-    return [];
-  }
-  const html = await res.text();
+  const html = await fetchHtmlWithRetry(url);
 
   const ITEM_RE = /<a\s+href="([^"]+)"\s+onclick="goDetailView\([^)]*\);return false;"\s*>([\s\S]*?)<\/a>\s*<\/li>/g;
   const items = [];
@@ -162,12 +176,7 @@ async function fetchMinistryItems(dept) {
 // 담당자가 원문을 확인해 실제 소관 부처·담당자를 수동으로 배정하도록 한다(우선순위 등과 동일한 패턴).
 async function fetchUnifiedPolicyNews(knownNewsIds) {
   const url = `https://www.korea.kr/news/policyNewsList.do`;
-  const res = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!res.ok) {
-    console.error(`[WARN] 기타부처(통합피드) fetch failed: HTTP ${res.status}`);
-    return [];
-  }
-  const html = await res.text();
+  const html = await fetchHtmlWithRetry(url);
 
   const ITEM_RE = /<a\s+href="([^"]+)"\s+onclick="goDetailView\([^)]*\);return false;"\s*>([\s\S]*?)<\/a>\s*<\/li>/g;
   const items = [];
@@ -204,9 +213,7 @@ async function fetchUnifiedPolicyNews(knownNewsIds) {
 // generateAnalysis()가 조용히 null을 반환하고 "분석 대기" 상태로 남을 뿐, 파이프라인은 계속 동작한다.
 async function fetchArticleBody(url) {
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': UA } });
-    if (!res.ok) return null;
-    const html = await res.text();
+    const html = await fetchHtmlWithRetry(url);
     const m = html.match(/<div class="article_body"[^>]*>([\s\S]*?)<div class="article_footer"/);
     if (!m) return null;
     const text = m[1]
@@ -328,6 +335,7 @@ async function main() {
 
   const collected = [];
   const sourceSummary = []; // 소스별 성공/실패 요약 — GITHUB_STEP_SUMMARY에 기록해 유지보수 시 한눈에 확인
+  let successCount = 0;
   for (const dept of DEPTS) {
     console.log(`Fetching ${dept.name} (${dept.repCode})...`);
     try {
@@ -336,6 +344,7 @@ async function main() {
       const items = await fetchMinistryItems(dept);
       console.log(`  -> ${items.length} items found`);
       collected.push(...items);
+      successCount++;
       sourceSummary.push(`| ${dept.name} | ✅ 성공 | ${items.length}건 |`);
     } catch (e) {
       console.error(`[WARN] ${dept.name} 수집 실패:`, e.message);
@@ -351,10 +360,31 @@ async function main() {
     const etcItems = await fetchUnifiedPolicyNews(knownNewsIds);
     console.log(`  -> ${etcItems.length} items found`);
     collected.push(...etcItems);
+    successCount++;
     sourceSummary.push(`| 기타부처(통합피드) | ✅ 성공 | ${etcItems.length}건 |`);
   } catch (e) {
     console.error('[WARN] 기타부처(통합피드) 수집 실패:', e.message);
     sourceSummary.push(`| 기타부처(통합피드) | ❌ 실패 | ${e.message} |`);
+  }
+
+  // 소스가 전부 실패하면(예: 러너의 일시적 네트워크 장애) 0건짜리 결과로 기존 data/trends.json을
+  // 덮어쓰지 않고 중단한다 — 실제로 그날 새로 발견된 항목이 0건인 것과, 전체 수집 자체가 실패한
+  // 것은 전혀 다른 상황인데 이 둘을 구분하지 않으면 일시적 장애만으로 기존 데이터가 통째로 날아간다.
+  if (successCount === 0) {
+    console.error('[ERROR] 모든 소스 수집이 실패했습니다 — 기존 data/trends.json을 덮어쓰지 않고 종료합니다. (일시적 네트워크 장애일 가능성이 높으니 다음 실행에서 재시도됨)');
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      const summary = [
+        '## 정부정책 동향 수집 결과 — 전체 실패',
+        `수집 시각: ${today.toISOString()} · 모든 소스 수집 실패로 data/trends.json을 갱신하지 않음`,
+        '',
+        '| 부처 | 상태 | 결과 |',
+        '|---|---|---|',
+        ...sourceSummary,
+      ].join('\n') + '\n';
+      await writeFile(process.env.GITHUB_STEP_SUMMARY, summary, { flag: 'a' });
+    }
+    process.exitCode = 1;
+    return;
   }
 
   const relevant = collected.filter(isRelevant);
