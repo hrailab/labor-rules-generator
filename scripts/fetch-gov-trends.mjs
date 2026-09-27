@@ -441,6 +441,11 @@ async function main() {
       // AI가 생성한 초안인지 여부 — true인 동안은 프런트엔드에 "AI 초안 · 검토 필요"로 표시된다.
       // 담당자가 검토 후 내용을 수정하면 이 값도 false로 바꿔 검토 완료를 표시해야 한다.
       aiGenerated: prev?.aiGenerated ?? false,
+      // 향후 대응 여지를 시사하는 표현(ACTIONABLE_KEYWORDS)이 제목·요약에 있는지 — 프런트엔드가
+      // "✓ 직접 대응 가능" 배지를 붙이는 데 사용한다. 담당자가 수기로 덮어쓰는 값이 아니라 항상
+      // 최신 제목·요약 기준으로 다시 계산한다(1차 스크리닝이라 완벽하지 않으므로 배지가 없다고
+      // 해서 대응 불가로 단정하지는 않음 — isActionable 함수 주석 참고).
+      actionable: isActionable(t),
     };
   });
 
