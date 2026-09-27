@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>정부정책 동향 리포트 | 전략기획팀</title>
+<link rel="icon" type="image/png" href="assets/favicon-ku.png">
+<link rel="apple-touch-icon" href="assets/favicon-ku.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -30,6 +32,7 @@
 }
 body{font-family:'Noto Sans KR',sans-serif;background:var(--surface-2);color:var(--ink);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,.chip:focus-visible{outline:2px solid var(--green);outline-offset:2px}
 
 /* ── HERO ── */
 .hero{background:radial-gradient(ellipse 90% 140% at 15% -20%,#0f4a30 0%,#1e1d20 55%),linear-gradient(160deg,#242327,#151417);position:relative;overflow:hidden}
@@ -37,7 +40,8 @@ a{color:inherit}
 .hero-inner{position:relative;max-width:1180px;margin:0 auto;padding:34px 28px 26px}
 .hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
 .hero-brand{display:flex;align-items:center;gap:12px}
-.hero-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--green),#2fa968);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;box-shadow:0 4px 14px rgba(0,118,69,.5)}
+.hero-mark{width:42px;height:42px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.08);overflow:hidden;padding:3px}
+.hero-mark img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .hero-brand-text{display:flex;flex-direction:column}
 .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8fe0b8}
 .hero-org{font-size:13px;font-weight:500;color:#cac7bd}
@@ -77,6 +81,7 @@ a{color:inherit}
 .main{max-width:1180px;margin:0 auto;padding:36px 28px 90px;display:flex;flex-direction:column;gap:52px}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
 .section-title{font-size:19px;font-weight:800;color:var(--ink);letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.section-title::before{content:'';width:4px;height:16px;border-radius:2px;background:var(--green);flex-shrink:0}
 .section-title .sub{font-size:12.5px;color:var(--ink-4);font-weight:500}
 .section-desc{font-size:12.5px;color:var(--ink-4);margin-top:3px}
 
@@ -105,9 +110,9 @@ a{color:inherit}
 
 /* TREND CARDS */
 .trend-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.trend-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .15s,border-color .15s,background .15s;text-decoration:none;color:inherit}
+.trend-card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;transition:box-shadow .18s,border-color .18s,background .18s,transform .18s;text-decoration:none;color:inherit}
 a.trend-card{cursor:pointer}
-.trend-card:hover{background:var(--green-light);box-shadow:0 6px 20px rgba(30,29,32,.08);border-color:var(--green)}
+a.trend-card:hover{background:var(--green-light);box-shadow:0 10px 24px rgba(30,29,32,.1);border-color:var(--green);transform:translateY(-2px)}
 .ext-arrow{color:var(--ink-4);font-weight:400;text-decoration:none}
 a.ext-arrow:hover{color:var(--green)}
 .trend-top{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
@@ -212,14 +217,15 @@ a.comp-item{cursor:pointer}
 
 /* SOURCES */
 .source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.source-card{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 15px;text-decoration:none;transition:border-color .15s}
-.source-card:hover{border-color:var(--green)}
+.source-card{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:13px 15px;text-decoration:none;transition:border-color .15s,transform .15s,box-shadow .15s}
+a.source-card:hover{border-color:var(--green);transform:translateY(-1px);box-shadow:0 6px 16px rgba(30,29,32,.07)}
 .source-num{width:24px;height:24px;border-radius:6px;background:var(--surface-3);color:var(--ink-3);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .source-text{flex:1;font-size:12.5px;font-weight:600;color:var(--ink-2);line-height:1.4}
 .source-arrow{font-size:13px;color:var(--ink-4)}
 
 /* FOOTER */
 .site-footer{text-align:center;padding:30px 28px;font-size:11.5px;color:var(--ink-4);border-top:1px solid var(--border);background:var(--surface);line-height:1.8}
+.footer-mark{height:38px;margin-bottom:14px;opacity:.92}
 
 @media(max-width:900px){
   .kpi-row{grid-template-columns:1fr 1fr}
@@ -240,7 +246,7 @@ a.comp-item{cursor:pointer}
   <div class="hero-inner">
     <div class="hero-top">
       <div class="hero-brand">
-        <div class="hero-mark">🏛️</div>
+        <div class="hero-mark"><img src="assets/emblem.png" alt="건국대학교 엠블럼"></div>
         <div class="hero-brand-text">
           <span class="hero-eyebrow">Strategic Planning Team</span>
           <span class="hero-org">전략기획팀 · 정부정책 동향 모니터링</span>
@@ -249,7 +255,7 @@ a.comp-item{cursor:pointer}
       <div class="hero-meta">
         <span class="meta-pill" id="baseDateBadge">기준 —</span>
         <span class="meta-pill" id="cycleBadge">다음 갱신 —</span>
-        <button class="btn-report" id="reportBtn" onclick="generateWordReport()">📄 보고서 초안 발행 (Word)</button>
+        <button class="btn-report" id="reportBtn" onclick="generateWordReport()"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg> 보고서 초안 발행 (Word)</button>
       </div>
     </div>
     <h1>정부정책 동향 <span>리포트</span></h1>
@@ -297,7 +303,7 @@ a.comp-item{cursor:pointer}
       </div>
     </div>
     <div class="filter-bar">
-      <div class="search-box">🔍<input type="text" id="trendSearch" placeholder="사업명·키워드 검색"></div>
+      <div class="search-box"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;color:var(--ink-4)"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" id="trendSearch" placeholder="사업명·키워드 검색"></div>
       <div class="chip-row" id="deptChips"></div>
       <span class="filter-divider"></span>
       <div class="chip-row" id="statusChips"></div>
@@ -374,6 +380,7 @@ a.comp-item{cursor:pointer}
 </main>
 
 <footer class="site-footer">
+  <img class="footer-mark" src="assets/comm-mark.png" alt="Konkuk University">
   <p style="font-weight:600;color:var(--ink-3);margin-bottom:4px">전략기획팀 · 정부정책 동향 리포트</p>
   <p>본 페이지는 데모 목적의 목업 데이터로 구성되어 있으며, 실제 정부 정책·예산·경쟁대학 동향과 무관합니다.</p>
   <p id="footerRefreshNote" style="margin-top:2px"></p>
@@ -1142,7 +1149,7 @@ function initScrollSpy(){
 // 목업 폴백)를 그대로 사용한다 — 즉 화면이 실데이터를 보여주고 있으면 보고서도 실데이터 기준.
 async function generateWordReport(){
   const btn = document.getElementById('reportBtn');
-  const originalLabel = btn.textContent;
+  const originalLabel = btn.innerHTML;
   btn.disabled = true;
   btn.textContent = '⏳ 생성 중…';
   try{
@@ -1256,7 +1263,7 @@ async function generateWordReport(){
     alert('보고서 생성 중 오류가 발생했습니다. 콘솔을 확인해주세요.');
   } finally {
     btn.disabled = false;
-    btn.textContent = originalLabel;
+    btn.innerHTML = originalLabel;
   }
 }
 
