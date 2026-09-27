@@ -310,7 +310,7 @@ a.comp-item{cursor:pointer}
     <div class="chart-grid">
       <div class="chart-card">
         <h3>부처별 월간 신규 동향 등록 추이</h3>
-        <div class="u">단위: 건</div>
+        <div class="u">단위: 건 · ⚠ 예시 데이터(월별 이력을 저장하는 인프라가 아직 없어 실제 값이 아님)</div>
         <div class="chart-svg-wrap" id="trendChart"></div>
         <div class="chart-legend" id="trendLegend"></div>
       </div>
@@ -492,9 +492,10 @@ let USING_MOCK = true;
 // 러너에서 그대로 실행해 얻은 결과(게시글 제목·분류·URL이 서로 일치하는 실제 항목)를 사용한다.
 // (이전에는 URL만 실존을 확인하고 제목은 임의로 지어내, 제목과 실제 게시글 내용이 서로 다른
 // 문제가 있었음 — 이제는 파서가 반환한 제목을 그대로 사용해 제목·URL이 항상 일치하도록 함.)
-// 경희대·동국대·이화여대는 파서가 현재 0건을 반환해(목록 페이지 구조 변경 추정, 재확인 필요)
-// 실제 개별 게시글 URL을 확보하지 못했으므로, 존재하지 않는 URL을 지어내는 대신 실제로 존재하는
-// 해당 학교 공지 게시판(목록) 페이지로 연결한다 — scripts/fetch-competitor-trends.mjs 참고.
+// 경희대·동국대·이화여대는 이 목업 데이터 작성 시점엔 파서가 0건을 반환해 실제 개별 게시글
+// URL을 확보하지 못했었다(이후 실제 HTML 구조를 재확인해 세 학교 모두 정상 수집되도록 수정
+// 완료 — scripts/fetch-competitor-trends.mjs 참고). 이 목업 항목들은 존재하지 않는 URL을
+// 지어내는 대신 실제로 존재하는 해당 학교 공지 게시판(목록) 페이지로 연결해둔 상태 그대로 둔다.
 const MOCK_COMPETITORS = [
   {name:'성균관대', owner:'서원석', items:[
     {category:'산학협력', title:'[창업지원단/실험실창업혁신단] 2026 SKKU 프리 텍스코어 참가자 모집', date:'09.23', url:'https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140119'},
@@ -638,10 +639,16 @@ async function loadTrends(){
 }
 
 const SCHOOL_ORDER = ['성균관대','한양대','경희대','동국대','중앙대','이화여대'];
+// 담당 경쟁대학이 해당 조회 기간에 수집된 항목이 0건이더라도 카드 자체는 항상 노출해야
+// "왜 이 학교 카드가 안 보이지?"로 오인하지 않으므로, 학교별 담당자를 미리 매핑해둔다.
+const SCHOOL_OWNER = {};
+OWNERS.forEach(o=>{ o.schools.forEach(s=>{ if(SCHOOL_ORDER.includes(s)) SCHOOL_OWNER[s] = o.name.split(' ')[0]; }); });
 
 // 학교당 카드 1장으로 묶고, 카드 안에는 분야(카테고리)별 항목을 나열할 수 있도록 그룹핑한다.
+// 수집 결과가 0건인 학교도 카드는 항상 노출하고(빈 상태 문구로 표시), 실제로 조용히 사라지지 않게 한다.
 function groupCompetitorsBySchool(flatItems){
   const map = new Map();
+  SCHOOL_ORDER.forEach(s=>{ map.set(s, {name:s, owner:SCHOOL_OWNER[s]||'미배정', items:[]}); });
   flatItems.forEach(it=>{
     if(!map.has(it.school)) map.set(it.school, {name:it.school, owner:it.owner, items:[]});
     map.get(it.school).items.push({
@@ -651,7 +658,7 @@ function groupCompetitorsBySchool(flatItems){
       url: it.url || null,
     });
   });
-  const schools = SCHOOL_ORDER.filter(s=>map.has(s)).map(s=>map.get(s));
+  const schools = SCHOOL_ORDER.map(s=>map.get(s));
   // SCHOOL_ORDER에 없는 학교가 데이터에 있으면 뒤에 붙인다(향후 학교 추가 대비)
   map.forEach((v,k)=>{ if(!SCHOOL_ORDER.includes(k)) schools.push(v); });
   return schools;
@@ -769,7 +776,7 @@ function renderKpi(){
   const compTotal = compBreakdown.reduce((a,c)=>a+c.count,0);
   const compDelta = compBreakdown.map(c=>c.category+' '+c.count).join(' · ') || COMPETITORS.length+'개교 모니터링 중';
   const kpis = [
-    {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'직전 갱신 대비 +2건', up:true},
+    {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'최근 14일 롤링 집계', up:false},
     {label:'대응 우선순위 높음', value:highCount+'건', delta:'즉시 검토 필요', up:true},
     {label:'신규 등록', value:newCount+'건', delta:'실시간 주요 정책 및 사업 현황 '+highCount+'건 포함', up:true},
     {label:'경쟁대학 포착 건수', value:compTotal+'건', delta:compDelta, up:false},

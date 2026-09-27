@@ -228,7 +228,7 @@ async function fetchArticleBody(url) {
   }
 }
 
-const ANALYSIS_MODEL = 'claude-opus-5';
+const ANALYSIS_MODEL = 'claude-opus-5-5';
 let anthropicClient;
 // ANTHROPIC_API_KEY가 없으면 null을 반환해 AI 분석 생성 전체를 건너뛴다(로컬 실행·키 미설정 시 안전한 기본값).
 function getAnthropicClient() {
