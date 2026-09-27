@@ -32,4 +32,17 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/competitors.json
           git commit -m "chore: update competitor university trends ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-          git push
+          # 정부정책 동향 워크플로우가 같은 시각(정오·자정)에 함께 실행되어 서로 다른 파일을
+          # 각자 커밋·푸시하므로, 둘 다 push하는 순간이 겹치면 뒤에 push하는 쪽이 거절된다.
+          # rebase 후 재시도해 두 워크플로우가 안전하게 공존하도록 한다.
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "push rejected (attempt $i) — rebasing onto latest origin/main and retrying"
+            git fetch origin main
+            git rebase origin/main
+            sleep $((i * 3))
+          done
+          echo "::error::여러 번 재시도했지만 push에 실패했습니다."
+          exit 1
