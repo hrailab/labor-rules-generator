@@ -98,6 +98,7 @@ a{color:inherit}
 .search-box{flex:1;min-width:180px;display:flex;align-items:center;gap:8px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-sm);padding:8px 12px}
 .search-box input{border:none;background:transparent;outline:none;font-family:inherit;font-size:13px;width:100%;color:var(--ink)}
 .chip-row{display:flex;gap:6px;flex-wrap:wrap}
+.filter-divider{width:1px;align-self:stretch;background:var(--border);flex-shrink:0}
 .chip{font-size:12px;font-weight:600;padding:7px 13px;border-radius:99px;border:1.5px solid var(--border);background:var(--surface);color:var(--ink-3);cursor:pointer;transition:all .15s;white-space:nowrap}
 .chip:hover{border-color:var(--green)}
 .chip.active{background:var(--green);border-color:var(--green);color:#fff}
@@ -286,6 +287,8 @@ a.comp-item{cursor:pointer}
     <div class="filter-bar">
       <div class="search-box">🔍<input type="text" id="trendSearch" placeholder="사업명·키워드 검색"></div>
       <div class="chip-row" id="deptChips"></div>
+      <span class="filter-divider"></span>
+      <div class="chip-row" id="statusChips"></div>
     </div>
     <div class="trend-grid" id="trendGrid"></div>
   </section>
@@ -816,7 +819,7 @@ function renderMatrix(){
 }
 
 // Trends (with filter)
-let activeDept = '전체', searchTerm = '';
+let activeDept = '전체', activeStatus = '전체', searchTerm = '';
 function renderChips(){
   const depts = ['전체', ...Object.keys(DEPTS)];
   document.getElementById('deptChips').innerHTML = depts.map(d=>
@@ -824,10 +827,21 @@ function renderChips(){
   ).join('');
   document.querySelectorAll('#deptChips .chip').forEach(el=>el.onclick=()=>{activeDept=el.dataset.dept;renderChips();renderTrends();});
 }
+// statusClass()가 다루는 4가지 값(신규/확대/계속/모니터링)을 그대로 필터 칩으로 노출한다.
+// 데이터에 특정 상태가 하나도 없어도 칩 자체는 항상 노출해(부처 칩과 동일한 방식) 어떤 값이
+// 존재할 수 있는지 담당자가 바로 알 수 있게 한다.
+const STATUS_OPTIONS = ['전체', '신규', '확대', '계속', '모니터링'];
+function renderStatusChips(){
+  document.getElementById('statusChips').innerHTML = STATUS_OPTIONS.map(s=>
+    '<button class="chip'+(s===activeStatus?' active':'')+'" data-status="'+s+'">'+s+'</button>'
+  ).join('');
+  document.querySelectorAll('#statusChips .chip').forEach(el=>el.onclick=()=>{activeStatus=el.dataset.status;renderStatusChips();renderTrends();});
+}
 function renderTrends(){
   const list = TRENDS.filter(t=>
     inWindow(t) &&
     (activeDept==='전체'||t.dept===activeDept) &&
+    (activeStatus==='전체'||t.status===activeStatus) &&
     (t.name.includes(searchTerm)||(t.desc||'').includes(searchTerm))
   );
   document.getElementById('trendGrid').innerHTML = list.map(t=>{
@@ -1185,6 +1199,7 @@ async function generateWordReport(){
   renderKpi();
   renderIssues();
   renderChips();
+  renderStatusChips();
   renderTrends();
   renderCompetitors();
   renderCharts();
