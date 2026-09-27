@@ -13,70 +13,85 @@ async function get(url) {
   }
 }
 
-function snippetAround(text, marker, before = 200, after = 800) {
-  const i = text.indexOf(marker);
-  if (i === -1) return '(marker not found)';
-  return text.slice(Math.max(0, i - before), i + after);
-}
-
 const out = [];
 const log = (s) => { console.log(s); out.push(s); };
 
+function allIndicesOf(text, marker) {
+  const idxs = [];
+  let i = text.indexOf(marker);
+  while (i !== -1 && idxs.length < 5) {
+    idxs.push(i);
+    i = text.indexOf(marker, i + 1);
+  }
+  return idxs;
+}
+
 async function main() {
-  // 1) Retry the 5 named ministries + policyNewsList.do to see if yesterday's "fetch failed" was transient
-  const RETRY_TARGETS = [
-    ['기획예산처', 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00040&pWiseMinistry=ministryNews'],
-    ['교육부', 'https://www.korea.kr/news/ministryNewsList.do?repCode=A00002&pWiseMinistry=ministryNews'],
-    ['정책뉴스 통합피드', 'https://www.korea.kr/news/policyNewsList.do'],
-  ];
-  log('## 1) korea.kr retry test\n');
-  for (const [name, url] of RETRY_TARGETS) {
-    const r = await get(url);
-    log(`${name}: ok=${r.ok} status=${r.status} ms=${r.ms} len=${r.len} ${r.error ? 'error=' + r.error : ''}`);
-    await new Promise(res => setTimeout(res, 500));
-  }
-
-  // 2) policyNewsList.do structure — find how items are marked up (may differ from ministryNewsList.do)
-  log('\n## 2) policyNewsList.do structure\n');
+  // 1) policyNewsList.do — count real ITEM_RE matches (same regex as fetchMinistryItems)
+  log('## 1) policyNewsList.do ITEM_RE match test\n');
   const unified = await get('https://www.korea.kr/news/policyNewsList.do');
-  log(`status=${unified.status} len=${unified.text.length}`);
-  await writeFile('policyNewsList.html', unified.text);
-  log('saved full HTML to policyNewsList.html (artifact)');
-  log('--- snippet around "goDetailView" ---');
-  log(snippetAround(unified.text, 'goDetailView', 100, 900));
-  log('--- snippet around "class=\\"lst' + '"' + ' (possible list container) ---');
-  log(snippetAround(unified.text, 'class="lst', 50, 600));
-  log('--- count of <li> tags ---');
-  log('li count: ' + (unified.text.match(/<li/g) || []).length);
-  log('--- count of "onclick=" occurrences ---');
-  log('onclick count: ' + (unified.text.match(/onclick=/g) || []).length);
-
-  // 3) korea.kr pagination probe (cautious — test one param at a time with delay)
-  log('\n## 3) korea.kr pagination probe\n');
-  const pageParams = ['pageIndex=2', 'page=2', 'currentPage=2', 'pageNo=2'];
-  for (const p of pageParams) {
-    const url = `https://www.korea.kr/news/policyNewsList.do?${p}`;
-    const r = await get(url);
-    log(`?${p}: ok=${r.ok} status=${r.status} ms=${r.ms} len=${r.len} ${r.error ? 'error=' + r.error : ''}`);
-    await new Promise(res => setTimeout(res, 800));
+  const ITEM_RE = /<a\s+href="([^"]+)"\s+onclick="goDetailView\([^)]*\);return false;"\s*>([\s\S]*?)<\/a>\s*<\/li>/g;
+  const matches = [...unified.text.matchAll(ITEM_RE)];
+  log('ITEM_RE match count: ' + matches.length);
+  if (matches.length) {
+    log('first match href: ' + matches[0][1]);
+    log('first match inner (first 300 chars): ' + matches[0][2].slice(0, 300));
+  } else {
+    // find where goDetailView is actually USED (not the function def) by looking for '(url,' style calls
+    const usageIdxs = allIndicesOf(unified.text, 'onclick="goDetailView(');
+    log('onclick="goDetailView( occurrences: ' + usageIdxs.length);
+    if (usageIdxs.length) {
+      const i = usageIdxs[0];
+      log('--- context around first real usage ---');
+      log(unified.text.slice(Math.max(0, i - 300), i + 500));
+    } else {
+      // maybe the news items are rendered via a totally different pattern; look for repeated "newsId=" occurrences
+      const newsIdIdxs = allIndicesOf(unified.text, 'newsId=');
+      log('newsId= occurrences: ' + newsIdIdxs.length);
+      if (newsIdIdxs.length) {
+        const i = newsIdIdxs[0];
+        log('--- context around first newsId= ---');
+        log(unified.text.slice(Math.max(0, i - 500), i + 300));
+      }
+    }
   }
 
-  // 4) 경희대/동국대/이화여대 raw structure
-  log('\n## 4) 경희대/동국대/이화여대 structure\n');
-  const schools = [
-    ['경희대', 'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316'],
-    ['동국대', 'https://www.dongguk.edu/article/INTEXNOTICE/list'],
-    ['이화여대', 'https://www.ewha.ac.kr/ewha/news/ewha-news.do'],
+  // 2) pageIndex pagination re-check with delay + verify item ids differ from page 1
+  log('\n## 2) pageIndex re-check\n');
+  const p1 = await get('https://www.korea.kr/news/policyNewsList.do');
+  await new Promise(r => setTimeout(r, 800));
+  const p2 = await get('https://www.korea.kr/news/policyNewsList.do?pageIndex=2');
+  log(`page1 len=${p1.len} ok=${p1.ok}`);
+  log(`page2 len=${p2.len} ok=${p2.ok}`);
+  const ids1 = [...p1.text.matchAll(/newsId=(\d+)/g)].map(m => m[1]).slice(0, 5);
+  const ids2 = [...p2.text.matchAll(/newsId=(\d+)/g)].map(m => m[1]).slice(0, 5);
+  log('page1 first 5 newsIds: ' + ids1.join(','));
+  log('page2 first 5 newsIds: ' + ids2.join(','));
+
+  // 3) University board structures — search for board-specific markers deep in the page
+  log('\n## 3) University board structure search\n');
+  const targets = [
+    ['경희대', 'https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?menuNo=200316', ['BMSR00040', 'list_', 'board_', '게시판', 'articleNo', 'boardList', 'tbody']],
+    ['동국대', 'https://www.dongguk.edu/article/INTEXNOTICE/list', ['INTEXNOTICE', 'article', 'list-item', 'boardList', '<table', 'goto']],
+    ['이화여대', 'https://www.ewha.ac.kr/ewha/news/ewha-news.do', ['ewha-news', 'articleNo', 'newsList', 'board', '<table', 'jwxe']],
   ];
-  for (const [name, url] of schools) {
+  for (const [name, url, markers] of targets) {
     const r = await get(url);
-    log(`\n--- ${name}: ok=${r.ok} status=${r.status} len=${r.len} ---`);
-    await writeFile(`${name === '경희대' ? 'khu' : name === '동국대' ? 'dgu' : 'ewha'}.html`, r.text);
-    log(`saved full HTML (artifact)`);
-    // dump a broad slice of body to find list markup
-    const bodyIdx = r.text.indexOf('<body');
-    log('--- body slice (first 3000 chars from <body) ---');
-    log(r.text.slice(bodyIdx, bodyIdx + 3000));
+    log(`\n--- ${name} (len=${r.len}) ---`);
+    for (const mk of markers) {
+      const idxs = allIndicesOf(r.text, mk);
+      log(`  marker "${mk}": ${idxs.length} occurrence(s)${idxs.length ? ' @ ' + idxs.slice(0,3).join(',') : ''}`);
+    }
+    // dump context around the first occurrence of the most-specific marker with matches, prioritizing later markers
+    let shown = false;
+    for (const mk of markers.slice().reverse()) {
+      const i = r.text.indexOf(mk);
+      if (i !== -1 && !shown) {
+        log(`  --- context around "${mk}" ---`);
+        log('  ' + r.text.slice(Math.max(0, i - 200), i + 1500).replace(/\n/g, '\n  '));
+        shown = true;
+      }
+    }
     await new Promise(res => setTimeout(res, 500));
   }
 
