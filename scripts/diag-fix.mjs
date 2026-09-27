@@ -1,5 +1,3 @@
-import { writeFile } from 'node:fs/promises';
-
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
 
 async function get(url) {
@@ -13,10 +11,11 @@ async function get(url) {
 }
 
 async function main() {
-  console.log('## 동국대 real item markup (offset 60700-63200)\n');
-  const dgu = await get('https://www.dongguk.edu/article/INTEXNOTICE/list');
-  console.log(`len=${dgu.len}`);
-  console.log(dgu.text.slice(60700, 63200));
+  console.log('## 동국대 detail URL (GET) verification\n');
+  const r = await get('https://www.dongguk.edu/article/INTEXNOTICE/detail/26766294');
+  console.log(`status=${r.status} len=${r.len}`);
+  console.log('contains "Language Exchange": ' + r.text.includes('Language Exchange'));
+  console.log('contains error markers (존재하지|잘못된|오류): ' + /존재하지|잘못된|오류가 발생/.test(r.text));
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
