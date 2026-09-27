@@ -1184,32 +1184,70 @@ function initScrollSpy(){
   });
 }
 
-// 최종 결정권자(총장 등) 보고용 Word(.docx) 초안을 클라이언트에서 직접 조립해 다운로드한다.
+// 최고경영자(총장 등) 보고용 Word(.docx) 초안을 클라이언트에서 직접 조립해 다운로드한다.
 // 서버 없이 브라우저에서 바로 실행되며, 현재 화면에 표시된 것과 동일한 데이터(실데이터 또는
 // 목업 폴백)를 그대로 사용한다 — 즉 화면이 실데이터를 보여주고 있으면 보고서도 실데이터 기준.
+//
+// 화면에 보이는 내용을 순서대로 옮겨 적는 "페이지 덤프"가 아니라, 경영진이 짧은 시간에 의사결정할
+// 수 있도록 핵심만 앞에 배치하는 구조로 구성한다: (1) 핵심 요약 → (2) 즉시 의사결정 필요 사항(표) →
+// (3~4) 전체 동향·경쟁대학 동향 집계 요약 → (5) 출처 → 부록(상세 목록·상세 분석). 상세 데이터는
+// 삭제하지 않고 부록으로 유지해, 실무자가 경영진 질의에 바로 근거를 제시할 수 있게 한다.
 async function generateWordReport(){
   const btn = document.getElementById('reportBtn');
   const originalLabel = btn.innerHTML;
   btn.disabled = true;
   btn.textContent = '⏳ 생성 중…';
   try{
-    const { Document, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell, WidthType, Packer, ExternalHyperlink, AlignmentType } = docx;
+    const { Document, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell, WidthType, Packer, ExternalHyperlink, AlignmentType, ImageRun } = docx;
 
     const windowTrends = TRENDS.filter(inWindow);
     const highItems = windowTrends.filter(t=>t.priority==='높음');
+    // isActionable() 기반 t.actionable(1차 스크리닝, 완벽하지 않음)로 "즉시 검토 가능" 여부를 가른다 —
+    // fetch-gov-trends.mjs의 actionable 필드·index.html의 actionable-flag 배지와 동일한 기준.
+    const actionableHighItems = highItems.filter(t=>t.actionable);
+    const watchHighItems = highItems.filter(t=>!t.actionable);
     const newCount = windowTrends.filter(t=>t.status==='신규').length;
     const compBreakdown = competitorCategoryCounts();
     const compCount = compBreakdown.reduce((a,c)=>a+c.count,0);
 
+    const deptCounts = {};
+    windowTrends.forEach(t=>{ deptCounts[t.dept] = (deptCounts[t.dept]||0)+1; });
+    const deptCountsText = Object.entries(deptCounts).map(([d,n])=>`${d} ${n}건`).join(', ') || '집계할 항목 없음';
+
+    // 경쟁대학 학교별 집계(경쟁대학 동향 요약표용) — 상세 항목은 부록 C에 그대로 유지
+    const schoolSummaries = COMPETITORS.map(s=>{
+      const cats = {};
+      s.items.forEach(it=>{ const c = it.category||'기타'; cats[c]=(cats[c]||0)+1; });
+      const catText = Object.entries(cats).map(([c,n])=>`${c} ${n}`).join('·') || '-';
+      return { name:s.name, owner:s.owner, count:s.items.length, catText };
+    });
+
+    // 표지에 넣을 교표(Authority Mark) — 공식 문서용으로 안내된 마크. 이미지 로드에 실패해도
+    // (예: 파일 경로 이슈) 보고서 생성 자체는 계속 진행하고 표지 이미지만 생략한다.
+    let logoImage = null;
+    try{
+      const logoResp = await fetch('assets/authority-mark.png');
+      if(logoResp.ok) logoImage = new Uint8Array(await logoResp.arrayBuffer());
+    }catch(e){ console.warn('교표 이미지 로드 실패 — 이미지 없이 보고서 생성 계속:', e.message); }
+
     const H = (text, level) => new Paragraph({ text, heading: level, spacing:{ before:280, after:120 } });
     const P = (text, opts={}) => new Paragraph({ children:[ new TextRun({ text, ...opts }) ], spacing:{ after:80 } });
     const bullet = (text, opts={}) => new Paragraph({ children:[ new TextRun({ text, ...opts }) ], bullet:{ level:0 }, spacing:{ after:60 } });
+    // 문단형 텍스트를 개조식 항목(문장별 1개 bullet)으로 나눠 렌더링 — 사이트 화면(issue-bullets)과
+    // 동일하게 toBulletPoints()/toBulletEnding()을 재사용해 웹·보고서 표기가 일치하게 한다.
+    const bulletsFrom = (text, opts={}) => {
+      const pts = toBulletPoints(text);
+      return pts.length ? pts.map(p=>bullet(p, opts)) : [P('별도 추가 확인 필요', { italics:true, color:'999999' })];
+    };
     const link = (text, url) => new Paragraph({ children:[ new ExternalHyperlink({ link:url, children:[ new TextRun({ text, style:'Hyperlink' }) ] }) ], spacing:{ after:80 } });
     const cell = (text, opts={}) => new TableCell({ width:{ size:opts.width||20, type:WidthType.PERCENTAGE }, children:[ new Paragraph({ children:[ new TextRun({ text:String(text||'-'), bold:!!opts.bold, size:opts.size||18 }) ] }) ] });
 
     const children = [];
 
     // 표지
+    if(logoImage){
+      children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new ImageRun({ data:logoImage, transformation:{ width:96, height:63 }, type:'png' }) ], spacing:{ after:160 } }));
+    }
     children.push(new Paragraph({ text:'정부정책 동향 보고서 (초안)', heading:HeadingLevel.TITLE, alignment:AlignmentType.CENTER, spacing:{ after:120 } }));
     children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:'전략기획팀 · 정부정책 동향 모니터링', color:'666666', size:22 }) ], spacing:{ after:60 } }));
     children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:`기준 ${fmtDateTime(ANCHOR)} · 조회기간 ${fmtDate(WINDOW_START)} ~ ${fmtDate(ANCHOR)} (최근 14일)`, color:'999999', size:18 }) ], spacing:{ after:200 } }));
@@ -1218,27 +1256,88 @@ async function generateWordReport(){
       : '일부 데이터는 아직 자동 수집 전이라 목업으로 대체되어 있습니다.';
     children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:dataNote, italics:true, color:'b5691e', size:18 }) ], spacing:{ after:300 } }));
 
-    // 1. 요약
-    children.push(H('1. 요약', HeadingLevel.HEADING_1));
-    children.push(bullet(`최근 14일 전체 동향: ${windowTrends.length}건`));
-    children.push(bullet(`대응 우선순위 '높음': ${highItems.length}건 (즉시 검토 필요)`));
-    children.push(bullet(`신규 등록: ${newCount}건`));
-    const compBreakdownText = compBreakdown.map(c=>`${c.category} ${c.count}건`).join(', ') || `${COMPETITORS.length}개교 모니터링`;
-    children.push(bullet(`경쟁대학 포착 건수: ${compCount}건 (${compBreakdownText})`));
+    // 1. 핵심 요약 — 경영진이 이 페이지만 읽어도 판단할 수 있도록 즉시 검토 대상과 모니터링 대상을
+    // 분리해서 먼저 제시한다(상세 분석은 부록 A로 이동).
+    children.push(H('1. 핵심 요약', HeadingLevel.HEADING_1));
+    children.push(P(`이번 기간(최근 14일) 수집된 전체 동향은 ${windowTrends.length}건이며, 이 중 대응 우선순위 '높음'은 ${highItems.length}건입니다. 이 중 ${actionableHighItems.length}건은 접수·공고 등 대응 가능 시점에 있어 즉시 검토가 필요하고, 나머지 ${watchHighItems.length}건은 세부 일정이 아직 공개되지 않아 계속 모니터링이 필요합니다. 경쟁대학 동향은 ${compCount}건 포착됐습니다.`));
+    if(actionableHighItems.length){
+      children.push(P('■ 즉시 검토가 필요한 사업', { bold:true, size:20, color:'045c37' }));
+      actionableHighItems.forEach(iss=>{
+        const headline = toBulletPoints(iss.implication || iss.body || iss.bg)[0] || '세부 내용은 부록 A 참고';
+        children.push(bullet(`${iss.name}(${iss.dept}) — ${headline}`));
+      });
+    }
+    if(watchHighItems.length){
+      children.push(P('■ 계속 모니터링 중인 사업', { bold:true, size:20, color:'666666' }));
+      watchHighItems.forEach(iss=>{
+        children.push(bullet(`${iss.name}(${iss.dept}) — ${iss.due||'세부 일정 미공개'}`));
+      });
+    }
+    if(schoolSummaries.some(s=>s.count>0)){
+      children.push(P('■ 경쟁대학 동향 요약', { bold:true, size:20, color:'2e7ea6' }));
+      schoolSummaries.forEach(s=>{
+        children.push(bullet(`${s.name}(담당 ${s.owner}) — 이번 기간 ${s.count}건${s.count?` (${s.catText})`:' (수집된 주요 동향 없음)'}`));
+      });
+    }
 
-    // 2. 실시간 주요 정책 및 사업 현황
-    children.push(H('2. 실시간 주요 정책 및 사업 현황', HeadingLevel.HEADING_1));
+    // 2. 즉시 의사결정 필요 사항 — 실시간 주요 정책 및 사업 현황을 표 1장으로 압축해, 담당자가
+    // 페이지를 넘겨가며 문단을 읽지 않아도 사업규모·일정·대응가능 여부·핵심 대응을 한눈에 비교할 수
+    // 있게 한다. 전체 문단·7개 필드 상세는 부록 A로 이동.
+    children.push(H('2. 즉시 의사결정 필요 사항', HeadingLevel.HEADING_1));
+    if(highItems.length === 0){
+      children.push(P('현재 우선순위 \'높음\'으로 분류된 사안이 없습니다.'));
+    } else {
+      const decHeader = new TableRow({ tableHeader:true, children:[
+        cell('사업명', { bold:true, width:24 }), cell('부처', { bold:true, width:10 }), cell('사업규모', { bold:true, width:18 }),
+        cell('접수기간/일정', { bold:true, width:16 }), cell('대응가능', { bold:true, width:10 }), cell('핵심 대응', { bold:true, width:22 }),
+      ]});
+      const decRows = highItems.map(iss=>{
+        const budgetHeadline = iss.budget ? (toBulletPoints(iss.budget)[0] || iss.budget) : '별도 확인 필요';
+        const strategyHeadline = iss.strategy ? (toBulletPoints(iss.strategy)[0] || iss.strategy) : '별도 확인 필요';
+        return new TableRow({ children:[
+          cell(iss.name, { width:24 }), cell(iss.dept, { width:10 }), cell(budgetHeadline, { width:18 }),
+          cell(iss.period || iss.due || '미공개', { width:16 }), cell(iss.actionable ? '가능' : '대기', { width:10 }), cell(strategyHeadline, { width:22 }),
+        ]});
+      });
+      children.push(new Table({ width:{ size:100, type:WidthType.PERCENTAGE }, rows:[decHeader, ...decRows] }));
+    }
+
+    // 3. 전체 동향 현황 — 부처별 집계만 요약으로 제시하고, 개별 항목 목록은 부록 B로 이동.
+    children.push(H('3. 전체 동향 현황', HeadingLevel.HEADING_1));
+    children.push(P(`총 ${windowTrends.length}건 (신규 ${newCount}건) — 부처별: ${deptCountsText}`));
+    children.push(P('개별 항목 목록은 부록 B를 참고하십시오.', { italics:true, color:'999999', size:16 }));
+
+    // 4. 경쟁대학 동향 요약 — 학교별 집계표만 제시하고, 개별 항목 목록은 부록 C로 이동.
+    children.push(H('4. 경쟁대학 동향 요약', HeadingLevel.HEADING_1));
+    const compHeader = new TableRow({ tableHeader:true, children:[
+      cell('학교', { bold:true, width:20 }), cell('담당', { bold:true, width:15 }), cell('포착 건수', { bold:true, width:15 }), cell('분야 구성', { bold:true, width:50 }),
+    ]});
+    const compRows = schoolSummaries.map(s => new TableRow({ children:[
+      cell(s.name, { width:20 }), cell(s.owner, { width:15 }), cell(s.count+'건', { width:15 }), cell(s.catText, { width:50 }),
+    ]}));
+    children.push(new Table({ width:{ size:100, type:WidthType.PERCENTAGE }, rows:[compHeader, ...compRows] }));
+    children.push(new Paragraph({ text:'', spacing:{ after:80 } }));
+    children.push(P('개별 항목 목록은 부록 C를 참고하십시오.', { italics:true, color:'999999', size:16 }));
+
+    // 5. 출처
+    children.push(H('5. 출처', HeadingLevel.HEADING_1));
+    SOURCES.forEach(s=>{
+      children.push(s.url ? link(s.label, s.url) : P(s.label));
+    });
+
+    // 부록 A. 실시간 주요 정책 및 사업 현황 상세 분석 — 웹페이지 issue-bullets와 동일하게 개조식으로 표시.
+    children.push(H('부록 A. 실시간 주요 정책 및 사업 현황 상세 분석', HeadingLevel.HEADING_1));
     if(highItems.length === 0){
       children.push(P('현재 우선순위 \'높음\'으로 분류된 실시간 주요 정책 및 사업 현황이 없습니다.'));
     }
     highItems.forEach((iss,i)=>{
-      children.push(H(`2.${i+1}. ${iss.name}`, HeadingLevel.HEADING_2));
+      children.push(H(`A.${i+1}. ${iss.name}`, HeadingLevel.HEADING_2));
       children.push(P(`${iss.dept} · 담당 ${iss.owner} · ${iss.due||'-'}`, { color:'666666', size:18 }));
       children.push(P(`유관부서: ${matchDepts(iss.name+' '+(iss.desc||'')).join(' · ')}`, { color:'2e7ea6', size:18 }));
       if(iss.url) children.push(link('원문 보기 ↗', iss.url));
       const field = (label, val, opts={}) => {
         children.push(P(label, { bold:true, size:20 }));
-        children.push(val ? P(val, opts) : P('별도 추가 확인 필요', { italics:true, color:'999999' }));
+        bulletsFrom(val, opts).forEach(p=>children.push(p));
       };
       field('추진 배경', iss.bg);
       field('주요 내용', iss.body);
@@ -1250,8 +1349,8 @@ async function generateWordReport(){
       if(iss.aiGenerated) children.push(P('※ AI 초안 — 담당자 검토 필요', { italics:true, color:'b5691e', size:16 }));
     });
 
-    // 3. 전체 동향
-    children.push(H('3. 전체 동향 (최근 14일)', HeadingLevel.HEADING_1));
+    // 부록 B. 전체 동향 상세 목록
+    children.push(H('부록 B. 전체 동향 상세 목록 (최근 14일)', HeadingLevel.HEADING_1));
     const trendHeader = new TableRow({ tableHeader:true, children:[
       cell('부처', { bold:true, width:12 }), cell('사업명', { bold:true, width:26 }), cell('우선순위', { bold:true, width:10 }),
       cell('상태', { bold:true, width:10 }), cell('등록일', { bold:true, width:12 }), cell('유관부서', { bold:true, width:18 }), cell('비고', { bold:true, width:12 }),
@@ -1263,8 +1362,8 @@ async function generateWordReport(){
     ]}));
     children.push(new Table({ width:{ size:100, type:WidthType.PERCENTAGE }, rows:[trendHeader, ...trendRows] }));
 
-    // 4. 경쟁대학 동향
-    children.push(H('4. 경쟁대학 동향', HeadingLevel.HEADING_1));
+    // 부록 C. 경쟁대학 동향 상세 목록
+    children.push(H('부록 C. 경쟁대학 동향 상세 목록', HeadingLevel.HEADING_1));
     COMPETITORS.forEach(school=>{
       children.push(H(`${school.name} (담당 ${school.owner})`, HeadingLevel.HEADING_3));
       if(school.items.length === 0){
@@ -1276,12 +1375,6 @@ async function generateWordReport(){
           children.push(it.url ? link(text, it.url) : P(text));
         });
       }
-    });
-
-    // 5. 출처
-    children.push(H('5. 출처', HeadingLevel.HEADING_1));
-    SOURCES.forEach(s=>{
-      children.push(s.url ? link(s.label, s.url) : P(s.label));
     });
 
     children.push(new Paragraph({ text:'', spacing:{ before:300 } }));
