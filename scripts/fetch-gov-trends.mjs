@@ -13,7 +13,8 @@
 // 조용히 건너뛰고 기존처럼 모든 필드가 비어 있는 상태로 남는다.
 // 소관 부처 재확인 등 그 외 사람 판단이 필요한 항목은 이 스크립트가 채우지 않음 —
 // data/trends.json을 직접 열어 수동으로 보완하거나, 별도 검토 절차를 거쳐야 함.
-// (PRIORITY_KEYWORDS에 해당하는 신규 항목은 우선순위 '높음'을 잠정 자동 태깅한다.)
+// (우선순위는 담당자가 아직 값을 지정하지 않은 모든 항목에 대해 autoPriority()가 매번
+// 자동으로 '높음'/'중간'/'낮음' 중 하나를 잠정 태깅한다 — 기준은 autoPriority 함수 주석 참고.)
 //
 // 수집 범위: 대학·대학 구성원(교원·연구자·학생)에게 적용될 만한 항목만 남기도록
 // RELEVANT_KEYWORDS 키워드 필터를 거친다 (isRelevant 함수 참고). 본교는 사립대이므로
@@ -71,17 +72,19 @@ function isRelevant(item) {
   return RELEVANT_KEYWORDS.some(k => text.includes(k));
 }
 
-// 전략적 파급력이 큰 사업·정책일수록 우선 검토가 필요하므로, 아래 키워드가 제목에 포함된
-// "신규" 항목은 우선순위를 '높음'으로 자동 태깅해 "실시간 주요 정책 및 사업 현황" 섹션에 곧바로 노출한다.
-// 이미 담당자가 우선순위를 수기로 지정한 기존 항목은 절대 덮어쓰지 않는다(merge 단계에서 prev 우선).
-//
-// 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것이다
-// (index.html의 hero-sub 참고) — 즉 아직 확정되지 않은, 우리가 준비할 시간이 있는 사안을
-// 조기에 포착하는 것이 핵심이다. 따라서 전략적 키워드가 맞더라도, 이미 결과가 확정·발표된
-// 사안(예: 선정 결과 발표, 이미 종료된 공모의 사후 조치)은 "실시간 주요 정책 및 사업 현황"에 올릴 필요가 없다
-// — 사립대학이 더 이상 취할 수 있는 대응이 없기 때문이다. 그래서 전략적 키워드에 더해
-// ACTIONABLE_KEYWORDS(공모·접수·시행 예정 등 향후 대응 여지를 시사하는 표현)가 함께 있어야만
-// 우선순위 '높음'으로 자동 태깅한다.
+// "전체 동향"의 모든 항목에 우선순위를 자동으로 매긴다(담당자가 수기로 값을 넣기 전까지는
+// null로 방치하지 않는다). 두 개의 독립된 신호를 축으로 삼는다:
+//   ① 전략적 중요도 — 제목에 PRIORITY_KEYWORDS(파급력이 큰 사업·정책 유형)가 포함되는가
+//   ② 대응 가능성 — isActionable()(공모·접수·시행 예정 등 향후 대응 여지를 시사하는 표현)이
+//     참인가 — 즉 아직 결과가 확정되지 않아 사립대학이 실제로 준비·대응할 수 있는 시점인가
+// 이 페이지의 목적은 "공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보"하는 것이므로
+// (index.html의 hero-sub 참고), 두 신호가 모두 있어야 정말 급한 사안이라고 보수적으로 판단한다.
+//   ①② 모두 해당 → '높음'  (전략적으로 중요 + 지금 대응할 수 있음 — 즉시 검토 필요)
+//   ①② 중 하나만 해당 → '중간'  (둘 중 하나만 맞음 — 계속 지켜볼 필요는 있으나 최우선은 아님)
+//   ①② 모두 해당 없음 → '낮음'  (전략 키워드도 없고 당장 취할 조치도 없는 일반 정보성 사안)
+// 이미 담당자가 우선순위를 수기로 지정했거나 이전에 자동 태깅된 값이 있으면 절대 덮어쓰지
+// 않는다(merge 단계에서 prev.priority가 있으면 그 값을 그대로 쓴다) — 재계산은 아직 값이 없는
+// (null) 항목에 한해서만 일어난다.
 const PRIORITY_KEYWORDS = [
   'RISE', '라이즈', '글로컬대학', '대학혁신지원사업', 'LINC', '링크사업',
   '첨단인재', '산학협력', '무전공', '자율전공', '직업훈련', '정원 감축', '정원감축',
@@ -95,8 +98,15 @@ function isActionable(item) {
   const text = item.title + ' ' + item.desc;
   return ACTIONABLE_KEYWORDS.some(k => text.includes(k));
 }
-function isPriorityCandidate(item) {
-  return PRIORITY_KEYWORDS.some(k => item.title.includes(k)) && isActionable(item);
+function isPriorityKeywordMatch(item) {
+  return PRIORITY_KEYWORDS.some(k => item.title.includes(k));
+}
+function autoPriority(item) {
+  const strategic = isPriorityKeywordMatch(item);
+  const actionable = isActionable(item);
+  if (strategic && actionable) return '높음';
+  if (strategic || actionable) return '중간';
+  return '낮음';
 }
 
 // "전체 동향" 자체가 위 목적(아직 확정되지 않아 대응을 준비할 수 있는 사안)에 집중해야 하므로,
@@ -430,18 +440,18 @@ async function main() {
     excludedByRelevance.forEach(t => console.log(`  - [${t.dept}] ${t.title}`));
   }
 
-  // 직전 실행 대비 신규/계속 판정. 우선순위·마감일·정책 분석(배경/내용/시사점/대응전략) 등
-  // 사람 판단이 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
-  // 다만 신규 항목 중 전략적 파급력이 큰 키워드(PRIORITY_KEYWORDS)가 제목에 포함된 경우에는
-  // 담당자가 놓치지 않도록 우선순위를 '높음'으로 미리 태깅해 실시간 주요 정책 및 사업 현황에 바로 노출되게 한다
-  // (담당자가 이후 수기로 값을 바꾸면 그 값이 항상 우선한다).
+  // 직전 실행 대비 신규/계속 판정. 마감일·정책 분석(배경/내용/시사점/대응전략) 등 사람 판단이
+  // 필요한 값은 자동 산출하지 않고, 기존에 담당자가 수기로 채워둔 값이 있으면 보존한다.
+  // 우선순위만은 예외로, 아직 값이 없는(null) 항목이면 매번 autoPriority()로 자동 재계산해
+  // "미지정" 상태로 방치되지 않게 한다 — 담당자가 한 번이라도 수기로 값을 지정하면(또는 이전
+  // 실행에서 이미 자동 태깅됐으면) 그 값이 항상 우선하고 다시는 덮어쓰지 않는다.
   const prevById = new Map(previous.map(t => [t.id, t]));
   const merged = windowed.map(t => {
     const prev = prevById.get(t.id);
     return {
       ...t,
       status: prev ? (prev.status || '계속') : '신규',
-      priority: prev ? (prev.priority ?? null) : (isPriorityCandidate(t) ? '높음' : null),
+      priority: prev?.priority ?? autoPriority(t),
       due: prev?.due ?? null,
       // 접수 마감일(YYYY-MM-DD, 정확한 날짜가 확인된 경우에만) — 프런트엔드에서 D-day 배지 계산에 사용.
       // 보도자료 원문만으로는 자동 추출이 어려워 담당자가 직접 채워 넣는 값.
