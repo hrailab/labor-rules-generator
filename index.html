@@ -922,7 +922,7 @@ function renderTrends(){
       // t.actionable(향후 대응 여지를 시사하는 키워드 매칭 여부, 1차 스크리닝)이 true인 경우에만
       // 초록 배지로 강조 표시하고, false인 경우엔 (대응 불가로 단정하지 않고) 기존처럼 유관부서만 안내한다.
       +(t.actionable
-        ? '<div class="actionable-flag">✓ 건국대 '+relatedDepts.join('·')+' 직접 대응 가능</div>'
+        ? '<div class="actionable-flag">✓ '+relatedDepts.join('·')+' 직접 대응 가능</div>'
         : '<div style="margin-top:8px;font-size:10.5px;color:var(--ink-4)">유관부서 <b style="color:var(--ink-2)">'+relatedDepts.join('·')+'</b></div>')
       +'<button type="button" class="trend-toggle" onclick="toggleTrend('+i+')">상세 내용(개조식) <span class="chevron">▾</span></button>'
       +'<div class="trend-detail">'+sevenFieldDetail(t)+'</div>'
