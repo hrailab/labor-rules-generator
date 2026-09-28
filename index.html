@@ -916,7 +916,7 @@ function renderTrends(){
       +'<span class="dept-tag">'+deptDot(t.dept)+t.dept+'</span>'
       +'</div>'
       +'<div class="trend-name">'+escapeHtml(t.name)+(verifiedLink?' <a class="ext-arrow" href="'+verifiedLink+'" target="_blank" rel="noopener" title="원문 보기">↗</a>':'')+(t.daysAgo===0?' <span class="new-flag">NEW</span>':'')+(t.aiGenerated?' <span class="ai-draft-flag">AI 초안 · 검토 필요</span>':'')+'</div>'
-      +(t.desc ? '<div class="trend-desc">'+escapeHtml(t.desc)+'</div>' : '')
+      +(t.desc ? '<div class="trend-desc"><ul class="issue-bullets">'+toBulletPoints(t.desc).map(p=>'<li>'+escapeHtml(p)+'</li>').join('')+'</ul></div>' : '')
       +'<div class="trend-foot"><span>담당 <b>'+t.owner+'</b> · 등록 '+fmtDate(trendDate(t))+'</span><span>'+(t.due||'-')+'</span></div>'
       +(fallbackLink ? '<a class="trend-fallback-note" href="'+fallbackLink+'" target="_blank" rel="noopener">원문 미검증 · 클릭 시 '+t.dept+' 뉴스 목록으로 이동 ↗</a>' : '')
       // t.actionable(향후 대응 여지를 시사하는 키워드 매칭 여부, 1차 스크리닝)이 true인 경우에만
@@ -985,8 +985,14 @@ function toBulletEnding(sentence){
 function toBulletPoints(text){
   if(!text) return [];
   return text
-    .split(/(?<=[.!?])\s+|\n+/)
+    // 정부부처 보도자료 lead(요약)는 원래 "- 항목1 - 항목2"처럼 줄바꿈된 개조식 글머리를
+    // 스크래핑 과정에서 한 줄로 이어붙인 경우가 많다(예: "- 주민이 ... 찾는다 - 우수
+    // 아이디어는 ..."). 문장부호·줄바꿈 기준 분리에 더해, 단어 사이에 낀 " - "(공백-하이픈-
+    // 공백)도 항목 구분자로 취급한다 — "AI-중심대학"처럼 공백 없이 붙은 하이픈이나
+    // "2027-2028"처럼 숫자 범위 표기는 공백이 없어 매칭되지 않으므로 안전하다.
+    .split(/(?<=[.!?])\s+|\n+|\s-\s+/)
     .map(s => s.trim())
+    .map(s => s.replace(/^-\s*/, '')) // 맨 앞 항목에 남아있는 선행 "- " 글머리 기호 제거
     .filter(Boolean)
     .map(s => s.replace(/[.]+$/, ''))
     .map(toBulletEnding);
