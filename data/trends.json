@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T09:26:37.378Z",
+  "generatedAt": "2026-09-29T19:46:15.964Z",
   "windowDays": 14,
   "items": [
     {
@@ -114,6 +114,14 @@
     },
     {
       "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금 사업은 국가재정법 등 법적 절차를 준수하여 편성했습니다.",
+      "desc": "",
+      "date": "2026-09-29",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972776&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "(보도설명) 환수결정액이 조기에 환수될 수 있도록 부정수급 관리를 강화해 나가겠습니다",
       "desc": "",
       "date": "2026-09-29",
@@ -190,14 +198,6 @@
       "desc": "",
       "date": "2026-09-28",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972706&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 성인지 예산제도를 통해 다양한 사업에서 성평등이 개선되는 성과가 있었습니다.",
-      "desc": "",
-      "date": "2026-09-28",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972702&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -295,14 +295,6 @@
       "date": "2026-09-17",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972119&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부 '농어촌 기본소득' 지역지원기관 공모…5000만 원 지원",
-      "desc": "",
-      "date": "2026-09-16",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148971995&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
     }
   ]
 }
