@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T09:17:11.929Z",
+  "generatedAt": "2026-09-30T19:47:49.136Z",
   "windowDays": 14,
   "items": [
     {
@@ -68,6 +68,14 @@
     },
     {
       "dept": "기획예산처",
+      "title": "(보도설명) 정부는 농어민 지원과 미래 농업 경쟁력 강화를 위한 투자를 대폭 확대하고 있습니다.",
+      "desc": "",
+      "date": "2026-09-30",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972848&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "(보도설명) 부정수급 근절을 위해 다각적인 방안을 강구하고 있습니다",
       "desc": "",
       "date": "2026-09-30",
@@ -100,6 +108,14 @@
     },
     {
       "dept": "과기정통부",
+      "title": "글로벌 AI 허브 입지 선정 공청회 개최",
+      "desc": "글로벌 AI 허브 입지 선정 공청회 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-09-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783845&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
       "title": "한-영, 인공지능 분야 협력 강화 방안 논의",
       "desc": "한-영, 인공지능 분야 협력 강화 방안 논의 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-09-30",
@@ -116,10 +132,10 @@
     },
     {
       "dept": "과기정통부",
-      "title": "사이버 침해사고 예방&middot;대응 전면 강화를 위한 정보통신망법&middot;시행령, 10월 1일부터 시행",
-      "desc": "- 범부처 정보보호 종합대책 , 법 &middot; 시행령으로 제도적 뒷받침 - CISO 임원 격상 , ISMS 강화인증 신설 , 반복적 침해사고엔 과징금 부과",
+      "title": "[보도설명] 정부는 농어민 지원과 미래 농업 경쟁력 강화를 위한 투자를 대폭 확대하고 있습니다",
+      "desc": "",
       "date": "2026-09-30",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783725&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972849&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -203,14 +219,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 환수결정액이 조기에 환수될 수 있도록 부정수급 관리를 강화해 나가겠습니다",
-      "desc": "",
-      "date": "2026-09-29",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972769&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "농지 투기는 가려내고, 관행적 임대차는 안정적인 계약으로 전환합니다.",
       "desc": "",
@@ -280,22 +288,6 @@
       "desc": "",
       "date": "2026-09-18",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972173&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "한-중앙아시아, 'AI·과학기술 실크로드' 구축…미래 협력 강화",
-      "desc": "",
-      "date": "2026-09-17",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972061&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "'수시모집 장애' 최종 354명 구제…경쟁률 조회 후 접수 3건은 취소 권고",
-      "desc": "",
-      "date": "2026-09-17",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972119&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "confirmed_outcome"
     }
   ]
