@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-01T09:44:37.048Z",
+  "generatedAt": "2026-10-01T20:05:11.084Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "A00033-156783975",
+      "id": "A00033-156784062",
       "dept": "과기정통부",
       "category": "정책예고",
-      "title": "&#xFF62;7대 시드&#xFF63; 양자 기술, 연구실을 넘어 시장으로 - 구혁채 제1차관, 국산 이온트랩 양자컴퓨터 연구 현장 방문 -",
-      "desc": "- 연구 성과의 창업 &middot; 사업화부터 초기시장 창출 &middot; 기업 성장까지 집중 지원 - 산 &middot; 학 &middot; 연 &middot; 투자사와 ' 양자 심층 기술 ( 딥테크 )' 성장 생태계 조성 방안 논의",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783975&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "같은 원자, 다른 순서로 재료의 한계를 넘다",
+      "desc": "- 포항공대 이대수 교수 연구팀 , 원자층 ' 그라데이션 ' 설계 원리 규명 ... 사이언스 지( 誌) 게재 - 차세대 전자소자와 반도체 절연막 , 열 센서 개발을 위한 원천기술로 활용 기대",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784062&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
       "status": "신규",
       "priority": "낮음",
@@ -51,6 +51,14 @@
   ],
   "excludedItems": [
     {
+      "dept": "과기정통부",
+      "title": "고혈압이 골관절염 악화시키는 '연결고리' 찾았다",
+      "desc": "- 전남 대 &middot; 인제대 공동연구팀 , 골관절염의 새로운 치료 전략 제시 ... 사이언스 誌 게재 - 고혈압으로 증가한 뇌 호르몬이 수용체와 결합해 연골 파괴를 촉진하는 핵심 기전 규",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784063&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "「지방정부 국고보조시설 효율화 방안」 도출을 위한 심층평가 착수",
       "desc": "기획예산처는 지방정부가 운영중인 국고보조 공공시설 운영현황 실태조사 및 제도개선 방안 마련을 추진합니다. 자세한 내용은 첨부를 참고해주시기 바랍니다.",
@@ -80,14 +88,6 @@
       "desc": "희토류 사용 줄이고 재활용하는 기술개발 도전 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784025&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "전국에서 모인 AI 아이디어 390건…. 「모두의 AI실험실」에서 국민이 직접 만드는 AI 서비스, 본격 출발",
-      "desc": "- 「 모두의 AI 실험실 AI 서비스 경진대회 」 본선 진출 12 개 팀 선정 , 전국 5 개 권역 예선 거쳐 10 월 1 일 발대식 - 카카오 &middot; 네이버클라우드 &middot;NHN 클라우드 &middot;LG 유플러스 &middot;SKT...",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783974&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -305,14 +305,6 @@
       "date": "2026-09-21",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972325&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "'2차 모두의 창업' 9만 2838명 신청…1차보다 3만 명 늘어",
-      "desc": "",
-      "date": "2026-09-18",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972173&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
     }
   ]
 }
