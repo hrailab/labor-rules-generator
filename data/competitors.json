@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T10:00:31.013Z",
+  "generatedAt": "2026-10-01T20:18:01.342Z",
   "windowDays": 14,
   "items": [
     {
@@ -150,16 +150,6 @@
       "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51122",
       "date": "2026-09-22",
       "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766292",
-      "school": "동국대",
-      "title": "영국 University of Cambridge 대학원 입학 설명회 수요 조사",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766292",
-      "date": "2026-09-18",
-      "owner": "이수연",
       "status": "신규"
     }
   ]
