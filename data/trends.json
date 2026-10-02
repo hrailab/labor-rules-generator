@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-01T20:05:11.084Z",
+  "generatedAt": "2026-10-02T19:44:02.763Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "A00033-156784062",
-      "dept": "과기정통부",
+      "id": "A00008-156784210",
+      "dept": "농식품부",
       "category": "정책예고",
-      "title": "같은 원자, 다른 순서로 재료의 한계를 넘다",
-      "desc": "- 포항공대 이대수 교수 연구팀 , 원자층 ' 그라데이션 ' 설계 원리 규명 ... 사이언스 지( 誌) 게재 - 차세대 전자소자와 반도체 절연막 , 열 센서 개발을 위한 원천기술로 활용 기대",
+      "title": "국가에 헌신한 봉사동물부터 유기동물까지... 정부-국립대학, 공공동물의료 협력 시동",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 10 월 2 일 ( 금 ), 서울 성수동 에서 열린 제 2 회 동물보호의 날 개막식 행사에서 4 개 국립대학교 ( 강원대 , 충북대 , 충남대 , 전남대 ) 와 함께 공공거점동물병원 운영 업무협약 ...",
       "date": "2026-10-02",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784062&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784210&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -51,12 +51,84 @@
   ],
   "excludedItems": [
     {
-      "dept": "과기정통부",
-      "title": "고혈압이 골관절염 악화시키는 '연결고리' 찾았다",
-      "desc": "- 전남 대 &middot; 인제대 공동연구팀 , 골관절염의 새로운 치료 전략 제시 ... 사이언스 誌 게재 - 고혈압으로 증가한 뇌 호르몬이 수용체와 결합해 연골 파괴를 촉진하는 핵심 기전 규",
+      "dept": "기획예산처",
+      "title": "제14회 한-OECD 국제재정포럼 및 OECD 수석 이코노미스트 양자면담 결과",
+      "desc": "기획예산처는 KDI&middot;OECD와 공동으로 9.30(수)~10.1(목) 양일간 프랑스 파리 OECD본부에서 제14회 한-OECD 국제재정포럼을 개최하였으며, 조용범 차관은 스테파노 스카르페타(Stefano Scarpetta) OECD 수석 이코노미스트와 양자면담을 가졌습니다. 자세한 내용은 첨...",
       "date": "2026-10-02",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784063&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784104&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 3대 메가프로젝트는 국가 정책적 핵심사업으로서, 적기 추진을 위해 국가재정법상 요건과 절차를 준수하여 예타를 면제하였습니다.",
+      "desc": "",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972971&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "국산 인공지능 반도체 성능지표 'K-Perf', 공공 현장 도입 검증에 첫 활용",
+      "desc": "- 과기정통부 , 한전 - 리벨리온 -한국정보통신기술협회(TTA) 국산 인공지능 반도체 전력분야 기술협력 협약식 참석 - K-Perf 를 전력현장 인공지능 영상분석에 활용 , 성능 평가  검증 영역 확대",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784177&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "구혁채 과기정통부 제1차관, 2030 청년자문단과 '청년이 그리는 과학기술계 미래' 논의",
+      "desc": "- 제 3 기 2030 청년자문단과 간담회 개최 , 현장의 생생한 목소리 청취 - 2030 청년자문단 정책 발굴 및 제안 활동 내용 환류 ( 피드백 )",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784169&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "글로벌 시장에서 K-브랜드 보호를 위한 중기부-지재처 협업 체계 가동",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 지식재산처(처장 김용선, 이하 지재처)는 10월 2일(금) 오후 정부대전청사에서 '중소기업 K-브랜드 지식재산 보호 협의체' 운영을 위한 착수 회의를 개최한다고 밝혔다. 최근 한류 열풍 등에 힘입어, K-뷰티, K-푸드, K-패션 등 K-브랜드의 인기가 높아...",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784074&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부 장관, 동물보호의 날 기념 팝업스토어 찾아 '공감과 실천' 강조",
+      "desc": "농림축산식품부 장관은 10 월 2 일 ( 금 ) 서울 성수동에서 열린 제 2 회 동물 보호의 날 기념 ' 오늘은 1004' 팝업스토어 개막식에 참석하여 사람과 동물이 더불어 살아가는 사회를 위한 ' 공감과 실천 ' 을 강조하였다 . 이번 행사는 국민들이 동물복지의 ...",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784201&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "'농산물무역정책심의회' 법정 위원회로 첫발, 수입농산물 정책에 생산자 참여 확대",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 2 일 ( 금 ) 오전 aT 센터 ( 서울 ) 에서 생산자 및 소비자 단체 , 전문가 , 유관기관 등 위원 14 명을 포함하여 , 약 30 명이 참석한 가운데 2026 년 제...",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784144&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농지 전수조사로 맹지&middot;경사지 등 현실적으로 경작이 어려운 농지까지 일률적으로 처분하거나 이행강제금을 부과한다는 것은 사실이 아닙니다.",
+      "desc": "",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972982&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농사를 짓지 않는 농지는 반드시 처분명령을 내리고, 계약서가 없는 임대차는 모두 불법으로 본다는 주장은 사실이 아닙니다.",
+      "desc": "",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972965&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "소리로 구조물의 미세한 떨림 읽은 고교생들, 대통령상 수상",
+      "desc": "- 교원 &middot; 일반부 대통령상은 조선시대 무기 ' 편곤 ' 에서 물리 원리 풀어낸 초등교사팀 수상 - 제 72 회 전국과학전람회 학생부와 교원 &middot; 일반부 수상작 발표",
+      "date": "2026-10-02",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784115&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
     },
     {
       "dept": "기획예산처",
@@ -80,14 +152,6 @@
       "desc": "",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972887&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "희토류 사용 줄이고 재활용하는 기술개발 도전",
-      "desc": "희토류 사용 줄이고 재활용하는 기술개발 도전 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784025&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -123,14 +187,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "중기부",
-      "title": "온누리상품권, 전통시장&middot;지방상권 중점으로 18년 만에 개편",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 1일(목) 경제관계장관회의에서 관계부처 합동으로 마련한 「온누리상품권 개편 방안」을 발표했다. 이번 개편은 전통시장과 지방상권에서의 소비 혜택을 집중하고, 지방 관광자원 및 민간 서비스와의 연계를 강화해 온누리상품권 가맹점의 매출을 높이는 데 중점을 ...",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783869&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "가을엔 '촌캉스' 떠나볼까…농촌여행 상품 최대 50% 할인",
       "desc": "",
@@ -140,50 +196,10 @@
     },
     {
       "dept": "농식품부",
-      "title": "농식품부, 여성농업인 정책 거버넌스 강화를 위한 권역별 간담회 개최",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 여성농업인 정책 추진체계를 점검하고 , 현장 소통을 강화하기 위해 10 월 1 일 충청권역을 시작으로 약 두달 간 전국 4 개 권역 ( 충청권 , 전라권 , 경기 &middot; 강원권 , 경상 ...",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784016&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "&quot;가을 여행은 촌캉스로!&quot; 농식품부, 여행가는 달(가을) 맞아 10~11월 두 달간 '농촌관광 가는 주간' 확대 운영",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 매월 둘째 주간에 운영하고 있는 ' 농촌관광 가는 주간 ' 을 문화체육관광부에서 추진하는 '2026 여행가는 가을 ' 과 연계하여 10 월부터 11 월까지 두 달 전체로 확대 운영한다고 밝혔다 . 이번 확...",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783907&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "&quot;국내산인 줄 알았는데&quot;... 농관원, 추석 농식품 원산지 위반 256개소 적발",
-      "desc": "국립농산물품질관리원 ( 원장 김철 , 이하 ' 농관원 ') 은 추석 선물 &middot; 제수용 농식품 등의 원산지 표시를 집중 점검한 결과 , 원산지를 거짓 으로 표시하거나 표시하지 않은 업체 256 개소를 적발했다 . 이번 점검은 9 월 7 일부터 9 월...",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783906&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
       "title": "농지 전수조사가 태양광 확대를 위한 것이라는 주장은 사실이 아닙니다.",
       "desc": "",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972901&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농어촌 기본소득 시범사업, 국비 지원 확대 등 지방정부 부담을 완화하며 추진합니다.",
-      "desc": "",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972880&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "박홍근 장관, 서울 만리어린이집 현장방문",
-      "desc": "박홍근 기획예산처 장관은 9월 30일(수) 서울시 중구 만리동에 소재한 만리어린이집을 방문하여 아이들의 보육 수업에 직접 참여하고, 부모, 교사 등과 간담회를 개최하는 등 보육정책 수요자들과 긴밀한 소통의 시간을 가졌습니다. * 자세한 사항은 첨부의 내용을 참고하여 주시기 바랍니다.",
-      "date": "2026-09-30",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783695&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -259,28 +275,12 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "농지 임대수탁은 농업인 수수료가 없으며, 업무 편의성 등을 개선하고, 농지연금 예산 확대로 대기자를 해소해 나가겠습니다.",
-      "desc": "",
-      "date": "2026-09-30",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972851&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "교육부",
       "title": "2027학년도 수시모집 원서접수 마감시간 연장에 따른 추가 접수 현황 분석 및 향후 대응계획",
       "desc": "",
       "date": "2026-09-30",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783778&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금 사업은 국가재정법 등 법적 절차를 준수하여 편성했습니다.",
-      "desc": "",
-      "date": "2026-09-29",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972776&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
     },
     {
       "dept": "교육부",
