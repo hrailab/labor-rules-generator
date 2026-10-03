@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T09:02:49.472Z",
+  "generatedAt": "2026-10-03T18:38:09.453Z",
   "windowDays": 14,
   "items": [
     {
@@ -50,6 +50,26 @@
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026393",
       "date": "2026-10-03",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367102",
+      "school": "이화여대",
+      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
+      "date": "2026-10-03",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-366858",
+      "school": "이화여대",
+      "title": "본교-금융감독원, 금융권 기후리스크 관리 국제컨퍼런스 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=366858&article.offset=0&articleLimit=10",
+      "date": "2026-10-03",
+      "owner": "정주원",
       "status": "신규"
     },
     {
