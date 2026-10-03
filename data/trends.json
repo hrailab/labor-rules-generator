@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T08:50:21.879Z",
+  "generatedAt": "2026-10-03T18:31:12.295Z",
   "windowDays": 14,
   "items": [
     {
@@ -50,6 +50,14 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "과기정통부",
+      "title": "[보도설명] 독자 AI 파운데이션 모델 개발은 계속되며, 동시에 최상위급 AI모델 개발에도 도전할 계획입니다(다수매체)",
+      "desc": "",
+      "date": "2026-10-03",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972991&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "농식품부",
       "title": "농지 전수조사로 맹지&middot;경사지 등 현실적으로 경작이 어려운 농지까지 일률적으로 처분하거나 이행강제금을 부과한다는 것은 사실이 아닙니다.",
@@ -248,14 +256,6 @@
       "desc": "",
       "date": "2026-09-30",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972849&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "[보도설명] 과기정통부는 기업의 자체 취약점 점검에 그치지 않고, ISMS 인증 사후심사를 통해 지속적으로 현장검증을 하고 있습니다",
-      "desc": "",
-      "date": "2026-09-30",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972843&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
