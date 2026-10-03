@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T19:44:02.763Z",
+  "generatedAt": "2026-10-03T08:50:21.879Z",
   "windowDays": 14,
   "items": [
     {
@@ -50,6 +50,22 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "농식품부",
+      "title": "농지 전수조사로 맹지&middot;경사지 등 현실적으로 경작이 어려운 농지까지 일률적으로 처분하거나 이행강제금을 부과한다는 것은 사실이 아닙니다.",
+      "desc": "",
+      "date": "2026-10-03",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972982&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농사를 짓지 않는 농지는 반드시 처분명령을 내리고, 계약서가 없는 임대차는 모두 불법으로 본다는 주장은 사실이 아닙니다.",
+      "desc": "",
+      "date": "2026-10-03",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972965&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "제14회 한-OECD 국제재정포럼 및 OECD 수석 이코노미스트 양자면담 결과",
@@ -104,22 +120,6 @@
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 2 일 ( 금 ) 오전 aT 센터 ( 서울 ) 에서 생산자 및 소비자 단체 , 전문가 , 유관기관 등 위원 14 명을 포함하여 , 약 30 명이 참석한 가운데 2026 년 제...",
       "date": "2026-10-02",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784144&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지 전수조사로 맹지&middot;경사지 등 현실적으로 경작이 어려운 농지까지 일률적으로 처분하거나 이행강제금을 부과한다는 것은 사실이 아닙니다.",
-      "desc": "",
-      "date": "2026-10-02",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972982&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농사를 짓지 않는 농지는 반드시 처분명령을 내리고, 계약서가 없는 임대차는 모두 불법으로 본다는 주장은 사실이 아닙니다.",
-      "desc": "",
-      "date": "2026-10-02",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972965&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
