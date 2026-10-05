@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T10:17:12.091Z",
+  "generatedAt": "2026-10-05T21:57:05.542Z",
   "windowDays": 14,
   "items": [
     {
@@ -130,16 +130,6 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766425",
       "date": "2026-09-30",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "cau-51122",
-      "school": "중앙대",
-      "title": "2027학년도 전반기(3월 입학) 순수외국인전형 의학부 면접 수험생 유의사항 안내",
-      "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51122",
-      "date": "2026-09-22",
-      "owner": "정주원",
       "status": "신규"
     }
   ]
