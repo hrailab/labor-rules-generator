@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T18:30:55.815Z",
+  "generatedAt": "2026-10-05T09:58:48.036Z",
   "windowDays": 14,
   "items": [
     {
@@ -51,11 +51,27 @@
   ],
   "excludedItems": [
     {
+      "dept": "농식품부",
+      "title": "고령농의 농지 매입 확대와 현장 불편을 최소화하기 위해 적극 노력하겠습니다.",
+      "desc": "",
+      "date": "2026-10-05",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973001&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "[보도설명] 정부는 국회와 법률의 통제 하에서 미래대응기금을 민주적이고 투명하게 운용해 나갈 계획입니다.",
       "desc": "",
       "date": "2026-10-04",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972995&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "국내 반려동물 산업 발전을 위한 통계 기반을 구축해 나가겠습니다.",
+      "desc": "",
+      "date": "2026-10-04",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973000&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -80,14 +96,6 @@
       "desc": "",
       "date": "2026-10-03",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972982&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농사를 짓지 않는 농지는 반드시 처분명령을 내리고, 계약서가 없는 임대차는 모두 불법으로 본다는 주장은 사실이 아닙니다.",
-      "desc": "",
-      "date": "2026-10-03",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972965&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -208,14 +216,6 @@
       "desc": "",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972890&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지 전수조사가 태양광 확대를 위한 것이라는 주장은 사실이 아닙니다.",
-      "desc": "",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972901&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
