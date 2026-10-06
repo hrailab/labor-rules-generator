@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-05T21:57:05.542Z",
+  "generatedAt": "2026-10-06T10:03:20.220Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "hyu-1026501",
-      "school": "한양대",
-      "title": "[동행한대] 나를 다시 일으킨 기부",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026501",
-      "date": "2026-10-05",
+      "id": "skku-140156",
+      "school": "성균관대",
+      "title": "[앵커사업단] 2026 랜선으로 만나는 릴레이 글로벌 취·창업 톡톡톡(talk) 특강 신청 안내",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140156&article.offset=0&articleLimit=10",
+      "date": "2026-10-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,38 +18,58 @@
       "title": "10년의 기다림 끝에 정상으로… 한양대, 대학동문골프최강전 우승",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026275",
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026476",
+      "id": "hyu-1026562",
       "school": "한양대",
-      "title": "한양대 창업대학원, 개인투자조합 결성 …재학생이 이끄는 스타트업 3개사에 투자",
+      "title": "숙련공 ‘손끝 감각’ AI로 옮긴다…한양대 ERICA, 43.85억 규모 산학연 공동개발로 금형 지능형 가이드 구축",
       "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026476",
-      "date": "2026-10-05",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026562",
+      "date": "2026-10-06",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026473",
+      "id": "hyu-1026563",
       "school": "한양대",
-      "title": "한양대 조겸 동문(건축학부 19), 제44회 서울특별시 건축상 대상",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026473",
-      "date": "2026-10-05",
+      "title": "한양대 Beyond-G 글로벌 혁신센터, 전파·AI로 모유량 추정하는 ‘스마트 수유 브라’ 개발",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026563",
+      "date": "2026-10-06",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026393",
+      "id": "hyu-1026557",
       "school": "한양대",
-      "title": "[아시아경제] 한양대, 현장실습 기반 실용교육과 산학협력으로 취업 경쟁률 독보적 성과 입증",
+      "title": "[한국대학신문] 한양대 ERICA GAIA센터, 경기도 앵커 사업서 반도체 원천기술 30억5000만 원 기술이전 성과 달성",
       "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026393",
-      "date": "2026-10-05",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026557",
+      "date": "2026-10-06",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026559",
+      "school": "한양대",
+      "title": "[한국경제] 한양대 경영전문대학원, 산업 맞춤형 특화교육 및 글로벌 역량 강화로 산업별 전문 경영인 양성",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026559",
+      "date": "2026-10-06",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766489",
+      "school": "동국대",
+      "title": "2027-1학기 일본 Outbound 교환학생 선발(2차) 공고",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766489",
+      "date": "2026-10-06",
+      "owner": "이수연",
       "status": "신규"
     },
     {
@@ -58,7 +78,7 @@
       "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "owner": "정주원",
       "status": "신규"
     },
@@ -68,18 +88,8 @@
       "title": "본교-금융감독원, 금융권 기후리스크 관리 국제컨퍼런스 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=366858&article.offset=0&articleLimit=10",
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140156",
-      "school": "성균관대",
-      "title": "[앵커사업단] 2026 랜선으로 만나는 릴레이 글로벌 취·창업 톡톡톡(talk) 특강 신청 안내",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140156&article.offset=0&articleLimit=10",
-      "date": "2026-10-02",
-      "owner": "서원석",
       "status": "신규"
     },
     {
