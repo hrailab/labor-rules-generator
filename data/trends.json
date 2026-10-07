@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T09:45:16.970Z",
+  "generatedAt": "2026-10-07T20:23:55.428Z",
   "windowDays": 14,
   "items": [
     {
@@ -75,6 +75,14 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금은 청년, 성장동력, 지방, 교육&middot;인재 4대 계정에 맞는 사업을 편성했고, 다른 예산과 같이 국회 심의를 거쳐 운용됩니다.",
+      "desc": "",
+      "date": "2026-10-07",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973172&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "(보도설명) 경제 성장에 따른 국가 부채 비율 개선은 국가의 부채 감당 능력이 개선되는 것을 의미합니다",
       "desc": "",
       "date": "2026-10-07",
@@ -120,14 +128,6 @@
       "date": "2026-10-07",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784489&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부는 AI 보안위협에 대응하여 정보보호 예산을 대폭 증액하였습니다.",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973091&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
     },
     {
       "dept": "교육부",
