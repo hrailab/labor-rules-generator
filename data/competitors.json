@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-10-06T20:08:12.775Z",
+  "generatedAt": "2026-10-07T10:07:14.562Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "skku-140156",
+      "id": "skku-140402",
       "school": "성균관대",
-      "title": "[앵커사업단] 2026 랜선으로 만나는 릴레이 글로벌 취·창업 톡톡톡(talk) 특강 신청 안내",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140156&article.offset=0&articleLimit=10",
-      "date": "2026-10-06",
+      "title": "[KUSF 두드림] 스포츠단 농구부 재능 기부 프로그램 참여자 모집 (창의품 10시간 지급)",
+      "category": "대외협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140402&article.offset=0&articleLimit=10",
+      "date": "2026-10-07",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-94576",
+      "school": "성균관대",
+      "title": "국내외 타 대학 학점교류 및 교환학생 성적인정 절차 안내(GLS)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=94576&article.offset=0&articleLimit=10",
+      "date": "2026-10-07",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,27 +28,7 @@
       "title": "10년의 기다림 끝에 정상으로… 한양대, 대학동문골프최강전 우승",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026275",
-      "date": "2026-10-06",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026562",
-      "school": "한양대",
-      "title": "숙련공 ‘손끝 감각’ AI로 옮긴다…한양대 ERICA, 43.85억 규모 산학연 공동개발로 금형 지능형 가이드 구축",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026562",
-      "date": "2026-10-06",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026563",
-      "school": "한양대",
-      "title": "한양대 Beyond-G 글로벌 혁신센터, 전파·AI로 모유량 추정하는 ‘스마트 수유 브라’ 개발",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026563",
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +38,7 @@
       "title": "[한국대학신문] 한양대 ERICA GAIA센터, 경기도 앵커 사업서 반도체 원천기술 30억5000만 원 기술이전 성과 달성",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026557",
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,6 +48,56 @@
       "title": "[한국경제] 한양대 경영전문대학원, 산업 맞춤형 특화교육 및 글로벌 역량 강화로 산업별 전문 경영인 양성",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026559",
+      "date": "2026-10-07",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-322511",
+      "school": "경희대",
+      "title": "[창업교육센터] KHU 창업멘토링 신청 안내",
+      "category": "산학협력",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=322511&menuNo=200316",
+      "date": "2026-10-07",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "cau-51223",
+      "school": "중앙대",
+      "title": "[실기고사] 2027학년도 전반기(3월 입학) 학부 순수외국인전형 예체능계열 실기고사 안내",
+      "category": "국제",
+      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51223",
+      "date": "2026-10-07",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367102",
+      "school": "이화여대",
+      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
+      "date": "2026-10-07",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-366858",
+      "school": "이화여대",
+      "title": "본교-금융감독원, 금융권 기후리스크 관리 국제컨퍼런스 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=366858&article.offset=0&articleLimit=10",
+      "date": "2026-10-07",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140156",
+      "school": "성균관대",
+      "title": "[앵커사업단] 2026 랜선으로 만나는 릴레이 글로벌 취·창업 톡톡톡(talk) 특강 신청 안내",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140156&article.offset=0&articleLimit=10",
       "date": "2026-10-06",
       "owner": "서원석",
       "status": "신규"
