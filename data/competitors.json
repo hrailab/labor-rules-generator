@@ -1,44 +1,14 @@
 {
-  "generatedAt": "2026-10-07T20:32:46.665Z",
+  "generatedAt": "2026-10-08T10:21:56.863Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "skku-140238",
-      "school": "성균관대",
-      "title": "[인공지능혁신융합대학사업단] 2026 인공지능혁신융합대학사업단 호주 UTAS 해외교육 모집 안내",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140238&article.offset=0&articleLimit=10",
-      "date": "2026-10-07",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140402",
-      "school": "성균관대",
-      "title": "[KUSF 두드림] 스포츠단 농구부 재능 기부 프로그램 참여자 모집 (창의품 10시간 지급)",
+      "id": "hyu-1026496",
+      "school": "한양대",
+      "title": "[한양에 이런 일이?!] 국어교사가 만든 교육 플랫폼 ‘리로스쿨’, 최석 동문을 찾아서",
       "category": "대외협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140402&article.offset=0&articleLimit=10",
-      "date": "2026-10-07",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-94576",
-      "school": "성균관대",
-      "title": "국내외 타 대학 학점교류 및 교환학생 성적인정 절차 안내(GLS)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=94576&article.offset=0&articleLimit=10",
-      "date": "2026-10-07",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140393",
-      "school": "성균관대",
-      "title": "[글로벌 학습경험 확대] WAVE 글로벌공동강의 특강 안내 (강연자: Brian Soebbing)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140393&article.offset=0&articleLimit=10",
-      "date": "2026-10-07",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026496",
+      "date": "2026-10-08",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +18,7 @@
       "title": "10년의 기다림 끝에 정상으로… 한양대, 대학동문골프최강전 우승",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026275",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,7 +28,7 @@
       "title": "[한국대학신문] 한양대 ERICA GAIA센터, 경기도 앵커 사업서 반도체 원천기술 30억5000만 원 기술이전 성과 달성",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026557",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,6 +38,36 @@
       "title": "[한국경제] 한양대 경영전문대학원, 산업 맞춤형 특화교육 및 글로벌 역량 강화로 산업별 전문 경영인 양성",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026559",
+      "date": "2026-10-08",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367102",
+      "school": "이화여대",
+      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
+      "date": "2026-10-08",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-366858",
+      "school": "이화여대",
+      "title": "본교-금융감독원, 금융권 기후리스크 관리 국제컨퍼런스 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=366858&article.offset=0&articleLimit=10",
+      "date": "2026-10-08",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140238",
+      "school": "성균관대",
+      "title": "[인공지능혁신융합대학사업단] 2026 인공지능혁신융합대학사업단 호주 UTAS 해외교육 모집 안내",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140238&article.offset=0&articleLimit=10",
       "date": "2026-10-07",
       "owner": "서원석",
       "status": "신규"
@@ -88,26 +88,6 @@
       "title": "[실기고사] 2027학년도 전반기(3월 입학) 학부 순수외국인전형 예체능계열 실기고사 안내",
       "category": "국제",
       "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51223",
-      "date": "2026-10-07",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367102",
-      "school": "이화여대",
-      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-07",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-366858",
-      "school": "이화여대",
-      "title": "본교-금융감독원, 금융권 기후리스크 관리 국제컨퍼런스 개최",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=366858&article.offset=0&articleLimit=10",
       "date": "2026-10-07",
       "owner": "정주원",
       "status": "신규"
