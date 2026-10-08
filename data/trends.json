@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T20:23:55.428Z",
+  "generatedAt": "2026-10-08T09:55:56.787Z",
   "windowDays": 14,
   "items": [
     {
@@ -75,26 +75,90 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "중장기전략위원회 혁신성장반 분과회의 개최",
+      "desc": "기획예산처와 중장기전략위원회는 '26.10.8일(목) 혁신성장반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784728&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금은 청년, 성장동력, 지방, 교육&middot;인재 4대 계정에 맞는 사업을 편성했고, 공공기관 지방이전 사업은 지방계정 사업 목적에 부합합니다.",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973215&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금의 전기요금 복지할인 지원은 성장의 과실을 취약계층과 나누고, 전력망 확충을 뒷받침하기 위한 사업입니다.",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973208&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "한국과 이집트, 고등교육분야 국제협력 활성화의 새로운 장 연다",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784658&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "반도체가 자라는 '시작점'까지 설계… 고집적&middot;저전력 AI 반도체 구현의 새 길",
+      "desc": "- KAIST&middot;UNIST&middot; 한양대 &middot;TDS Innovation 연구팀 , 2 차원 반도체의 핵생성을 원하는 위치로 제어 ... 네이처 게재 - 2 차원 반도체 결정의 단일 중심 성장 성공 , 차세대 적층 공정 활용으로 고집적 &middot; ...",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784602&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "「농지 조사 후속조치와 제도 개혁 방향」 브리핑 내용",
+      "desc": "안녕하십니까 . 어제 국정감사에서 농지 조사와 관련해 여러 지적이 있었습니다 . 특히 조사 이후 농지가 어떻게 처리되는지 정부의 설명이 충분하지 않았고 , 그로 인해 현장에서 불필요한 불안이 발생하고 있다는 지적이 있었습니다 . 한 분이라도 불안하게 여기신다면 저희의 불찰이라고 생각합니다 ...",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784688&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "'27년 농어촌 기본소득 시범사업, 신규 참여지역 10.8일부터 공모 개시",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 인구 감소 등으로 어려움을 겪고 있는 농어촌 지역에 새로운 활력을 불어 넣기 위해 추진 중인 농어촌 기본소득 시범사업 ( 이하 , ' 시범사업 ') 에 참여할 '27 년 신규 지역을 공모한다고 밝혔다 . *...",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784662&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "&quot;반려동물과의 마지막 동행까지 함께합니다&quot;",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 반려동물과의 이별을 준비 하거나 경험한 보호자의 심리적 어려움을 완화하고 건강한 반려문화를 조성하기 위해 「 펫로스 심리지원 프로그램 」 을 서울특별시 , 대전광역시 , 경상북도 구미시 * 에서 운영한다고 밝...",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784632&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "공익직불금 부정수급 관리를 더욱 철저히 하겠습니다.",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973235&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "5가지 유형뿐만 아니라, 투기 등이 아닌 모든 농지는 특별조치법 대상입니다",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973234&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "(보도설명) 미래대응기금은 청년, 성장동력, 지방, 교육&middot;인재 4대 계정에 맞는 사업을 편성했고, 다른 예산과 같이 국회 심의를 거쳐 운용됩니다.",
       "desc": "",
       "date": "2026-10-07",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973172&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 경제 성장에 따른 국가 부채 비율 개선은 국가의 부채 감당 능력이 개선되는 것을 의미합니다",
-      "desc": "",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973158&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부는 '27년 전부처 AI 예산 16.4조원의 약 20%인 3.1조원을 피지컬 AI에 집중 투자할 계획입니다.",
-      "desc": "",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973137&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -107,27 +171,11 @@
     },
     {
       "dept": "농식품부",
-      "title": "&quot;보고, 맛보고, 즐기는 K-미식의 정수 … 제1회 한식의 날, 국립중앙박물관에서 사흘간 축제 연다&quot;",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 외교부 ( 장관 조현 ) 는 법정기념일로 지정된 첫 ' 한식의 날 (10 월 24 일 )' 을 맞아 10 월 23 일 ( 금 ) 부터 25 일 ( 일 ) 까지 사흘간 국립중앙박물관 ...",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784482&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
       "title": "농지 촬영정보는 외부 유출 없이 안전하게 관리하고 있으며, 필요한 보안조치를 철저히 준수하고 있습니다.",
       "desc": "",
       "date": "2026-10-07",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973134&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "대한민국 과학기술인상 10월 수상자 이정은 교수 선정",
-      "desc": "- 원시별 'EC 53' 폭발 전후 변화를 세계 최초로 관측 … 초기 태양계 및 행성 형성 규명 - 국내 연구진이 기획 &middot; 주도한 국제공동연구 … 천문학적 난제 해결의 결정적 단서 제공",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784489&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
     },
     {
       "dept": "교육부",
@@ -170,46 +218,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "겨울철새 남하 시작...10월 중하순 본격 도래 전망",
-      "desc": "농림축산식품부 ( 장관 송미령 ) 와 기후에너지환경부 ( 장관 김성환 ) 는 겨울 철새의 국내도래가 시작되고 , 해외 야생조류 에서도 고병원성 조류인플루엔자 (AI) 검출이 증가함에 따라 국내 유입 &middot; 확산에 대비하여 선제적 방역대응을 강화한다 . 기후에...",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784373&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부, 「일본 치바 농산업박람회」 한국관 운영… K-농기자재 수출시장 확대 나선다",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 7 일부터 9 일까지 일본 치바 ( 도쿄 인근 ) 에서 열리는 국제 농산업박람회에 한국관을 운 영하며 한국의 우수한 K- 농기자재를 집중 홍보하고 수 출시장 개척에 나선다 . * 참가 ...",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784363&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "30만ha는 '투기의심 농지'가 아니며, 농지은행 '위탁'과 '매입'은 다릅니다.",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973103&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지 조사원은 지역 지리와 농지 사정에 밝은 지원자가 많이 선발된 것으로 판단됩니다.",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973105&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "데이터로 읽는 우리 교육 제15호 발간",
-      "desc": "&lt;데이터로 읽는 우리 교육&gt; 제15호 발간 - 교육기본통계로 살펴보는 우리나라 교육기관의 변화",
-      "date": "2026-10-05",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784325&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "[보도설명] 독자 AI 파운데이션 모델 개발은 계속되며, 동시에 최상위급 AI모델 개발에도 도전할 계획입니다(다수매체)",
       "desc": "",
@@ -239,14 +247,6 @@
       "desc": "기획예산처는 지방정부가 운영중인 국고보조 공공시설 운영현황 실태조사 및 제도개선 방안 마련을 추진합니다. 자세한 내용은 첨부를 참고해주시기 바랍니다.",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783896&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "전직 재정당국 수장 한 목소리로, &quot;미래를 여는 전략적 투자 사령탑&quot; 역할 주문",
-      "desc": "박홍근 장관은 9월 30일(수) 18시 30분 서울에서 역대 기획예산처 장관 정책 간담회를 개최하였습니다. 자세한 내용은 첨부를 참고해주시기 바랍니다.",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783860&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
