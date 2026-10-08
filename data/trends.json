@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T09:55:56.787Z",
+  "generatedAt": "2026-10-08T20:29:00.798Z",
   "windowDays": 14,
   "items": [
     {
@@ -107,6 +107,14 @@
     },
     {
       "dept": "과기정통부",
+      "title": "인공지능을 우리 일상의 곳곳에... 2026 전국 스마트 디바이스 공모전 결선 개최",
+      "desc": "- 2026 년 정보통신 스마트 디바이스 전국 공모전 결선 및 시상식 개최 - 총 161 건 접수 … 온디바이스 AI, 피지컬 AI 등 결선 6 팀 경합 - ' 알파팜텍 ' 기업 부문 대상 , ' 드란비 (Dranvi)' 일반 부문 대상 수상",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784733&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
       "title": "반도체가 자라는 '시작점'까지 설계… 고집적&middot;저전력 AI 반도체 구현의 새 길",
       "desc": "- KAIST&middot;UNIST&middot; 한양대 &middot;TDS Innovation 연구팀 , 2 차원 반도체의 핵생성을 원하는 위치로 제어 ... 네이처 게재 - 2 차원 반도체 결정의 단일 중심 성장 성공 , 차세대 적층 공정 활용으로 고집적 &middot; ...",
       "date": "2026-10-08",
@@ -159,14 +167,6 @@
       "desc": "",
       "date": "2026-10-07",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973172&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 한국사회보장정보원 주관 수익형 민간투자 소프트웨어사업 인정",
-      "desc": "- 보건 복지부 산하 한국사회보장정보원 주관 'AI 기반 사회보장통합 개발 플랫폼 구축 사업 ' … 복지 정책 - 수혜 시차 단축 기대 - 20 억 미만 소규모 민간투자 소프트웨어사업 패스트트랙 첫 적용으로 신기술 신속 도입 지원",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784498&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
