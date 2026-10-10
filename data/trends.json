@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T09:21:41.452Z",
+  "generatedAt": "2026-10-10T19:06:48.953Z",
   "windowDays": 14,
   "items": [
     {
@@ -99,6 +99,14 @@
     },
     {
       "dept": "교육부",
+      "title": "한·이집트, 고등교육 협력 확대…MOU 10년 만에 개정",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973216&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
       "title": "한국과 이집트, 고등교육분야 국제협력 활성화의 새로운 장 연다",
       "desc": "",
       "date": "2026-10-08",
@@ -119,6 +127,22 @@
       "desc": "- 한국과학기술원 &middot; 울산과학기술원 (KAIST&middot;UNIST)&middot; 한양대 &middot;TDS Innovation 연구팀 , 2 차원 반도체의 핵생성을 원하는 위치로 제어 ... 네이처 게재 - 2 차원 반도체 결정의 단일 중심 성장 성공 , ...",
       "date": "2026-10-08",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784602&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "10만 원대로 즐기는 '1박 2일' 농촌 여행…농촌관광벨트 상품 출시",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973211&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "정부, '투기 아니면 농지 처분 제외'…특별조치법 추진",
+      "desc": "",
+      "date": "2026-10-08",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973212&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
