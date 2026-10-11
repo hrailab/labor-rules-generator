@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T09:38:36.586Z",
+  "generatedAt": "2026-10-11T19:19:10.281Z",
   "windowDays": 14,
   "items": [
     {
@@ -73,6 +73,14 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "농식품부",
+      "title": "정부는 안정적인 계란 공급을 위해 신선란 수입선을 다변화해 왔습니다.",
+      "desc": "",
+      "date": "2026-10-11",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973280&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "중장기전략위원회 혁신성장반 분과회의 개최",
@@ -171,18 +179,18 @@
     },
     {
       "dept": "농식품부",
-      "title": "공익직불금 부정수급 관리를 더욱 철저히 하겠습니다.",
+      "title": "투기는 엄단, 조사 결과는 제도개선에 활용, 농지 조사의 원칙은 변하지 않았습니다.",
       "desc": "",
       "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973235&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973279&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "농식품부",
-      "title": "5가지 유형뿐만 아니라, 투기 등이 아닌 모든 농지는 특별조치법 대상입니다",
+      "title": "공익직불금 부정수급 관리를 더욱 철저히 하겠습니다.",
       "desc": "",
       "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973234&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973235&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -191,14 +199,6 @@
       "desc": "",
       "date": "2026-10-07",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973172&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지 촬영정보는 외부 유출 없이 안전하게 관리하고 있으며, 필요한 보안조치를 철저히 준수하고 있습니다.",
-      "desc": "",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973134&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
