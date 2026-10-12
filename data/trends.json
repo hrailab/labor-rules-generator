@@ -1,39 +1,16 @@
 {
-  "generatedAt": "2026-10-11T19:19:10.281Z",
+  "generatedAt": "2026-10-12T10:11:02.310Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "A00033-156784520",
-      "dept": "과기정통부",
+      "id": "A00032-156784857",
+      "dept": "중기부",
       "category": "정책예고",
-      "title": "제47회 전국학생과학발명품경진대회 시상식 개최",
-      "desc": "제47회 전국학생과학발명품경진대회 시상식 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784520&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00002-156784375",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "'꿈을 향한 장애학생들의 도전과 희망' 2026년 전국 장애학생 직업기능 경진대회 개최",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784375&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
+      "title": "중기부, 전국 17개 시&middot;도에서 '1차 모두의 창업' 지역별 오디션 개최",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 1차 「모두의 창업」 프로젝트(이하 '모두의 창업') 지역별 오디션을 13일(화)부터 15일(목)까지 사흘간 전국 17개 시&middot;도 '지역창업전담기관'인 창조경제혁신센터 등에서 개최한다고 밝혔다. '모두의 창업'은 국민 누구나 아이디어만 있으면 시제...",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784857&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -73,6 +50,102 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "기획예산처",
+      "title": "박홍근 장관, 서민금융 상담현장 방문 및 간담회 개최",
+      "desc": "박홍근 기획예산처 장관은 10월 12일(월) 서울시 중구 소공동에 소재한 중앙 서민금융통합지원센터를 방문하여 서민금융 상담현장을 참관하고 공공기관, 민간단체 및 이용자와 간담회를 개최하는 등 긴밀한 소통의 시간을 가졌습니다.",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784887&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "새로운 행정으로 변화를 이끌어 내는 적극행정 우수공무원 시상",
+      "desc": "",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784843&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "피지컬 AI 기술&middot;산업&middot;정책&middot;투자를 한자리에 「피지컬 AI Tech Week」 13일 개막",
+      "desc": "- 피지컬 AI 얼라이언스를 중심으로 정부 &middot; 산업계 &middot; 연구계가 함께하는 종합 협력의 장 - 범부처 사업설명회 , 글로벌 기술강연 , 얼라이언스 네트워킹으로 실증 &middot; 사업화 연계 - 피지컬 AI 기술전시 , 토크 콘서트 등을 통...",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784836&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "(관계 부처합동) 인공지능이 폐기물 종류 확인부터 배출 방법 안내까지 한번에! '인공지능 폐기물 처리 도우미' 앱 실증 개시",
+      "desc": "- 과학기술정보통신부 &middot; 기후에너지환경부 , 공공 인공지능 전환 사업( AX 프로젝트) 「 내 손안의 인공지능 폐기물 처리 도우미 」 앱 시범 서비스 개시 - 서울 은평구 주민 대상 실증 ...인공지능 폐기물 식별 및 일괄(원스톱) 배출 신청 지원",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784837&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "&quot;AI 시대의 장원을 찾습니다&quot; 국립과천과학관, 「AI 신(新) 과거제」 개최",
+      "desc": "\"AI 시대의 장원을 찾습니다\" 국립과천과학관, 「AI 신(新) 과거제」 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784833&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "중기부&middot;국세청, 2,559개 AI 중소&middot;스타트업 집중 지원",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 국세청(청장 임광현)은 미래 인공지능(이하 AI) 산업을 선도할 유망 AI 중소&middot;스타트업의 성장을 뒷받침하기 위해 2,559개사를 대상으로 양 기관의 지원을 집중 연계한다고 밝혔다. 이번 지원은 지난해 12월 양 기관이 체결한 「AI 중소&mid...",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784788&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "SNS상 유포 중인 '이소영 장관 122억 결제' 관련 게시물은 명백한 허위조작정보입니다.",
+      "desc": "",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973284&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "올해 K-푸드+ 수출을 빛낸 '별들의 축제'에 초대합니다!",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 올 한 해 K- 푸드 ⁺ 수출 주역들에게 수여하는 'K- 푸드 ⁺ 수출탑 ' 수상 후보를 10 월 13 일 ( 화 ) 부터 30 일 ( 금 ) 까지 모집한다 . 올해로 4 회째를...",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784829&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "Non-GMO 옥수수의 안정적 수급을 위해 공급망 안정화를 추진하겠습니다.",
+      "desc": "",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973335&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농지 조사의 원칙은 변하지 않았으며,정책이 오락가락했다는 주장은 사실과 다릅니다.",
+      "desc": "",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973327&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "사립대학 특성화에 집중 투자, 2026년 특성화 선도대학 33개교 선정",
+      "desc": "내용없음",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784844&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
+    },
+    {
+      "dept": "중기부",
+      "title": "유망 아이디어를 창업으로, 2차 &#xFF62;모두의 창업&#xFF63; AI 솔루션 선정",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 12일(월) 2차 「모두의 창업」 프로젝트(이하 「모두의 창업」) 도전자의 아이디어 구체화와 사업 모델 고도화를 지원할 인공지능(이하 AI) 솔루션 공급기업 50개사, 103개 솔루션을 공개한다고 밝혔다. 「모두의 창업」은 아이디어를 가진 국민 누구나...",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784789&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
+    },
     {
       "dept": "농식품부",
       "title": "정부는 안정적인 계란 공급을 위해 신선란 수입선을 다변화해 왔습니다.",
@@ -122,22 +195,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "인공지능을 우리 일상의 곳곳에... 2026 전국 스마트 디바이스 공모전 결선 개최",
-      "desc": "- 2026 년 정보통신 스마트 디바이스 전국 공모전 결선 및 시상식 개최 - 총 161 건 접수 … 온디바이스 AI, 피지컬 AI 등 결선 6 팀 경합 - ' 알파팜텍 ' 기업 부문 대상 , ' 드란비 (Dranvi)' 일반 부문 대상 수상",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784733&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "반도체가 자라는 '시작점'까지 설계… 고집적&middot;저전력 인공지능 반도체 구현의 새 길",
-      "desc": "- 한국과학기술원 &middot; 울산과학기술원 (KAIST&middot;UNIST)&middot; 한양대 &middot;TDS Innovation 연구팀 , 2 차원 반도체의 핵생성을 원하는 위치로 제어 ... 네이처 게재 - 2 차원 반도체 결정의 단일 중심 성장 성공 , ...",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784602&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "10만 원대로 즐기는 '1박 2일' 농촌 여행…농촌관광벨트 상품 출시",
       "desc": "",
@@ -170,43 +227,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "농촌을 잇고 지역에 활력을 더하다, 농촌관광벨트 기반 특화 여행상품 시범 운영",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 8 일부터 농촌관광벨트 시범모델 기반 특화 여행상품을 시범 운영한다고 밝혔다 . 지난 7 월 농식품부는 농촌관광 방문객 유입을 늘리고 , 증가하고 있는 체류형 관광수요 * 등에 대응하기 위해 시 ...",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784633&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "투기는 엄단, 조사 결과는 제도개선에 활용, 농지 조사의 원칙은 변하지 않았습니다.",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973279&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "공익직불금 부정수급 관리를 더욱 철저히 하겠습니다.",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973235&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "기획예산처",
       "title": "(보도설명) 미래대응기금은 청년, 성장동력, 지방, 교육&middot;인재 4대 계정에 맞는 사업을 편성했고, 다른 예산과 같이 국회 심의를 거쳐 운용됩니다.",
       "desc": "",
       "date": "2026-10-07",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973172&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "재외동포 어린이, 그림일기로 한국어 실력을 선보이다",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784376&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -234,14 +259,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "중기부",
-      "title": "거제&middot;통영 특별재난지역 소상공인&middot;중소기업 정책자금 금리 낮추고 상환기간 늘린다",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 지난 9월 28일(월) 「2026년 제1차 재난대책심의위원회」를 개최하고, 호우 피해로 특별재난지역으로 선포된 거제&middot;통영 지역의 소상공인과 중소기업을 위한 '재해자금지원방안'을 의결했다고 밝혔다. 이에 따라 피해기업에 대한 긴급경영안전자금 금리와 ...",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784324&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "[보도설명] 독자 AI 파운데이션 모델 개발은 계속되며, 동시에 최상위급 AI모델 개발에도 도전할 계획입니다(다수매체)",
       "desc": "",
@@ -255,22 +272,6 @@
       "desc": "기획예산처는 KDI&middot;OECD와 공동으로 9.30(수)~10.1(목) 양일간 프랑스 파리 OECD본부에서 제14회 한-OECD 국제재정포럼을 개최하였으며, 조용범 차관은 스테파노 스카르페타(Stefano Scarpetta) OECD 수석 이코노미스트와 양자면담을 가졌습니다. 자세한 내용은 첨...",
       "date": "2026-10-02",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784104&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "글로벌 시장에서 K-브랜드 보호를 위한 중기부-지재처 협업 체계 가동",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 지식재산처(처장 김용선, 이하 지재처)는 10월 2일(금) 오후 정부대전청사에서 '중소기업 K-브랜드 지식재산 보호 협의체' 운영을 위한 착수 회의를 개최한다고 밝혔다. 최근 한류 열풍 등에 힘입어, K-뷰티, K-푸드, K-패션 등 K-브랜드의 인기가 높아...",
-      "date": "2026-10-02",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784074&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "「지방정부 국고보조시설 효율화 방안」 도출을 위한 심층평가 착수",
-      "desc": "기획예산처는 지방정부가 운영중인 국고보조 공공시설 운영현황 실태조사 및 제도개선 방안 마련을 추진합니다. 자세한 내용은 첨부를 참고해주시기 바랍니다.",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783896&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -295,14 +296,6 @@
       "desc": "",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972815&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "중기부-금융위, 모태펀드-국민성장펀드 제2차 이어달리기 합동 밋업(Meet-Up) 개최",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 금융위원회(위원장 이억원, 이하 금융위)는 10월 1일(목) 한국성장금융투자운용(서울 영등포구 국제금융로8길31)에서 '제2차 모태펀드-국민성장펀드 이어달리기 합동 밋업(Meet-Up)' 행사를 개최*했다고 밝혔다. * 제1차 이어달리기 : (일시) '26....",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783964&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
