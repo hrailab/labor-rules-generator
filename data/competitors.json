@@ -1,14 +1,34 @@
 {
-  "generatedAt": "2026-10-11T19:27:08.041Z",
+  "generatedAt": "2026-10-12T10:36:03.773Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "skku-140504",
+      "school": "성균관대",
+      "title": "2026학년도 국제동계학기(WISE) 본교생 수강신청 사전 안내",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140504&article.offset=0&articleLimit=10",
+      "date": "2026-10-12",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026692",
+      "school": "한양대",
+      "title": "한양대 안원비 학생, 코리아국제현대무용콩쿠르 전체 대상…문체부 장관상",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026692",
+      "date": "2026-10-12",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "hyu-1026496",
       "school": "한양대",
       "title": "[한양에 이런 일이?!] 국어교사가 만든 교육 플랫폼 ‘리로스쿨’, 최석 동문을 찾아서",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026496",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +38,17 @@
       "title": "10년의 기다림 끝에 정상으로… 한양대, 대학동문골프최강전 우승",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026275",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026675",
+      "school": "한양대",
+      "title": "신현상 글로벌사회혁신단장, 유니세프 포럼서 ‘컬렉티브 임팩트’ 기조강연 진행",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026675",
+      "date": "2026-10-12",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,18 +58,28 @@
       "title": "[한국대학신문] 한양대 ERICA GAIA센터, 경기도 앵커 사업서 반도체 원천기술 30억5000만 원 기술이전 성과 달성",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026557",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026559",
-      "school": "한양대",
-      "title": "[한국경제] 한양대 경영전문대학원, 산업 맞춤형 특화교육 및 글로벌 역량 강화로 산업별 전문 경영인 양성",
+      "id": "khu-323083",
+      "school": "경희대",
+      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(10월)",
       "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026559",
-      "date": "2026-10-11",
-      "owner": "서원석",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
+      "date": "2026-10-12",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766567",
+      "school": "동국대",
+      "title": "2026 동계 일본 삿포로가쿠인대학 단기연수 참가자 선발",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766567",
+      "date": "2026-10-12",
+      "owner": "이수연",
       "status": "신규"
     },
     {
@@ -48,7 +88,7 @@
       "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "owner": "정주원",
       "status": "신규"
     },
@@ -58,18 +98,8 @@
       "title": "본교-금융감독원, 금융권 기후리스크 관리 국제컨퍼런스 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=366858&article.offset=0&articleLimit=10",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140238",
-      "school": "성균관대",
-      "title": "[인공지능혁신융합대학사업단] 2026 인공지능혁신융합대학사업단 호주 UTAS 해외교육 모집 안내",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140238&article.offset=0&articleLimit=10",
-      "date": "2026-10-07",
-      "owner": "서원석",
       "status": "신규"
     },
     {
@@ -93,32 +123,12 @@
       "status": "신규"
     },
     {
-      "id": "skku-140156",
-      "school": "성균관대",
-      "title": "[앵커사업단] 2026 랜선으로 만나는 릴레이 글로벌 취·창업 톡톡톡(talk) 특강 신청 안내",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140156&article.offset=0&articleLimit=10",
-      "date": "2026-10-06",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
       "id": "dgu-26766489",
       "school": "동국대",
       "title": "2027-1학기 일본 Outbound 교환학생 선발(2차) 공고",
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766489",
       "date": "2026-10-06",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323083",
-      "school": "경희대",
-      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(10월)",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
-      "date": "2026-10-02",
       "owner": "이수연",
       "status": "신규"
     },
@@ -148,16 +158,6 @@
       "title": "영국 University of Westminster 교환학생 프로그램 Info Session 안내",
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766427",
-      "date": "2026-09-30",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766425",
-      "school": "동국대",
-      "title": "ETS 주최 IBT TOEFL(토플) 응시료 10% 할인 안내",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766425",
       "date": "2026-09-30",
       "owner": "이수연",
       "status": "신규"
