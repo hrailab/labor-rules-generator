@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T10:03:59.634Z",
+  "generatedAt": "2026-10-13T20:29:46.106Z",
   "windowDays": 14,
   "items": [
     {
@@ -296,30 +296,6 @@
       "desc": "",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972890&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "민·관이 함께 '국가 AI 안전 종합계획' 수립한다",
-      "desc": "",
-      "date": "2026-09-30",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972829&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "송미령 장관 \"농지 전수조사, 실태 파악 목적…현실에 맞게 개선\"",
-      "desc": "",
-      "date": "2026-09-30",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972814&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "경북 영양 등 농어촌 기본소득 지역에 '찾아가는 식품 서비스' 개시",
-      "desc": "",
-      "date": "2026-09-30",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972812&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
