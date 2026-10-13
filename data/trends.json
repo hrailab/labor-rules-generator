@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-10-12T10:11:02.310Z",
+  "generatedAt": "2026-10-13T10:03:59.634Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "A00002-156784968",
+      "dept": "교육부",
+      "category": "정책예고",
+      "title": "부트캠프 학생들, 반도체와 미래차 산업 현장을 만나다",
+      "desc": "",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784968&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "정주원",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00032-156784857",
       "dept": "중기부",
@@ -24,32 +47,65 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
-    },
-    {
-      "id": "A00033-148972767",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "대학 교육 AI 중심으로 전환…AI중심대학 18곳·AX대학원 15곳 출범",
-      "desc": "",
-      "date": "2026-09-29",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972767&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     }
   ],
   "excludedItems": [
+    {
+      "dept": "과기정통부",
+      "title": "과기정통부, 나의 연구 도전기 본선 대회 개최... 연구 결과 뒤 숨은 과정들을 이야기하다",
+      "desc": "과기정통부, 나의 연구 도전기 본선 대회 개최... 연구 결과 뒤 숨은 과정들을 이야기하다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785013&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "배경훈 부총리, 피지컬 AI 얼라이언스와 현장 중심의 실질적 성과 창출 가속화",
+      "desc": "- 피지컬 AI 얼라이언스 간담회를 통해 산업 현장 애로 및 정책 수요 청취 - K- 피지컬 AI 풀스택 &middot; 산업별 실증 &middot; 데이터 &middot; 표준 등 추진성과 및 실행과제 점검 - 관계부처 사업 &middot; 정책금융 연계해 현장 실증과 ...",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784992&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "13개국 퀀텀개발그룹, 안전하고 신뢰할 수 있는 퀀텀 생태계 구축을 위한 협력 의지 다져",
+      "desc": "- 외교부 , 제 6 차 퀀텀개발그룹 (QDG, Quantum Development Group) 회의 개최 - 퀀텀기술 보호 &middot; 투자 &middot; 표준화 분야 국제협력 및 산업계 참여 확대 방안 논의",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785006&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "여성농업인과 함께, 세계로 도약하는 희망농촌!",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 농협중앙회와 함께 10 월 13 일 ( 화 ) 서울 양재 aT 센터에서 제 5 회 ' 여성농업인의 날 ' 기념행사를 개최하였다 . 정부와 농업계는 농업 &middot; 농촌에서 중추적인 역할을 ...",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785011&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부, 고병원성 조류인플루엔자 방역 현장 대응력 향상을 위한 2026년 안전한국훈련 실시",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 13 일 ( 화 ) 농식품부 재난상황실에서 행정안전부 , 기후에너지환경부 , 질병관리청 , 농림축산검역본부 , 가축위생방역지원본부 , 전북특별자치도 , 완주군 , 농협경제지주 ...",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785010&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부 2030청년자문단, 현장형 워크숍 통해 정책 아이디어 발굴",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 12 일 ( 월 ) 부터 13 일 ( 화 ) 까지 1 박 2 일간 충남 아산 외암민속마을과 충북 청주 영농형태양광 실증단지 일원에서 ' 제 3 기 2030 청년자문단 워크숍 '...",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784981&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "정부는 계란 수급 안정과 국내 산업기반 강화를 병행하고 있으며 브라질 수입은 전체 수입량의 0.8% 수준의 시범적 조치입니다.",
+      "desc": "",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973421&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "박홍근 장관, 서민금융 상담현장 방문 및 간담회 개최",
@@ -64,30 +120,6 @@
       "desc": "",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784843&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "피지컬 AI 기술&middot;산업&middot;정책&middot;투자를 한자리에 「피지컬 AI Tech Week」 13일 개막",
-      "desc": "- 피지컬 AI 얼라이언스를 중심으로 정부 &middot; 산업계 &middot; 연구계가 함께하는 종합 협력의 장 - 범부처 사업설명회 , 글로벌 기술강연 , 얼라이언스 네트워킹으로 실증 &middot; 사업화 연계 - 피지컬 AI 기술전시 , 토크 콘서트 등을 통...",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784836&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "(관계 부처합동) 인공지능이 폐기물 종류 확인부터 배출 방법 안내까지 한번에! '인공지능 폐기물 처리 도우미' 앱 실증 개시",
-      "desc": "- 과학기술정보통신부 &middot; 기후에너지환경부 , 공공 인공지능 전환 사업( AX 프로젝트) 「 내 손안의 인공지능 폐기물 처리 도우미 」 앱 시범 서비스 개시 - 서울 은평구 주민 대상 실증 ...인공지능 폐기물 식별 및 일괄(원스톱) 배출 신청 지원",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784837&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "&quot;AI 시대의 장원을 찾습니다&quot; 국립과천과학관, 「AI 신(新) 과거제」 개최",
-      "desc": "\"AI 시대의 장원을 찾습니다\" 국립과천과학관, 「AI 신(新) 과거제」 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784833&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -108,10 +140,10 @@
     },
     {
       "dept": "농식품부",
-      "title": "올해 K-푸드+ 수출을 빛낸 '별들의 축제'에 초대합니다!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 올 한 해 K- 푸드 ⁺ 수출 주역들에게 수여하는 'K- 푸드 ⁺ 수출탑 ' 수상 후보를 10 월 13 일 ( 화 ) 부터 30 일 ( 금 ) 까지 모집한다 . 올해로 4 회째를...",
+      "title": "농협 부실채권 증가는 농지전수조사의 영향으로 보기 어렵습니다.",
+      "desc": "",
       "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784829&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973353&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -120,14 +152,6 @@
       "desc": "",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973335&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지 조사의 원칙은 변하지 않았으며,정책이 오락가락했다는 주장은 사실과 다릅니다.",
-      "desc": "",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973327&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -145,14 +169,6 @@
       "date": "2026-10-12",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784789&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "농식품부",
-      "title": "정부는 안정적인 계란 공급을 위해 신선란 수입선을 다변화해 왔습니다.",
-      "desc": "",
-      "date": "2026-10-11",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973280&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
     },
     {
       "dept": "기획예산처",
@@ -187,14 +203,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "교육부",
-      "title": "한국과 이집트, 고등교육분야 국제협력 활성화의 새로운 장 연다",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784658&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "10만 원대로 즐기는 '1박 2일' 농촌 여행…농촌관광벨트 상품 출시",
       "desc": "",
@@ -208,22 +216,6 @@
       "desc": "",
       "date": "2026-10-08",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973212&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "「농지 조사 후속조치와 제도 개혁 방향」 브리핑 내용",
-      "desc": "안녕하십니까 . 어제 국정감사에서 농지 조사와 관련해 여러 지적이 있었습니다 . 특히 조사 이후 농지가 어떻게 처리되는지 정부의 설명이 충분하지 않았고 , 그로 인해 현장에서 불필요한 불안이 발생하고 있다는 지적이 있었습니다 . 한 분이라도 불안하게 여기신다면 저희의 불찰이라고 생각합니다 ...",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784688&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "'27년 농어촌 기본소득 시범사업, 신규 참여지역 10.8일부터 공모 개시",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 인구 감소 등으로 어려움을 겪고 있는 농어촌 지역에 새로운 활력을 불어 넣기 위해 추진 중인 농어촌 기본소득 시범사업 ( 이하 , ' 시범사업 ') 에 참여할 '27 년 신규 지역을 공모한다고 밝혔다 . *...",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784662&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
