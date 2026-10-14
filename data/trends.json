@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-14T08:22:10.801Z",
+  "generatedAt": "2026-10-14T19:09:37.958Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "A00008-156785076",
-      "dept": "농식품부",
+      "id": "A00033-156785186",
+      "dept": "과기정통부",
       "category": "정책예고",
-      "title": "&quot;비 오기 전에 수확할까?&quot; AI가 종자 수확시기 알려준다",
-      "desc": "국립종자원 ( 원장 양주필 ) 과 한국전자기술연구원 ( 원장 노건기 ) 은 기상정보와 벼 생육정보를 활용해 종자의 적정 수확시기를 예측하는 'AI 기반 종자 수 확기 예측 프로그램 ' 을 개발하고 정부 보급종 생산현장뿐만 아니라 지방정부와 민간 종자업체에도 제공하여 적극 활용하고...",
+      "title": "주요 13개국, 양자기술 정책부터 연구개발, 산업화 등 전주기 협력 강화",
+      "desc": "- 과기정통부 , 「 제 9 차 양자기술다자대화 」 및 「 양자기술 산업화 비즈니스 나이트 」 개최 - 英 양자컴퓨터 조달프로그램 ' ProQure' 및 글로벌 양자기업의 활용사례 소개 - 7 대 SEED 핵심사업인 ' 국산 양자컴퓨터 제조챌린지 ' 등 ...",
       "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785076&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785186&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "이수연",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -67,6 +67,14 @@
       "reason": "relevance"
     },
     {
+      "dept": "기획예산처",
+      "title": "(보도설명) 26년 11~12월 국채발행 추가 축소 여부 및 규모는 정해지지 않았습니다.",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973499&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "교육부",
       "title": "교육부는 유아 대상 레벨테스트 금지 제도가 현장에서 실효성 있게 작동하도록 점검 및 조치를 강화하겠습니다",
       "desc": "",
@@ -96,14 +104,6 @@
       "desc": "- 「 2026 네이처 컨퍼런스 」 계기 네이처 편집위원 및 KAIST 관계자와 간담회 - K- 문샷으로 추진 중인 휴머노이드 기술 경쟁력 강화 방안 논의",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785110&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "2026년 9월 정보통신산업(ICT) 수출입 동향",
-      "desc": "- 정보통신산업(ICT) 수출 700 억 달러 , 무역수지는 500 억 달러를 초과하며 역대 최고 실적 기록 - 반도체가 603.3 억 달러로 정보통신산업(ICT) 수출의 80.3% 를 차지하며 전체 수출을 견인 ※ 9 월 정보통신산업( ICT) 수출 751.5 ...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785075&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -144,6 +144,14 @@
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 14일(수)부터 2026년 해외규격인증획득 지원사업(3차)에 참여할 중소기업을 모집한다고 밝혔다. 해외규격인증획득 지원사업은 중소기업이 해외 진출 과정에서 수출 대상국이 요구하는 규격인증 획득을 위해 인증, 시험, 컨설팅 등에 지출하는 비용의 일부를 ...",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785057&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부 차관, AI 농업로봇 실증 현장 방문",
+      "desc": "김종구 농림축산식품부 ( 이하 ' 농식품부 ') 차관은 10 월 14 일 ( 수 ) , 성주참외과 채류연구소를 방문하여 인공지능 (AI) 농업로봇의 기술개발 &middot; 실증 현황을 점검하고 , 기업들과 농업로봇의 현장 확산과 산업 성장을 위한 간담회를 가졌다 ...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785187&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -243,14 +251,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금은 청년, 성장동력, 지방, 교육&middot;인재 4대 계정에 맞는 사업을 편성했고, 다른 예산과 같이 국회 심의를 거쳐 운용됩니다.",
-      "desc": "",
-      "date": "2026-10-07",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973172&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "과기정통부, 금융권 해킹사고 '24시간 비상대응체계' 가동",
       "desc": "",
@@ -272,30 +272,6 @@
       "desc": "",
       "date": "2026-10-06",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973061&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "국민 아이디어로 AI 서비스 만든다…'모두의 AI실험실' 본격 가동",
-      "desc": "",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972887&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "온누리상품권, 전통시장 최대 10% 할인…지방 골목상권은 8%까지",
-      "desc": "",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972815&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "가을엔 '촌캉스' 떠나볼까…농촌여행 상품 최대 50% 할인",
-      "desc": "",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972890&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
