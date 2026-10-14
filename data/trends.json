@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-10-13T20:29:46.106Z",
+  "generatedAt": "2026-10-14T08:22:10.801Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "A00008-156785076",
+      "dept": "농식품부",
+      "category": "정책예고",
+      "title": "&quot;비 오기 전에 수확할까?&quot; AI가 종자 수확시기 알려준다",
+      "desc": "국립종자원 ( 원장 양주필 ) 과 한국전자기술연구원 ( 원장 노건기 ) 은 기상정보와 벼 생육정보를 활용해 종자의 적정 수확시기를 예측하는 'AI 기반 종자 수 확기 예측 프로그램 ' 을 개발하고 정부 보급종 생산현장뿐만 아니라 지방정부와 민간 종자업체에도 제공하여 적극 활용하고...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785076&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00002-156784968",
       "dept": "교육부",
@@ -24,78 +47,119 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
-    },
-    {
-      "id": "A00032-156784857",
-      "dept": "중기부",
-      "category": "정책예고",
-      "title": "중기부, 전국 17개 시&middot;도에서 '1차 모두의 창업' 지역별 오디션 개최",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 1차 「모두의 창업」 프로젝트(이하 '모두의 창업') 지역별 오디션을 13일(화)부터 15일(목)까지 사흘간 전국 17개 시&middot;도 '지역창업전담기관'인 창조경제혁신센터 등에서 개최한다고 밝혔다. '모두의 창업'은 국민 누구나 아이디어만 있으면 시제...",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784857&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     }
   ],
   "excludedItems": [
     {
-      "dept": "과기정통부",
-      "title": "과기정통부, 나의 연구 도전기 본선 대회 개최... 연구 결과 뒤 숨은 과정들을 이야기하다",
-      "desc": "과기정통부, 나의 연구 도전기 본선 대회 개최... 연구 결과 뒤 숨은 과정들을 이야기하다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785013&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "dept": "기획예산처",
+      "title": "제10차 확대간부회의 개최",
+      "desc": "기획예산처는 '26.10.14.(수) 9시 30분 정부세종청사 5-1동 4층 대회의실에서 박홍근 장관 주재로 제10차 확대간부회의를 개최하였습니다. 자세한 내용은 첨부자료를 참고해주시기 바랍니다.",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785116&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도참고) IMF, 우리나라 부채 전망 대폭 하향",
+      "desc": "IMF는 금일 발표된 IMF FM(Fiscal Monitor) '26.10월호에서 우리나라의 일반정부부채 전망을 대폭 하향하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785083&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "교육부는 유아 대상 레벨테스트 금지 제도가 현장에서 실효성 있게 작동하도록 점검 및 조치를 강화하겠습니다",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785145&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "학교 태양광 설비 안전관리 강화를 위해 교육부-한국전기안전공사 손 맞잡는다",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785104&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "과기정통부",
-      "title": "배경훈 부총리, 피지컬 AI 얼라이언스와 현장 중심의 실질적 성과 창출 가속화",
-      "desc": "- 피지컬 AI 얼라이언스 간담회를 통해 산업 현장 애로 및 정책 수요 청취 - K- 피지컬 AI 풀스택 &middot; 산업별 실증 &middot; 데이터 &middot; 표준 등 추진성과 및 실행과제 점검 - 관계부처 사업 &middot; 정책금융 연계해 현장 실증과 ...",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784992&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "한-스코틀랜드, 반도체 분야 협력 강화 방안 논의",
+      "desc": "한-스코틀랜드, 반도체 분야 협력 강화 방안 논의 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785127&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "과기정통부",
-      "title": "13개국 퀀텀개발그룹, 안전하고 신뢰할 수 있는 퀀텀 생태계 구축을 위한 협력 의지 다져",
-      "desc": "- 외교부 , 제 6 차 퀀텀개발그룹 (QDG, Quantum Development Group) 회의 개최 - 퀀텀기술 보호 &middot; 투자 &middot; 표준화 분야 국제협력 및 산업계 참여 확대 방안 논의",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785006&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "과기정통부, 국제 학술지 네이처(Nature)와 미래 로보틱스 발전 방향 논의",
+      "desc": "- 「 2026 네이처 컨퍼런스 」 계기 네이처 편집위원 및 KAIST 관계자와 간담회 - K- 문샷으로 추진 중인 휴머노이드 기술 경쟁력 강화 방안 논의",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785110&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "2026년 9월 정보통신산업(ICT) 수출입 동향",
+      "desc": "- 정보통신산업(ICT) 수출 700 억 달러 , 무역수지는 500 억 달러를 초과하며 역대 최고 실적 기록 - 반도체가 603.3 억 달러로 정보통신산업(ICT) 수출의 80.3% 를 차지하며 전체 수출을 견인 ※ 9 월 정보통신산업( ICT) 수출 751.5 ...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785075&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "[보도설명] 초고속인터넷 속도 및 순위 관련 보도에 대하여 다음과 같이 설명드립니다(다수 매체)",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973494&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "[보도설명] 과기정통부는 출연연구기관의 사이버보안을 강화해 나아가겠습니다.(동아일보)",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973475&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "「코리아 그랜드 페스티벌」 연계 '상생소비복권' 이벤트 개최",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 29일부터 개최되는 범부처 국가 단위 할인 행사인 「코리아 그랜드 페스티벌」의 소비 참여를 확대하기 위해 10월 15일부터 전 국민을 대상으로 '상생소비복권' 이벤트를 진행한다고 밝혔다. 「코리아 그랜드 페스티벌」은 내수 활성화와 지역 소비 촉진을 위...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785112&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "이소영 장관, 스마트제조혁신 현장방문 &quot;AI 대전환 시대, 중소기업이 당당한 주역돼야&quot;",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부) 이소영 장관은 10월 13일(화) 서울 코엑스에서 열린 '2026 스마트비즈엑스포(Smart Biz Expo)' 개막식에 참석해 상생형 스마트공장의 성과를 확인하고, 곧바로 실제 인공지능(이하 AI)을 활용하고 있는 스마트공장 현장을 연이어 방문하였다. 스마트제...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785061&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "해외규격인증획득 지원사업(3차) 참여기업 모집",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 14일(수)부터 2026년 해외규격인증획득 지원사업(3차)에 참여할 중소기업을 모집한다고 밝혔다. 해외규격인증획득 지원사업은 중소기업이 해외 진출 과정에서 수출 대상국이 요구하는 규격인증 획득을 위해 인증, 시험, 컨설팅 등에 지출하는 비용의 일부를 ...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785057&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "농식품부",
-      "title": "여성농업인과 함께, 세계로 도약하는 희망농촌!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 농협중앙회와 함께 10 월 13 일 ( 화 ) 서울 양재 aT 센터에서 제 5 회 ' 여성농업인의 날 ' 기념행사를 개최하였다 . 정부와 농업계는 농업 &middot; 농촌에서 중추적인 역할을 ...",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785011&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "농식품부 장관, 가을철 사과 수확 현장 점검",
+      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 14 일 ( 수 ), 가을철 본격적인 수확기를 맞아 경남 함양군의 사과 재배 농가를 방문하여 , 홍로 &middot; 후지 등 주요 사과 품종의 작황 점검과 함께 농업인들의 애로사항을 청취하였다 . 이날...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785170&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "농식품부",
-      "title": "농식품부, 고병원성 조류인플루엔자 방역 현장 대응력 향상을 위한 2026년 안전한국훈련 실시",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 13 일 ( 화 ) 농식품부 재난상황실에서 행정안전부 , 기후에너지환경부 , 질병관리청 , 농림축산검역본부 , 가축위생방역지원본부 , 전북특별자치도 , 완주군 , 농협경제지주 ...",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785010&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부 2030청년자문단, 현장형 워크숍 통해 정책 아이디어 발굴",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 12 일 ( 월 ) 부터 13 일 ( 화 ) 까지 1 박 2 일간 충남 아산 외암민속마을과 충북 청주 영농형태양광 실증단지 일원에서 ' 제 3 기 2030 청년자문단 워크숍 '...",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784981&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "농식품부 장관, 마을 이장 만나 농지 조사 후속조치 설명",
+      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 14 일 ( 수 ) 경상남도 함양군청에서 마을 이장들과 간담회를 갖고 , 농지 조사 후속조치 방향과 제도개선 계획을 설명하는 한편 , 농촌 현장의 의견을 청취했다고 밝혔다 . 이번 간담회는 농지 조사와 ...",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785111&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -112,22 +176,6 @@
       "desc": "박홍근 기획예산처 장관은 10월 12일(월) 서울시 중구 소공동에 소재한 중앙 서민금융통합지원센터를 방문하여 서민금융 상담현장을 참관하고 공공기관, 민간단체 및 이용자와 간담회를 개최하는 등 긴밀한 소통의 시간을 가졌습니다.",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784887&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "새로운 행정으로 변화를 이끌어 내는 적극행정 우수공무원 시상",
-      "desc": "",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784843&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "중기부&middot;국세청, 2,559개 AI 중소&middot;스타트업 집중 지원",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 국세청(청장 임광현)은 미래 인공지능(이하 AI) 산업을 선도할 유망 AI 중소&middot;스타트업의 성장을 뒷받침하기 위해 2,559개사를 대상으로 양 기관의 지원을 집중 연계한다고 밝혔다. 이번 지원은 지난해 12월 양 기관이 체결한 「AI 중소&mid...",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784788&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -152,30 +200,6 @@
       "desc": "",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973335&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "사립대학 특성화에 집중 투자, 2026년 특성화 선도대학 33개교 선정",
-      "desc": "내용없음",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784844&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "중기부",
-      "title": "유망 아이디어를 창업으로, 2차 &#xFF62;모두의 창업&#xFF63; AI 솔루션 선정",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 12일(월) 2차 「모두의 창업」 프로젝트(이하 「모두의 창업」) 도전자의 아이디어 구체화와 사업 모델 고도화를 지원할 인공지능(이하 AI) 솔루션 공급기업 50개사, 103개 솔루션을 공개한다고 밝혔다. 「모두의 창업」은 아이디어를 가진 국민 누구나...",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784789&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "중장기전략위원회 혁신성장반 분과회의 개최",
-      "desc": "기획예산처와 중장기전략위원회는 '26.10.8일(목) 혁신성장반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784728&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -252,34 +276,10 @@
     },
     {
       "dept": "과기정통부",
-      "title": "[보도설명] 독자 AI 파운데이션 모델 개발은 계속되며, 동시에 최상위급 AI모델 개발에도 도전할 계획입니다(다수매체)",
-      "desc": "",
-      "date": "2026-10-03",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972991&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "제14회 한-OECD 국제재정포럼 및 OECD 수석 이코노미스트 양자면담 결과",
-      "desc": "기획예산처는 KDI&middot;OECD와 공동으로 9.30(수)~10.1(목) 양일간 프랑스 파리 OECD본부에서 제14회 한-OECD 국제재정포럼을 개최하였으며, 조용범 차관은 스테파노 스카르페타(Stefano Scarpetta) OECD 수석 이코노미스트와 양자면담을 가졌습니다. 자세한 내용은 첨...",
-      "date": "2026-10-02",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784104&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
       "title": "국민 아이디어로 AI 서비스 만든다…'모두의 AI실험실' 본격 가동",
       "desc": "",
       "date": "2026-10-01",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972887&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "[보도설명] 독자 AI 파운데이션 모델 프로젝트 중단 및 최상위급 AI모델 개발 관련 SPC 설립 여부 등에 대해서는 정해진 바 없음을 알려드립니다.",
-      "desc": "",
-      "date": "2026-10-01",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148972875&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
