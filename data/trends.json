@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T19:09:37.958Z",
+  "generatedAt": "2026-10-15T07:58:31.715Z",
   "windowDays": 14,
   "items": [
     {
@@ -24,46 +24,79 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
-    },
-    {
-      "id": "A00002-156784968",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "부트캠프 학생들, 반도체와 미래차 산업 현장을 만나다",
-      "desc": "",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784968&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     }
   ],
   "excludedItems": [
+    {
+      "dept": "기획예산처",
+      "title": "「지역활성화 투자 펀드 로드쇼」 개최",
+      "desc": "「'26년도 지역활성화 투자 펀드 로드쇼」가 13개 광역 및 관내 기초 지방정부를 대상으로 권역별로 개최될 예정입니다. 자세한 내용은 첨부파일을 확인해 주시기 바랍니다.",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785331&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "[보도참고] 「월간 재정동향」 2026년 10월호 발간",
+      "desc": "ㅁ 기획예산처는 「월간 재정동향 」 '26년 10월호를 발간하여 '26.8월말 기준 재정운용을 발표하였음. ※ 자세한 사항 및 관련 문의처는 붙임을 참고하시기 바랍니다.",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785261&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "어린이집&middot;유치원 입소&middot;입학 신청, 더 쉽고 편리해진다",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785298&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "[설명자료] 직업계고 학과가 산업계 요구와 변화에 맞춰 재구조화될 수 있도록 적극 지원하겠습니다",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973554&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
+      "desc": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785264&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "신선농산물 최초 '포도 수출 1억 달러' 시대 연다",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 경상북도 ( 도지사 이철우 ) 는 10 월 15 일 ( 목 ) 오후 , 대한민국 대표 포도 주산지인 경북 상주시 소재 포도 농장 ( 도영농원 ) 에서 ' 포도 수출 1 억 달러 도약 현장 ...",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785342&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부-군수협의회, 신뢰와 소통을 기반으로 농정 협력 강화키로!",
+      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 15 일 ( 목 ) 전북 무주군 태권도원 에서 개최된 ' 제 16 차 전국농어촌지역군수협의회 * 총회 ' 에 참석하여 정부의 농업 &middot; 농촌 정책을 공유하고 협력 방안을 논의하였다 ...",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785332&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "겨울철 가축전염병 예방을 위한 특별방역대책점검회의 개최",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 10 월 15 일 ( 목 ), 철새 도래가 본격화되는 겨울철이 시작되기 전 고병원성 조류인플루엔자 (AI) 를 비롯한 가축전염병 예방을 위해 특별방역대책점검회의를 진행하였다 . 올해는 해외 야생조류의 고병원성 A...",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785278&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "제10차 확대간부회의 개최",
       "desc": "기획예산처는 '26.10.14.(수) 9시 30분 정부세종청사 5-1동 4층 대회의실에서 박홍근 장관 주재로 제10차 확대간부회의를 개최하였습니다. 자세한 내용은 첨부자료를 참고해주시기 바랍니다.",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785116&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도참고) IMF, 우리나라 부채 전망 대폭 하향",
-      "desc": "IMF는 금일 발표된 IMF FM(Fiscal Monitor) '26.10월호에서 우리나라의 일반정부부채 전망을 대폭 하향하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785083&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -96,14 +129,6 @@
       "desc": "한-스코틀랜드, 반도체 분야 협력 강화 방안 논의 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785127&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 국제 학술지 네이처(Nature)와 미래 로보틱스 발전 방향 논의",
-      "desc": "- 「 2026 네이처 컨퍼런스 」 계기 네이처 편집위원 및 KAIST 관계자와 간담회 - K- 문샷으로 추진 중인 휴머노이드 기술 경쟁력 강화 방안 논의",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785110&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -148,26 +173,10 @@
     },
     {
       "dept": "농식품부",
-      "title": "농식품부 차관, AI 농업로봇 실증 현장 방문",
-      "desc": "김종구 농림축산식품부 ( 이하 ' 농식품부 ') 차관은 10 월 14 일 ( 수 ) , 성주참외과 채류연구소를 방문하여 인공지능 (AI) 농업로봇의 기술개발 &middot; 실증 현황을 점검하고 , 기업들과 농업로봇의 현장 확산과 산업 성장을 위한 간담회를 가졌다 ...",
+      "title": "민간 비축시설 활용은 비축사업 효율화의 일환이며, 비축기지 신설은 노후기지 매각과 함께 검토&middot;추진되고 있습니다.",
+      "desc": "",
       "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785187&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부 장관, 가을철 사과 수확 현장 점검",
-      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 14 일 ( 수 ), 가을철 본격적인 수확기를 맞아 경남 함양군의 사과 재배 농가를 방문하여 , 홍로 &middot; 후지 등 주요 사과 품종의 작황 점검과 함께 농업인들의 애로사항을 청취하였다 . 이날...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785170&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부 장관, 마을 이장 만나 농지 조사 후속조치 설명",
-      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 14 일 ( 수 ) 경상남도 함양군청에서 마을 이장들과 간담회를 갖고 , 농지 조사 후속조치 방향과 제도개선 계획을 설명하는 한편 , 농촌 현장의 의견을 청취했다고 밝혔다 . 이번 간담회는 농지 조사와 ...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785111&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973521&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -176,14 +185,6 @@
       "desc": "",
       "date": "2026-10-13",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973421&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "박홍근 장관, 서민금융 상담현장 방문 및 간담회 개최",
-      "desc": "박홍근 기획예산처 장관은 10월 12일(월) 서울시 중구 소공동에 소재한 중앙 서민금융통합지원센터를 방문하여 서민금융 상담현장을 참관하고 공공기관, 민간단체 및 이용자와 간담회를 개최하는 등 긴밀한 소통의 시간을 가졌습니다.",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156784887&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -200,14 +201,6 @@
       "desc": "",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973353&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "Non-GMO 옥수수의 안정적 수급을 위해 공급망 안정화를 추진하겠습니다.",
-      "desc": "",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973335&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
