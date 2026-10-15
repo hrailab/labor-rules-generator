@@ -1,7 +1,53 @@
 {
-  "generatedAt": "2026-10-15T07:58:31.715Z",
+  "generatedAt": "2026-10-15T18:52:04.767Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "A00033-156785382",
+      "dept": "과기정통부",
+      "category": "정책예고",
+      "title": "원자 바꿔 반도체 소재 자유자재로... 차세대 초고성능 소자 구현",
+      "desc": "- 기초과학연구원( IBS), 선택적 원자 치환으로 반도체 &middot; 절연막 &middot; 준금속 구현하는 ' 모듈형 트랜지스터 제작 기술 ' 개발 - 초미세 &middot; 초저전력 반도체 개발을 위한 새로운 공정 인식체계(패러다임) 제시, 사이언스 지( 誌) 게재...",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785382&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "이수연",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00032-148973549",
+      "dept": "중기부",
+      "category": "정책예고",
+      "title": "2차 '모두의 창업' 1만 명 선발…활동자금·멘토링 지원",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973549&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00033-156785186",
       "dept": "과기정통부",
@@ -29,6 +75,14 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "IMF, 올해 한국 일반정부부채 비율 54.4%→46.1% 하향 전망",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973539&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "「지역활성화 투자 펀드 로드쇼」 개최",
       "desc": "「'26년도 지역활성화 투자 펀드 로드쇼」가 13개 광역 및 관내 기초 지방정부를 대상으로 권역별로 개최될 예정입니다. 자세한 내용은 첨부파일을 확인해 주시기 바랍니다.",
       "date": "2026-10-15",
@@ -41,6 +95,22 @@
       "desc": "ㅁ 기획예산처는 「월간 재정동향 」 '26년 10월호를 발간하여 '26.8월말 기준 재정운용을 발표하였음. ※ 자세한 사항 및 관련 문의처는 붙임을 참고하시기 바랍니다.",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785261&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명)예비타당성조사는 사업의 경제성뿐만 아니라 정책성, 균형성장효과 등 다양한 가치를 종합적으로 평가하고 있습니다.",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973595&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "어린이집·유치원 신청 일정 미리 안내…서류도 간편 등록·제출",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973548&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -61,10 +131,26 @@
     },
     {
       "dept": "과기정통부",
-      "title": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
-      "desc": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "title": "[관계부처 합동] 건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
+      "desc": "[관계부처 합동] 건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785264&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "포도 수출 1억 달러 시대 연다…생산·물류·마케팅 전방위 지원",
+      "desc": "",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973550&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "제주의 밭담, 수원에서 만나다...",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 15 일 ( 목 ) 경기도 수 원시 소재 국립농업박물관에서 ' 제주밭담 야외체험공간 완공식 및 국가 중요농업유산 정책협력 워크숍 ' 을 개최했다 . 행사에는 제주특별자치도 , 국가 중요농...",
+      "date": "2026-10-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785353&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -81,14 +167,6 @@
       "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 15 일 ( 목 ) 전북 무주군 태권도원 에서 개최된 ' 제 16 차 전국농어촌지역군수협의회 * 총회 ' 에 참석하여 정부의 농업 &middot; 농촌 정책을 공유하고 협력 방안을 논의하였다 ...",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785332&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "겨울철 가축전염병 예방을 위한 특별방역대책점검회의 개최",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 10 월 15 일 ( 목 ), 철새 도래가 본격화되는 겨울철이 시작되기 전 고병원성 조류인플루엔자 (AI) 를 비롯한 가축전염병 예방을 위해 특별방역대책점검회의를 진행하였다 . 올해는 해외 야생조류의 고병원성 A...",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785278&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -109,6 +187,14 @@
     },
     {
       "dept": "교육부",
+      "title": "학교 태양광 설비 법정검사 주기 4년→1년 단축…안전 강화",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973472&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
       "title": "교육부는 유아 대상 레벨테스트 금지 제도가 현장에서 실효성 있게 작동하도록 점검 및 조치를 강화하겠습니다",
       "desc": "",
       "date": "2026-10-14",
@@ -125,14 +211,6 @@
     },
     {
       "dept": "과기정통부",
-      "title": "한-스코틀랜드, 반도체 분야 협력 강화 방안 논의",
-      "desc": "한-스코틀랜드, 반도체 분야 협력 강화 방안 논의 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785127&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
       "title": "[보도설명] 초고속인터넷 속도 및 순위 관련 보도에 대하여 다음과 같이 설명드립니다(다수 매체)",
       "desc": "",
       "date": "2026-10-14",
@@ -145,6 +223,14 @@
       "desc": "",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973475&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "'상생소비복권' 17억 풀린다…디지털온누리 3만원 이상 결제시 응모",
+      "desc": "",
+      "date": "2026-10-14",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973449&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -181,6 +267,14 @@
     },
     {
       "dept": "농식품부",
+      "title": "올해 쌀 6만 6000톤 초과 생산 전망…정부, 수확기 수급안정 추진",
+      "desc": "",
+      "date": "2026-10-13",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973384&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
       "title": "정부는 계란 수급 안정과 국내 산업기반 강화를 병행하고 있으며 브라질 수입은 전체 수입량의 0.8% 수준의 시범적 조치입니다.",
       "desc": "",
       "date": "2026-10-13",
@@ -197,6 +291,14 @@
     },
     {
       "dept": "농식품부",
+      "title": "'농지 전수조사 상담센터' 12일부터 운영…관련 궁금증·불안 해소",
+      "desc": "",
+      "date": "2026-10-12",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973320&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
       "title": "농협 부실채권 증가는 농지전수조사의 영향으로 보기 어렵습니다.",
       "desc": "",
       "date": "2026-10-12",
@@ -209,14 +311,6 @@
       "desc": "",
       "date": "2026-10-08",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973215&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금의 전기요금 복지할인 지원은 성장의 과실을 취약계층과 나누고, 전력망 확충을 뒷받침하기 위한 사업입니다.",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973208&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
