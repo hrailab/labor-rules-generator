@@ -1,24 +1,14 @@
 {
-  "generatedAt": "2026-10-14T19:16:11.614Z",
+  "generatedAt": "2026-10-15T08:10:55.290Z",
   "windowDays": 14,
   "items": [
-    {
-      "id": "skku-140573",
-      "school": "성균관대",
-      "title": "(한국국제협력단) 2026년 KOICA 해외봉사단 정기설명회 개최",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140573&article.offset=0&articleLimit=10",
-      "date": "2026-10-14",
-      "owner": "서원석",
-      "status": "신규"
-    },
     {
       "id": "hyu-1026698",
       "school": "한양대",
       "title": "한양대 학생팀, 수액 카테터 고정 혁신으로 한국팀 유일 ‘세계 20선’ 진입… 제임스 다이슨 어워드 국제전 우승 도전",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026698",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +18,7 @@
       "title": "한양대 안원비 학생, 코리아국제현대무용콩쿠르 전체 대상…문체부 장관상",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026692",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +28,7 @@
       "title": "[한양에 이런 일이?!] 국어교사가 만든 교육 플랫폼 ‘리로스쿨’, 최석 동문을 찾아서",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026496",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,17 +38,7 @@
       "title": "10년의 기다림 끝에 정상으로… 한양대, 대학동문골프최강전 우승",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026275",
-      "date": "2026-10-14",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026709",
-      "school": "한양대",
-      "title": "\"외국인 관광객의 눈으로 다시 본 황리단길\"… 한양대, 전국 대학생들과 글로컬 비즈니스 리빙랩 통해 지역혁신에 앞장서다",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026709",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,8 +48,28 @@
       "title": "[한국대학신문] 한양대 ERICA GAIA센터, 경기도 앵커 사업서 반도체 원천기술 30억5000만 원 기술이전 성과 달성",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026557",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323325",
+      "school": "경희대",
+      "title": "[창업교육센터] 경기도와 함께하는 2026 찾아가는 공정거래 교육 신청 안내",
+      "category": "산학협력",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323325&menuNo=200316",
+      "date": "2026-10-15",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367102",
+      "school": "이화여대",
+      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
+      "date": "2026-10-15",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -80,16 +80,6 @@
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
       "date": "2026-10-14",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367102",
-      "school": "이화여대",
-      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-14",
-      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -109,16 +99,6 @@
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766567",
       "date": "2026-10-12",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-322511",
-      "school": "경희대",
-      "title": "[창업교육센터] KHU 창업멘토링 신청 안내",
-      "category": "산학협력",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=322511&menuNo=200316",
-      "date": "2026-10-07",
       "owner": "이수연",
       "status": "신규"
     },
@@ -145,7 +125,7 @@
     {
       "id": "dgu-26766453",
       "school": "동국대",
-      "title": "2026학년도 영어권 동계 단기프로그램 선발 안내",
+      "title": "2026학년도 영어권 동계 단기프로그램 선발 안내 (추가)",
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766453",
       "date": "2026-10-02",
