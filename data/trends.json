@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T07:52:13.648Z",
+  "generatedAt": "2026-10-16T18:36:00.260Z",
   "windowDays": 14,
   "items": [
     {
@@ -11,6 +11,29 @@
       "date": "2026-10-16",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785382&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00032-156785521",
+      "dept": "중기부",
+      "category": "정책예고",
+      "title": "1만 개의 아이디어, 창업의 첫발을 내딛다 2차 '모두의 창업' 1라운드 진출자 선발",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 9만 3천여 명의 도전자가 몰린 2차 '모두의 창업' 프로젝트(이하 모두의 창업)의 1라운드 진출자 1만 명(일반&middot;기술 8천 명, 로컬 2천 명)을 선발했다고 밝혔다. 이번 2차 '모두의 창업'은 1차(5천 명)보다 선발 규모를 2배로 늘렸음에도 ...",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785521&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -91,10 +114,34 @@
     },
     {
       "dept": "농식품부",
+      "title": "농식품부 장관, 농관원 경북지원 방문농지 조사 후속조치 정확한 현장 안내 당부",
+      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 16 일 ( 금 ) 오후 국립농산물품질관리원 ( 이하 ' 농관원 ') 경북지원에서 농지 조사 담당 공무원 및 조사원과의 간담회를 개최하여 농지 조사 추진상황을 점검하는 한 편 , 농촌 현장의 의견...",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785517&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
       "title": "'Bloom Together'... 도심 숲에서 만나는 '2026 양재 플라워 페스타'",
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 박정훈 식량정책실장은 10 월 16 일 ( 금 ) 오후 2 시 서울 서초구 매헌시민의숲에서 열린 '2026 양재 플라워 페스타 ' 개막식에 참석하였다 . 올해 행사는 'Bloom Together( 함...",
       "date": "2026-10-16",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785504&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "과천 경마장 이전, 한국마사회와 협의하여 신속히 추진하겠습니다.",
+      "desc": "",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973702&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "브라질산 계란 수입은 국민 물가 부담을 완화하기 위한 계란 수입선 다변화 조치로 추진되었습니다.",
+      "desc": "",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973701&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -178,14 +225,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "신선농산물 최초 '포도 수출 1억 달러' 시대 연다",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 경상북도 ( 도지사 이철우 ) 는 10 월 15 일 ( 목 ) 오후 , 대한민국 대표 포도 주산지인 경북 상주시 소재 포도 농장 ( 도영농원 ) 에서 ' 포도 수출 1 억 달러 도약 현장 ...",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785342&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "기획예산처",
       "title": "(보도설명) 26년 11~12월 국채발행 추가 축소 여부 및 규모는 정해지지 않았습니다.",
       "desc": "",
@@ -258,14 +297,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "중기부",
-      "title": "해외규격인증획득 지원사업(3차) 참여기업 모집",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 14일(수)부터 2026년 해외규격인증획득 지원사업(3차)에 참여할 중소기업을 모집한다고 밝혔다. 해외규격인증획득 지원사업은 중소기업이 해외 진출 과정에서 수출 대상국이 요구하는 규격인증 획득을 위해 인증, 시험, 컨설팅 등에 지출하는 비용의 일부를 ...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785057&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "민간 비축시설 활용은 비축사업 효율화의 일환이며, 비축기지 신설은 노후기지 매각과 함께 검토&middot;추진되고 있습니다.",
       "desc": "",
@@ -282,14 +313,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "정부는 계란 수급 안정과 국내 산업기반 강화를 병행하고 있으며 브라질 수입은 전체 수입량의 0.8% 수준의 시범적 조치입니다.",
-      "desc": "",
-      "date": "2026-10-13",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973421&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "SNS상 유포 중인 '이소영 장관 122억 결제' 관련 게시물은 명백한 허위조작정보입니다.",
       "desc": "",
@@ -303,14 +326,6 @@
       "desc": "",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973320&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농협 부실채권 증가는 농지전수조사의 영향으로 보기 어렵습니다.",
-      "desc": "",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973353&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
