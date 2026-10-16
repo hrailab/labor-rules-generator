@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:52:04.767Z",
+  "generatedAt": "2026-10-16T07:52:13.648Z",
   "windowDays": 14,
   "items": [
     {
@@ -75,7 +75,31 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
-      "title": "IMF, 올해 한국 일반정부부채 비율 54.4%→46.1% 하향 전망",
+      "title": "중장기전략위원회 미래사회전략반, 거버넌스개혁반 분과회의 개최",
+      "desc": "기획예산처와 중장기전략위원회는 '26.10.16일(금) 미래사회전략반, 거버넌스개혁반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785466&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "원자층 골라 바꿔 반도체 만든다…차세대 2D 반도체 제작기술 개발",
+      "desc": "",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973629&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "'Bloom Together'... 도심 숲에서 만나는 '2026 양재 플라워 페스타'",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 박정훈 식량정책실장은 10 월 16 일 ( 금 ) 오후 2 시 서울 서초구 매헌시민의숲에서 열린 '2026 양재 플라워 페스타 ' 개막식에 참석하였다 . 올해 행사는 'Bloom Together( 함...",
+      "date": "2026-10-16",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785504&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "IMF, 올해 한국 일반정부부채 비율 54.4%→47.3% 하향 전망",
       "desc": "",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973539&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
@@ -159,22 +183,6 @@
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 경상북도 ( 도지사 이철우 ) 는 10 월 15 일 ( 목 ) 오후 , 대한민국 대표 포도 주산지인 경북 상주시 소재 포도 농장 ( 도영농원 ) 에서 ' 포도 수출 1 억 달러 도약 현장 ...",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785342&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부-군수협의회, 신뢰와 소통을 기반으로 농정 협력 강화키로!",
-      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 15 일 ( 목 ) 전북 무주군 태권도원 에서 개최된 ' 제 16 차 전국농어촌지역군수협의회 * 총회 ' 에 참석하여 정부의 농업 &middot; 농촌 정책을 공유하고 협력 방안을 논의하였다 ...",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785332&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "제10차 확대간부회의 개최",
-      "desc": "기획예산처는 '26.10.14.(수) 9시 30분 정부세종청사 5-1동 4층 대회의실에서 박홍근 장관 주재로 제10차 확대간부회의를 개최하였습니다. 자세한 내용은 첨부자료를 참고해주시기 바랍니다.",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785116&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
