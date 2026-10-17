@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:36:00.260Z",
+  "generatedAt": "2026-10-17T17:44:48.180Z",
   "windowDays": 14,
   "items": [
     {
@@ -96,6 +96,14 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "기획예산처",
+      "title": "신고 포상금 확대, 인력과 예산 확충 등 내실 있는 부정수급 신고센터 운영을 위해 최선을 다하겠습니다.",
+      "desc": "",
+      "date": "2026-10-17",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973706&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "중장기전략위원회 미래사회전략반, 거버넌스개혁반 분과회의 개최",
@@ -326,14 +334,6 @@
       "desc": "",
       "date": "2026-10-12",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973320&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금은 청년, 성장동력, 지방, 교육&middot;인재 4대 계정에 맞는 사업을 편성했고, 공공기관 지방이전 사업은 지방계정 사업 목적에 부합합니다.",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973215&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
