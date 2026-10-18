@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T07:45:03.440Z",
+  "generatedAt": "2026-10-18T17:47:25.450Z",
   "windowDays": 14,
   "items": [
     {
@@ -98,6 +98,46 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "(보도설명) 정부는 국채 이자지출을 안정적인 수준으로 관리 중이며 향후 차환 리스크도 낮은 편입니다",
+      "desc": "",
+      "date": "2026-10-18",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973718&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "데이터로 읽는 우리 교육 제16호 발간",
+      "desc": "&lt;데이터로 읽는 우리 교육&gt; 제16호 발간 - OECD 교육지표를 통해 본 우리나라 고등교육의 특성",
+      "date": "2026-10-18",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785544&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "중기부, 2026년 수탁&middot;위탁거래 정기 실태조사 실시",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 기업 간 수탁․위탁거래 과정에서 발생하는 불공정거래행위를 바로잡고 공정한 거래질서를 확립하기 위해 19일(월)부터 「2026년 수탁․위탁거래 정기 실태조사」를 실시한다고 밝혔다. 수탁&middot;위탁거래 정기 실태조사는 「대․중소기업 상생협력 촉진에 관한 ...",
+      "date": "2026-10-18",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785559&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "장바구니&middot;식탁 넘어 학교 급식까지 K-푸드, 유럽 시장 곳곳에서 체급 키운다",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 세계 최대 식품박람회인 ' 2026 파리 국제식품박람회 (SIAL Paris 2026)' 참가를 계기로 , 10 월 16 일부터 17 일까지 프랑스 파리에서 K- 푸드의 유럽 시장 진출 확대를 위한 활동을...",
+      "date": "2026-10-18",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785547&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "&quot;10년의 결실, 세계로 뛰는 K-종자&quot; 2026 국제종자박람회 개최!!",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 오는 10 월 21 일 ( 수 ) 부터 23 일 ( 금 ) 까지 3 일간 전북특별자치도 김제시 민간육종연구단지 ( 종자산업진흥센터 ) 에서 「 2026 국제종자박람회 (KOREA SEED EXPO...",
+      "date": "2026-10-18",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785546&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "신고 포상금 확대, 인력과 예산 확충 등 내실 있는 부정수급 신고센터 운영을 위해 최선을 다하겠습니다.",
       "desc": "",
       "date": "2026-10-17",
@@ -126,14 +166,6 @@
       "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 16 일 ( 금 ) 오후 국립농산물품질관리원 ( 이하 ' 농관원 ') 경북지원에서 농지 조사 담당 공무원 및 조사원과의 간담회를 개최하여 농지 조사 추진상황을 점검하는 한 편 , 농촌 현장의 의견...",
       "date": "2026-10-16",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785517&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "'Bloom Together'... 도심 숲에서 만나는 '2026 양재 플라워 페스타'",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 박정훈 식량정책실장은 10 월 16 일 ( 금 ) 오후 2 시 서울 서초구 매헌시민의숲에서 열린 '2026 양재 플라워 페스타 ' 개막식에 참석하였다 . 올해 행사는 'Bloom Together( 함...",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785504&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -225,22 +257,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "제주의 밭담, 수원에서 만나다...",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 15 일 ( 목 ) 경기도 수 원시 소재 국립농업박물관에서 ' 제주밭담 야외체험공간 완공식 및 국가 중요농업유산 정책협력 워크숍 ' 을 개최했다 . 행사에는 제주특별자치도 , 국가 중요농...",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785353&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 26년 11~12월 국채발행 추가 축소 여부 및 규모는 정해지지 않았습니다.",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973499&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "교육부",
       "title": "학교 태양광 설비 법정검사 주기 4년→1년 단축…안전 강화",
       "desc": "",
@@ -254,14 +270,6 @@
       "desc": "",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785145&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "학교 태양광 설비 안전관리 강화를 위해 교육부-한국전기안전공사 손 맞잡는다",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785104&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -294,14 +302,6 @@
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 29일부터 개최되는 범부처 국가 단위 할인 행사인 「코리아 그랜드 페스티벌」의 소비 참여를 확대하기 위해 10월 15일부터 전 국민을 대상으로 '상생소비복권' 이벤트를 진행한다고 밝혔다. 「코리아 그랜드 페스티벌」은 내수 활성화와 지역 소비 촉진을 위...",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785112&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "이소영 장관, 스마트제조혁신 현장방문 &quot;AI 대전환 시대, 중소기업이 당당한 주역돼야&quot;",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부) 이소영 장관은 10월 13일(화) 서울 코엑스에서 열린 '2026 스마트비즈엑스포(Smart Biz Expo)' 개막식에 참석해 상생형 스마트공장의 성과를 확인하고, 곧바로 실제 인공지능(이하 AI)을 활용하고 있는 스마트공장 현장을 연이어 방문하였다. 스마트제...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785061&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
