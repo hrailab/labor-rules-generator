@@ -1,30 +1,7 @@
 {
-  "generatedAt": "2026-10-18T17:47:25.450Z",
+  "generatedAt": "2026-10-19T08:27:31.785Z",
   "windowDays": 14,
   "items": [
-    {
-      "id": "A00033-156785382",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "원자 바꿔 반도체 소재 자유자재로... 차세대 초고성능 소자 구현",
-      "desc": "- 기초과학연구원( IBS), 선택적 원자 치환으로 반도체 &middot; 절연막 &middot; 준금속 구현하는 ' 모듈형 트랜지스터 제작 기술 ' 개발 - 초미세 &middot; 초저전력 반도체 개발을 위한 새로운 공정 인식체계(패러다임) 제시, 사이언스 지( 誌) 게재...",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785382&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
     {
       "id": "A00032-156785521",
       "dept": "중기부",
@@ -70,32 +47,97 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
-    },
-    {
-      "id": "A00033-156785186",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "주요 13개국, 양자기술 정책부터 연구개발, 산업화 등 전주기 협력 강화",
-      "desc": "- 과기정통부 , 「 제 9 차 양자기술다자대화 」 및 「 양자기술 산업화 비즈니스 나이트 」 개최 - 英 양자컴퓨터 조달프로그램 ' ProQure' 및 글로벌 양자기업의 활용사례 소개 - 7 대 SEED 핵심사업인 ' 국산 양자컴퓨터 제조챌린지 ' 등 ...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785186&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     }
   ],
   "excludedItems": [
+    {
+      "dept": "기획예산처",
+      "title": "박홍근 장관, 민간 일자리 확충을 위한 현장의견 청취",
+      "desc": "기획예산처 박홍근 장관은 민간 일자리 확충을 위한 현장의견을 청취하는 자리를 가졌습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785701&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "늦은 퇴근.휴일 근무 시 돌봄, '틈새돌봄 정보무늬(QR코드)'로 확인하세요",
+      "desc": "",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785658&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "아태이론물리센터, 2026년도 이휘소상 수상자 선정 및 강연 개최",
+      "desc": "아태이론물리센터, 2026년도 이휘소상 수상자 선정 및 강연 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785674&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "과기정통부, 세계은행과 함께 글로벌 AI&middot;디지털 협력 논의",
+      "desc": "- 세계은행과 공동으로 「 글로벌 AI &middot; 디지털 서밋 」 개최 (10 월 19~22 일 , 서울 ) - 배경훈 부총리 , 60 여 개국 장 &middot; 차관급 대표들과 AI &middot; 디지털 장관회의 개최 (10.19.) - 포용적 ...",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785665&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "'26년 10월 '대한민국 엔지니어상' 수상자 선정",
+      "desc": "'26년 10월 '대한민국 엔지니어상' 수상자 선정 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785652&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "중기부, 2027년도 전통시장 및 상점가 활성화 지원사업 공고",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 '2027년도 전통시장 및 상점가 활성화 지원사업' 참여 대상을 10월 20일(화)부터 11월 16일(월)까지 모집한다고 밝혔다. 이번 공고에서는 전통시장, 상점가, 골목형상점가 등을 대상으로 문화관광형시장, 시장경영지원, 전통시장 안전관리패키지, 지역상품전...",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785689&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부, 소셜미디어 가짜뉴스 엄정 대응…악의적 게시 법적 조치",
+      "desc": "",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973772&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부, 유튜브 등 소셜미디어가짜뉴스 엄정 대응",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 언론 보도와 국정감사 등을 통해 제기된 농식품부 관련 현안들에 대해 설명 &middot; 반박 자료 등을 통해 수 차례 정확한 사실관계를 밝혀왔음에도 , 유튜브 &middot; 인스타그램 등 소셜 미디어에서 악의...",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785696&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "이번 주말, 장바구니에 이 농산물 어떠세요?",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 최근 대부분 농산물이 작황이 양호해 가격이 낮은 상황으로 , 앞으로 낮은 가격이 지속될 것으로 예상되는 파프리카 , 토마토 , 샤인머스캣 등 주요 품목 의 소비 촉진 을 위해 힘쓰고 있다고 밝혔다 . * ...",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785637&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "은퇴 검역탐지견과 입양가족의 특별한 1박 2일 '견생 2막, 함께 걸어갑니다'",
+      "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 10 월 17 일부터 18 일까지 이틀간 강원도 홍천 소노펫클럽앤리조트 비발디파크에서 트리니티 항공 ( 구 티웨이항공 ), 소노펫클럽앤리조트 ( 이하 ' 소노펫 ') 와 합동으로 은퇴 검...",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785636&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "신선란의 국내 신속한 공급과 수입선 다변화를 위해 브라질산 계란을 시범 수입하였습니다.",
+      "desc": "",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973757&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "(보도설명) 정부는 국채 이자지출을 안정적인 수준으로 관리 중이며 향후 차환 리스크도 낮은 편입니다",
@@ -121,22 +163,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "장바구니&middot;식탁 넘어 학교 급식까지 K-푸드, 유럽 시장 곳곳에서 체급 키운다",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 세계 최대 식품박람회인 ' 2026 파리 국제식품박람회 (SIAL Paris 2026)' 참가를 계기로 , 10 월 16 일부터 17 일까지 프랑스 파리에서 K- 푸드의 유럽 시장 진출 확대를 위한 활동을...",
-      "date": "2026-10-18",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785547&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "&quot;10년의 결실, 세계로 뛰는 K-종자&quot; 2026 국제종자박람회 개최!!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 오는 10 월 21 일 ( 수 ) 부터 23 일 ( 금 ) 까지 3 일간 전북특별자치도 김제시 민간육종연구단지 ( 종자산업진흥센터 ) 에서 「 2026 국제종자박람회 (KOREA SEED EXPO...",
-      "date": "2026-10-18",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785546&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "기획예산처",
       "title": "신고 포상금 확대, 인력과 예산 확충 등 내실 있는 부정수급 신고센터 운영을 위해 최선을 다하겠습니다.",
       "desc": "",
@@ -158,14 +184,6 @@
       "desc": "",
       "date": "2026-10-16",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973629&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부 장관, 농관원 경북지원 방문농지 조사 후속조치 정확한 현장 안내 당부",
-      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 16 일 ( 금 ) 오후 국립농산물품질관리원 ( 이하 ' 농관원 ') 경북지원에서 농지 조사 담당 공무원 및 조사원과의 간담회를 개최하여 농지 조사 추진상황을 점검하는 한 편 , 농촌 현장의 의견...",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785517&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -202,14 +220,6 @@
     },
     {
       "dept": "기획예산처",
-      "title": "[보도참고] 「월간 재정동향」 2026년 10월호 발간",
-      "desc": "ㅁ 기획예산처는 「월간 재정동향 」 '26년 10월호를 발간하여 '26.8월말 기준 재정운용을 발표하였음. ※ 자세한 사항 및 관련 문의처는 붙임을 참고하시기 바랍니다.",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785261&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
       "title": "(보도설명)예비타당성조사는 사업의 경제성뿐만 아니라 정책성, 균형성장효과 등 다양한 가치를 종합적으로 평가하고 있습니다.",
       "desc": "",
       "date": "2026-10-15",
@@ -241,14 +251,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "[관계부처 합동] 건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
-      "desc": "[관계부처 합동] 건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785264&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "포도 수출 1억 달러 시대 연다…생산·물류·마케팅 전방위 지원",
       "desc": "",
@@ -262,14 +264,6 @@
       "desc": "",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973472&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "교육부는 유아 대상 레벨테스트 금지 제도가 현장에서 실효성 있게 작동하도록 점검 및 조치를 강화하겠습니다",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785145&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -294,22 +288,6 @@
       "desc": "",
       "date": "2026-10-14",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973449&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "「코리아 그랜드 페스티벌」 연계 '상생소비복권' 이벤트 개최",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 29일부터 개최되는 범부처 국가 단위 할인 행사인 「코리아 그랜드 페스티벌」의 소비 참여를 확대하기 위해 10월 15일부터 전 국민을 대상으로 '상생소비복권' 이벤트를 진행한다고 밝혔다. 「코리아 그랜드 페스티벌」은 내수 활성화와 지역 소비 촉진을 위...",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785112&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "민간 비축시설 활용은 비축사업 효율화의 일환이며, 비축기지 신설은 노후기지 매각과 함께 검토&middot;추진되고 있습니다.",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973521&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
