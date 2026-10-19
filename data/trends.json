@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T08:27:31.785Z",
+  "generatedAt": "2026-10-19T20:20:06.127Z",
   "windowDays": 14,
   "items": [
     {
@@ -91,6 +91,14 @@
       "reason": "relevance"
     },
     {
+      "dept": "과기정통부",
+      "title": "[보도설명] 과기정통부는 출연연 보안조치 권고에 대한 사후관리를 철저히 이행해 나아가겠습니다",
+      "desc": "",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973801&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "중기부",
       "title": "중기부, 2027년도 전통시장 및 상점가 활성화 지원사업 공고",
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 '2027년도 전통시장 및 상점가 활성화 지원사업' 참여 대상을 10월 20일(화)부터 11월 16일(월)까지 모집한다고 밝혔다. 이번 공고에서는 전통시장, 상점가, 골목형상점가 등을 대상으로 문화관광형시장, 시장경영지원, 전통시장 안전관리패키지, 지역상품전...",
@@ -128,6 +136,14 @@
       "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 10 월 17 일부터 18 일까지 이틀간 강원도 홍천 소노펫클럽앤리조트 비발디파크에서 트리니티 항공 ( 구 티웨이항공 ), 소노펫클럽앤리조트 ( 이하 ' 소노펫 ') 와 합동으로 은퇴 검...",
       "date": "2026-10-19",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785636&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "청년&middot;귀농인의 경영위험 완화를 위해 최선을 다하겠습니다.",
+      "desc": "",
+      "date": "2026-10-19",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973809&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -192,14 +208,6 @@
       "desc": "",
       "date": "2026-10-16",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973702&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "브라질산 계란 수입은 국민 물가 부담을 완화하기 위한 계란 수입선 다변화 조치로 추진되었습니다.",
-      "desc": "",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973701&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -336,30 +344,6 @@
       "desc": "",
       "date": "2026-10-08",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973212&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 금융권 해킹사고 '24시간 비상대응체계' 가동",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973069&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "[보도설명] 정부는 AI 보안위협에 대응하여 정보보호 예산을 대폭 증액하였습니다(중앙일보)",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973087&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "거제·통영 호우 피해기업 재해특례 적용…소상공인 최대 3억 지원",
-      "desc": "",
-      "date": "2026-10-06",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973061&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
