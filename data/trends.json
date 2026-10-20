@@ -1,15 +1,38 @@
 {
-  "generatedAt": "2026-10-19T20:20:06.127Z",
+  "generatedAt": "2026-10-20T08:09:36.553Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "A00032-156785521",
+      "id": "A00032-156785829",
       "dept": "중기부",
       "category": "정책예고",
-      "title": "1만 개의 아이디어, 창업의 첫발을 내딛다 2차 '모두의 창업' 1라운드 진출자 선발",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 9만 3천여 명의 도전자가 몰린 2차 '모두의 창업' 프로젝트(이하 모두의 창업)의 1라운드 진출자 1만 명(일반&middot;기술 8천 명, 로컬 2천 명)을 선발했다고 밝혔다. 이번 2차 '모두의 창업'은 1차(5천 명)보다 선발 규모를 2배로 늘렸음에도 ...",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785521&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "9.3만 명의 도전, 1만 명의 새로운 출발 「2차 모두의 창업」 본격 출범",
+      "desc": "총 9만 3천여 명이 지원한 2차 '모두의 창업 프로젝트'(이하 모두의 창업)에서 1만 명의 도전자가 선발돼 본격적인 창업 여정을 시작한다. 중소벤처기업부(장관 이소영, 이하 중기부)는 10월 20일(화), 스타트업벤처캠퍼스(SVC) 서울에서 '2차 모두의 창업 출범식'을 개최하고, 1라운드를 통과한 ...",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785829&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00032-156785828",
+      "dept": "중기부",
+      "category": "정책예고",
+      "title": "EU 포장재 규제(PPWR) 대응, 중소기업 애로 듣는다",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 20일(화) 서울 마포구 스타트업벤처캠퍼스(SVC) 서울에서 심재윤 중기부 글로벌성장정책관 주재로 'EU 포장재 규제(이하 PPWR) 대응 중소기업 간담회'를 개최했다고 밝혔다. PPWR*은 업종에 관계없이 유럽연합(이하 EU) 시장에 출시되는 모든 ...",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785828&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
@@ -52,18 +75,114 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
-      "title": "박홍근 장관, 민간 일자리 확충을 위한 현장의견 청취",
-      "desc": "기획예산처 박홍근 장관은 민간 일자리 확충을 위한 현장의견을 청취하는 자리를 가졌습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785701&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "관계부처 합동 제16차 재정집행점검회의 개최",
+      "desc": "조용범 기획예산처 차관은 10.20일(화) 관계부처 합동 「제16차 재정집행 점검회의」를 개최하여 청년지원 사업 및 초혁신경제 선도 프로젝트 주요 사업의 집행현황을 점검하였습니다. * 자세한 사항은 첨부의 내용을 참고하여 주시기 바랍니다.",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785836&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "교육부",
-      "title": "늦은 퇴근.휴일 근무 시 돌봄, '틈새돌봄 정보무늬(QR코드)'로 확인하세요",
+      "title": "11월 19일 수능날, 출근시간 10시 이후로…시험장 200m 전방 차량 통제",
       "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973935&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "안정적인 2027학년도 수능 시행을 위해 모든 부처가 힘을 모아 지원합니다",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785812&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "「초&middot;중등교육법 시행령」 일부개정령안 국무회의 통과",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785810&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "「교과용 도서에 관한 규정」 일부개정령안 국무회의 통과",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785811&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "정보보호 공시 의무, 2027년부터 전체 상장사 등으로 확대",
+      "desc": "- 「 정보보호산업의 진흥에 관한 법률 시행령 」 개정안 국무회의 의결 - 전체 상장법인 &middot;정보보호 관리체계(ISMS) 인증 의무대상자 포함 및 예외 규정 삭제 - 국민의 알 권리 보장 및 기업의 자발적 정보보호 투자 유도",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785847&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "해외 우수 한식당 5년간 1000곳으로 확대…지정제 개편·맞춤형 지원",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973944&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "순천만 야생조류 분변에서 고병원성 조류인플루엔자(AI) 첫 검출... 전국 위기경보 '심각' 상향",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 기후에너지환경부 ( 장관 김성환 , 이하 ' 기후부 ') 는 지난 10 월 12 일 전남광주 순천시 순천만에서 채취한 야생 조류 분변에 대해 국립야생동물질병관리원이 정밀검사를 실시한 결과 , 10...",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785817&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "2026년산 공공비축벼 매입 검사 본격 시작",
+      "desc": "국립농산물품질관리원 ( 원장 김철 , 이하 농관원 ) 은 2026 년산 공공비축 벼 ( 가루쌀벼 포함 ) 40 만 톤 ( 쌀 기준 ) 에 대한 매입검사를 실시한다 . 10 월 23 일 경기도 포천시를 시작으로 각 도별 배정된 물량에 따라 전 국 3 천 여 개 ...",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785791&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "&quot;세계인이 믿고 찾는 해외 한식당 만든다&quot; 농식품부, 해외 한식당 경쟁력 강화 추진",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 글로벌 한식 수요 증가에 대응하여 해외 한식당의 품질과 경쟁력을 높이고 , 한식의 지속가능한 글로벌 성장기반을 마련하기 위해 ' 해외 한식당 경쟁력 강화 방안 ' 을 수립했다 . 최근 K- 콘텐츠의 확산과 더...",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785790&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "전통주 산업 발전을 위해 온&middot;오프라인 판로 확대를 추진해 나가겠습니다.",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973948&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "과천 경마장 이전, 한국마사회와 협의하여 추진하겠습니다.",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973929&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "2026년산 공공비축벼 매입 검사 본격 시작",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973921&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "박홍근 장관, 민간 일자리 확충을 위한 현장의견 청취",
+      "desc": "기획예산처 박홍근 장관은 민간 일자리 확충을 위한 현장의견을 청취하는 자리를 가졌습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
       "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785658&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785701&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -80,14 +199,6 @@
       "desc": "- 세계은행과 공동으로 「 글로벌 AI &middot; 디지털 서밋 」 개최 (10 월 19~22 일 , 서울 ) - 배경훈 부총리 , 60 여 개국 장 &middot; 차관급 대표들과 AI &middot; 디지털 장관회의 개최 (10.19.) - 포용적 ...",
       "date": "2026-10-19",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785665&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "'26년 10월 '대한민국 엔지니어상' 수상자 선정",
-      "desc": "'26년 10월 '대한민국 엔지니어상' 수상자 선정 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785652&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -115,67 +226,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "농식품부, 유튜브 등 소셜미디어가짜뉴스 엄정 대응",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 언론 보도와 국정감사 등을 통해 제기된 농식품부 관련 현안들에 대해 설명 &middot; 반박 자료 등을 통해 수 차례 정확한 사실관계를 밝혀왔음에도 , 유튜브 &middot; 인스타그램 등 소셜 미디어에서 악의...",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785696&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "이번 주말, 장바구니에 이 농산물 어떠세요?",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 최근 대부분 농산물이 작황이 양호해 가격이 낮은 상황으로 , 앞으로 낮은 가격이 지속될 것으로 예상되는 파프리카 , 토마토 , 샤인머스캣 등 주요 품목 의 소비 촉진 을 위해 힘쓰고 있다고 밝혔다 . * ...",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785637&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "은퇴 검역탐지견과 입양가족의 특별한 1박 2일 '견생 2막, 함께 걸어갑니다'",
-      "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 10 월 17 일부터 18 일까지 이틀간 강원도 홍천 소노펫클럽앤리조트 비발디파크에서 트리니티 항공 ( 구 티웨이항공 ), 소노펫클럽앤리조트 ( 이하 ' 소노펫 ') 와 합동으로 은퇴 검...",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785636&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "청년&middot;귀농인의 경영위험 완화를 위해 최선을 다하겠습니다.",
-      "desc": "",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973809&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "신선란의 국내 신속한 공급과 수입선 다변화를 위해 브라질산 계란을 시범 수입하였습니다.",
-      "desc": "",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973757&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "기획예산처",
       "title": "(보도설명) 정부는 국채 이자지출을 안정적인 수준으로 관리 중이며 향후 차환 리스크도 낮은 편입니다",
       "desc": "",
       "date": "2026-10-18",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973718&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "데이터로 읽는 우리 교육 제16호 발간",
-      "desc": "&lt;데이터로 읽는 우리 교육&gt; 제16호 발간 - OECD 교육지표를 통해 본 우리나라 고등교육의 특성",
-      "date": "2026-10-18",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785544&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "중기부, 2026년 수탁&middot;위탁거래 정기 실태조사 실시",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 기업 간 수탁․위탁거래 과정에서 발생하는 불공정거래행위를 바로잡고 공정한 거래질서를 확립하기 위해 19일(월)부터 「2026년 수탁․위탁거래 정기 실태조사」를 실시한다고 밝혔다. 수탁&middot;위탁거래 정기 실태조사는 「대․중소기업 상생협력 촉진에 관한 ...",
-      "date": "2026-10-18",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785559&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -203,27 +258,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "과천 경마장 이전, 한국마사회와 협의하여 신속히 추진하겠습니다.",
-      "desc": "",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973702&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "기획예산처",
       "title": "IMF, 올해 한국 일반정부부채 비율 54.4%→47.3% 하향 전망",
       "desc": "",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973539&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "「지역활성화 투자 펀드 로드쇼」 개최",
-      "desc": "「'26년도 지역활성화 투자 펀드 로드쇼」가 13개 광역 및 관내 기초 지방정부를 대상으로 권역별로 개최될 예정입니다. 자세한 내용은 첨부파일을 확인해 주시기 바랍니다.",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785331&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -240,14 +279,6 @@
       "desc": "",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973548&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "어린이집&middot;유치원 입소&middot;입학 신청, 더 쉽고 편리해진다",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785298&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -336,14 +367,6 @@
       "desc": "",
       "date": "2026-10-08",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973211&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "정부, '투기 아니면 농지 처분 제외'…특별조치법 추진",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973212&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
