@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T08:09:36.553Z",
+  "generatedAt": "2026-10-20T18:53:16.412Z",
   "windowDays": 14,
   "items": [
     {
@@ -75,6 +75,14 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "박홍근 장관, 기금 자산운용 개선을 위한 민간 전문가 간담회 개최",
+      "desc": "박홍근 기획예산처 장관은 10월 20일(화) 기금 수익성 제고를 위한 자산운용 개선 방안과 미래대응기금의 효율적인 자산운용 방향에 대해 논의하기 위해 간담회를 개최하였습니다. * 자세한 사항은 첨부의 내용을 참고하여 주시기 바랍니다.",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785856&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "관계부처 합동 제16차 재정집행점검회의 개최",
       "desc": "조용범 기획예산처 차관은 10.20일(화) 관계부처 합동 「제16차 재정집행 점검회의」를 개최하여 청년지원 사업 및 초혁신경제 선도 프로젝트 주요 사업의 집행현황을 점검하였습니다. * 자세한 사항은 첨부의 내용을 참고하여 주시기 바랍니다.",
       "date": "2026-10-20",
@@ -111,6 +119,14 @@
       "desc": "",
       "date": "2026-10-20",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785811&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "내년부터 코스피·코스닥 전체 상장사에 정보보호 공시 의무화",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973964&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -155,6 +171,14 @@
     },
     {
       "dept": "농식품부",
+      "title": "복지용 쌀, 출고&middot;보관&middot;배송 단계별 품질관리 및 시설 점검을 강화하여 추진하겠습니다.",
+      "desc": "",
+      "date": "2026-10-20",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973975&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
       "title": "전통주 산업 발전을 위해 온&middot;오프라인 판로 확대를 추진해 나가겠습니다.",
       "desc": "",
       "date": "2026-10-20",
@@ -167,14 +191,6 @@
       "desc": "",
       "date": "2026-10-20",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973929&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "2026년산 공공비축벼 매입 검사 본격 시작",
-      "desc": "",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973921&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -195,8 +211,8 @@
     },
     {
       "dept": "과기정통부",
-      "title": "과기정통부, 세계은행과 함께 글로벌 AI&middot;디지털 협력 논의",
-      "desc": "- 세계은행과 공동으로 「 글로벌 AI &middot; 디지털 서밋 」 개최 (10 월 19~22 일 , 서울 ) - 배경훈 부총리 , 60 여 개국 장 &middot; 차관급 대표들과 AI &middot; 디지털 장관회의 개최 (10.19.) - 포용적 ...",
+      "title": "과기정통부, 세계은행과 함께 국제 인공지능&middot;디지털 협력 논의",
+      "desc": "- 세계은행과 공동으로 「국제 인공지능 &middot;디지털 정상회의( 글로벌 AI &middot; 디지털 서밋) 」 개최 (10 월 19~22 일 , 서울 ) - 배경훈 부총리 , 60 여 개국 장 &middot; 차관급 대표들과 인공지능 &middot; ...",
       "date": "2026-10-19",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785665&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
@@ -239,14 +255,6 @@
       "desc": "",
       "date": "2026-10-17",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973706&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "중장기전략위원회 미래사회전략반, 거버넌스개혁반 분과회의 개최",
-      "desc": "기획예산처와 중장기전략위원회는 '26.10.16일(금) 미래사회전략반, 거버넌스개혁반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
-      "date": "2026-10-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785466&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
