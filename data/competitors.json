@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T08:24:17.564Z",
+  "generatedAt": "2026-10-20T19:07:27.140Z",
   "windowDays": 14,
   "items": [
     {
@@ -18,16 +18,6 @@
       "title": "2027학년도 2학기 해외파견 교환학생 설명회 개최 안내",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140687&article.offset=0&articleLimit=10",
-      "date": "2026-10-20",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140482",
-      "school": "성균관대",
-      "title": "[인공지능혁신융합대학사업] 2026학년도 인공지능혁신융합대학사업 겨울 계절학기 학점교류 수강 안내 (상시 업데이트)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482&article.offset=0&articleLimit=10",
       "date": "2026-10-20",
       "owner": "서원석",
       "status": "신규"
@@ -150,16 +140,6 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766567",
       "date": "2026-10-12",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "cau-51223",
-      "school": "중앙대",
-      "title": "[실기고사] 2027학년도 전반기(3월 입학) 학부 순수외국인전형 예체능계열 실기고사 안내",
-      "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51223",
-      "date": "2026-10-07",
-      "owner": "정주원",
       "status": "신규"
     }
   ]
