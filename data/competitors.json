@@ -1,24 +1,44 @@
 {
-  "generatedAt": "2026-10-19T20:30:54.530Z",
+  "generatedAt": "2026-10-20T08:24:17.564Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "skku-140674",
+      "school": "성균관대",
+      "title": "성균관대 삼성SDI-SKKU 이차전지산학협력연구센터 행정 직원 모집 (~10/26 월 오전 11시)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140674&article.offset=0&articleLimit=10",
+      "date": "2026-10-20",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140687",
+      "school": "성균관대",
+      "title": "2027학년도 2학기 해외파견 교환학생 설명회 개최 안내",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140687&article.offset=0&articleLimit=10",
+      "date": "2026-10-20",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140482",
+      "school": "성균관대",
+      "title": "[인공지능혁신융합대학사업] 2026학년도 인공지능혁신융합대학사업 겨울 계절학기 학점교류 수강 안내 (상시 업데이트)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482&article.offset=0&articleLimit=10",
+      "date": "2026-10-20",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "hyu-1026698",
       "school": "한양대",
       "title": "한양대 학생팀, 수액 카테터 고정 혁신으로 한국팀 유일 ‘세계 20선’ 진입… 제임스 다이슨 어워드 국제전 우승 도전",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026698",
-      "date": "2026-10-19",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026692",
-      "school": "한양대",
-      "title": "한양대 안원비 학생, 코리아국제현대무용콩쿠르 전체 대상…문체부 장관상",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026692",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +48,17 @@
       "title": "10년의 기다림 끝에 정상으로… 한양대, 대학동문골프최강전 우승",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026275",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026782",
+      "school": "한양대",
+      "title": "한양대박물관, 대학박물관 분야 대표 국제상 ‘UMAC상’ 수상",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026782",
+      "date": "2026-10-20",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +68,7 @@
       "title": "한양대 최정욱 교수팀, AI 모델·반도체 공동 최적화로 국제대회 1위",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026739",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +78,7 @@
       "title": "한양대 ERICA 학생들, 산학협력 수업서 만든 영화로 국내 영화제 2곳 수상",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026738",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,8 +88,28 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323360",
+      "school": "경희대",
+      "title": "[국제교육원] 2026-5차 가을 정규 외국어 강좌 모집 공지",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323360&menuNo=200316",
+      "date": "2026-10-20",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766680",
+      "school": "동국대",
+      "title": "2026 동계 대만 대북시립대학교 단기 프로그램 참가자 선발",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766680",
+      "date": "2026-10-20",
+      "owner": "이수연",
       "status": "신규"
     },
     {
@@ -68,7 +118,7 @@
       "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "owner": "정주원",
       "status": "신규"
     },
@@ -89,16 +139,6 @@
       "category": "국제",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
       "date": "2026-10-16",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323325",
-      "school": "경희대",
-      "title": "[창업교육센터] 경기도와 함께하는 2026 찾아가는 공정거래 교육 신청 안내",
-      "category": "산학협력",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323325&menuNo=200316",
-      "date": "2026-10-15",
       "owner": "이수연",
       "status": "신규"
     },
