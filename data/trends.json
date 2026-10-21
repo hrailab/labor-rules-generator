@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:53:16.412Z",
+  "generatedAt": "2026-10-21T08:15:10.394Z",
   "windowDays": 14,
   "items": [
     {
@@ -74,19 +74,67 @@
   ],
   "excludedItems": [
     {
-      "dept": "기획예산처",
-      "title": "박홍근 장관, 기금 자산운용 개선을 위한 민간 전문가 간담회 개최",
-      "desc": "박홍근 기획예산처 장관은 10월 20일(화) 기금 수익성 제고를 위한 자산운용 개선 방안과 미래대응기금의 효율적인 자산운용 방향에 대해 논의하기 위해 간담회를 개최하였습니다. * 자세한 사항은 첨부의 내용을 참고하여 주시기 바랍니다.",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785856&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "dept": "과기정통부",
+      "title": "5G 기반 지하철 와이파이, 국민과 함께 체험",
+      "desc": "- 시범노선 ( 인천 1&middot;2 호선 ) 의 지하철 와이파이 고도화 (LTE → 5G) 완료 - 과기정통부 류제명 제 2 차관 , 국민과 함께 개선된 통신 품질 직접 체험",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786030&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "관계부처 합동 제16차 재정집행점검회의 개최",
-      "desc": "조용범 기획예산처 차관은 10.20일(화) 관계부처 합동 「제16차 재정집행 점검회의」를 개최하여 청년지원 사업 및 초혁신경제 선도 프로젝트 주요 사업의 집행현황을 점검하였습니다. * 자세한 사항은 첨부의 내용을 참고하여 주시기 바랍니다.",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785836&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "dept": "과기정통부",
+      "title": "양자통신 상용화를 위한 실증 기반 확대 본격 착수",
+      "desc": "- 과기정통부 , 「 개방형 양자 테스트베드 고도화 &middot; 확산 」 착수보고회 개최 - 국내 실증망 확대부터 해외 연계 &middot; 차세대 기술 검증까지 , 3 개 거점 구축 추진 - 미래성장동력 「 7 대 SEED 프로젝트 」 양자 분야 상용화 &...",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785982&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "[보도설명] 국민의 알권리 보장과 기업의 투자 확대를 위해 공시제도를 확대하였으며 기업의 행정부담을 최소화할 계획입니다",
+      "desc": "",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973998&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "대구·경북 통합 지역성장펀드 출범…모펀드 1300억 원 결성",
+      "desc": "",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974021&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농지은행 임대수탁 신청 간소화…서류 없애고 처리시간 절반 단축",
+      "desc": "",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974017&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "「농촌형 교통모델」 워크숍 개최, 지역 맞춤형 교통서비스 확산 방안 모색",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 21 일 ( 수 ) 시 &middot; 도 및 군 담당자 등 약 150 명이 참석하는 「 농촌형 교통모델 」 워크숍을 개최했다 . 이번 워크숍은 농촌형 교통모델의 정책 추진방향과 지역의 ...",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786003&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "한-베트남 정상회담 후속 성과로 베트남에 K-닭고기가공품 수출 개시!",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 식품의약품안전처 ( 처장 오유경 , 이하 ' 식약처 ') 는 2026 년 4 월 한 - 베트남 정상회담 계기로 타결된 열처리 가금육 검역 &middot; 위생협상 에 따라 베트남에 처음으로 ...",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785997&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "&quot;10년의 결실, 세계로 뛰는 K-종자&quot; 2026 국제종자박람회 개막",
+      "desc": "김정욱 농림축산식품부 농산업혁신정책실장은 10 월 21 일 ( 수 ) , 전북특별자치도 김제시 민간육종연구단지 ( 종자산업진흥센터 ) 에서 개최된 「 2026 국제종자 박 람회 」 개막식에 참석하여 종자기업 관계자들을 격려하고 현장을 살폈다 . 올해로 10 회...",
+      "date": "2026-10-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785993&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -147,30 +195,6 @@
     },
     {
       "dept": "농식품부",
-      "title": "순천만 야생조류 분변에서 고병원성 조류인플루엔자(AI) 첫 검출... 전국 위기경보 '심각' 상향",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 기후에너지환경부 ( 장관 김성환 , 이하 ' 기후부 ') 는 지난 10 월 12 일 전남광주 순천시 순천만에서 채취한 야생 조류 분변에 대해 국립야생동물질병관리원이 정밀검사를 실시한 결과 , 10...",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785817&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "2026년산 공공비축벼 매입 검사 본격 시작",
-      "desc": "국립농산물품질관리원 ( 원장 김철 , 이하 농관원 ) 은 2026 년산 공공비축 벼 ( 가루쌀벼 포함 ) 40 만 톤 ( 쌀 기준 ) 에 대한 매입검사를 실시한다 . 10 월 23 일 경기도 포천시를 시작으로 각 도별 배정된 물량에 따라 전 국 3 천 여 개 ...",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785791&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "&quot;세계인이 믿고 찾는 해외 한식당 만든다&quot; 농식품부, 해외 한식당 경쟁력 강화 추진",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 글로벌 한식 수요 증가에 대응하여 해외 한식당의 품질과 경쟁력을 높이고 , 한식의 지속가능한 글로벌 성장기반을 마련하기 위해 ' 해외 한식당 경쟁력 강화 방안 ' 을 수립했다 . 최근 K- 콘텐츠의 확산과 더...",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785790&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
       "title": "복지용 쌀, 출고&middot;보관&middot;배송 단계별 품질관리 및 시설 점검을 강화하여 추진하겠습니다.",
       "desc": "",
       "date": "2026-10-20",
@@ -191,30 +215,6 @@
       "desc": "",
       "date": "2026-10-20",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973929&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "박홍근 장관, 민간 일자리 확충을 위한 현장의견 청취",
-      "desc": "기획예산처 박홍근 장관은 민간 일자리 확충을 위한 현장의견을 청취하는 자리를 가졌습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785701&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "아태이론물리센터, 2026년도 이휘소상 수상자 선정 및 강연 개최",
-      "desc": "아태이론물리센터, 2026년도 이휘소상 수상자 선정 및 강연 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785674&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 세계은행과 함께 국제 인공지능&middot;디지털 협력 논의",
-      "desc": "- 세계은행과 공동으로 「국제 인공지능 &middot;디지털 정상회의( 글로벌 AI &middot; 디지털 서밋) 」 개최 (10 월 19~22 일 , 서울 ) - 배경훈 부총리 , 60 여 개국 장 &middot; 차관급 대표들과 인공지능 &middot; ...",
-      "date": "2026-10-19",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785665&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -242,43 +242,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부는 국채 이자지출을 안정적인 수준으로 관리 중이며 향후 차환 리스크도 낮은 편입니다",
-      "desc": "",
-      "date": "2026-10-18",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973718&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "신고 포상금 확대, 인력과 예산 확충 등 내실 있는 부정수급 신고센터 운영을 위해 최선을 다하겠습니다.",
-      "desc": "",
-      "date": "2026-10-17",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973706&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "원자층 골라 바꿔 반도체 만든다…차세대 2D 반도체 제작기술 개발",
       "desc": "",
       "date": "2026-10-16",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973629&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "IMF, 올해 한국 일반정부부채 비율 54.4%→47.3% 하향 전망",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973539&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명)예비타당성조사는 사업의 경제성뿐만 아니라 정책성, 균형성장효과 등 다양한 가치를 종합적으로 평가하고 있습니다.",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973595&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -322,14 +290,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "[보도설명] 과기정통부는 출연연구기관의 사이버보안을 강화해 나아가겠습니다.(동아일보)",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973475&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "'상생소비복권' 17억 풀린다…디지털온누리 3만원 이상 결제시 응모",
       "desc": "",
@@ -367,14 +327,6 @@
       "desc": "",
       "date": "2026-10-08",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973216&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "10만 원대로 즐기는 '1박 2일' 농촌 여행…농촌관광벨트 상품 출시",
-      "desc": "",
-      "date": "2026-10-08",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973211&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
