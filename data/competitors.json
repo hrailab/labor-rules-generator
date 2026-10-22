@@ -1,7 +1,17 @@
 {
-  "generatedAt": "2026-10-22T08:29:51.802Z",
+  "generatedAt": "2026-10-22T19:07:47.774Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "skku-140744",
+      "school": "성균관대",
+      "title": "[KUSF 두드림] 스포츠단 농구부 재능 기부 프로그램 참여자 모집 (창의품 10시간 지급)",
+      "category": "대외협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140744&article.offset=0&articleLimit=10",
+      "date": "2026-10-22",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "skku-140739",
       "school": "성균관대",
@@ -28,26 +38,6 @@
       "title": "2027학년도 2학기 해외파견 교환학생 설명회 및 Student Mobility Fair 안내",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140709&article.offset=0&articleLimit=10",
-      "date": "2026-10-22",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140482",
-      "school": "성균관대",
-      "title": "[인공지능혁신융합대학사업] 2026학년도 인공지능혁신융합대학사업 겨울 계절학기 학점교류 수강 안내 (상시 업데이트)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482&article.offset=0&articleLimit=10",
-      "date": "2026-10-22",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140495",
-      "school": "성균관대",
-      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
       "date": "2026-10-22",
       "owner": "서원석",
       "status": "신규"
