@@ -1,14 +1,44 @@
 {
-  "generatedAt": "2026-10-21T19:12:13.615Z",
+  "generatedAt": "2026-10-22T08:29:51.802Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "skku-140739",
+      "school": "성균관대",
+      "title": "[발전협력팀] 2026학년도 수원지역동문회 장학생 선발 안내(~11/13)",
+      "category": "대외협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140739&article.offset=0&articleLimit=10",
+      "date": "2026-10-22",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140730",
+      "school": "성균관대",
+      "title": "제3회 바이오헬스 글로벌 석학 멘토십 세미나 개최 안내(11/9)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140730&article.offset=0&articleLimit=10",
+      "date": "2026-10-22",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "skku-140709",
       "school": "성균관대",
       "title": "2027학년도 2학기 해외파견 교환학생 설명회 및 Student Mobility Fair 안내",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140709&article.offset=0&articleLimit=10",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140482",
+      "school": "성균관대",
+      "title": "[인공지능혁신융합대학사업] 2026학년도 인공지능혁신융합대학사업 겨울 계절학기 학점교류 수강 안내 (상시 업데이트)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482&article.offset=0&articleLimit=10",
+      "date": "2026-10-22",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +48,7 @@
       "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +58,7 @@
       "title": "한양대 학생팀, 수액 카테터 고정 혁신으로 한국팀 유일 ‘세계 20선’ 진입… 제임스 다이슨 어워드 국제전 우승 도전",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026698",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,17 +68,7 @@
       "title": "한양대 동문 류지현 감독, 4년 만에 KBO리그 복귀… 한화 이글스 이끈다",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026818",
-      "date": "2026-10-21",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026782",
-      "school": "한양대",
-      "title": "한양대박물관, 대학박물관 분야 대표 국제상 ‘UMAC상’ 수상",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026782",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,8 +78,58 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323375",
+      "school": "경희대",
+      "title": "[지구사회봉사단] 쿠스커스 해외봉사단 2기 모집 공고 (2026년 동계 베트남 해외봉사)",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323375&menuNo=200316",
+      "date": "2026-10-22",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323373",
+      "school": "경희대",
+      "title": "★★[국제교육원] 2026-5차 무료 영어회화 샘플강의★★",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323373&menuNo=200316",
+      "date": "2026-10-22",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766705",
+      "school": "동국대",
+      "title": "2026 동계 일본 나가사키대학 단기연수 참가자 선발",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766705",
+      "date": "2026-10-22",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766702",
+      "school": "동국대",
+      "title": "2026 동계 일본 세츠난대학 단기연수 참가자 선발",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766702",
+      "date": "2026-10-22",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367102",
+      "school": "이화여대",
+      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
+      "date": "2026-10-22",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -73,19 +143,9 @@
       "status": "신규"
     },
     {
-      "id": "ewha-367102",
-      "school": "이화여대",
-      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-21",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
       "id": "khu-323360",
       "school": "경희대",
-      "title": "[국제교육원] 2026-5차 가을 정규 외국어 강좌 모집 공지",
+      "title": "[국제교육원] ★등록마감임박★ 2026-5차 가을 정규 외국어 강좌 모집 공지",
       "category": "국제",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323360&menuNo=200316",
       "date": "2026-10-20",
@@ -99,16 +159,6 @@
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766680",
       "date": "2026-10-20",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323337",
-      "school": "경희대",
-      "title": "[국제교육원(국제)] 2026년 가을학기 2차 외국어특강 운영 안내",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323337&menuNo=200316",
-      "date": "2026-10-16",
       "owner": "이수연",
       "status": "신규"
     },
