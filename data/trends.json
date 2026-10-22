@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T08:16:37.995Z",
+  "generatedAt": "2026-10-22T19:02:21.530Z",
   "windowDays": 14,
   "items": [
     {
@@ -138,6 +138,14 @@
     },
     {
       "dept": "과기정통부",
+      "title": "정부, 양자·우주 등 '7대 SEED 프로젝트' 전략 수립 본격화",
+      "desc": "",
+      "date": "2026-10-22",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974150&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
       "title": "과기부, 'PHP' 심각한 보안 취약점…'보안 업데이트' 즉시 적용",
       "desc": "",
       "date": "2026-10-22",
@@ -174,6 +182,14 @@
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 23 일부터 11 월 22 일까지 참여형 공익 캠페인 플랫폼인 ' 네이버 해피빈 ' 과 협업하여 ' 농촌여행 ' 촌캉스 ' 를 즐기는 N 가지 방법 ' 캠페인을 진행한다고 밝혔다 ...",
       "date": "2026-10-22",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786112&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "정부는 할당관세의 물가안정 효과를 높이기 위한 제도개선을 지속 추진 중입니다.",
+      "desc": "",
+      "date": "2026-10-22",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974157&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -278,14 +294,6 @@
       "desc": "",
       "date": "2026-10-20",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973944&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "복지용 쌀, 출고&middot;보관&middot;배송 단계별 품질관리 및 시설 점검을 강화하여 추진하겠습니다.",
-      "desc": "",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973975&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
