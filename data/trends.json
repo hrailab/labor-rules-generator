@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T19:02:21.530Z",
+  "generatedAt": "2026-10-23T08:13:42.234Z",
   "windowDays": 14,
   "items": [
     {
@@ -49,29 +49,6 @@
       "actionable": true
     },
     {
-      "id": "A00008-156786111",
-      "dept": "농식품부",
-      "category": "정책예고",
-      "title": "&quot;우리 농산물 100% 전통식품&quot; 급식, 학생 입맛 사로잡았다.",
-      "desc": "국립농산물품질관리원 ( 원장 김철 , 이하 ' 농관원 ') 은 성장기 학생들에게 우수한 우리 전통식품의 가치를 알리고 건강한 식습관 형성을 유도하기 위해 추진한 ' 우리 학교 전통식품 인증품 먹는 날 ' 시범 운영을 성공적으로 마쳤다고 밝 혔다 . 농관원은 교육부 및 5...",
-      "date": "2026-10-22",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786111&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
       "id": "A00032-148973549",
       "dept": "중기부",
       "category": "정책예고",
@@ -96,6 +73,38 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "농식품부",
+      "title": "&quot;대한민국 첫 한식의 날, 한식의 새로운 미래를 선언하다&quot;",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 외교부 ( 장관 조현 ) 는 법정 기념일로 처음 지정된 ' 한식의 날 (10 월 24 일 )' 을 기념하여 10 월 23 일 ( 금 ) 국립중앙박물관 대강당에서 ' 제 1 회 한식의 날...",
+      "date": "2026-10-23",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786301&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "직거래 페스타의 만남이 일상 속 식탁으로",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 온오프라인에서 활동 중인 농산물 직거래 주체 간 만남의 장이자 도농 상생의 장인 &#xFF62; 온앤오프 직거래 페스타 &#xFF63; 를 기념하여 10 월 23 일 ( 금 ) 오전 11 시 서울 상암...",
+      "date": "2026-10-23",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786266&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부, 연대와 협력으로 농촌의 가치를 높인다! 농업&middot;농촌형 예비사회적기업 7개소 신규 지정",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ' ) 는 농촌의 돌봄 공백과 일자 리 부족 , 농가소득 정체 등을 해결하고 공동체적 가치를 실천할 ' 농 업 &middot; 농촌형 예비사회적기업 ' 7 개소를 새롭게 지정했다고 밝혔다 . 이번에 지정된 기업들은...",
+      "date": "2026-10-23",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786214&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농기계 사망사고 예방을 위한 예산을 전액 삭감했다는 주장은 사실과 다릅니다.",
+      "desc": "",
+      "date": "2026-10-23",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974198&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "조용범 차관, 미래대응기금 정책 심포지엄 축사",
@@ -178,10 +187,10 @@
     },
     {
       "dept": "농식품부",
-      "title": "농촌여행 '촌캉스'를 즐기는 N가지 방법을 소개합니다!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 23 일부터 11 월 22 일까지 참여형 공익 캠페인 플랫폼인 ' 네이버 해피빈 ' 과 협업하여 ' 농촌여행 ' 촌캉스 ' 를 즐기는 N 가지 방법 ' 캠페인을 진행한다고 밝혔다 ...",
+      "title": "농지시장과 농업인의 경영 안정을 위해 적극 대응하겠습니다.",
+      "desc": "",
       "date": "2026-10-22",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786112&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974162&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -190,14 +199,6 @@
       "desc": "",
       "date": "2026-10-22",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974157&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농산물 TRQ 63개 품목은 WTO 규정 및 국내 법령에 따라 운영하고 있습니다.",
-      "desc": "",
-      "date": "2026-10-22",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974112&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -238,22 +239,6 @@
       "desc": "",
       "date": "2026-10-21",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974017&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "「농촌형 교통모델」 워크숍 개최, 지역 맞춤형 교통서비스 확산 방안 모색",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 10 월 21 일 ( 수 ) 시 &middot; 도 및 군 담당자 등 약 150 명이 참석하는 「 농촌형 교통모델 」 워크숍을 개최했다 . 이번 워크숍은 농촌형 교통모델의 정책 추진방향과 지역의 ...",
-      "date": "2026-10-21",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786003&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "&quot;농사 안 지으면 땅 뺏는다&quot;는 전혀 사실이 아닙니다",
-      "desc": "",
-      "date": "2026-10-21",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974064&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
