@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-10-23T18:52:34.859Z",
+  "generatedAt": "2026-10-24T07:52:04.172Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "A00033-156786331",
+      "dept": "과기정통부",
+      "category": "정책예고",
+      "title": "한국, 아시아태평양경제협력체(APEC) 정보통신실무그룹(TEL) 의장단에 연이어 진출",
+      "desc": "- 장주동 국립전파연구원 연구사 , 적합성평가 &middot; 상호운용성 운영그룹 간사 선출 - 박정은 정보통신정책연구원 연구원 , 개발 &middot; 정책 운영그룹 부간사 선출",
+      "date": "2026-10-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786331&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "이수연",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00032-156786326",
       "dept": "중기부",
@@ -97,6 +120,14 @@
   ],
   "excludedItems": [
     {
+      "dept": "과기정통부",
+      "title": "아이들의 상상력이 인공지능을 만나는 첫 경험! 「전 국민 인공지능 경진대회」, 인공지능 창작대회 본선 개최",
+      "desc": "아이들의 상상력이 인공지능을 만나는 첫 경험! 「전 국민 인공지능 경진대회」, 인공지능 창작대회 본선 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786340&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "농식품부",
       "title": "&quot;대한민국 첫 한식의 날, 한식의 새로운 미래를 선언하다&quot;",
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 외교부 ( 장관 조현 ) 는 법정 기념일로 처음 지정된 ' 한식의 날 (10 월 24 일 )' 을 기념하여 10 월 23 일 ( 금 ) 국립중앙박물관 대강당에서 ' 제 1 회 한식의 날...",
@@ -190,22 +221,6 @@
       "desc": "",
       "date": "2026-10-22",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974113&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 웹사이트 개발 언어 'PHP' 보안 취약점 관련 긴급 보안 최신화(업데이트) 및 기술적 조치 당부",
-      "desc": "- 웹사이트 운영 기업 &middot; 기관은 즉시 최신화(업데이트) , 구버전은 상위 버전 전환 및 침해 여부 점검 필요 - 민간 분야 사이버위기 경보 ' 관심 ' 에서 ' 주의 ' 로 상향 조정",
-      "date": "2026-10-22",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786135&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "전세계 과학관 전문가들이 모여 디지털 시대 과학관과 과학콘텐츠의 미래 논한다",
-      "desc": "전세계 과학관 전문가들이 모여 디지털 시대 과학관과 과학콘텐츠의 미래 논한다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-10-22",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786115&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
