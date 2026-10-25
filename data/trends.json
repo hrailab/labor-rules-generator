@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T08:05:16.782Z",
+  "generatedAt": "2026-10-25T18:05:25.022Z",
   "windowDays": 14,
   "items": [
     {
@@ -119,6 +119,14 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "교육부",
+      "title": "인공지능 시대, '인문학은 질문합니다.'",
+      "desc": "",
+      "date": "2026-10-25",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786342&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "과기정통부",
       "title": "아이들의 상상력이 인공지능을 만나는 첫 경험! 「전 국민 인공지능 경진대회」, 인공지능 창작대회 본선 개최",
@@ -288,14 +296,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "교육부",
-      "title": "「초&middot;중등교육법 시행령」 일부개정령안 국무회의 통과",
-      "desc": "",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785810&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "내년부터 코스피·코스닥 전체 상장사에 정보보호 공시 의무화",
       "desc": "",
@@ -405,22 +405,6 @@
       "desc": "",
       "date": "2026-10-13",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973384&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "SNS상 유포 중인 '이소영 장관 122억 결제' 관련 게시물은 명백한 허위조작정보입니다.",
-      "desc": "",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973284&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "'농지 전수조사 상담센터' 12일부터 운영…관련 궁금증·불안 해소",
-      "desc": "",
-      "date": "2026-10-12",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973320&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
