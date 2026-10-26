@@ -1,7 +1,17 @@
 {
-  "generatedAt": "2026-10-26T08:45:49.090Z",
+  "generatedAt": "2026-10-26T20:24:18.933Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "skku-140803",
+      "school": "성균관대",
+      "title": "[미디어커뮤니케이션학과]WAVE 글로벌 공동강의 특강 안내: Sungjun (Steven) Park교수 초청",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140803&article.offset=0&articleLimit=10",
+      "date": "2026-10-26",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "hyu-1026698",
       "school": "한양대",
