@@ -1,14 +1,44 @@
 {
-  "generatedAt": "2026-10-26T20:24:18.933Z",
+  "generatedAt": "2026-10-27T08:51:42.307Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "skku-140803",
+      "id": "skku-140495",
       "school": "성균관대",
-      "title": "[미디어커뮤니케이션학과]WAVE 글로벌 공동강의 특강 안내: Sungjun (Steven) Park교수 초청",
+      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중)",
       "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140803&article.offset=0&articleLimit=10",
-      "date": "2026-10-26",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
+      "date": "2026-10-27",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140823",
+      "school": "성균관대",
+      "title": "2026학년도 국제동계학기(WISE) 본교생 수강신청 안내 (11/26(목) 10:00 ~ 12/10(목) 17:00)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140823&article.offset=0&articleLimit=10",
+      "date": "2026-10-27",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140824",
+      "school": "성균관대",
+      "title": "[학술정보관] 해외 저널 투고를 위한 연구 워크플로 특강 안내 (11/4~11/6)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140824&article.offset=0&articleLimit=10",
+      "date": "2026-10-27",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140821",
+      "school": "성균관대",
+      "title": "[AI중심대학사업단] 글로벌 IT전문가와 킹고인의 만남 시즌2 여든네 번째 만남 (10/28, 수, 12시)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140821&article.offset=0&articleLimit=10",
+      "date": "2026-10-27",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +48,7 @@
       "title": "한양대 학생팀, 수액 카테터 고정 혁신으로 한국팀 유일 ‘세계 20선’ 진입… 제임스 다이슨 어워드 국제전 우승 도전",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026698",
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +58,7 @@
       "title": "한양대 동문 류지현 감독, 4년 만에 KBO리그 복귀… 한화 이글스 이끈다",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026818",
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,8 +68,18 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367102",
+      "school": "이화여대",
+      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
+      "date": "2026-10-27",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -49,26 +89,6 @@
       "category": "국제",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323360&menuNo=200316",
       "date": "2026-10-26",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367102",
-      "school": "이화여대",
-      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-26",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323373",
-      "school": "경희대",
-      "title": "★★[국제교육원] 2026-5차 무료 영어회화 샘플강의★★",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323373&menuNo=200316",
-      "date": "2026-10-22",
       "owner": "이수연",
       "status": "신규"
     },
