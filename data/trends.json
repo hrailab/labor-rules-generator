@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-10-27T08:37:06.414Z",
+  "generatedAt": "2026-10-27T19:47:50.517Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "A00002-148974367",
+      "dept": "교육부",
+      "category": "정책예고",
+      "title": "대학 등록금 올리면 증액분 어디에 쓰나…등록금심의위가 확인",
+      "desc": "",
+      "date": "2026-10-27",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974367&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "정주원",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00002-156786640",
       "dept": "교육부",
@@ -24,6 +47,29 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": true
+    },
+    {
+      "id": "A00008-156786615",
+      "dept": "농식품부",
+      "category": "정책예고",
+      "title": "소(牛)프라이즈 대한민국 한우세일 실시",
+      "desc": "농림축산식품부 ( 장관 송미령 ) 는 10 월 28 일 ( 수 ) 부터 11 월 8 일 ( 일 ) 까지 12 일 동안 전국 대형마트 , 슈퍼마켓 , 농축협 하나로마트 및 주요 온라인몰 등에서 한우의 날을 맞이하여 ' 소 ( 牛 ) 프라이즈 대한민...",
+      "date": "2026-10-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786615&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "중간",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
     },
     {
       "id": "A00033-156786451",
@@ -107,6 +153,14 @@
     },
     {
       "dept": "과기정통부",
+      "title": "'IAEA 원자력 장관회의' 한국서 첫 개최…\"글로벌 생산 거점 도약\"",
+      "desc": "",
+      "date": "2026-10-27",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974385&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
       "title": "과기정통부, 국제 원자력기구(IAEA) 원자력 장관회의 한국 첫 개최",
       "desc": "- 안전 확보와 투명한 소통으로 국민 &middot; 국제사회의 신뢰 강화 - 민관 역량 결집해 소형 모듈 원자로( SMR) 의 안전한 개발 &middot; 실증에 속도 - K- 원자력 , 세계적 생산 거점 도약과 전주기 협력 확대",
       "date": "2026-10-27",
@@ -130,27 +184,27 @@
       "reason": "relevance"
     },
     {
+      "dept": "중기부",
+      "title": "자동차&middot;가전부터 한우&middot;수산물까지...최대 50% 할인 정부, 「제2회 코리아 그랜드 페스티벌」 시작(10.29~11.15)",
+      "desc": "정부는 내수 활성화와 지역 상권에 활력을 불어넣기 위해 10월 29일(목)부터 11월 15일(일)까지 18일간 제2회 「코리아 그랜드 페스티벌(Korea Grand Festival)」을 개최한다고 밝혔다. 관련 내용은 10월 27일(화) 국무회의에서 보고됐다. 코리아 그랜드 페스티벌(이하 '코그페')은...",
+      "date": "2026-10-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786694&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농식품부 장관, 보은군 방문하여 농어촌 기본소득으로 나타난 지역사회 변화 확인",
+      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 10 월 27 일 ( 화 ) 오후 , 농어촌 기본소득 시범사업 ( 이하 ' 기본소득 ') 시행 지역인 보은군을 찾아 현장 간담회를 개최하여 보은군 기본소득 추진현황을 점검하고 , 지역사회에 나타난 변화를...",
+      "date": "2026-10-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786698&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "농식품부",
       "title": "자동차&middot;가전부터 한우&middot;수산물까지...최대 50% 할인 정부, 「제2회 코리아 그랜드 페스티벌」 시작(10.29~11.15)",
       "desc": "정부는 내수 활성화와 지역 상권에 활력을 불어넣기 위해 10 월 29 일 ( 목 ) 부 터 11 월 15 일 ( 일 ) 까지 18 일간 제 2 회 「 코리아 그랜드 페스티벌 (Korea Grand Festival) 」 을 개최한다고 밝혔다 . 관련 내용...",
       "date": "2026-10-27",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786648&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농림축산검역본부-KOICA, 아시아 개도국에 한국의 식물검역 기술 알린다",
-      "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 한국국제 협력단 (KOICA) 과 함께 10 월 12 일부터 10 월 23 일까지 12 일간 아시아 개발도상국 ( 이하 ' 개도국 ') 10 개국 * 의 식물검역전문가 20 명...",
-      "date": "2026-10-27",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786618&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "K-푸드, 글로벌 식품 트렌드 중심지 '시알 파리'를 매료시키다!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 지난 10 월 17 일 ( 토 ) 부터 21 일 ( 수 ) 까지 프랑스 파리 노르빌팽트 (Paris Nord Villepinte) 전시장에서 열린 세계 최대 규모의 식품 박람회 '2026 시알 파...",
-      "date": "2026-10-27",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786616&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -207,14 +261,6 @@
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 23일(금) 부산 벡스코(BEXCO)에서 「2026 대한민국 소상공인대회」 개회식을 개최하고, 소상공인의 우수 제품을 전시&middot;홍보하는 한편 소상공인 발전에 기여한 유공자를 포상했다고 밝혔다. &lt; 행사 개요 &gt; &middot; 행 사 명...",
       "date": "2026-10-26",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786384&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "제주 로컬 크라우드펀딩 판매전 개최",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 26일(월)부터 11월 24일(화)까지 제주 고유의 특색을 담은 소상공인 브랜드 제품을 만나볼 수 있는 「제주 로컬 크라우드펀딩」을 개최한다고 밝혔다. 크라우드펀딩은 사업에 필요한 자금을 마련하기 위해 온라인 플랫폼 등을 통해 다수의 참여자로부터 자금...",
-      "date": "2026-10-26",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156786383&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -399,22 +445,6 @@
       "desc": "",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973550&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "학교 태양광 설비 법정검사 주기 4년→1년 단축…안전 강화",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973472&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "'상생소비복권' 17억 풀린다…디지털온누리 3만원 이상 결제시 응모",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973449&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
