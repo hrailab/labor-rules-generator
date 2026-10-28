@@ -1,64 +1,54 @@
 {
-  "generatedAt": "2026-10-27T20:00:03.003Z",
+  "generatedAt": "2026-10-28T09:31:44.624Z",
   "windowDays": 14,
   "items": [
+    {
+      "id": "skku-140948",
+      "school": "성균관대",
+      "title": "[앵커사업단] 글로벌 창업경진대회 Soulmate Pioneers 참가팀 모집(~11/15, 총 상금 900만원)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140948&article.offset=0&articleLimit=10",
+      "date": "2026-10-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140957",
+      "school": "성균관대",
+      "title": "2026학년도 국제동계학기(WISE) 조교(TA/OA/HA) 모집 안내",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140957&article.offset=0&articleLimit=10",
+      "date": "2026-10-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140855",
+      "school": "성균관대",
+      "title": "미래인문학기반사회혁신창업교육연구단 제7회 국제학술대회 &#034;AX 시대의 사회혁신&#034;",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140855&article.offset=0&articleLimit=10",
+      "date": "2026-10-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "skku-140495",
       "school": "성균관대",
       "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "skku-140823",
-      "school": "성균관대",
-      "title": "2026학년도 국제동계학기(WISE) 본교생 수강신청 안내 (11/26(목) 10:00 ~ 12/10(목) 17:00)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140823&article.offset=0&articleLimit=10",
-      "date": "2026-10-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140824",
-      "school": "성균관대",
-      "title": "[학술정보관] 해외 저널 투고를 위한 연구 워크플로 특강 안내 (11/4~11/6)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140824&article.offset=0&articleLimit=10",
-      "date": "2026-10-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140821",
-      "school": "성균관대",
-      "title": "[AI중심대학사업단] 글로벌 IT전문가와 킹고인의 만남 시즌2 여든네 번째 만남 (10/28, 수, 12시)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140821&article.offset=0&articleLimit=10",
-      "date": "2026-10-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026698",
+      "id": "hyu-1026833",
       "school": "한양대",
-      "title": "한양대 학생팀, 수액 카테터 고정 혁신으로 한국팀 유일 ‘세계 20선’ 진입… 제임스 다이슨 어워드 국제전 우승 도전",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026698",
-      "date": "2026-10-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026818",
-      "school": "한양대",
-      "title": "한양대 동문 류지현 감독, 4년 만에 KBO리그 복귀… 한화 이글스 이끈다",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026818",
-      "date": "2026-10-27",
+      "title": "‘연구에서 창업으로, 기술에서 혁신으로’ …한양대, 2026 교원창업포럼 성료",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026833",
+      "date": "2026-10-28",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,8 +58,38 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766775",
+      "school": "동국대",
+      "title": "[기관토플] 2026학년도 하반기 기관토플(ITP) 시행 안내",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766775",
+      "date": "2026-10-28",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766774",
+      "school": "동국대",
+      "title": "2026 동계 중국 동화대학교 단기 프로그램 참가자 선발",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766774",
+      "date": "2026-10-28",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367629",
+      "school": "이화여대",
+      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
+      "date": "2026-10-28",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -78,7 +98,7 @@
       "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "owner": "정주원",
       "status": "신규"
     },
