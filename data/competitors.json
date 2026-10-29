@@ -1,44 +1,34 @@
 {
-  "generatedAt": "2026-10-28T20:11:29.750Z",
+  "generatedAt": "2026-10-29T09:45:35.065Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "skku-140948",
-      "school": "성균관대",
-      "title": "[앵커사업단] 글로벌 창업경진대회 Soulmate Pioneers 참가팀 모집(~11/15, 총 상금 900만원)",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140948&article.offset=0&articleLimit=10",
-      "date": "2026-10-28",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140957",
-      "school": "성균관대",
-      "title": "2026학년도 국제동계학기(WISE) 조교(TA/OA/HA) 모집 안내",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140957&article.offset=0&articleLimit=10",
-      "date": "2026-10-28",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140855",
-      "school": "성균관대",
-      "title": "미래인문학기반사회혁신창업교육연구단 제7회 국제학술대회 &#034;AX 시대의 사회혁신&#034;",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140855&article.offset=0&articleLimit=10",
-      "date": "2026-10-28",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
       "id": "skku-140495",
       "school": "성균관대",
-      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행중)",
+      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026766",
+      "school": "한양대",
+      "title": "러닝에서 런칭으로, 한양 대표 창업동아리 '마인드러닝72'",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026766",
+      "date": "2026-10-29",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026854",
+      "school": "한양대",
+      "title": "한양대, 미 실리콘밸리서 글로벌 스타트업 멘토단 10기 출범…후배 창업인재 위해 1천만 원 기부",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026854",
+      "date": "2026-10-29",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +38,17 @@
       "title": "‘연구에서 창업으로, 기술에서 혁신으로’ …한양대, 2026 교원창업포럼 성료",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026833",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026841",
+      "school": "한양대",
+      "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
+      "date": "2026-10-29",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,8 +58,38 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323360",
+      "school": "경희대",
+      "title": "[국제교육원(서울)] ★추가모집★ 2026-5차 가을 정규 외국어 강좌 모집 공지(~11.05)",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323360&menuNo=200316",
+      "date": "2026-10-29",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "cau-51294",
+      "school": "중앙대",
+      "title": "[합격자 발표 안내] 2027학년도 전반기 1차 (3월 입학) 합격자 발표 시간 안내",
+      "category": "국제",
+      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51294",
+      "date": "2026-10-29",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367629",
+      "school": "이화여대",
+      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
+      "date": "2026-10-29",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -80,26 +110,6 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766774",
       "date": "2026-10-28",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367629",
-      "school": "이화여대",
-      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-10-28",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367102",
-      "school": "이화여대",
-      "title": "우수 연구성과 기술사업화로 잇는다…지식재산·글로벌 사업화 지원체계 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367102&article.offset=0&articleLimit=10",
-      "date": "2026-10-28",
-      "owner": "정주원",
       "status": "신규"
     },
     {
