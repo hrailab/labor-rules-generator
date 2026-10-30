@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-10-29T20:10:42.414Z",
+  "generatedAt": "2026-10-30T09:51:20.826Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "skku-140495",
+      "id": "skku-140730",
       "school": "성균관대",
-      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
+      "title": "제3회 바이오헬스 글로벌 석학 멘토십 세미나 개최 안내(11/9)",
       "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-10-29",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140730&article.offset=0&articleLimit=10",
+      "date": "2026-10-30",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140948",
+      "school": "성균관대",
+      "title": "[앵커사업단] 글로벌 창업경진대회 Soulmate Pioneers 참가팀 모집(~11/15, 총 상금 900만원)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140948&article.offset=0&articleLimit=10",
+      "date": "2026-10-30",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,27 +28,47 @@
       "title": "러닝에서 런칭으로, 한양 대표 창업동아리 '마인드러닝72'",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026766",
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026854",
+      "id": "hyu-1026881",
       "school": "한양대",
-      "title": "한양대, 미 실리콘밸리서 글로벌 스타트업 멘토단 10기 출범…후배 창업인재 위해 1천만 원 기부",
+      "title": "한양대 ERICA 교원창업기업 코스모크, 로봇 촉각센서로 세계 29개국 참여 ‘인피니언 스타트업 챌린지’ 2위",
       "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026854",
-      "date": "2026-10-29",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026881",
+      "date": "2026-10-30",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026833",
+      "id": "hyu-1026880",
       "school": "한양대",
-      "title": "‘연구에서 창업으로, 기술에서 혁신으로’ …한양대, 2026 교원창업포럼 성료",
+      "title": "한양대, 창업기업 8개사 일본 진출 지원…원티드재팬서 협업 제안",
       "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026833",
-      "date": "2026-10-29",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026880",
+      "date": "2026-10-30",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026866",
+      "school": "한양대",
+      "title": "한양대 위정재 교수 연구팀, Cell Press 국제학술지 『Device』에 자성 로봇 연구 잇따라 게재",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026866",
+      "date": "2026-10-30",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026863",
+      "school": "한양대",
+      "title": "한양대 조기춘 교수팀, IEEE ‘RE 2026’ 최우수 산업혁신 논문상 수상… 현대차와 산학협력 성과",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026863",
+      "date": "2026-10-30",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +78,7 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,8 +88,38 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323083",
+      "school": "경희대",
+      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
+      "date": "2026-10-30",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766805",
+      "school": "동국대",
+      "title": "2027학년도 1학기 오도행장학 장학생 선발 안내",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766805",
+      "date": "2026-10-30",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367629",
+      "school": "이화여대",
+      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
+      "date": "2026-10-30",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -73,11 +133,11 @@
       "status": "신규"
     },
     {
-      "id": "cau-51294",
+      "id": "cau-51300",
       "school": "중앙대",
-      "title": "[합격자 발표 안내] 2027학년도 전반기 1차 (3월 입학) 합격자 발표 시간 안내",
+      "title": "[2차 모집요강] 2027학년도 전반기 (3월 입학)2차 학부 순수 외국인전형 원서접수 일정 및 모집요강 안내",
       "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51294",
+      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51300",
       "date": "2026-10-29",
       "owner": "정주원",
       "status": "신규"
@@ -99,16 +159,6 @@
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766774",
       "date": "2026-10-28",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323375",
-      "school": "경희대",
-      "title": "[지구사회봉사단] 쿠스커스 해외봉사단 2기 모집 공고 (2026년 동계 베트남 해외봉사)",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323375&menuNo=200316",
-      "date": "2026-10-22",
       "owner": "이수연",
       "status": "신규"
     },
@@ -140,6 +190,16 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766680",
       "date": "2026-10-20",
       "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "cau-51259",
+      "school": "중앙대",
+      "title": "[합격자 조회] 2027학년도 전반기 1차 (3월 입학) 학부 순수외국인전형 합격자 조회",
+      "category": "국제",
+      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51259",
+      "date": "2026-10-19",
+      "owner": "정주원",
       "status": "신규"
     }
   ]
