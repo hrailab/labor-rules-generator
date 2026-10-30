@@ -1,16 +1,39 @@
 {
-  "generatedAt": "2026-10-29T20:02:52.677Z",
+  "generatedAt": "2026-10-30T09:34:21.387Z",
   "windowDays": 14,
   "items": [
     {
-      "id": "A00033-156787182",
+      "id": "A00033-156787275",
       "dept": "과기정통부",
       "category": "정책예고",
-      "title": "더 정교한 촉매 설계의 실마리 찾았다... 화학 결합의 장거리 영향 규명",
-      "desc": "- 기초과학연구원 &middot; 독일 막스플랑크 , 멀리 떨어진 금속 표면의 원자 구조가 분자 결합에 미치는 영향 규명 - - 분자와 금속의 전자적 상호작용에 대한 새로운 이론 모델 제시 , 사이언스 誌 게재 -",
+      "title": "제5차 한-캐나다 과학기술혁신공동위원회 개최",
+      "desc": "- 인공지능 &middot; 양자 &middot; 생명공학 ( 바이오 ) 등 핵심신흥기술 및 연구안보 협력 논의 - - 양국 연구지원기관 ( 한 한국연구재단 – 캐 국가연구위원회 ) 간 업무협약 체결 - - 혁신과학경제개발부 차관 면담을 통해 협력 확대 모색 -",
       "date": "2026-10-30",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787182&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787275&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
+      "status": "신규",
+      "priority": "중간",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": true
+    },
+    {
+      "id": "A00032-156787187",
+      "dept": "중기부",
+      "category": "정책예고",
+      "title": "로컬창업 소상공인 투자유치 1,227억원 달성",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 29일(목) 「로컬창업 소상공인 대상 민간투자 동향 및 분석 결과」를 발표했다. 립스*는 중기부가 지정한 운영사(민간투자사)가 지역의 고유한 자원, 문화, 특성을 가진 로컬창업 소상공인에게 먼저 투자하면, 중기부가 정책자금 및 사업화 자금을 매칭 지원...",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787187&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -98,6 +121,54 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "대국민 재정교육 아이디어 공모전 개최",
+      "desc": "기획예산처는 국민 눈높이에 맞는 쉽고 유익한 재정교육 콘텐츠와 프로그램을 발굴하기 위해 「대국민 재정교육 아이디어 공모전」을 개최합니다 * 자세한 내용은 첨부파일을 확인하시기 바랍니다.",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787269&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "인공지능시대사이버보안영재교육지원을위한 교육부.LG유플러스.티오리한국 업무협약 체결",
+      "desc": "",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787281&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "교육부, 제3회 특별성과 우수사례 시상",
+      "desc": "",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787186&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "과기정통부, 통신재난 대응 강화로 국민 일상 보호",
+      "desc": "과기정통부, 통신재난 대응 강화로 국민 일상 보호 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787312&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "음악가 공모부터 선곡까지, 시민의 댓글이 콘서트가 됐다",
+      "desc": "- 국립과천과학관 , 관객 참여형 융합 콘서트 〈 재즈와 물리 〉 10 월 31 일 개최 - - 시민 댓글 아이디어를 실제 연주곡으로 구현 … 피크닉형으로 즐기는 이색 야간 과학음악회 -",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787266&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "따스한 가정의 품으로, 국가봉사동물의 견(犬)생 2막을 지원합니다",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 10 월 30 일 영종도 검역탐지견센터에서 은퇴 검역탐지견 11 마리와 입양 가족들과 함께 검역탐지견 홈커밍데이를 개최하였다 ...",
+      "date": "2026-10-30",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787276&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "2026년 제6회 민간투자사업심의위원회 개최",
       "desc": "조용범 기획예산처 차관은 26.10.29일 2026년 제6회 민간투자사업심의위원회를 개최하여 3개 사업을 심의, 의결하였습니다. 자세한 내용은 첨부파일을 참고 부탁드립니다.",
       "date": "2026-10-29",
@@ -113,43 +184,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "조용범 차관, 제24회 협동조합정책심의위원회 개최",
-      "desc": "기획예산처는 10월 29일(목) 오후 14시, 스페이스쉐어 서울역 센터에서 조용범 기획예산처 차관 주재로 제24회 협동조합정책심의위원회를 개최하였습니다. 자세한 사항은 첨부자료를 참고하여 주시기 바랍니다.",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787122&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "&quot;우리 지역, 우리 아이에게 꼭 맞게&quot; 사교육 고민 덜고, 영유아기 교육 선택 돕는다",
-      "desc": "\"우리 지역, 우리 아이에게 꼭 맞게\" 사교육 고민 덜고, 영유아기 교육 선택 돕는다",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787057&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "교육부",
       "title": "한국어로 열리는 진로&middot;취업의 기회, 베트남 한국유학박람회 개최",
       "desc": "",
       "date": "2026-10-29",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787056&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "한국에서 함께 그린 원자력의 내일, 국제원자력기구 원자력 장관회의 폐막",
-      "desc": "- 62 개 회원국 참여 , 안전 &middot; 신뢰 확보와 신기술 활용 위한 국제협력 방향 제시 - - K- 원자력의 경험 공유 , 인재 양성 &middot; 기술교류 &middot; 해외 사업협력 추진 의지 밝혀 -",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787151&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "구혁채 과기정통부 제1차관, 원자력학회 참석 및 경주지역 연구현장 방문",
-      "desc": "- 추계학술발표회 기조강연 통해 원자력과 과학기술로 여는 대한민국 미래상 제시 - 경주지역 양성자 과학 연구단 과 문무대왕과학연구소 건설현장 방문 을 통해 추진현황 점검 및 애로사항 수렴",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787116&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -169,14 +208,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "중기부",
-      "title": "중소 제조현장을 피지컬 AI 혁신의 무대로, 「중소제조 피지컬 AI 확산 전략」 발표",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 10월 29일(목), 충남 천안에 위치한 제약바이오 기업인 종근당에서 개최된 국무총리 주재 제16회 국가정책조정회의에서 「중소제조 피지컬 AI 확산 전략」을 발표했다. 이번 전략은 '중소제조기업과 함께 만드는 피지컬 AI 선도국가'로의 도약을 비전으로, 중소...",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787119&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "이장 선출은 '1세대 1표'가 아닌, '1인 1표'로! 농식품부, 성평등 농촌문화 확산",
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 여성농업인의 동등한 권리와 참여를 보장하고 성평등한 농촌문화를 조성하기 위해 , 전국 농촌마을의 다양한 성평등 우수사례를 발굴하여 온 &#x2024; 오프라인 콘텐츠로 제작 &#x2024; 확산한다 . 농가 인구...",
@@ -191,22 +222,6 @@
       "date": "2026-10-29",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974533&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "2026년 10월 대학정보공시 분석 결과 발표",
-      "desc": "",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787055&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
-    },
-    {
-      "dept": "농식품부",
-      "title": "사진 한 장으로 반려동물 건강 체크, 인공지능(AI)로 여는 펫헬스케어 시대",
-      "desc": "농림축 산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 농식품 분야 우수 벤처창업 기업을 발굴 &middot; 홍보하기 위해 이달의 에이 (A)- 벤처스 * 제 90 호 기업으로 주식회사 십일리터 ( 대표 김광현 , 이하 ' 십일리터 ') 를 선정하...",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787021&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
     },
     {
       "dept": "교육부",
