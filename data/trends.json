@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T09:15:14.480Z",
+  "generatedAt": "2026-10-31T19:04:13.786Z",
   "windowDays": 14,
   "items": [
     {
@@ -413,14 +413,6 @@
       "desc": "",
       "date": "2026-10-19",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973772&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부는 국채 이자지출을 안정적인 수준으로 관리 중이며 향후 차환 리스크도 낮은 편입니다",
-      "desc": "",
-      "date": "2026-10-18",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973718&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
