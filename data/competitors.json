@@ -1,34 +1,14 @@
 {
-  "generatedAt": "2026-10-30T19:53:47.696Z",
+  "generatedAt": "2026-10-31T09:29:45.604Z",
   "windowDays": 14,
   "items": [
-    {
-      "id": "skku-140730",
-      "school": "성균관대",
-      "title": "제3회 바이오헬스 글로벌 석학 멘토십 세미나 개최 안내(11/9)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140730&article.offset=0&articleLimit=10",
-      "date": "2026-10-30",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140948",
-      "school": "성균관대",
-      "title": "[앵커사업단] 글로벌 창업경진대회 Soulmate Pioneers 참가팀 모집(~11/15, 총 상금 900만원)",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140948&article.offset=0&articleLimit=10",
-      "date": "2026-10-30",
-      "owner": "서원석",
-      "status": "신규"
-    },
     {
       "id": "hyu-1026766",
       "school": "한양대",
       "title": "러닝에서 런칭으로, 한양 대표 창업동아리 '마인드러닝72'",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026766",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +18,7 @@
       "title": "한양대 ERICA 교원창업기업 코스모크, 로봇 촉각센서로 세계 29개국 참여 ‘인피니언 스타트업 챌린지’ 2위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026881",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +28,7 @@
       "title": "한양대, 창업기업 8개사 일본 진출 지원…원티드재팬서 협업 제안",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026880",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,7 +38,7 @@
       "title": "한양대 위정재 교수 연구팀, Cell Press 국제학술지 『Device』에 자성 로봇 연구 잇따라 게재",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026866",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,7 +48,7 @@
       "title": "한양대 조기춘 교수팀, IEEE ‘RE 2026’ 최우수 산업혁신 논문상 수상… 현대차와 산학협력 성과",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026863",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,7 +58,7 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "owner": "서원석",
       "status": "신규"
     },
@@ -88,6 +68,16 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
+      "date": "2026-10-31",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140730",
+      "school": "성균관대",
+      "title": "제3회 바이오헬스 글로벌 석학 멘토십 세미나 개최 안내(11/9)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140730&article.offset=0&articleLimit=10",
       "date": "2026-10-30",
       "owner": "서원석",
       "status": "신규"
