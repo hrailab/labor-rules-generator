@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T10:19:37.966Z",
+  "generatedAt": "2026-11-01T19:28:58.275Z",
   "windowDays": 14,
   "items": [
     {
@@ -180,16 +180,6 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766680",
       "date": "2026-10-20",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "cau-51259",
-      "school": "중앙대",
-      "title": "[합격자 조회] 2027학년도 전반기 1차 (3월 입학) 학부 순수외국인전형 합격자 조회",
-      "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51259",
-      "date": "2026-10-19",
-      "owner": "정주원",
       "status": "신규"
     }
   ]
