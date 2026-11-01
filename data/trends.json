@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T19:04:13.786Z",
+  "generatedAt": "2026-11-01T10:01:56.846Z",
   "windowDays": 14,
   "items": [
     {
@@ -184,14 +184,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "교육부",
-      "title": "한국어로 열리는 진로&middot;취업의 기회, 베트남 한국유학박람회 개최",
-      "desc": "",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787056&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "중소 제조현장에 피지컬 AI 확산…2030년까지 5조 원 이상 투입",
       "desc": "",
@@ -209,19 +201,27 @@
     },
     {
       "dept": "농식품부",
-      "title": "이장 선출은 '1세대 1표'가 아닌, '1인 1표'로! 농식품부, 성평등 농촌문화 확산",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 여성농업인의 동등한 권리와 참여를 보장하고 성평등한 농촌문화를 조성하기 위해 , 전국 농촌마을의 다양한 성평등 우수사례를 발굴하여 온 &#x2024; 오프라인 콘텐츠로 제작 &#x2024; 확산한다 . 농가 인구...",
-      "date": "2026-10-29",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787022&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
       "title": "농어촌 기본소득 시범사업으로 지역 경제 및 공동체 활력 제고 성과가 나타나고 있습니다.",
       "desc": "",
       "date": "2026-10-29",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974533&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "2026년 10월 대학정보공시 분석 결과 발표",
+      "desc": "",
+      "date": "2026-10-29",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787055&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
+    },
+    {
+      "dept": "농식품부",
+      "title": "사진 한 장으로 반려동물 건강 체크, 인공지능(AI)로 여는 펫헬스케어 시대",
+      "desc": "농림축 산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 농식품 분야 우수 벤처창업 기업을 발굴 &middot; 홍보하기 위해 이달의 에이 (A)- 벤처스 * 제 90 호 기업으로 주식회사 십일리터 ( 대표 김광현 , 이하 ' 십일리터 ') 를 선정하...",
+      "date": "2026-10-29",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787021&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
     },
     {
       "dept": "교육부",
