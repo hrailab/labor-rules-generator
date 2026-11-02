@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T10:29:58.621Z",
+  "generatedAt": "2026-11-02T22:58:40.034Z",
   "windowDays": 21,
   "items": [
     {
@@ -53,7 +53,7 @@
       "dept": "과기정통부",
       "category": "정책예고",
       "title": "[연구행정 혁신+-⑧] &quot;해외 논문 성과등록 논문 고유번호만 넣으면 끝!&quot;범부처 통합연구지원시스템, 연구자 눈높이로 대폭 변신",
-      "desc": "- 해외 논문 DB(Web of Science) 와 직접 연결해 논문 고유번호 (DOI) 만 입력 하면 제목 &middot; 저자 &middot; 학술지 등 서지정보 자동 완성 - - 이동 중에도 간편하게 … 과제 현황 &middot; 실적 조회 등 24 종 모바일 ...",
+      "desc": "- 해외 논문 데이터베이스 (Web of Science) 와 직접 연결해 논문 고유번호 만 입력 하면 제목 &middot; 저자 &middot; 학술지 등 서지정보 자동 완성 - - 이동 중에도 간편하게 … 과제 현황 &middot; 실적 조회 등 24 종 모바일 서비...",
       "date": "2026-11-01",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787417&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
@@ -223,6 +223,14 @@
       "reason": "relevance"
     },
     {
+      "dept": "농식품부",
+      "title": "기금 통합으로 재원 조달 구조를 보완하여 재정 건전성을 확보하겠습니다.",
+      "desc": "",
+      "date": "2026-11-02",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974829&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "(보도설명) 정부는 미래대응기금이 재정안정화 장치로서의 역할을 충실히 수행해 나갈 수 있도록 안정적 운용을 위해 적극 노력해 나갈 계획입니다.",
       "desc": "",
@@ -364,14 +372,6 @@
       "desc": "",
       "date": "2026-10-26",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974311&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "노인장기요양등급자 등에 대한 관리를 강화하여 공익직불금 부적정 지급을 방지하겠습니다.",
-      "desc": "",
-      "date": "2026-10-23",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974236&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
