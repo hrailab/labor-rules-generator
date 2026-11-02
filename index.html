@@ -273,7 +273,7 @@ a.source-card:hover{border-color:var(--green);transform:translateY(-1px);box-sha
     <p class="hero-sub">
       <b>공문 수신 이전 단계에서 정부 정책 정보를 선제적으로 확보</b>하기 위한 상시 모니터링 리포트입니다.<br>
       기획재정처·교육부·과학기술정보통신부·중소벤처기업부·농림축산식품부 소관 정책과 그 외 부처의 대학 관련 정책까지 통합 피드로 폭넓게 포착합니다.<br>
-      <b>경쟁대학 추진 현황</b>을 담당자별로 정리하며, <b>현재 기준 최근 14일</b>의 동향을 <b>매일 정오·자정</b> 기준으로 갱신합니다.
+      <b>경쟁대학 추진 현황</b>을 담당자별로 정리하며, <b>현재 기준 최근 21일</b>의 동향을 <b>매일 정오·자정</b> 기준으로 갱신합니다.
     </p>
     <div class="kpi-row" id="kpiRow"></div>
   </div>
@@ -299,7 +299,7 @@ a.source-card:hover{border-color:var(--green);transform:translateY(-1px);box-sha
     <div class="section-head">
       <div>
         <div class="section-title">실시간 주요 정책 및 사업 현황</div>
-        <div class="section-desc">최근 14일 내 대응 우선순위 '높음'으로 분류된 사안 — 아직 결과가 확정되지 않아 본교가 대응을 준비할 수 있는 예정 정책·사업 중심</div>
+        <div class="section-desc">최근 21일 내 대응 우선순위 '높음'으로 분류된 사안 — 아직 결과가 확정되지 않아 본교가 대응을 준비할 수 있는 예정 정책·사업 중심</div>
       </div>
     </div>
     <div class="issue-list" id="issueList"></div>
@@ -309,7 +309,7 @@ a.source-card:hover{border-color:var(--green);transform:translateY(-1px);box-sha
   <section id="trends">
     <div class="section-head">
       <div>
-        <div class="section-title">전체 동향 <span class="sub">최근 14일 등록 항목</span></div>
+        <div class="section-title">전체 동향 <span class="sub">최근 21일 등록 항목</span></div>
         <div class="section-desc" id="trendsRangeDesc">조회 기간 계산 중…</div>
       </div>
     </div>
@@ -352,7 +352,7 @@ a.source-card:hover{border-color:var(--green);transform:translateY(-1px);box-sha
       </div>
       <div class="chart-card">
         <h3>대응 우선순위별 동향 분포</h3>
-        <div class="u">최근 14일 등록 항목 기준</div>
+        <div class="u">최근 21일 등록 항목 기준</div>
         <div class="donut-wrap">
           <div class="chart-svg-wrap" id="typeChart"></div>
           <div class="chart-legend" id="typeLegend" style="flex-direction:column;gap:8px"></div>
@@ -598,7 +598,7 @@ const SOURCES = [
 ];
 
 /* ───────────────────────── RENDER ───────────────────────── */
-const WINDOW_DAYS = 14; // 항상 "현재 시점 ~ 과거 13일"(총 14일)을 조회 대상으로 삼음
+const WINDOW_DAYS = 21; // 항상 "현재 시점 ~ 과거 20일"(총 21일)을 조회 대상으로 삼음
 
 // 방문자 브라우저·서버의 실제 타임존과 무관하게 "항상 KST 기준"으로 계산하기 위해,
 // 현재 시각에 +9시간을 더한 뒤 UTC getter/setter로 읽고 쓴다(= UTC 필드를 KST 필드처럼 사용).
@@ -639,9 +639,9 @@ WINDOW_START.setUTCDate(WINDOW_START.getUTCDate() - (WINDOW_DAYS - 1));
 document.getElementById('baseDateBadge').textContent = '기준 ' + fmtDateTime(ANCHOR);
 document.getElementById('cycleBadge').textContent = '다음 갱신 ' + fmtDateTime(NEXT_ANCHOR);
 document.getElementById('trendsRangeDesc').textContent =
-  '조회 기간 ' + fmtDate(WINDOW_START) + ' ~ ' + fmtDate(ANCHOR) + ' (현재 기준 최근 14일) · 매일 정오·자정 갱신 · 아직 결과가 확정되지 않아 대응을 준비할 수 있는 예정 정책 중심';
+  '조회 기간 ' + fmtDate(WINDOW_START) + ' ~ ' + fmtDate(ANCHOR) + ' (현재 기준 최근 21일) · 매일 정오·자정 갱신 · 아직 결과가 확정되지 않아 대응을 준비할 수 있는 예정 정책 중심';
 document.getElementById('footerRefreshNote').textContent =
-  '데이터 갱신: 매일 정오(12:00)·자정(00:00) 2회 · 조회 대상: 현재 기준 최근 14일 롤링';
+  '데이터 갱신: 매일 정오(12:00)·자정(00:00) 2회 · 조회 대상: 현재 기준 최근 21일 롤링';
 
 function trendDate(t){
   const d = new Date(ANCHOR);
@@ -848,7 +848,7 @@ function renderKpi(){
   const compTotal = compBreakdown.reduce((a,c)=>a+c.count,0);
   const compDelta = compBreakdown.map(c=>c.category+' '+c.count).join(' · ') || COMPETITORS.length+'개교 모니터링 중';
   const kpis = [
-    {label:'최근 14일 전체 동향', value:windowTrends.length+'건', delta:'최근 14일 롤링 집계', up:false},
+    {label:'최근 21일 전체 동향', value:windowTrends.length+'건', delta:'최근 21일 롤링 집계', up:false},
     {label:'대응 우선순위 높음', value:highCount+'건', delta:'즉시 검토 필요', up:true},
     {label:'신규 등록', value:newCount+'건', delta:'실시간 주요 정책 및 사업 현황 '+highCount+'건 포함', up:true},
     {label:'경쟁대학 포착 건수', value:compTotal+'건', delta:compDelta, up:false},
@@ -943,7 +943,7 @@ function renderExcluded(){
   const list = EXCLUDED_TRENDS.filter(inWindow);
   const el = document.getElementById('excludedPanel');
   if(!list.length){
-    el.innerHTML = '<div class="excluded-empty">현재 조회 기간(최근 14일) 내 1차 필터로 제외된 항목이 없습니다.</div>';
+    el.innerHTML = '<div class="excluded-empty">현재 조회 기간(최근 21일) 내 1차 필터로 제외된 항목이 없습니다.</div>';
     return;
   }
   el.innerHTML = '<div class="excluded-note">담당자가 필터 기준이 잘못됐다고 판단되면 scripts/fetch-gov-trends.mjs의 RELEVANT_KEYWORDS·CONFIRMED_OUTCOME_KEYWORDS 조정을 요청해 주세요.</div>'
@@ -1072,7 +1072,7 @@ function renderCompetitors(){
         +'</div>'
         +'<div class="comp-item-meta"><span class="comp-item-dept">유관부서 <b>'+(CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·')+'</b></span><span class="comp-item-date">'+it.date+'</span></div>'
         +'</'+tag+'>';
-    }).join('') : '<div class="comp-empty">최근 14일 내 수집된 주요 동향이 없습니다.</div>';
+    }).join('') : '<div class="comp-empty">최근 21일 내 수집된 주요 동향이 없습니다.</div>';
     const ownerColor = OWNER_COLOR[c.owner] || '#75747a';
     return '<div class="comp-card"><div class="comp-top"><div class="comp-name">'+c.name+'</div><div class="comp-owner" style="color:'+ownerColor+';background:'+ownerColor+'1a">'+c.owner+' 담당</div></div>'
       +'<div class="comp-items">'+itemsHtml+'</div></div>';
@@ -1183,7 +1183,7 @@ function renderCharts(){
     {label:'기획예산처', data:[2,3,3,4,4], color:'#007645'},
   ]);
 
-  // 대응 우선순위별 동향 분포 — 조회 기간(최근 14일) 내 실제 TRENDS 데이터를 그대로 집계한 값
+  // 대응 우선순위별 동향 분포 — 조회 기간(최근 21일) 내 실제 TRENDS 데이터를 그대로 집계한 값
   // (이전에는 이 자리에 TRENDS와 무관한 임의의 '사업 유형' 숫자가 하드코딩되어 있었음)
   const windowTrends = TRENDS.filter(inWindow);
   const PRIORITY_STYLE = {'높음':'#b5691e', '중간':'#6c63a6', '낮음':'#75747a', '미지정':'#a3a2a8'};
@@ -1282,7 +1282,7 @@ async function generateWordReport(){
     }
     children.push(new Paragraph({ text:'정부정책 동향 보고서 (초안)', heading:HeadingLevel.TITLE, alignment:AlignmentType.CENTER, spacing:{ after:120 } }));
     children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:'전략기획팀 · 정부정책 동향 모니터링', color:'666666', size:22 }) ], spacing:{ after:60 } }));
-    children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:`기준 ${fmtDateTime(ANCHOR)} · 조회기간 ${fmtDate(WINDOW_START)} ~ ${fmtDate(ANCHOR)} (최근 14일)`, color:'999999', size:18 }) ], spacing:{ after:200 } }));
+    children.push(new Paragraph({ alignment:AlignmentType.CENTER, children:[ new TextRun({ text:`기준 ${fmtDateTime(ANCHOR)} · 조회기간 ${fmtDate(WINDOW_START)} ~ ${fmtDate(ANCHOR)} (최근 21일)`, color:'999999', size:18 }) ], spacing:{ after:200 } }));
     const dataNote = (USING_MOCK && COMPETITORS_USING_MOCK) ? '⚠ 본 보고서는 목업(mock) 데이터를 기반으로 생성된 데모입니다.'
       : (!USING_MOCK && !COMPETITORS_USING_MOCK) ? '정부부처·경쟁대학 동향 모두 자동 수집된 실데이터를 기반으로 생성되었습니다.'
       : '일부 데이터는 아직 자동 수집 전이라 목업으로 대체되어 있습니다.';
@@ -1291,7 +1291,7 @@ async function generateWordReport(){
     // 1. 핵심 요약 — 경영진이 이 페이지만 읽어도 판단할 수 있도록 즉시 검토 대상과 모니터링 대상을
     // 분리해서 먼저 제시한다(상세 분석은 부록 A로 이동).
     children.push(H('1. 핵심 요약', HeadingLevel.HEADING_1));
-    children.push(P(`이번 기간(최근 14일) 수집된 전체 동향은 ${windowTrends.length}건이며, 이 중 대응 우선순위 '높음'은 ${highItems.length}건입니다. 이 중 ${actionableHighItems.length}건은 접수·공고 등 대응 가능 시점에 있어 즉시 검토가 필요하고, 나머지 ${watchHighItems.length}건은 세부 일정이 아직 공개되지 않아 계속 모니터링이 필요합니다. 경쟁대학 동향은 ${compCount}건 포착됐습니다.`));
+    children.push(P(`이번 기간(최근 21일) 수집된 전체 동향은 ${windowTrends.length}건이며, 이 중 대응 우선순위 '높음'은 ${highItems.length}건입니다. 이 중 ${actionableHighItems.length}건은 접수·공고 등 대응 가능 시점에 있어 즉시 검토가 필요하고, 나머지 ${watchHighItems.length}건은 세부 일정이 아직 공개되지 않아 계속 모니터링이 필요합니다. 경쟁대학 동향은 ${compCount}건 포착됐습니다.`));
     if(actionableHighItems.length){
       children.push(P('■ 즉시 검토가 필요한 사업', { bold:true, size:20, color:'045c37' }));
       actionableHighItems.forEach(iss=>{
@@ -1382,7 +1382,7 @@ async function generateWordReport(){
     });
 
     // 부록 B. 전체 동향 상세 목록
-    children.push(H('부록 B. 전체 동향 상세 목록 (최근 14일)', HeadingLevel.HEADING_1));
+    children.push(H('부록 B. 전체 동향 상세 목록 (최근 21일)', HeadingLevel.HEADING_1));
     const trendHeader = new TableRow({ tableHeader:true, children:[
       cell('부처', { bold:true, width:12 }), cell('사업명', { bold:true, width:26 }), cell('우선순위', { bold:true, width:10 }),
       cell('상태', { bold:true, width:10 }), cell('등록일', { bold:true, width:12 }), cell('유관부서', { bold:true, width:18 }), cell('비고', { bold:true, width:12 }),
@@ -1399,7 +1399,7 @@ async function generateWordReport(){
     COMPETITORS.forEach(school=>{
       children.push(H(`${school.name} (담당 ${school.owner})`, HeadingLevel.HEADING_3));
       if(school.items.length === 0){
-        children.push(P('최근 14일 내 수집된 주요 동향이 없습니다.', { italics:true, color:'999999' }));
+        children.push(P('최근 21일 내 수집된 주요 동향이 없습니다.', { italics:true, color:'999999' }));
       } else {
         school.items.forEach(it=>{
           const deptText = (CATEGORY_DEPT[it.category]||CATEGORY_DEPT['기타']).join('·');
