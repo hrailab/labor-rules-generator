@@ -23,7 +23,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
-const WINDOW_DAYS = 14;
+const WINDOW_DAYS = 21;
 const OUT_PATH = 'data/competitors.json';
 
 // 분야 분류 — 순서대로 검사해 먼저 걸리는 분야로 태깅한다.

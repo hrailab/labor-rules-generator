@@ -31,7 +31,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import Anthropic from '@anthropic-ai/sdk';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36';
-const WINDOW_DAYS = 14;
+const WINDOW_DAYS = 21;
 const OUT_PATH = 'data/trends.json';
 
 // 담당자 소관 매핑 (전략기획팀 정부정책 동향 리포트 담당 매트릭스 기준)
@@ -427,7 +427,7 @@ async function main() {
 
   // isRelevant()/isConfirmedOutcome()은 둘 다 "1차 스크리닝"일 뿐 완벽하지 않은데(각 함수 주석 참고),
   // 지금까지는 걸러진 항목이 조용히 사라져 담당자가 오탐·누락 여부를 확인할 방법이 없었다.
-  // "전체 동향"과 같은 14일 창 안에서 걸러진 항목만 골라 별도로 남겨, 프런트엔드가 "제외된 항목도
+  // "전체 동향"과 같은 21일 창 안에서 걸러진 항목만 골라 별도로 남겨, 프런트엔드가 "제외된 항목도
   // 보기" 토글로 노출하고 담당자가 직접 눈으로 필터 정확도를 검증할 수 있게 한다(수집 대상 자체를
   // 넓히는 것이 아니라 이미 수집된 것 중 걸러진 항목의 사유만 투명하게 공개하는 것).
   const excludedByRelevance = collected.filter(t => !isRelevant(t) && inWindow(t.date, today));
