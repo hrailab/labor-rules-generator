@@ -1,14 +1,34 @@
 {
-  "generatedAt": "2026-11-02T23:04:09.197Z",
+  "generatedAt": "2026-11-03T10:42:16.274Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "skku-140495",
+      "id": "skku-141543",
       "school": "성균관대",
-      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-11-02",
+      "title": "[앵커사업단] 「성균관대학교 창업팀 투자 유치 역량 강화 집중 프로그램」 참여팀 모집 (~11/10)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141543&article.offset=0&articleLimit=10",
+      "date": "2026-11-03",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-136325",
+      "school": "성균관대",
+      "title": "[대학원혁신지원사업] 2026학년도 SKKU 수월성 기반 학문후속세대 연구지원 프로그램 시행안내",
+      "category": "재정지원",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=136325&article.offset=0&articleLimit=10",
+      "date": "2026-11-03",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026928",
+      "school": "한양대",
+      "title": "한양대, 중국 내 네 번째 지역 동문회 ‘화난동문회’ 출범…동문 네트워크 4개 권역으로 확대",
+      "category": "대외협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026928",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +38,7 @@
       "title": "한양대, 동문 기부로 세운 지상 10층 ‘구자겸 기계공학관’ 준공식 개최",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026904",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +48,7 @@
       "title": "러닝에서 런칭으로, 한양 대표 창업동아리 '마인드러닝72'",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026766",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +58,7 @@
       "title": "국제기구의 경험을 한양인에게... 소재향 L.A.C 연사 초청 특강",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026845",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +68,7 @@
       "title": "한양대 ERICA, ‘안산의 대화’ 통해 이주민·선주민 상호문화 교류",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026916",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,7 +78,7 @@
       "title": "한양대학교 신현상 글로벌사회혁신단장, ‘사랑의열매’와 함께 미래 사회문제 조기 발굴",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026915",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,7 +88,7 @@
       "title": "한양대 YK인터칼리지, 서울어린이대공원·서울상상나라서 200명 현장리서치... ‘Play Smart, Design Kind’ 산학협력 본격화",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026905",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,17 +98,17 @@
       "title": "한양대 ERICA 교원창업기업 코스모크, 로봇 촉각센서로 세계 29개국 참여 ‘인피니언 스타트업 챌린지’ 2위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026881",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026880",
+      "id": "hyu-1026917",
       "school": "한양대",
-      "title": "한양대, 창업기업 8개사 일본 진출 지원…원티드재팬서 협업 제안",
+      "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
       "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026880",
-      "date": "2026-11-02",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -98,7 +118,7 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
       "status": "신규"
     },
@@ -108,8 +128,28 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323468",
+      "school": "경희대",
+      "title": "★ [국제교류팀] 2026학년도 동계 SDGs 국제화연수 (Oxford Consortium for...",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323468&menuNo=200316",
+      "date": "2026-11-03",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "dgu-26766856",
+      "school": "동국대",
+      "title": "'Dongguk International Week 2026' 개최 안내",
+      "category": "국제",
+      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766856",
+      "date": "2026-11-03",
+      "owner": "이수연",
       "status": "신규"
     },
     {
@@ -118,7 +158,7 @@
       "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "owner": "정주원",
       "status": "신규"
     },
@@ -199,16 +239,6 @@
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766702",
       "date": "2026-10-22",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766680",
-      "school": "동국대",
-      "title": "2026 동계 대만 대북시립대학교 단기 프로그램 참가자 선발",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766680",
-      "date": "2026-10-20",
       "owner": "이수연",
       "status": "신규"
     },
