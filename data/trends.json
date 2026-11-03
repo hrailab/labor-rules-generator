@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T10:26:28.142Z",
+  "generatedAt": "2026-11-03T20:45:30.172Z",
   "windowDays": 21,
   "items": [
     {
@@ -167,6 +167,22 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "(보도설명) 중장기 의무지출 추계는 추계 전제 등에 따라 달라질 수 있으며, 정부가 복지분야 지출을 과소 추계하였다는 것은 사실이 아닙니다.",
+      "desc": "",
+      "date": "2026-11-03",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974937&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 교육교부금은 개편을 통해 지속적이고 안정적으로 늘어나며, 영유아&middot;고등&middot;평생 등 타 교육부문도 균형있게 성장합니다.",
+      "desc": "",
+      "date": "2026-11-03",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974935&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "(보도설명) 농어촌특별세의 미래대응기금 전출&middot;예탁은 미래대응기금법(안)과 국가재정법에 따라 추진했습니다.",
       "desc": "",
       "date": "2026-11-03",
@@ -199,18 +215,18 @@
     },
     {
       "dept": "과기정통부",
-      "title": "말하기 어려웠던 연구 현장의 목소리, 익명의 문자 한 통(1551-1441)으로 듣는다",
-      "desc": "- 과기정통부 , 익명 소통 플랫폼 , &#xFF62; R&amp;D 대나무숲 &#xFF63; 운영 착수 - - 본인 인증 없이 문자 한 통 으로 어떤 의견 이든 손쉽게 전송 가능 - - 접수 의견은 AI 를 활용 해 다각적으로 분석 하여 정책 &middo...",
+      "title": "국민인공지능서비스혁신추진단, 전문임기제공무원 2차 공개 모집",
+      "desc": "- 국민 AI 서비스 기획 &middot; 개발 &middot; 인프라 등 7 개 분야 민간 전문가 19 명 , 11.2 일 부터 공고 게시 및 11.10 일부터 원서 접수 - - 김세웅 단장 취임 후 첫 채용 … 국민 AI 서비스 개발 역량 본격 강화",
       "date": "2026-11-03",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787779&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787846&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "과기정통부",
-      "title": "과학 탐구의 결실 한자리에, 제72회 전국과학전람회 시상식 개최",
-      "desc": "- 대통령상 &middot; 국무총리상 등 수상자 시상 , 참가자들의 탐구 노력 격려 - - 지역대회부터 전국대회까지 이어진 한 해의 과학 탐구 여정 마무리 -",
+      "title": "청년들의 창의적 아이디어로 합성생물학의 미래를 열다",
+      "desc": "- 과학기술정보통신부 , 이틀간 (11.2~11.3) 합성생물학 경진대회 본선대회 개최 - - 발표 심사를 통해 과기정통부 부총리상 등 최종 13 팀의 수상자 결정 - - 본선 결과 상위 4 개팀은 세계 최대 국제 합성생물학 경진대회 (iGEM) 참가 지원 -",
       "date": "2026-11-03",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787778&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787845&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -307,14 +323,6 @@
       "desc": "",
       "date": "2026-11-02",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974829&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부는 미래대응기금이 재정안정화 장치로서의 역할을 충실히 수행해 나갈 수 있도록 안정적 운용을 위해 적극 노력해 나갈 계획입니다.",
-      "desc": "",
-      "date": "2026-11-01",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974699&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -422,14 +430,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 재경부는 미래대응기금 설치 취지에 공감하며, 재경부와 기획처는 국회 법안심의 과정에서 긴밀히 협의해 나갈 계획입니다.",
-      "desc": "",
-      "date": "2026-10-22",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974135&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "대구·경북 통합 지역성장펀드 출범…모펀드 1300억 원 결성",
       "desc": "",
@@ -491,22 +491,6 @@
       "desc": "",
       "date": "2026-10-15",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973554&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "학교 태양광 설비 법정검사 주기 4년→1년 단축…안전 강화",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973472&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "'상생소비복권' 17억 풀린다…디지털온누리 3만원 이상 결제시 응모",
-      "desc": "",
-      "date": "2026-10-14",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973449&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
