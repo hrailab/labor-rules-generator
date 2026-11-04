@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T10:25:11.597Z",
+  "generatedAt": "2026-11-04T21:02:23.311Z",
   "windowDays": 21,
   "items": [
     {
@@ -103,29 +103,6 @@
       "date": "2026-10-27",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974367&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "정주원",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00032-148973549",
-      "dept": "중기부",
-      "category": "정책예고",
-      "title": "2차 '모두의 창업' 1만 명 선발…활동자금·멘토링 지원",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973549&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -460,30 +437,6 @@
       "desc": "",
       "date": "2026-10-19",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973772&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "IMF, 올해 한국 일반정부부채 비율 54.4%→47.3% 하향 전망",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973539&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "어린이집·유치원 신청 일정 미리 안내…서류도 간편 등록·제출",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973548&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "[설명자료] 직업계고 학과가 산업계 요구와 변화에 맞춰 재구조화될 수 있도록 적극 지원하겠습니다",
-      "desc": "",
-      "date": "2026-10-15",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148973554&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
