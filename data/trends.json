@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T10:18:33.992Z",
+  "generatedAt": "2026-11-05T21:19:28.179Z",
   "windowDays": 21,
   "items": [
     {
@@ -95,13 +95,13 @@
       "actionable": false
     },
     {
-      "id": "A00032-156788124",
+      "id": "A00032-156788156",
       "dept": "중기부",
       "category": "정책예고",
-      "title": "「제3자 부당개입 문제해결 TF」 7차 회의 개최",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 5일(목) 서울창조경제혁신센터에서 노용석 제1차관 주재로 경찰청, 4개 정책금융기관*, 창업진흥원, 중소기업기술정보진흥원 등이 참여하는 '제3자 부당개입 문제해결 TF'(이하 TF) 7차 회의를 개최하였다. * 중소벤처기업진흥공단, 소상공인시장진흥공단...",
+      "title": "중소벤처기업부, 신임 소상공인정책실장에 조경원 창업정책관 발탁",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 6일(금)자로 소상공인정책실장에 조경원(55) 현 창업정책관을 임명한다고 밝혔다. 신임 조경원 소상공인정책실장은 중기부 소상공인정책관, 대통령실 자영업비서관실 행정관 등 국정과 현장을 아우르는 주요 보직을 두루 거치며 소상공인 분야에서 탄탄한 전문성을...",
       "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788124&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788156&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
@@ -118,13 +118,13 @@
       "actionable": false
     },
     {
-      "id": "A00032-156787944",
+      "id": "A00032-156788124",
       "dept": "중기부",
       "category": "정책예고",
-      "title": "「제1회 로컬창업 페스타 in 제주」 개막! 지역에서 시작한 혁신, 투자&middot;상권&middot;수출로 이어지는 성장의 길 열어",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 4일(수), 제주 쉐라톤호텔에서 「제1회 로컬창업 페스타 in 제주」 개막식을 개최하고, 6일(금)까지 3일간 제주시 원도심 일대에서 행사를 진행한다고 밝혔다. 이번 행사에는 전국 각지의 로컬기업 약 140개를 비롯해 국내 투자사 8개사, 해외 투자사...",
-      "date": "2026-11-04",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787944&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "「제3자 부당개입 문제해결 TF」 7차 회의 개최",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 5일(목) 서울창조경제혁신센터에서 노용석 제1차관 주재로 경찰청, 4개 정책금융기관*, 창업진흥원, 중소기업기술정보진흥원 등이 참여하는 '제3자 부당개입 문제해결 TF'(이하 TF) 7차 회의를 개최하였다. * 중소벤처기업진흥공단, 소상공인시장진흥공단...",
+      "date": "2026-11-05",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788124&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
@@ -235,6 +235,30 @@
   ],
   "excludedItems": [
     {
+      "dept": "교육부",
+      "title": "강의실을 넘어 세계로, 반도체&middot;인공지능(AI) 인재 한자리에 모이다",
+      "desc": "",
+      "date": "2026-11-06",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788164&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 국내생산세액공제 혜택을 받지 못하는 적자기업에 '직접 보조금'을 지급하는 정책의 도입 여부는 결정된 바 없습니다",
+      "desc": "",
+      "date": "2026-11-05",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975165&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금은 국민연금기금으로부터 예탁을 검토한 바 없습니다.",
+      "desc": "",
+      "date": "2026-11-05",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975161&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "(보도설명) 미래대응기금이 국회의 통제 하에서 전략적 투자 플랫폼이자 재정안정화 장치로서 본래의 기능을 충실히 수행할 수 있도록 관리・운용해 나가겠습니다.",
       "desc": "",
@@ -243,19 +267,19 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 국가 정책적 예타 면제는 국가재정법령이 정한구체적인 요건과 절차에 따라 운영하며, 적정성 검토 결과를 예산에 환류합니다.",
-      "desc": "",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975101&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "교육부",
       "title": "2026년 직업계고 졸업자 취업통계조사 결과 발표",
       "desc": "",
       "date": "2026-11-05",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788062&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "전국 유망 소공인, 성수동에 모인다 중기부, 무신사&middot;오아시스와 판로개척 성과보고대회 개최 - 2026년 소공인 디깅위크(DIGGING WEEK), 11월 4일 개막 -",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 4일(수)부터 8일(일)까지 5일간 서울 성수동 Y173(연무장 17길 3)과 구 비젼모터스(연무장11길 7)에서 「2026 소공인 판로개척 성과보고대회(2026 소공인 디깅위크(DIGGING WEEK))」를 개최한다고 밝혔다. 중기부는 올해 한국중소...",
+      "date": "2026-11-05",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788158&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -299,35 +323,11 @@
       "reason": "confirmed_outcome"
     },
     {
-      "dept": "기획예산처",
-      "title": "[보도설명] 미래대응기금 여유자금은 국고채 조달금리보다 낮은 목표 수익률을 설정한 바 없습니다.",
-      "desc": "",
-      "date": "2026-11-04",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975039&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "경제협력개발기구(OECD) 가입 30주년, 한국 교육의 성과와 미래 방향 조명",
-      "desc": "",
-      "date": "2026-11-04",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787908&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "교육부",
       "title": "[설명자료] 교육교부금은 개편을 통해 지속적이고 안정적으로 늘어나며, 영유아.고등.평생 등 타 교육부문도 균형있게 성장합니다",
       "desc": "",
       "date": "2026-11-04",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974963&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "중기부, 티메프 피해 중소기업 특별만기연장 시행",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 지난 '24년 티몬・위메프(이하 티메프) 사태로 피해를 입은 중소기업의 금융부담 완화를 위해 '티메프 피해기업 대상 정책자금 특별만기연장'을 시행한다고 11월 4일(수) 밝혔다. '24년 9월부터 12월까지 티메프 피해기업 지원프로그램을 통해 중소기업 긴급경...",
-      "date": "2026-11-04",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156787961&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
