@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-11-05T21:25:38.833Z",
+  "generatedAt": "2026-11-06T10:41:16.936Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "skku-140156",
+      "id": "skku-140495",
       "school": "성균관대",
-      "title": "[앵커사업단] 2026 랜선으로 만나는 릴레이 글로벌 취·창업 톡톡톡(talk) 특강 신청 안내",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140156&article.offset=0&articleLimit=10",
-      "date": "2026-11-05",
+      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
+      "date": "2026-11-06",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140482",
+      "school": "성균관대",
+      "title": "[인공지능혁신융합대학사업] 2026학년도 인공지능혁신융합대학사업 겨울 계절학기 학점교류 수강 안내 (상시 업데이트)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482&article.offset=0&articleLimit=10",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +28,7 @@
       "title": "수액 카테터 테이핑 없앤 한양대 학생팀, 한국팀 유일 ‘제임스 다이슨 어워드 2026’ 글로벌 Top 20 쾌거",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026959",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,27 +38,7 @@
       "title": "한양대, 중국 내 네 번째 지역 동문회 ‘화난동문회’ 출범…동문 네트워크 4개 권역으로 확대",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026928",
-      "date": "2026-11-05",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026904",
-      "school": "한양대",
-      "title": "한양대, 동문 기부로 세운 지상 10층 ‘구자겸 기계공학관’ 준공식 개최",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026904",
-      "date": "2026-11-05",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026920",
-      "school": "한양대",
-      "title": "한국원자력기술(주) 회장 고병령(한양대 69 동문) 인터뷰",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026920",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,7 +48,17 @@
       "title": "국제기구의 경험을 한양인에게... 소재향 L.A.C 연사 초청 특강",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026845",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026982",
+      "school": "한양대",
+      "title": "한양대, 경희대와 스포츠 교류전 ‘더 라이온 매치’서 종합 우승",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026982",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,7 +68,7 @@
       "title": "한양대 교원창업기업 유니코어로보틱스, 세계 최대 ITS 총회서 자율주행·주행보조 기술 공개",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026903",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,17 +78,7 @@
       "title": "박도현 동문, 2026년도 5급 공채 기계직 수석 합격",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026957",
-      "date": "2026-11-05",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026916",
-      "school": "한양대",
-      "title": "한양대 ERICA, ‘안산의 대화’ 통해 이주민·선주민 상호문화 교류",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026916",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -98,7 +88,7 @@
       "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -108,7 +98,7 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
       "status": "신규"
     },
@@ -118,8 +108,28 @@
       "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323083",
+      "school": "경희대",
+      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
+      "date": "2026-11-06",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323522",
+      "school": "경희대",
+      "title": "[굿네이버스] 온라인 해외봉사 역량강화 프로그램 '해외봉사 해vol래' 2기 모집",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323522&menuNo=200316",
+      "date": "2026-11-06",
+      "owner": "이수연",
       "status": "신규"
     },
     {
@@ -128,18 +138,8 @@
       "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323468",
-      "school": "경희대",
-      "title": "★ [국제교류팀] 2026학년도 동계 SDGs 국제화연수 (Oxford Consortium for...",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323468&menuNo=200316",
-      "date": "2026-11-03",
-      "owner": "이수연",
       "status": "신규"
     },
     {
@@ -155,7 +155,7 @@
     {
       "id": "cau-51306",
       "school": "중앙대",
-      "title": "[한국어능력기준] 2027학년도 전반기(3월 입학) 장학금 관련 한국어능력기준 증빙서류 추가 제출 안내",
+      "title": "[입학장학금 추가서류] 2027학년도 전반기(3월 입학) 장학금 관련 한국어능력기준 증빙서류 추가 제출 안내",
       "category": "국제",
       "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51306",
       "date": "2026-11-03",
