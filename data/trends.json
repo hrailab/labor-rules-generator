@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T20:40:56.592Z",
+  "generatedAt": "2026-11-07T09:35:47.415Z",
   "windowDays": 21,
   "items": [
     {
@@ -189,6 +189,14 @@
   ],
   "excludedItems": [
     {
+      "dept": "농식품부",
+      "title": "수상의 영광을 시장의 기회로, K-Sool의 도약이 시작된다.",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 2026 대한민국 우리술 품평회 수상작의 국내외 판로 확대와 수상업체 경쟁력 강화를 위해 해외바이어 수출상담회와 양조장 팸투어 , 성수동 팝업스토어 등을 추진했다 . 해외바이어 상담과 양조장 방문으로 수출 기회 확대 ...",
+      "date": "2026-11-07",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788310&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "한-중 실버경제 협력 국장급 회의&middot;기업교류회 개최",
       "desc": "기획예산처는 '26.11.5.(목) 중국 상하이에서 한-중 실버경제 협력 국장급 회의 및 기업교류회를 개최하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
@@ -282,14 +290,6 @@
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 6 일 ( 금 ) 송미령 장관 주재로 &#xFF62; 제 4 차 농식품규제 합리화 전략회의 &#xFF63; 를 개최하여 , 농식품 업계 &middot;민간 전문가 등 20 여 명과 국민...",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788301&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "김종구 농식품부 차관, 전남광주통합특별시 및 강진군 고병원성 AI 등 방역실태 현장 점검",
-      "desc": "농림축산식품부 ( 이하 농식품부 ) 김종구 차관은 11 월 6 일 ( 금 ), 전남광주 통합특별시 강진군청과 강진만 철새도래지를 방문하여 고병원성 조류인플루엔자 (AI) 및 럼피스킨 방역관리 상황 점검과 현장 애로사항을 청취하고 관계자를 격려하였다 . 이번 현장 점검은 경기...",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788299&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
