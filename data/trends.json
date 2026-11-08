@@ -1,7 +1,53 @@
 {
-  "generatedAt": "2026-11-08T09:50:31.514Z",
+  "generatedAt": "2026-11-08T19:19:07.696Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "A00008-156788320",
+      "dept": "농식품부",
+      "category": "정책예고",
+      "title": "농업&middot;농촌 현장애로, 지방정부와 함께 기술개발(R&D)로 해결한다",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 농업 &middot; 농촌 현장에서 발생하는 다양한 애로를 신속하게 해결하고 연구성과의 현장 활용을 높이기 위해 2027 년부터 ' 농업농촌현장애로단기해결기술개발 (R&amp;D)' 사업을 신규 추진한다 . 이를...",
+      "date": "2026-11-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788320&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00008-156788318",
+      "dept": "농식품부",
+      "category": "정책예고",
+      "title": "'2045, 농업&middot;농촌의 미래를 그리다' 전문가 세미나 개최",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 6 일 ( 금 ) 서울 코리아나 호텔에서 한국농촌경제연구원과 공동으로 학계 &#x2024; 연구기관 , 식품 &#x2024; 푸드테크 &#x2024; AI 등 농산업 선도기업 관계자 등 전...",
+      "date": "2026-11-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788318&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00033-156788208",
       "dept": "과기정통부",
@@ -189,11 +235,35 @@
   ],
   "excludedItems": [
     {
+      "dept": "기획예산처",
+      "title": "(보도설명) 정부는 2027년 예산안에 노인빈곤 개선을 위한 예산을 충실히 반영하였습니다.",
+      "desc": "",
+      "date": "2026-11-08",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975256&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금은 지방정부의 집행 자율성 제고를 위해 지역균형발전특별회계의 특례를 차용하고 있습니다.",
+      "desc": "",
+      "date": "2026-11-08",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975255&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "폐교의 새로운 시작, 지역의 가능성을 열다",
+      "desc": "",
+      "date": "2026-11-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788317&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "농식품부",
-      "title": "수상의 영광을 시장의 기회로, K-Sool의 도약이 시작된다.",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 2026 대한민국 우리술 품평회 수상작의 국내외 판로 확대와 수상업체 경쟁력 강화를 위해 해외바이어 수출상담회와 양조장 팸투어 , 성수동 팝업스토어 등을 추진했다 . 해외바이어 상담과 양조장 방문으로 수출 기회 확대 ...",
-      "date": "2026-11-07",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788310&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "가치소비부터 AI까지 식품 소비 판도 바뀐다!",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 4 일 ( 수 ), 11 월 5 일 ( 목 ) 양일간 서울 코엑스에서 '2027 식품외식산업전망 ' 을 성공적으로 개최했다 . 이번 행사에는 식품 &middot; 외식 업계 종사자를...",
+      "date": "2026-11-08",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788321&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -210,14 +280,6 @@
       "desc": "",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975234&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부가 미래대응기금 여유자금 운용수익을 기금운용계획안에 계상하지 않아 '쌈짓돈'으로 활용할 수 있다는 보도는 사실이 아닙니다",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975206&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -278,18 +340,10 @@
     },
     {
       "dept": "농식품부",
-      "title": "전남광주 장흥 육용오리 농장 고병원성 조류인플루엔자 확진에 따라 방역관리 강화",
-      "desc": "고병원성 조류인플루엔자 중앙사고수습본부 ( 본부장 송미령 농림축산식품부 장관 , 이하 중수본 ) 는 11 월 6 일 ( 금 ), 전남광주 장흥 소재 육용오리 (2 만 2 천여 마리 ) 농장에서 고병원성 조류인플루엔자가 확진 (H5N9 형 ) 되었다고 밝혔다 ...",
+      "title": "경제지주 해체 추진은 사실이 아닙니다.",
+      "desc": "",
       "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788303&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부, 제4차 농식품규제 합리화 전략회의 개최",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 6 일 ( 금 ) 송미령 장관 주재로 &#xFF62; 제 4 차 농식품규제 합리화 전략회의 &#xFF63; 를 개최하여 , 농식품 업계 &middot;민간 전문가 등 20 여 명과 국민...",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788301&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975253&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -309,35 +363,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 국내생산세액공제 혜택을 받지 못하는 적자기업에 '직접 보조금'을 지급하는 정책의 도입 여부는 결정된 바 없습니다",
-      "desc": "",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975165&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "2026년 직업계고 졸업자 취업통계조사 결과 발표",
-      "desc": "",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788062&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "전국 유망 소공인, 성수동에 모인다 중기부, 무신사&middot;오아시스와 판로개척 성과보고대회 개최 - 2026년 소공인 디깅위크(DIGGING WEEK), 11월 4일 개막 -",
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 4일(수)부터 8일(일)까지 5일간 서울 성수동 Y173(연무장 17길 3)과 구 비젼모터스(연무장11길 7)에서 「2026 소공인 판로개척 성과보고대회(2026 소공인 디깅위크(DIGGING WEEK))」를 개최한다고 밝혔다. 중기부는 올해 한국중소...",
       "date": "2026-11-05",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788158&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농협중앙회장 조합원 직선제는 그간 국회 논의 과정에서 법률적 검토와 입법적 보완 등을 통해 추진 중입니다.",
-      "desc": "",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975157&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
