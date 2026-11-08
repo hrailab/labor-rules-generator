@@ -1,7 +1,17 @@
 {
-  "generatedAt": "2026-11-08T10:08:32.272Z",
+  "generatedAt": "2026-11-08T19:27:54.945Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "khu-323524",
+      "school": "경희대",
+      "title": "[(국제)심리상담센터] 2026학년도 2학기 「나를 위한 CHECK-UP 시간」 심리검사 안내",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323524&menuNo=200316",
+      "date": "2026-11-09",
+      "owner": "이수연",
+      "status": "신규"
+    },
     {
       "id": "skku-141683",
       "school": "성균관대",
@@ -230,16 +240,6 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766702",
       "date": "2026-10-22",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "cau-51259",
-      "school": "중앙대",
-      "title": "[합격자 조회] 2027학년도 전반기 1차 (3월 입학) 학부 순수외국인전형 합격자 조회",
-      "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51259",
-      "date": "2026-10-19",
-      "owner": "정주원",
       "status": "신규"
     }
   ]
