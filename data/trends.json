@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-08T19:19:07.696Z",
+  "generatedAt": "2026-11-09T10:52:00.140Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "A00008-156788320",
-      "dept": "농식품부",
+      "id": "A00002-156788437",
+      "dept": "교육부",
       "category": "정책예고",
-      "title": "농업&middot;농촌 현장애로, 지방정부와 함께 기술개발(R&D)로 해결한다",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 농업 &middot; 농촌 현장에서 발생하는 다양한 애로를 신속하게 해결하고 연구성과의 현장 활용을 높이기 위해 2027 년부터 ' 농업농촌현장애로단기해결기술개발 (R&amp;D)' 사업을 신규 추진한다 . 이를...",
-      "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788320&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
+      "title": "교육부, 맞춤형 현장 자문으로 학생 마음건강 안전망 강화",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788437&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "정주원",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -34,52 +34,6 @@
       "date": "2026-11-08",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788318&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00033-156788208",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "과학관으로 온 첨단기술 원정대 아이들의 손끝에서 미래기술 만난다",
-      "desc": "- 국립중앙과학관 , '2026 첨단기술 원정대 ' 겨울철 프로그램 운영 - - 아동복지시설 이용 초등학생 초청해 무인기 &middot; 로봇 &middot; 인공지능 체험 … 지역 과학문화 격차 해소 -",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788208&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00002-156788063",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "로봇 기업 인사 담당자가 직접 부트캠프 학생의 취업 상담에 나선다",
-      "desc": "",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788063&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -236,6 +190,102 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
+      "title": "(보도설명) 지방교부세는 '26년 대비 크게 증가하며, 재정 전 분야를 통해 지방에 대한 지원을 확대하고 있습니다.",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975294&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금 신설로 재정지표에 '착시'가 발생한다는 보도는 사실과 다릅니다",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975291&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "수능 당일 '스마트안경' 착용하면 내년까지 시험자격 박탈",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975290&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "교육부-일본 문부과학성, 교육행정 교류로 상호이해와 협력 강화",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788438&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "수능 수험생 여러분, 전자기기 가져오지 마세요!",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788439&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "배경훈 부총리, 국제전기통신연합 전권회의에서 국제 디지털 협력 강화",
+      "desc": "- 고위급 정책연설 등을 통해 한국의 인공지능 &middot; 디지털 정책 미래상 공유 - - 국제전기통신연합 이사국 , 전파규칙위원회 위원 선거 출마 , 국제 정보통신기술 협력 확대 추진 -",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788469&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "과기정통부, 전직급 인공지능 대화형 코딩으로 행정혁신 앞당긴다",
+      "desc": "- 관리자부터 실무자까지 대화형 코딩 실습 교육 으로 인공지능 활용 역량 제고 - - 국산 인공지능 모델을 활용해 소프트웨어 개발 및 업무방식 변화 직접 체험 -",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788451&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "국산 NPU, 엔비디아 시스템과 연계해 글로벌 AI 인프라 시장 진출 길 연다",
+      "desc": "국산 NPU, 엔비디아 시스템과 연계해 글로벌 AI 인프라 시장 진출 길 연다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788455&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "국내 곤충산업 591억 원 규모로 성장…사료용 '동애등에' 65.3% 증가",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975284&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "국내 곤충산업 591억 원 규모로 지속 성장&middot;&middot;&middot; 사료용 곤충산업 &apos;65.3% 증가&apos; 견인",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 11 월 9 일 국내 곤충산업의 현주소를 진단하는 '2025 년 곤충산업 실태조사 ' 결과를 발표했다 . 곤충 생산 &middot; 가공 &middot; 유통업 신고 농가 및 법인 2,760 개소를 대상으로 ...",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788419&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농지 경매 위축은 부동산 전반의 흐름으로, 농지 조사 영향으로 단정하기 어렵습니다.",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975303&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "최근 계란 생산량은 전년 동기보다 증가하였으며, 고병원성 AI 방역과 수급 관리에 만전을 기하겠습니다.",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975295&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
       "title": "(보도설명) 정부는 2027년 예산안에 노인빈곤 개선을 위한 예산을 충실히 반영하였습니다.",
       "desc": "",
       "date": "2026-11-08",
@@ -243,27 +293,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금은 지방정부의 집행 자율성 제고를 위해 지역균형발전특별회계의 특례를 차용하고 있습니다.",
-      "desc": "",
-      "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975255&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "폐교의 새로운 시작, 지역의 가능성을 열다",
-      "desc": "",
-      "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788317&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
-      "title": "가치소비부터 AI까지 식품 소비 판도 바뀐다!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 4 일 ( 수 ), 11 월 5 일 ( 목 ) 양일간 서울 코엑스에서 '2027 식품외식산업전망 ' 을 성공적으로 개최했다 . 이번 행사에는 식품 &middot; 외식 업계 종사자를...",
+      "title": "아시아 지역의 구제역 대응을 위해 국내외 전문가 한자리에",
+      "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 해외 구제역 발생에 대한 선제적 대응과 국제 협력 강화를 위해 구제역세계표준연구소 ( 영국 퍼브라이트연구소 * ) 와 몽골 , 라오스 , 말레이시아 , 방글라데시의 구제역 책임자 및 전문가를 초...",
       "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788321&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788319&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -272,38 +306,6 @@
       "desc": "기획예산처는 '26.11.5.(목) 중국 상하이에서 한-중 실버경제 협력 국장급 회의 및 기업교류회를 개최하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788178&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 기획예산처는 미래대응기금에 대해 국회를 비롯한 각계각층의 의견을 폭넓게 수렴하고 있으며, 내실 있게 설계될 수 있도록 노력하겠습니다.",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975234&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "강의실을 넘어 세계로, 반도체&middot;인공지능(AI) 인재 한자리에 모이다",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788164&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "한-네덜란드, 첫 과학기술공동위 개최 첨단 과학기술 협력 본격화",
-      "desc": "한-네덜란드, 첫 과학기술공동위 개최 첨단 과학기술 협력 본격화 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788239&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 자율형 인공지능 이용 환경에서 철통 인증을 적용할 수 있는 안내서 발간",
-      "desc": "과기정통부, 자율형 인공지능 이용 환경에서 철통 인증을 적용할 수 있는 안내서 발간 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788207&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -344,22 +346,6 @@
       "desc": "",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975253&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농협법 개정안은 그간 국회 논의와 법률적 검토, 입법적 보완을 거쳐 추진 중입니다.",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975233&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지은행은 연간 약 7만 건의 농지 거래를 지원하고 있습니다.",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975223&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -496,14 +482,6 @@
       "desc": "",
       "date": "2026-10-21",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974021&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농지은행 임대수탁 신청 간소화…서류 없애고 처리시간 절반 단축",
-      "desc": "",
-      "date": "2026-10-21",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974017&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
