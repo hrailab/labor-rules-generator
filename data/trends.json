@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T10:52:00.140Z",
+  "generatedAt": "2026-11-09T23:40:42.939Z",
   "windowDays": 21,
   "items": [
     {
@@ -70,29 +70,6 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": true
-    },
-    {
-      "id": "A00032-156788156",
-      "dept": "중기부",
-      "category": "정책예고",
-      "title": "중소벤처기업부, 신임 소상공인정책실장에 조경원 창업정책관 발탁",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 6일(금)자로 소상공인정책실장에 조경원(55) 현 창업정책관을 임명한다고 밝혔다. 신임 조경원 소상공인정책실장은 중기부 소상공인정책관, 대통령실 자영업비서관실 행정관 등 국정과 현장을 아우르는 주요 보직을 두루 거치며 소상공인 분야에서 탄탄한 전문성을...",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788156&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     },
     {
       "id": "A00033-148974898",
@@ -189,6 +166,22 @@
   ],
   "excludedItems": [
     {
+      "dept": "중기부",
+      "title": "K-소상공인 수출성과, '로컬'을 넘어 '글로컬'로 도약",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 10일(화), 해외 판로 개척을 지원하는 '글로벌 소상공인 육성사업' 선정 100개사의 수출 성과를 발표했다. 2026년 신규로 시작한 '글로벌 소상공인 육성 사업'은 소비재 분야에서 수출 잠재력이 높은 소상공인을 대상으로 수출 역량 강화 교육, 수출...",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788511&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 미래대응기금은 국가재정법에서 규정하고 있는 요건과 절차에 따라 신설하였습니다.",
+      "desc": "",
+      "date": "2026-11-09",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975335&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "(보도설명) 지방교부세는 '26년 대비 크게 증가하며, 재정 전 분야를 통해 지방에 대한 지원을 확대하고 있습니다.",
       "desc": "",
@@ -282,14 +275,6 @@
       "desc": "",
       "date": "2026-11-09",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975295&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 정부는 2027년 예산안에 노인빈곤 개선을 위한 예산을 충실히 반영하였습니다.",
-      "desc": "",
-      "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975256&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -482,14 +467,6 @@
       "desc": "",
       "date": "2026-10-21",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974021&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "11월 19일 수능날, 출근시간 10시 이후로…시험장 200m 전방 차량 통제",
-      "desc": "",
-      "date": "2026-10-20",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973935&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
