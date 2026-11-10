@@ -1,53 +1,7 @@
 {
-  "generatedAt": "2026-11-09T23:40:42.939Z",
+  "generatedAt": "2026-11-10T10:44:35.768Z",
   "windowDays": 21,
   "items": [
-    {
-      "id": "A00002-156788437",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "교육부, 맞춤형 현장 자문으로 학생 마음건강 안전망 강화",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788437&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00008-156788318",
-      "dept": "농식품부",
-      "category": "정책예고",
-      "title": "'2045, 농업&middot;농촌의 미래를 그리다' 전문가 세미나 개최",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 6 일 ( 금 ) 서울 코리아나 호텔에서 한국농촌경제연구원과 공동으로 학계 &#x2024; 연구기관 , 식품 &#x2024; 푸드테크 &#x2024; AI 등 농산업 선도기업 관계자 등 전...",
-      "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788318&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
     {
       "id": "A00033-148975126",
       "dept": "과기정통부",
@@ -166,11 +120,99 @@
   ],
   "excludedItems": [
     {
+      "dept": "교육부",
+      "title": "국공립어린이집 의무 설치 기준, 지역 여건 따라 조정",
+      "desc": "",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975370&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "「교육공무원 임용령」 일부개정령안 국무회의 통과",
+      "desc": "",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788577&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "「유아교육법 시행령」 일부개정령안 국무회의 통과",
+      "desc": "",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788579&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "「영유아보육법 시행령」 일부개정령안 국무회의 통과",
+      "desc": "",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788578&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "'K-문샷 정책 세미나' 개최, 국가 과학 난제 해결을 위한 과학 인공지능 혁신을 논의하다.",
+      "desc": "'K-문샷 정책 세미나' 개최, 국가 과학 난제 해결을 위한 과학 인공지능 혁신을 논의하다. 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788593&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "양자 플래그십 프로젝트, 양자컴퓨팅&middot;통신&middot;센싱 핵심기술 개발 성과 가시화 - 「양자과학기술 플래그십 프로젝트 연례회의(애뉴얼 미팅, Annual Meeting)」 개최 -",
+      "desc": "- 초전도 큐비트 결맞음 시간 당초 목표의 2 배 (100 마이크로초 ) 달성부터 광 기반 양자중계기 기술 &middot; 심자도 센서 개발까지 - - 7 대 시드 (SEED) 양자기술 분야 사업화 기반 마련 기대 - - 26 개 과제 연구책임자 한자리에 ...",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788531&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "K-사이언스의 기틀을 만든 과학기술 이야기, 국가중요과학기술자료 23건 신규 등록",
+      "desc": "K-사이언스의 기틀을 만든 과학기술 이야기, 국가중요과학기술자료 23건 신규 등록 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788532&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "대&middot;중소기업 간 대금지급 관행 개선을 위한 현장 의견 청취",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 10일(화) 서울에서 '대&middot;중소기업 간 대금지급 혁신 TF 3차 회의'를 개최했다고 밝혔다. '대&middot;중소기업 간 대금지급 혁신 TF'는 기업 간 거래 현장에서 고착화된 대금지급 관행을 개선하기 위한 과제를 발굴하고 다양한 의견을...",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788518&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "중기부",
       "title": "K-소상공인 수출성과, '로컬'을 넘어 '글로컬'로 도약",
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 10일(화), 해외 판로 개척을 지원하는 '글로벌 소상공인 육성사업' 선정 100개사의 수출 성과를 발표했다. 2026년 신규로 시작한 '글로벌 소상공인 육성 사업'은 소비재 분야에서 수출 잠재력이 높은 소상공인을 대상으로 수출 역량 강화 교육, 수출...",
       "date": "2026-11-10",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788511&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "'26년 4분기 축산물이력제 합동단속 실시",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 '26 년 4 분기를 맞아 온라인 쇼핑몰 등을 통해 축산물을 유통 &middot; 판매하는 업체를 대상으로 11.11. 부터 11.25. 까지 약 2 주간 이력 &middot; 등급 &middot; ...",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788550&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "농업과 기업의 상생, '모두의 상생 프로젝트' 본격 시동",
+      "desc": "농업과 식품 &middot; 외식 기업이 손을 잡고 지역 경제에 새로운 활력을 불어넣고 있다 . 농림축산식품부 ( 이하 ' 농식품부 ') 가 추진하는 ' 모두의 상생 프로젝트 ' 는 농업 &middot; 농촌의 고유 자원과 기업의 창의적인 기술 &middot; 아이디어...",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788549&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "'26년도 염소고기에 대한 FTA피해보전직불금 지급 개시",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 「 자유무역협정 체결에 따른 농어업인 등의 지원에 관한 특별법 」 에 따라 자유무역협정 (FTA) 이행에 따른 가격 하락의 피해를 입은 농가의 경영 안정을 위해 지급되는 2026 년 FTA 피해보전직불금을 오...",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788551&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -206,59 +248,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "교육부",
-      "title": "교육부-일본 문부과학성, 교육행정 교류로 상호이해와 협력 강화",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788438&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "수능 수험생 여러분, 전자기기 가져오지 마세요!",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788439&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "배경훈 부총리, 국제전기통신연합 전권회의에서 국제 디지털 협력 강화",
-      "desc": "- 고위급 정책연설 등을 통해 한국의 인공지능 &middot; 디지털 정책 미래상 공유 - - 국제전기통신연합 이사국 , 전파규칙위원회 위원 선거 출마 , 국제 정보통신기술 협력 확대 추진 -",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788469&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 전직급 인공지능 대화형 코딩으로 행정혁신 앞당긴다",
-      "desc": "- 관리자부터 실무자까지 대화형 코딩 실습 교육 으로 인공지능 활용 역량 제고 - - 국산 인공지능 모델을 활용해 소프트웨어 개발 및 업무방식 변화 직접 체험 -",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788451&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "국산 NPU, 엔비디아 시스템과 연계해 글로벌 AI 인프라 시장 진출 길 연다",
-      "desc": "국산 NPU, 엔비디아 시스템과 연계해 글로벌 AI 인프라 시장 진출 길 연다 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788455&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "국내 곤충산업 591억 원 규모로 성장…사료용 '동애등에' 65.3% 증가",
       "desc": "",
       "date": "2026-11-09",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975284&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "국내 곤충산업 591억 원 규모로 지속 성장&middot;&middot;&middot; 사료용 곤충산업 &apos;65.3% 증가&apos; 견인",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 11 월 9 일 국내 곤충산업의 현주소를 진단하는 '2025 년 곤충산업 실태조사 ' 결과를 발표했다 . 곤충 생산 &middot; 가공 &middot; 유통업 신고 농가 및 법인 2,760 개소를 대상으로 ...",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788419&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -275,14 +269,6 @@
       "desc": "",
       "date": "2026-11-09",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975295&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "아시아 지역의 구제역 대응을 위해 국내외 전문가 한자리에",
-      "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 해외 구제역 발생에 대한 선제적 대응과 국제 협력 강화를 위해 구제역세계표준연구소 ( 영국 퍼브라이트연구소 * ) 와 몽골 , 라오스 , 말레이시아 , 방글라데시의 구제역 책임자 및 전문가를 초...",
-      "date": "2026-11-08",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788319&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -331,14 +317,6 @@
       "desc": "",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975253&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "전국 유망 소공인, 성수동에 모인다 중기부, 무신사&middot;오아시스와 판로개척 성과보고대회 개최 - 2026년 소공인 디깅위크(DIGGING WEEK), 11월 4일 개막 -",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 4일(수)부터 8일(일)까지 5일간 서울 성수동 Y173(연무장 17길 3)과 구 비젼모터스(연무장11길 7)에서 「2026 소공인 판로개척 성과보고대회(2026 소공인 디깅위크(DIGGING WEEK))」를 개최한다고 밝혔다. 중기부는 올해 한국중소...",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788158&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
