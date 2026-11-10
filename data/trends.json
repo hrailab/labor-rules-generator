@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T10:44:35.768Z",
+  "generatedAt": "2026-11-10T21:11:05.289Z",
   "windowDays": 21,
   "items": [
     {
@@ -120,6 +120,14 @@
   ],
   "excludedItems": [
     {
+      "dept": "기획예산처",
+      "title": "(보도설명) 연기금투자풀 운영 기관의 정보시스템 보안 점검을 강화하겠습니다.",
+      "desc": "",
+      "date": "2026-11-10",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975431&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "교육부",
       "title": "국공립어린이집 의무 설치 기준, 지역 여건 따라 조정",
       "desc": "",
@@ -229,14 +237,6 @@
       "desc": "",
       "date": "2026-11-09",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975294&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금 신설로 재정지표에 '착시'가 발생한다는 보도는 사실과 다릅니다",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975291&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -437,14 +437,6 @@
       "desc": "",
       "date": "2026-10-26",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974286&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "대구·경북 통합 지역성장펀드 출범…모펀드 1300억 원 결성",
-      "desc": "",
-      "date": "2026-10-21",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974021&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
