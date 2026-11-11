@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T10:16:31.020Z",
+  "generatedAt": "2026-11-11T21:42:54.280Z",
   "windowDays": 21,
   "items": [
     {
@@ -166,11 +166,27 @@
   ],
   "excludedItems": [
     {
+      "dept": "과기정통부",
+      "title": "얇은 렌즈로 밝은 야외에서도 뚜렷하게, 일상 속 증강현실 안경에 한 걸음",
+      "desc": "- 포항공대 &middot; 삼성리서치 연구팀 , 두께 1.5mm 증강현실 광학계 구현 ... 네이처 게재 - - 밝은 야외에서도 선명한 디지털 가상 정보 구현으로 증강현실 안경 상용화 탄력 -",
+      "date": "2026-11-12",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788826&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "기획처장관, 美 중간선거 이후 경제동향 점검을 위한 전문가 간담회 개최",
       "desc": "박홍근 기획예산처 장관은 11월 11일(수) 오후 12시 국회 의원회관에서 공공기관&middot;민간&middot;학계 전문가들과 오찬 간담회를 갖고, 미국 중간선거 이후 국내외 경제 동향을 점검하고 재정 대응방향을 논의하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
       "date": "2026-11-11",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788765&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 돌봄, 폭력피해자 지원사업은 '26년 대비 확대되었으며, 보조율 조정에 따른 영향을 면밀히 점검하고 적극관리해 나가겠습니다.",
+      "desc": "",
+      "date": "2026-11-11",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975532&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -207,10 +223,10 @@
     },
     {
       "dept": "과기정통부",
-      "title": "과기정통부, 유럽 콜드체인 해킹사고에 따른 국내 실태 점검 및 긴급조치 권고",
-      "desc": "과기정통부, 유럽 콜드체인 해킹사고에 따른 국내 실태 점검 및 긴급조치 권고 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "title": "과기정통부, 지에스건설㈜ 침해사고 직권조사 착수",
+      "desc": "과기정통부, 지에스건설㈜ 침해사고 직권조사 착수 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788782&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788823&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -219,14 +235,6 @@
       "desc": "- 중관소 &#xFF65; 경찰청 통합대응단 &#xFF65; 이통 3 사 &#xFF65; 관계기관 직통 회선 구축 - - 실시간 범죄 이용 정보 공유 및 선제 대응에 앞장 -",
       "date": "2026-11-11",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788753&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "세계적 인공지능바이오 강국 도약을 위한 소버린 바이오 전략 모색",
-      "desc": "- 7 대 SEED, K- 문샷 등 미래 바이오 전략 논의 - - 과학기술정보통신부 , 11 월 11 일 ( 수 ) 「 2026 바이오 미래 포럼 」 개최 -",
-      "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788703&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -294,11 +302,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 연기금투자풀 운영 기관의 정보시스템 보안 점검을 강화하겠습니다.",
+      "dept": "농식품부",
+      "title": "농식품 해외 통관거부에 대응하여 정보 제공, 맞춤형 컨설팅 등 지원을 강화하고 있습니다.",
       "desc": "",
-      "date": "2026-11-10",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975431&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "date": "2026-11-11",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975533&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -379,14 +387,6 @@
       "desc": "",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975196&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "경제지주 해체 추진은 사실이 아닙니다.",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975253&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
