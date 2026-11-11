@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T10:40:04.224Z",
+  "generatedAt": "2026-11-11T21:50:03.881Z",
   "windowDays": 21,
   "items": [
     {
@@ -169,26 +169,6 @@
       "category": "국제",
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766774",
       "date": "2026-10-28",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766705",
-      "school": "동국대",
-      "title": "2026 동계 일본 나가사키대학 단기연수 참가자 선발",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766705",
-      "date": "2026-10-22",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766702",
-      "school": "동국대",
-      "title": "2026 동계 일본 세츠난대학 단기연수 참가자 선발",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766702",
-      "date": "2026-10-22",
       "owner": "이수연",
       "status": "신규"
     }
