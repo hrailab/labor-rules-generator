@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-11-10T21:15:10.735Z",
+  "generatedAt": "2026-11-11T10:40:04.224Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "skku-140495",
+      "id": "skku-141798",
       "school": "성균관대",
-      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
+      "title": "[글로벌 학습경험 확대] WAVE 글로벌공동강의 특강 안내 (강연자: Anna Mueller)",
       "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-11-10",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141798&article.offset=0&articleLimit=10",
+      "date": "2026-11-11",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027044",
+      "school": "한양대",
+      "title": "한양대, ‘세계 상위 2% 연구자’ 144명 선정…4년간 꾸준히 늘며 글로벌 연구 영향력 확대",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027044",
+      "date": "2026-11-11",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +28,7 @@
       "title": "수액 카테터 테이핑 없앤 한양대 학생팀, 한국팀 유일 ‘제임스 다이슨 어워드 2026’ 글로벌 Top 20 쾌거",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026959",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,37 +38,17 @@
       "title": "국제기구의 경험을 한양인에게... 소재향 L.A.C 연사 초청 특강",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026845",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026982",
+      "id": "hyu-1027040",
       "school": "한양대",
-      "title": "한양대, 경희대와 스포츠 교류전 ‘더 라이온 매치’서 종합 우승",
+      "title": "칠레 국립의회도서관(BCN), 한양대에 도서 45종 기증… 학술 협력 MOU도 체결",
       "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026982",
-      "date": "2026-11-10",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026903",
-      "school": "한양대",
-      "title": "한양대 교원창업기업 유니코어로보틱스, 세계 최대 ITS 총회서 자율주행·주행보조 기술 공개",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026903",
-      "date": "2026-11-10",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026957",
-      "school": "한양대",
-      "title": "박도현 동문, 2026년도 5급 공채 기계직 수석 합격",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026957",
-      "date": "2026-11-10",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027040",
+      "date": "2026-11-11",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,7 +58,7 @@
       "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,18 +68,18 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026764",
-      "school": "한양대",
-      "title": "[한국경제] 한양대, 학생창업 상위권 이름 올려",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026764",
-      "date": "2026-11-10",
-      "owner": "서원석",
+      "id": "ewha-367629",
+      "school": "이화여대",
+      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
+      "date": "2026-11-11",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -100,16 +90,6 @@
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
       "date": "2026-11-10",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367629",
-      "school": "이화여대",
-      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-10",
-      "owner": "정주원",
       "status": "신규"
     },
     {
