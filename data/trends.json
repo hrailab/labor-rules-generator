@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-11-13T10:29:19.403Z",
+  "generatedAt": "2026-11-13T21:09:57.828Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "A00032-148975732",
+      "dept": "중기부",
+      "category": "정책예고",
+      "title": "민간 AI 솔루션 기업 A사 개인정보 유출...유출 대상에 2차 모두의 창업 참가자 818명 포함",
+      "desc": "",
+      "date": "2026-11-14",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975732&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00040-156789210",
       "dept": "기획예산처",
