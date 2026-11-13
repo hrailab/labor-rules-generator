@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-11-12T21:48:18.602Z",
+  "generatedAt": "2026-11-13T10:47:54.724Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "skku-141690",
+      "school": "성균관대",
+      "title": "★ 2026 제2회 성균관대학교 삼성융합의과학원 국제심포지엄 안내 ★(11월 30일(월)까지 홈페이지 사전 등록 )",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141690&article.offset=0&articleLimit=10",
+      "date": "2026-11-13",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "skku-140495",
       "school": "성균관대",
       "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,17 +28,7 @@
       "title": "한양대, ‘세계 상위 2% 연구자’ 144명 선정…4년간 꾸준히 늘며 글로벌 연구 영향력 확대",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027044",
-      "date": "2026-11-12",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026959",
-      "school": "한양대",
-      "title": "수액 카테터 테이핑 없앤 한양대 학생팀, 한국팀 유일 ‘제임스 다이슨 어워드 2026’ 글로벌 Top 20 쾌거",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026959",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +38,17 @@
       "title": "국제기구의 경험을 한양인에게... 소재향 L.A.C 연사 초청 특강",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026845",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027066",
+      "school": "한양대",
+      "title": "한양대, TeX-Corps 창업탐색교육 12개 팀 전원 수료... 대표동문 배출·창업경진대회 본선 진출",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027066",
+      "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +58,7 @@
       "title": "칠레 국립의회도서관(BCN), 한양대에 도서 45종 기증… 학술 협력 MOU도 체결",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027040",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,7 +68,7 @@
       "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,17 +78,27 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "khu-323563",
+      "id": "khu-323083",
       "school": "경희대",
-      "title": "[국제교류팀] 공공/국제정책/국제관계 분야 해외 명문대학원 설명회 안내",
+      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
       "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323563&menuNo=200316",
-      "date": "2026-11-12",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
+      "date": "2026-11-13",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323571",
+      "school": "경희대",
+      "title": "[한국장학재단] (국제C) 2026학년도 제34기 동계 대학생 재능봉사 캠프 멘토 모집 안내",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323571&menuNo=200316",
+      "date": "2026-11-13",
       "owner": "이수연",
       "status": "신규"
     },
@@ -88,17 +108,17 @@
       "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "owner": "정주원",
       "status": "신규"
     },
     {
-      "id": "khu-323083",
+      "id": "khu-323563",
       "school": "경희대",
-      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
+      "title": "[국제교류팀] 공공/국제정책/국제관계 분야 해외 명문대학원 설명회 안내",
       "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
-      "date": "2026-11-10",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323563&menuNo=200316",
+      "date": "2026-11-12",
       "owner": "이수연",
       "status": "신규"
     },
