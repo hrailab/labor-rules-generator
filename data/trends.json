@@ -1,15 +1,38 @@
 {
-  "generatedAt": "2026-11-12T21:42:24.093Z",
+  "generatedAt": "2026-11-13T10:29:19.403Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "A00033-156788925",
+      "id": "A00040-156789210",
+      "dept": "기획예산처",
+      "category": "정책예고",
+      "title": "기획예산처-산업연구원 정책간담회 개최",
+      "desc": "조용범 기획예산처 차관은 11월 13일(금) 산업연구원 권남훈 원장과 정책간담회를 개최하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789210&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "백승엽",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00033-156789197",
       "dept": "과기정통부",
       "category": "정책예고",
-      "title": "인공지능 안전 국민 모니터링단 「인공지능 안전 지킴이」 출범",
-      "desc": "- 과기정통부 &middot; 인공지능 안전연구소 , 대학생 &middot; 직장인 등 \" 인공지능 안전 지킴이 \" 80 명 위촉 - - 사실왜곡 , 편향 , 보안 취약점 , 결함 등 4 대 분야 오류사례 상시 제보 체계 구축 -",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788925&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "기업과 대학이 함께 키운 정보통신기술 인재, 연구&middot;교육과정 운영 성과 공유",
+      "desc": "- 과기정통부 , 학 &middot; 석사연계 정보통신기술 핵심인재양성 성과공유회 개최 - - 최 우수 과제 &middot; 학생 각각 부총리상 시상 , 산학협력 연구 &middot; 교육 성과 확산 -",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789197&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
       "status": "신규",
       "priority": "낮음",
@@ -26,14 +49,14 @@
       "actionable": false
     },
     {
-      "id": "A00033-156788915",
-      "dept": "과기정통부",
+      "id": "A00032-156789227",
+      "dept": "중기부",
       "category": "정책예고",
-      "title": "민간 첨단기술과 국방의 연결, 제4회 미래 국방 기술교류회 개최",
-      "desc": "- 박인규 과학기술혁신본부장 , 국방 연구개발 투자전략 강화를 위한 민 &middot; 군 협력 소통 - - '27 년도 국방 연구개발 예산 배분 &middot; 조정 ( 안 ) 공유 및 민간 우수기술 18 건 국방 적용 논의 -",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788915&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
+      "title": "민&middot;관이 함께 메가프로젝트 성과확산을 위한 중소기업 역할 강화방안 논의",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 12일(목), 삼성전자 아산사업장 온양캠퍼스에서 개최된 '메가프로젝트 제4차 민관합동 점검회의'에서 「메가프로젝트 성과확산을 위한 중소기업 역할 강화방안」을 보고하고, 관계부처, 지방정부, 기업인들과 함께 논의하였다. 이 방안의 주요 내용은 다음과 같...",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789227&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -190,18 +213,90 @@
   "excludedItems": [
     {
       "dept": "기획예산처",
-      "title": "중장기전략위원회 혁신성장반 분과회의 개최",
-      "desc": "기획예산처와 중장기전략위원회는 '26.11.12일(목) 혁신성장반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788963&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "2026년 제9차 재정투자평가위원회 개최",
+      "desc": "기획예산처는 2026년 제9차 재정투자평가위원회를 개최하였습니다. 자세한 내용은 첨부파일을 확인해주시기 바랍니다.",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789215&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "기획예산처",
-      "title": "「월간 재정동향」 2026년 11월호 발간",
-      "desc": "□ 기획예산처는 「월간 재정동향」 '26.11월호를 발간하여 '26.9월말 기준 재정운용 동향을 발표하였음. ※ 자세한 사항은 붙임을 참고하시기 바랍니다.",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788867&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "title": "제4차 기금자산운용정책위원회 개최",
+      "desc": "기획예산처는 2026.11.13.(금) 10:00 조용범 기획예산처 차관 주재로 「제4차 기금자산운용정책위원회」를 개최하여, 신규 민간위원 위촉식을 진행하고 대체투자 확대 및 정보보안 관리강화 방안 등을 논의하였습니다. * 자세한 사항은 첨부파일을 참고하여 주시기 바랍니다.",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789158&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "[관계부처 합동] (보도 참고 자료) 구글사 지도 국외 반출 허가 조건이행 결과 협의체 보고",
+      "desc": "",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789228&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "「대한민국 인터넷 대상」 및 「디지털 혁신상」 시상식 개최",
+      "desc": "「대한민국 인터넷 대상」 및 「디지털 혁신상」 시상식 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789196&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "메가프로젝트 성과 중소기업으로 확산…상생 재원 2조 원 조성",
+      "desc": "",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975667&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "정부, 대설·한파 대비 농업재해 대응 강화…피해 농가 신속 지원",
+      "desc": "",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975674&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "세계로 향하는 K-Sool, '2026 대한민국 우리술 대축제' 막 올랐다!",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 11 월 13 일 ( 금 ) 서울 양재동 aT 센터 제 1 전시관에서 국내 최대 규모의 전통주 제전인 「 2026 대한민국 우리술 대축제 」 개막식을 열고 사흘간의 대장정에 돌입했다고 밝혔다 . 올해로 ...",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789229&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "연말 김치&middot;배추&middot;무 수출 확대 위해… 민&middot;관 협력 총력전 나서",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 최근 풍작으로 공급이 늘어난 배추 &middot; 무 등 우리 농산물의 국내 수급을 안정시키고 소비처를 다변화하기 위해 , 11 월 13 일 ( 금 ) 정부세종청사에서 김치업계 및 배추 &middot; 무...",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789216&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "국민과 함께만든 특별성과! 탁월한 성과에는 파격적인 보상으로",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 13 일 ( 금 ), 정부세종 청사에서 국민이 체감하는 탁월한 성과를 이뤄낸 직원에게 특별 포상금과 장관 표창을 수여했다 . 이번 포상은 지난 8 월에 이어 세 번째 포상으로 ' 열심히 일하고...",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789171&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "단감, 10kg당 차랑11천원~부유17천원 수준으로 거래되고 있으며, 일부 저가 거래 사례가 전체 가격을 대표하지 않습니다.",
+      "desc": "",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975690&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "배추, 쪽파 등 김장채소류 가격안정을 위해 지방정부&middot;공공기관&middot;농협 등과 함께 총력 대응!",
+      "desc": "",
+      "date": "2026-11-13",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975689&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -221,14 +316,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "사물인터넷 제품, 제조사의 적극적 보안 강화와 소비자의 보안 수칙 실천이 필요",
-      "desc": "보안점검 결과와 유럽 냉장 &middot; 냉동설비 제어시스템 해킹 사고를 계기로 사물인터넷 제품 보안관리 중요성 강조 - - 안 전한 비밀번호 설정 , 주기적 보안 최신화 등 안전한 디지털 생활을 위한 소비자와 제조사의 관심 또한 필수적 -",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788896&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "대한민국 최대 할인행사, '코그페' 11월 15일까지 개최&middot;&middot;&middot; 전국에서 할인혜택 누리세요!",
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 오는 11월 15일(일) 종료되는 「제2회 코리아 그랜드 페스티벌(이하 코그페)」에 중앙정부, 지방정부, 기업&middot;경제계, 일반 국민들이 다양한 방식으로 동참하면서 전국적으로 소비 활성화 분위기가 확산되고 있다고 밝혔다. 코그페는 내수 활성화와 지역...",
@@ -242,38 +329,6 @@
       "desc": "",
       "date": "2026-11-12",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975563&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "제주 감귤, 검역협상 타결 8개월 만에 우즈베키스탄 첫 수출… 중앙아시아 공략 본격화",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 와 제주특별자치도 ( 도지사 위성곤 , 이하 ' 제주도 '), 한국농수산식품유통공사 (aT) 는 11 월 12 일 ( 목 ) 오후 제주시농협 농산물산지유통센터에서 제주시농협 주관으로 ' 우즈베...",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788982&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "농식품부, 농업계 목소리 듣고, 통상현안 해법 함께 모색",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 포괄적 &middot; 점진적 환태평양 경 제동반자협정 (CPTPP) 등 주요 통상현안에 대한 농업계의 의견을 폭넓게 수 렴하고 대응방안을 함께 모색하기 위해 민관협의체 ( 가칭 ' 농업 분야 통상현 안 대...",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788966&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "인천 강화 산란계 농장에 대한 정기 예찰 검사에서 H5형 조류인플루엔자 항원 확인",
-      "desc": "고병원성 조류인플루엔자 중앙사고수습본부 ( 본부장 송미령 농림축산식품부 장관 , 이하 ' 중수본 ') 는 11 월 12 일 ( 목 ) 인천 강화 소재 산란계 농장 (4 만 8 천여 마리 ) 에서 H5 형 조류인플루엔자 항원이 확인 * 되었다고 밝혔다 ....",
-      "date": "2026-11-12",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788953&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "기획처장관, 美 중간선거 이후 경제동향 점검을 위한 전문가 간담회 개최",
-      "desc": "박홍근 기획예산처 장관은 11월 11일(수) 오후 12시 국회 의원회관에서 공공기관&middot;민간&middot;학계 전문가들과 오찬 간담회를 갖고, 미국 중간선거 이후 국내외 경제 동향을 점검하고 재정 대응방향을 논의하였습니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.",
-      "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788765&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -341,14 +396,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "중기부",
-      "title": "중기부, 2030년까지 '기업가치 1조' AI 스타트업 20개사 육성",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 국가인공지능전략위원회(이하 국가AI전략위)와 공동으로 마련한 「AI 스타트업 Beyond유니콘 육성 전략」(이하 육성 전략)을 11월 11일(수), 국내 최대 규모 딥테크 스타트업 기술포럼 '딥 다이브 인투 2026'(DEEP DIVE INTO 2026, 이하...",
-      "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788778&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "배추 가격 42% 하락…수급 안정 위해 시장격리 등 조기 추진",
       "desc": "",
@@ -389,22 +436,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "농식품부",
-      "title": "농지 경매 위축은 부동산 전반의 흐름으로, 농지 조사 영향으로 단정하기 어렵습니다.",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975303&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "최근 계란 생산량은 전년 동기보다 증가하였으며, 고병원성 AI 방역과 수급 관리에 만전을 기하겠습니다.",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975295&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "[보도반박] 과기정통부가 바이러스토탈 사이트 이용을 권장했다는 내용은 전혀 사실이 아닙니다.",
       "desc": "",
@@ -442,14 +473,6 @@
       "desc": "",
       "date": "2026-11-03",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974922&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "가축전염병 보상금 상한 90%로…처분·이동제한 탄력 적용",
-      "desc": "",
-      "date": "2026-11-03",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974875&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
