@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T19:40:55.127Z",
+  "generatedAt": "2026-11-15T10:21:28.816Z",
   "windowDays": 21,
   "items": [
     {
@@ -95,13 +95,13 @@
       "actionable": false
     },
     {
-      "id": "A00002-156788735",
+      "id": "A00002-156788734",
       "dept": "교육부",
       "category": "정책예고",
-      "title": "미국 한국어반 고등학생들의 한글 그림, 샌프란시스코 현대미술관에 걸린다",
+      "title": "제3회 대학기초연구소 지원 사업(G-LAMP) 축제(페스티벌) 개최",
       "desc": "",
       "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788735&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788734&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "정주원",
       "status": "신규",
       "priority": "낮음",
