@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T10:21:28.816Z",
+  "generatedAt": "2026-11-15T20:07:15.398Z",
   "windowDays": 21,
   "items": [
     {
@@ -80,29 +80,6 @@
       "date": "2026-11-13",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789227&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00002-156788734",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "제3회 대학기초연구소 지원 사업(G-LAMP) 축제(페스티벌) 개최",
-      "desc": "",
-      "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788734&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -234,6 +211,22 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "교육부",
+      "title": "데이터로 읽는 우리 교육 제18호 발간",
+      "desc": "",
+      "date": "2026-11-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789247&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "의과대학 교육의 새로운 변화, 우수사례 8편 선정",
+      "desc": "",
+      "date": "2026-11-15",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789246&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
+    },
     {
       "dept": "기획예산처",
       "title": "2026년 제9차 재정투자평가위원회 개최",
@@ -379,14 +372,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "교육부",
-      "title": "교육부, EBS&middot;금융감독원 등과 함께 케이무크로 청년 경제&middot;금융 이해력 높인다",
-      "desc": "",
-      "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788733&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "과기정통부",
       "title": "한국 '디지털·AI 경쟁력' 세계 10위…전년 대비 8단계 ↑",
       "desc": "",
@@ -528,22 +513,6 @@
       "desc": "",
       "date": "2026-10-27",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974363&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "정부 '내년 지출효율화 TF' 조기 가동…국민참여단 청년 비중 40%로",
-      "desc": "",
-      "date": "2026-10-26",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974294&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "K-뷰티·반도체 날개…중소기업 3분기 수출 334억 달러 '역대 최고'",
-      "desc": "",
-      "date": "2026-10-26",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974280&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
