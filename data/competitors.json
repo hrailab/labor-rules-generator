@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T10:56:03.034Z",
+  "generatedAt": "2026-11-16T23:42:20.100Z",
   "windowDays": 21,
   "items": [
     {
@@ -8,6 +8,16 @@
       "title": "[HUSS] BRIDGE Agent 글로벌 프로젝트 참여학생 모집(중국 선전 4박 5일)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142012&article.offset=0&articleLimit=10",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142045",
+      "school": "성균관대",
+      "title": "삼성SDI-SKKU 이차전지산학협력연구센터 행정직원 모집(11.20(금) 17:00까지)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142045&article.offset=0&articleLimit=10",
       "date": "2026-11-16",
       "owner": "서원석",
       "status": "신규"
@@ -38,16 +48,6 @@
       "title": "2026학년도 국제동계학기(WISE) 조교(TA/OA/HA) 모집 안내 (신청종료)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140957&article.offset=0&articleLimit=10",
-      "date": "2026-11-16",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-142013",
-      "school": "성균관대",
-      "title": "AX 시대, 『주역』의 판단 문법으로 창업가의 태도·열정·능력을 기르는 8번의 토요일[Foundership(창업가 정신) 아카데미 제3기 파운더스 모집](11/20(금)까지)",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142013&article.offset=0&articleLimit=10",
       "date": "2026-11-16",
       "owner": "서원석",
       "status": "신규"
