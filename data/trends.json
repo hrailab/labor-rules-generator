@@ -1,7 +1,30 @@
 {
-  "generatedAt": "2026-11-16T10:36:13.897Z",
+  "generatedAt": "2026-11-16T23:38:11.181Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "A00002-156789506",
+      "dept": "교육부",
+      "category": "정책예고",
+      "title": "이주배경학생, 두 개의 언어로 꿈을 말하다",
+      "desc": "",
+      "date": "2026-11-17",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789506&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "정주원",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00002-148975788",
       "dept": "교육부",
@@ -47,29 +70,6 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": true
-    },
-    {
-      "id": "A00002-156789403",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "2026 제3회 산업계 대학교육 혁신포럼 개최",
-      "desc": "",
-      "date": "2026-11-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789403&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     },
     {
       "id": "A00033-156789327",
@@ -300,29 +300,6 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
-    },
-    {
-      "id": "A00002-148974367",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "대학 등록금 올리면 증액분 어디에 쓰나…등록금심의위가 확인",
-      "desc": "",
-      "date": "2026-10-27",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974367&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     }
   ],
   "excludedItems": [
@@ -332,6 +309,14 @@
       "desc": "□ 기획예산처는 미래대응기금의 취지와 목적, 구조, 투자방향 등을 외국정부,국제기구, 신평사, 학계 등에 상세히 알리기 위해 영문 Policy Brief를 발간합니다. ㅇ 자세한 내용은 첨부파일을 참고하시기 바랍니다. &lt;붙임&gt; Policy Brief: \"The Future Fund: A F...",
       "date": "2026-11-16",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789307&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "[보도설명] 미래대응기금 여유자금의 운용방식 등은 정해진 바 없습니다.",
+      "desc": "",
+      "date": "2026-11-16",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975829&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -360,18 +345,18 @@
     },
     {
       "dept": "과기정통부",
-      "title": "과기정통부, MS365 서비스 장애 관련 국내 이용자 불편 최소화에 나서",
-      "desc": "과기정통부, MS365 서비스 장애 관련 국내 이용자 불편 최소화에 나서 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "title": "대한민국, 국제전기통신연합(ITU) 이사국 10선 연임 성공 및 전파규칙위원회(RRB) 24년 만에 재진출",
+      "desc": "대한민국, 국제전기통신연합(ITU) 이사국 10선 연임 성공 및 전파규칙위원회(RRB) 24년 만에 재진출 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-11-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789326&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789502&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "과기정통부",
-      "title": "「2026 무선전력전송 콘퍼런스」 개최",
-      "desc": "「2026 무선전력전송 콘퍼런스」 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "title": "과기정통부, MS365 서비스 장애 관련 국내 이용자 불편 최소화에 나서",
+      "desc": "과기정통부, MS365 서비스 장애 관련 국내 이용자 불편 최소화에 나서 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
       "date": "2026-11-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789334&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789326&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -476,14 +461,6 @@
       "desc": "",
       "date": "2026-11-11",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975532&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 미래대응기금은 국민연금기금으로부터 예수를 검토한 바 없습니다.",
-      "desc": "",
-      "date": "2026-11-11",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975527&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -604,14 +581,6 @@
       "desc": "",
       "date": "2026-10-28",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974439&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "한우·수산물·의류 최대 50% 할인…'코리아 그랜드 페스티벌' 개막",
-      "desc": "",
-      "date": "2026-10-27",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974363&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
