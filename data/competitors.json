@@ -1,7 +1,147 @@
 {
-  "generatedAt": "2026-11-15T20:17:03.738Z",
+  "generatedAt": "2026-11-16T10:56:03.034Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "skku-142012",
+      "school": "성균관대",
+      "title": "[HUSS] BRIDGE Agent 글로벌 프로젝트 참여학생 모집(중국 선전 4박 5일)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142012&article.offset=0&articleLimit=10",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142039",
+      "school": "성균관대",
+      "title": "법학전문대학원 글로벌 커머셜 공개과정 운영 조교 모집",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142039&article.offset=0&articleLimit=10",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142018",
+      "school": "성균관대",
+      "title": "2026학년도 국제동계학기(WISE) 기숙사 조교(HA) 추가 모집 안내",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142018&article.offset=0&articleLimit=10",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-140957",
+      "school": "성균관대",
+      "title": "2026학년도 국제동계학기(WISE) 조교(TA/OA/HA) 모집 안내 (신청종료)",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140957&article.offset=0&articleLimit=10",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142013",
+      "school": "성균관대",
+      "title": "AX 시대, 『주역』의 판단 문법으로 창업가의 태도·열정·능력을 기르는 8번의 토요일[Foundership(창업가 정신) 아카데미 제3기 파운더스 모집](11/20(금)까지)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142013&article.offset=0&articleLimit=10",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026499",
+      "school": "한양대",
+      "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027044",
+      "school": "한양대",
+      "title": "한양대, ‘세계 상위 2% 연구자’ 144명 선정…4년간 꾸준히 늘며 글로벌 연구 영향력 확대",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027044",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026499",
+      "school": "한양대",
+      "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026997",
+      "school": "한양대",
+      "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026845",
+      "school": "한양대",
+      "title": "국제기구의 경험을 한양인에게... 소재향 L.A.C 연사 초청 특강",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026845",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027066",
+      "school": "한양대",
+      "title": "한양대, TeX-Corps 창업탐색교육 12개 팀 전원 수료... 대표동문 배출·창업경진대회 본선 진출",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027066",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027040",
+      "school": "한양대",
+      "title": "칠레 국립의회도서관(BCN), 한양대에 도서 45종 기증… 학술 협력 MOU도 체결",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027040",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026917",
+      "school": "한양대",
+      "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026841",
+      "school": "한양대",
+      "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
+      "date": "2026-11-16",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "khu-323562",
       "school": "경희대",
@@ -13,72 +153,12 @@
       "status": "신규"
     },
     {
-      "id": "hyu-1027044",
-      "school": "한양대",
-      "title": "한양대, ‘세계 상위 2% 연구자’ 144명 선정…4년간 꾸준히 늘며 글로벌 연구 영향력 확대",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027044",
-      "date": "2026-11-15",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026845",
-      "school": "한양대",
-      "title": "국제기구의 경험을 한양인에게... 소재향 L.A.C 연사 초청 특강",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026845",
-      "date": "2026-11-15",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027066",
-      "school": "한양대",
-      "title": "한양대, TeX-Corps 창업탐색교육 12개 팀 전원 수료... 대표동문 배출·창업경진대회 본선 진출",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027066",
-      "date": "2026-11-15",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027040",
-      "school": "한양대",
-      "title": "칠레 국립의회도서관(BCN), 한양대에 도서 45종 기증… 학술 협력 MOU도 체결",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027040",
-      "date": "2026-11-15",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026917",
-      "school": "한양대",
-      "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-15",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026841",
-      "school": "한양대",
-      "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-15",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
       "id": "ewha-367629",
       "school": "이화여대",
       "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-15",
+      "date": "2026-11-16",
       "owner": "정주원",
       "status": "신규"
     },
@@ -88,16 +168,6 @@
       "title": "★ 2026 제2회 성균관대학교 삼성융합의과학원 국제심포지엄 안내 ★(11월 30일(월)까지 홈페이지 사전 등록 )",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141690&article.offset=0&articleLimit=10",
-      "date": "2026-11-13",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "skku-140495",
-      "school": "성균관대",
-      "title": "2026학년도 겨울 계절수업 본교생 → 타 대학 학점교류 수강 안내(진행 중)",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140495&article.offset=0&articleLimit=10",
       "date": "2026-11-13",
       "owner": "서원석",
       "status": "신규"
@@ -123,13 +193,13 @@
       "status": "신규"
     },
     {
-      "id": "khu-323563",
-      "school": "경희대",
-      "title": "[국제교류팀] 공공/국제정책/국제관계 분야 해외 명문대학원 설명회 안내",
+      "id": "cau-51314",
+      "school": "중앙대",
+      "title": "[2차 원서접수]2027학년도 전반기 2차(3월 입학) 학부 순수 외국인전형 원서접수",
       "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323563&menuNo=200316",
+      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51314",
       "date": "2026-11-12",
-      "owner": "이수연",
+      "owner": "정주원",
       "status": "신규"
     },
     {
