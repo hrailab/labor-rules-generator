@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T11:27:22.810Z",
+  "generatedAt": "2026-11-17T22:45:55.705Z",
   "windowDays": 21,
   "items": [
     {
@@ -536,14 +536,6 @@
       "desc": "",
       "date": "2026-10-29",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974541&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "[설명자료] 케이(K)-에듀파인 고도화 사업이 안정적으로 추진되도록 관계기관 협조에 만전을 다하겠습니다",
-      "desc": "",
-      "date": "2026-10-28",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974439&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
