@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T11:04:06.682Z",
+  "generatedAt": "2026-11-18T22:27:45.788Z",
   "windowDays": 21,
   "items": [
     {
@@ -49,29 +49,6 @@
       "actionable": false
     },
     {
-      "id": "A00032-156789463",
-      "dept": "중기부",
-      "category": "정책예고",
-      "title": "지역에서 찾은 가능성...로컬 창업가 600명, 전국 무대로",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 17일(화)부터 20일(금)까지 전국 8개 권역에서 1차 「모두의 창업 프로젝트」(이하 '모두의 창업') 로컬트랙 전국예선을 개최한다고 밝혔다. 이번 예선에서는 2라운드에 진출해 사업화를 진행 중인 로컬 창업가 600명 중 파이널 오디션 진출자 100명...",
-      "date": "2026-11-16",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789463&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
       "id": "A00032-148975732",
       "dept": "중기부",
       "category": "정책예고",
@@ -103,29 +80,6 @@
       "date": "2026-11-13",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789210&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "백승엽",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00032-156789227",
-      "dept": "중기부",
-      "category": "정책예고",
-      "title": "민&middot;관이 함께 메가프로젝트 성과확산을 위한 중소기업 역할 강화방안 논의",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 12일(목), 삼성전자 아산사업장 온양캠퍼스에서 개최된 '메가프로젝트 제4차 민관합동 점검회의'에서 「메가프로젝트 성과확산을 위한 중소기업 역할 강화방안」을 보고하고, 관계부처, 지방정부, 기업인들과 함께 논의하였다. 이 방안의 주요 내용은 다음과 같...",
-      "date": "2026-11-13",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789227&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -234,6 +188,22 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "중기부",
+      "title": "도전하는 장애경제인, 성장하는 대한민국! 중기부, 「제21회 전국장애경제인대회」 개최",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 18일(수) 서울 FKI타워 그랜드볼룸에서 「제21회 전국장애경제인대회」를 개최하고, 장애인기업 발전에 기여한 모범 장애경제인과 유공자를 포상했다고 밝혔다. &lt; 전국장애경제인대회 행사개요 &gt; &middot; 행 사 명 : 제21회 전국장애경제인대...",
+      "date": "2026-11-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789831&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "온라인과 오프라인을 잇는 소상공인 매장, 서울숲에 문 연다.",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 18일(수) 서울 성동구 언더스탠드에비뉴에서 이병권 중기부 제2차관이 참석한 가운데 소담상회 2호점인 '소담상회 with 롯데온' 개소식을 개최한다고 밝혔다. 소담상회는 소상공인 제품을 소비자가 오프라인 매장에서 직접 체험하고 온라인에서 구매할 수 있...",
+      "date": "2026-11-19",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789830&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "교육부",
       "title": "수능일 전국에 위급재난문자 발송…\"국민 이해와 협조 부탁\"",
