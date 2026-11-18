@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T11:27:25.335Z",
+  "generatedAt": "2026-11-18T22:32:15.858Z",
   "windowDays": 21,
   "items": [
     {
@@ -200,16 +200,6 @@
       "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766805",
       "date": "2026-10-30",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "cau-51300",
-      "school": "중앙대",
-      "title": "[2차 모집요강] 2027학년도 전반기 (3월 입학)2차 학부 순수 외국인전형 원서접수 일정 및 모집요강 안내",
-      "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51300",
-      "date": "2026-10-29",
-      "owner": "정주원",
       "status": "신규"
     }
   ]
