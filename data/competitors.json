@@ -1,14 +1,24 @@
 {
-  "generatedAt": "2026-11-18T22:32:15.858Z",
+  "generatedAt": "2026-11-19T11:25:29.981Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "skku-142090",
+      "id": "skku-142148",
       "school": "성균관대",
-      "title": "성균관대 바이오헬스 글로벌 석학 멘토십 제4회 세미나 안내",
+      "title": "[AI중심대학사업단] 글로벌 IT전문가와 킹고인의 만남 시즌2 여든다섯 번째 만남 (11/25, 수, 15시)",
       "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142090&article.offset=0&articleLimit=10",
-      "date": "2026-11-18",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142148&article.offset=0&articleLimit=10",
+      "date": "2026-11-19",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027001",
+      "school": "한양대",
+      "title": "[한양인의 커리어를 묻다] 38만 유튜버 '페이퍼로지', 한양대 강단에 서다… 김도균 동문의 새로운 도전",
+      "category": "대외협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027001",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +28,7 @@
       "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +38,7 @@
       "title": "한양대, ‘세계 상위 2% 연구자’ 144명 선정…4년간 꾸준히 늘며 글로벌 연구 영향력 확대",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027044",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +48,7 @@
       "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +58,7 @@
       "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,7 +68,7 @@
       "title": "대학 창업생태계 구축 성과 인정… 한양대 류창완 창업지원단장 중기부 장관표창 수상",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027121",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -68,7 +78,7 @@
       "title": "한양대학교 예술·체육대학–강동문화재단, 지역 문화예술 발전을 위한 업무협약 체결",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027065",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,7 +88,7 @@
       "title": "한양대, TeX-Corps 창업탐색교육 12개 팀 전원 수료... 대표동문 배출·창업경진대회 본선 진출",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027066",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -88,7 +98,17 @@
       "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026841",
+      "school": "한양대",
+      "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -98,7 +118,7 @@
       "title": "[동아일보] 김남조 교수, 외국인 지방관광 숙박 인프라 관련 코멘트",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027119",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -108,7 +128,7 @@
       "title": "[서울경제] 김진수 교수, 핵심광물 해외 확보 전략 관련 코멘트",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027118",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "서원석",
       "status": "신규"
     },
@@ -118,7 +138,7 @@
       "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "owner": "정주원",
       "status": "신규"
     },
