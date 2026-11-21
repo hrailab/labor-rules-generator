@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T22:06:05.441Z",
+  "generatedAt": "2026-11-21T10:37:39.662Z",
   "windowDays": 21,
   "items": [
     {
@@ -235,6 +235,22 @@
   ],
   "excludedItems": [
     {
+      "dept": "과기정통부",
+      "title": "우리 사회의 인공지능을 생각하고 토론하는 축제의 장, &#xFF62;AI 인사이트 페스티벌 시상식&#xFF63; 개최",
+      "desc": "- 인공지능 기술에 대한 비판적 사고와 창의적 관점 을 높이기 위한 ' 토론대회 ' 부터 ' 논문 &middot; 아이디어 공모전 ', ' 우수도서 선정 ' 까지 한자리에 - - 부총리 겸 과기정통부 장관상 , 정보통신산업진흥원 원장상 등 총 33 점 수여 -",
+      "date": "2026-11-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790152&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "미래의 피지컬 AI 전문가 발굴! 「2026 청소년 로보틱스 챌린지」 결선 개최",
+      "desc": "미래의 피지컬 AI 전문가 발굴! 「2026 청소년 로보틱스 챌린지」 결선 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-21",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790143&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "중장기전략위원회 미래사회전략반, 거버넌스개혁반 분과회의 개최",
       "desc": "기획예산처와 중장기전략위원회는 '26.11.20일(금) 미래사회전략반, 거버넌스개혁반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
@@ -283,14 +299,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "과기정통부-기후부, 인공지능 데이터센터 신속 구축을 위한 전력계통영향평가 제도 개선 추진",
-      "desc": "- 비수도권 AIDC 계약전력 50MW 이하 는 전력계통영향평가 면제 - - AIDC 특구 내 AIDC 는 비기술적 평가 면제 ( 평가 간소화 ) - 메가프로젝트 , 인허가 일괄처리 대상 AIDC 는 평가 우선 처리 (AIDC 패스트트랙 ) -",
-      "date": "2026-11-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790068&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "중기부",
       "title": "중기부, 공공구매 유공 39점 포상… 중소기업 공공조달시장 진출 지원",
       "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 20일(금) 서울 엘타워에서 '공공구매 촉진대회' 행사를 개최했다고 밝혔다. 이번 행사는 공공구매를 통해 중소기업 판로 확대에 기여한 공공기관 및 직원 등 유공자를 포상하고, 공공기관과 중소기업간 직접적인 대면 기회 제공을 통해 판로 지원을 확대하기 ...",
@@ -313,14 +321,6 @@
       "date": "2026-11-20",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790107&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "기초연구의 오늘과 미래를 잇는 &#xFF62;대한민국 기초연구 커넥트&#xFF63; 행사 개최",
-      "desc": "- 2026 년 기초연구진흥 유공자 20 인 선정 - - 기초연구진흥 유공자 대표 5 인의 연구 및 성장 이야기 발표 - - 기초연구 지원 성과를 짚어보고 , 향후 정책 방향을 논의하는 포럼 진행 -",
-      "date": "2026-11-20",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790067&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
     },
     {
       "dept": "중기부",
