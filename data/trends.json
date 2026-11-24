@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-23T11:45:06.133Z",
+  "generatedAt": "2026-11-24T01:59:05.378Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "A00040-148976267",
-      "dept": "기획예산처",
+      "id": "A00033-156790471",
+      "dept": "과기정통부",
       "category": "정책예고",
-      "title": "(보도설명) 교부금 개편안은 초중등교육의 안정적인 지원과 함께 영유아&middot;고등&middot;평생교육 등 균형 잡힌 투자로 이번 정기국회에서 통과되면 올해부터 적용됩니다.",
-      "desc": "",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976267&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "백승엽",
+      "title": "인공지능&middot;인간형 로봇부터 전기차까지, 미래 일상을 움직일 '차세대 이차전지' 핵심 성과 한자리에",
+      "desc": "- 최신 기술 동향 및 연구개발 성과 공유를 위한 「 차세대 이차전지 성과공유회 」 개최 - - 산학연관이 함께하는 「 차세대 이차전지 민관협의체 」 개최 -",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790471&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "이수연",
       "status": "신규",
-      "priority": "중간",
+      "priority": "낮음",
       "due": null,
       "deadline": null,
       "bg": null,
@@ -23,7 +23,7 @@
       "implication": null,
       "strategy": null,
       "aiGenerated": false,
-      "actionable": true
+      "actionable": false
     },
     {
       "id": "A00002-148976308",
@@ -72,29 +72,6 @@
       "actionable": true
     },
     {
-      "id": "A00002-156790263",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "교육부, 「대입 허위 원서접수 신고센터 」 설치",
-      "desc": "",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790263&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
-      "status": "신규",
-      "priority": "중간",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": true
-    },
-    {
       "id": "A00002-148976321",
       "dept": "교육부",
       "category": "정책예고",
@@ -126,29 +103,6 @@
       "date": "2026-11-23",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790376&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00032-156790406",
-      "dept": "중기부",
-      "category": "정책예고",
-      "title": "모두의 성장으로 대전환을 위해 전 부처 역량 결집 &#xFF62;양극화 대응 TF&#xFF63; 산업&middot;기업반 1차 회의 개최",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 산업통상부(장관 김정관, 이하 산업부)는 11월 23일(월) 노용석 중기부 제1차관, 박동일 산업부 차관 공동 주재하에 관계부처, 국책연구기관과 함께 「양극화 대응 TF」 산업&middot;기업 격차완화반 1차 회의를 개최했다고 밝혔다. 이번 회의는 지난 1...",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790406&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -254,55 +208,57 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": true
-    },
-    {
-      "id": "A00033-148974898",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "불법사이트·대형화재·산불복구 등 현안에 R&D 예산 긴급 투입",
-      "desc": "",
-      "date": "2026-11-03",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974898&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00033-148974863",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "[보도설명] '27년 기초연구사업 예산은 2.91조원, 과제 수는 18,516개로 예산 규모와 과제 수 모두 역대 최대 수준입니다.",
-      "desc": "",
-      "date": "2026-11-03",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974863&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     }
   ],
   "excludedItems": [
+    {
+      "dept": "과기정통부",
+      "title": "Next-X 휴머노이드 챌린지 대회 사전 설명회 개최",
+      "desc": "Next-X 휴머노이드 챌린지 대회 사전 설명회 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790484&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "초격차 스타트업, 아시아-베를린 서밋에서 유럽 시장 정조준",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 국내 딥테크 스타트업의 유럽시장 진출을 본격 지원하기 위해 11월 23일(월)부터 25일(수)까지 이어지는 2026 아시아-베를린 서밋에서 현지 투자자 대상으로 「초격차 글로벌 IR 데모데이」를 개최한다고 밝혔다. 중기부는 국내 첨단기술(딥테크) 스타트업의 ...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790483&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "동반성장주간(11.23~27) 시리즈 ② 납품대금 연동으로 협력사 원가 부담 덜었다 중기부, 2026년 납품대금 연동 우수기업 9개사 선정",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 24일(화) 납품대금 연동제를 모범적으로 실천한 9개 기업을「2026년 납품대금 연동 우수기업」으로 선정했다고 밝혔다. 올해 선정된 연동 우수기업은 뉴금우고속관광전세, 대화공업, 롯데칠성음료㈜, 에이치디건설기계 주식회사, ㈜풍산, 한국보훈복지의료공단,...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790456&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "동반성장주간(11.23~27) 시리즈 ① 2026년 동반성장주간 개막... 상생협력 성과 공유하고 동반성장 확산",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 23일(월)부터 27일(금)까지 「2026년 동반성장주간」을 운영하고, 상생협력을 촉진하는 한편 이에 대한 국민적 관심을 높일 계획이라고 밝혔다. 올해 동반성장주간은 \"상생협력의 결실, 대한민국 성장의 동력이 된다\"라는 메시지 아래 기업과 국민이 함께...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790455&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "교육부, 제17회 학생 건강증진 교육활동 우수학교 10개교 선정",
+      "desc": "",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790454&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "confirmed_outcome"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 올해 초과세수 활용방안 등은 아직 결정된 바 없습니다.",
+      "desc": "",
+      "date": "2026-11-23",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976339&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "(보도설명) 정부는 지방정부 소방재정 확충을 위한 다양한 방안을 논의 중입니다.",
@@ -328,30 +284,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "[관계부처 합동] (보도참고) 제31차 유엔기후변화협약 당사국총회 폐막",
-      "desc": "– 1.5 ℃ 초과 최소화 , 전기화 , 기후재원 확대 등 핵심 메시지 담은 대표결정문 도출 시도 ... 화석연료 전환 문구 배제 등에 대한 이견으로 채택 불발 - – 감축 &middot; 대응조치 관련 결정문은 합의에 이르지 못했으나 , 적응 &middot; 정의로운 ...",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790337&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "'27년 스마트공장 구축지원사업 참여기업 모집",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 23일(월) '2027년도 스마트공장 구축지원사업' 참여기업 모집을 공고하고, 12월 7일(월)부터 내년 1월 6일(수)까지 신청을 받는다고 밝혔다. 이번 공고는 그동안 개별 사업별로 시행하던 스마트공장 사업공고를 하나로 통합한 것으로, 대상사업은 &...",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790407&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "&quot;중소기업의 기술 융합&middot;협업 성과 한자리에&quot;",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 경기도, 수원시와 함께 11월 23일(월) 수원컨벤션센터에서 「2026 중소기업융합대전」개막식을 개최한다고 밝혔다. &lt;개막식 행사 개요 &gt; &middot; [일시/장소] '26.11. 23.(월) 15:00~17:50/ 수원컨벤션센터 3층 컨벤션...",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790295&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "K-농기자재, 유럽&middot;중동 시장 진출 교두보 마련… 튀르키예 안탈리아 박람회 한국관 운영",
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 11 월 24 일부터 27 일까지 튀르키예 안탈리아 국제 농산업박람회에 참가해 한국관 ( 총 20 개사 ) * 을 운영 하고 , 국내 농기자재 기업의 해외 판로 확대와 유럽 &middot; 중동 ...",
@@ -374,14 +306,6 @@
       "date": "2026-11-23",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976326&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "한-아세안 과학기술 협력의 미래를 이끌 차세대 연구자 선정",
-      "desc": "한-아세안 과학기술 협력의 미래를 이끌 차세대 연구자 선정 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790327&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
     },
     {
       "dept": "농식품부",
@@ -597,14 +521,6 @@
       "desc": "",
       "date": "2026-11-06",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975175&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "휴머노이드가 일하는 법 배우는 '데이터 생산기지' 국내 첫 개소",
-      "desc": "",
-      "date": "2026-11-03",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974922&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
