@@ -1,7 +1,47 @@
 {
-  "generatedAt": "2026-11-24T02:06:09.077Z",
+  "generatedAt": "2026-11-24T13:30:05.459Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "skku-142310",
+      "school": "성균관대",
+      "title": "IUC 10주년 기념 국제학술대회 (2026.12.11）",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142310&article.offset=0&articleLimit=10",
+      "date": "2026-11-24",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-141690",
+      "school": "성균관대",
+      "title": "★ 2026 제2회 성균관대학교 삼성융합의과학원 국제심포지엄 안내 ★(11월 30일(월)까지 홈페이지 사전 등록 )",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=141690&article.offset=0&articleLimit=10",
+      "date": "2026-11-24",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142305",
+      "school": "성균관대",
+      "title": "2027년 1학기 한국농어촌희망재단 「청년창업농장학금」장학생 선발 안내(26.12.1 10:00 ~ 27.1.5 17:00)",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142305&article.offset=0&articleLimit=10",
+      "date": "2026-11-24",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142201",
+      "school": "성균관대",
+      "title": "「2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유회」 참여 학생 모집",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201&article.offset=0&articleLimit=10",
+      "date": "2026-11-24",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "hyu-1027130",
       "school": "한양대",
@@ -38,6 +78,16 @@
       "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
+      "date": "2026-11-24",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027171",
+      "school": "한양대",
+      "title": "한양대 서울캠퍼스, ‘2026 중앙일보 대학평가’ 종합 5위… 창업·산학협력 경쟁력 입증",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027171",
       "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
@@ -113,16 +163,6 @@
       "status": "신규"
     },
     {
-      "id": "skku-142201",
-      "school": "성균관대",
-      "title": "「2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유회」 참여 학생 모집",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201&article.offset=0&articleLimit=10",
-      "date": "2026-11-23",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
       "id": "khu-323083",
       "school": "경희대",
       "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
@@ -148,16 +188,6 @@
       "title": "[국제교육원(국제)] 11월 29일 정기토익 대비 PART 5 집중 공략 무료특강 안내",
       "category": "국제",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323615&menuNo=200316",
-      "date": "2026-11-20",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323468",
-      "school": "경희대",
-      "title": "(~11.29) ★ [국제교류팀] 2026학년도 동계 SDGs 국제화연수 (Oxford Conso...",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323468&menuNo=200316",
       "date": "2026-11-20",
       "owner": "이수연",
       "status": "신규"
