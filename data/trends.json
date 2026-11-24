@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-24T01:59:05.378Z",
+  "generatedAt": "2026-11-24T13:14:52.502Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "A00033-156790471",
+      "id": "A00033-156790546",
       "dept": "과기정통부",
       "category": "정책예고",
-      "title": "인공지능&middot;인간형 로봇부터 전기차까지, 미래 일상을 움직일 '차세대 이차전지' 핵심 성과 한자리에",
-      "desc": "- 최신 기술 동향 및 연구개발 성과 공유를 위한 「 차세대 이차전지 성과공유회 」 개최 - - 산학연관이 함께하는 「 차세대 이차전지 민관협의체 」 개최 -",
+      "title": "기업이 제안한 기술수요, 정부 연구개발로 이어진다",
+      "desc": "- 과기정통부 , 「 2026 년 민관 연구개발 혁신포럼 」 개최 - - 200 여 개 기업 발굴 수요 '27 년도 정부 연구개발 예산안 약 3,600 억 원 규모 반영 - - 산업계 기술수요 및 제도개선 의견을 담은 전략보고서 정부에 전달 -",
       "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790471&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790546&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
       "status": "신규",
       "priority": "낮음",
@@ -24,6 +24,29 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
+    },
+    {
+      "id": "A00008-156790488",
+      "dept": "농식품부",
+      "category": "정책예고",
+      "title": "더 많이, 더 든든하게, 2027 '천원의 아침밥' 참여대학 모집",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 대학생의 건강한 쌀 중심 식습관 지원과 쌀 소비 기반 마련을 위해 추진하는 「 2027 년도 대학생 천원의 아침밥 사업 」 신청을 11 월 25 일 ( 수 ) 부터 12 월 10 일 ( 목 ...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790488&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "중간",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": true
     },
     {
       "id": "A00002-148976308",
@@ -49,29 +72,6 @@
       "actionable": true
     },
     {
-      "id": "A00002-156790348",
-      "dept": "교육부",
-      "category": "정책예고",
-      "title": "신청은 미리! 등록금 걱정은 멀리! 2027학년도 1학기 국가장학금 신청하세요",
-      "desc": "",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790348&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
-      "status": "신규",
-      "priority": "높음",
-      "due": null,
-      "deadline": null,
-      "bg": "제공된 본문에는 \"이 자료는 교육부의 보도자료를 전재하여 제공함을 알려드립니다.\"라는 안내 문구만 있으며, 정책 추진 배경이나 경위는 명시되어 있지 않다. 제목상 교육부가 2027학년도 1학기 국가장학금 신청을 안내하는 보도자료로 확인되나, 구체적 배경은 교육부 원문 확인이 필요하다.",
-      "body": "제목에 따르면 교육부가 '신청은 미리! 등록금 걱정은 멀리!'라는 문구로 2027학년도 1학기 국가장학금 신청을 안내하는 내용이다. 다만 본문에는 교육부 보도자료를 전재했다는 문구만 있어 지원 대상·규모 개괄, 추진 경과 등 세부 내용은 확인되지 않으며, 교육부 원문을 별도로 확인해야 한다.",
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": "제목상 교육부가 2027학년도 1학기 국가장학금 신청을 학기 시작 전에 미리 하도록 독려하고 있어, 기한 내 신청 여부가 학생의 등록금 부담 완화에 직접 영향을 미치는 사안으로 볼 수 있다. 등록금 의존도가 높은 사립대학은 재학생·신입생의 신청 누락이 학생 개인의 부담 증가뿐 아니라 등록 및 학업 지속에도 영향을 줄 수 있다는 점에 유의할 필요가 있다.",
-      "strategy": "현재 신청을 안내하는 단계의 사안이므로, 우선 교육부 및 한국장학재단 원문을 확인해 신청 대상·기간·절차를 파악하고, 이를 학내에 정확하게 공지하는 것이 필요하다. 이후 학생지원·장학 부서를 중심으로 재학생과 신입생(입학 예정자 포함)에게 기한 내 신청을 반복적으로 안내하고, 대학이 수행해야 하는 관련 행정 절차가 있는지 사전에 점검하는 방향을 검토할 수 있다.",
-      "aiGenerated": true,
-      "actionable": true
-    },
-    {
       "id": "A00002-148976321",
       "dept": "교육부",
       "category": "정책예고",
@@ -93,29 +93,6 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": true
-    },
-    {
-      "id": "A00033-156790376",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "국가 과학 인공지능 역량 결집해 초지능 과학 혁신을 선도한다",
-      "desc": "- 배경훈 부총리 , 국가 과학 인공지능 연구센터 (NAIS) 방문 및 전문가 간담회 개최 - - 국가 과학 인공지능 자원 &middot; 역량을 결집하고 , 인공지능 과학자 구현을 위한 산학연 협력 방안 논의 -",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790376&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
     },
     {
       "id": "A00032-148976050",
@@ -212,44 +189,84 @@
   ],
   "excludedItems": [
     {
-      "dept": "과기정통부",
-      "title": "Next-X 휴머노이드 챌린지 대회 사전 설명회 개최",
-      "desc": "Next-X 휴머노이드 챌린지 대회 사전 설명회 개최 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "dept": "교육부",
+      "title": "교육부 '수능 부정행위 전담 대응팀' 본격 가동",
+      "desc": "",
       "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790484&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "초격차 스타트업, 아시아-베를린 서밋에서 유럽 시장 정조준",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 국내 딥테크 스타트업의 유럽시장 진출을 본격 지원하기 위해 11월 23일(월)부터 25일(수)까지 이어지는 2026 아시아-베를린 서밋에서 현지 투자자 대상으로 「초격차 글로벌 IR 데모데이」를 개최한다고 밝혔다. 중기부는 국내 첨단기술(딥테크) 스타트업의 ...",
-      "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790483&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "동반성장주간(11.23~27) 시리즈 ② 납품대금 연동으로 협력사 원가 부담 덜었다 중기부, 2026년 납품대금 연동 우수기업 9개사 선정",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 24일(화) 납품대금 연동제를 모범적으로 실천한 9개 기업을「2026년 납품대금 연동 우수기업」으로 선정했다고 밝혔다. 올해 선정된 연동 우수기업은 뉴금우고속관광전세, 대화공업, 롯데칠성음료㈜, 에이치디건설기계 주식회사, ㈜풍산, 한국보훈복지의료공단,...",
-      "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790456&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "동반성장주간(11.23~27) 시리즈 ① 2026년 동반성장주간 개막... 상생협력 성과 공유하고 동반성장 확산",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 23일(월)부터 27일(금)까지 「2026년 동반성장주간」을 운영하고, 상생협력을 촉진하는 한편 이에 대한 국민적 관심을 높일 계획이라고 밝혔다. 올해 동반성장주간은 \"상생협력의 결실, 대한민국 성장의 동력이 된다\"라는 메시지 아래 기업과 국민이 함께...",
-      "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790455&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976395&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
       "dept": "교육부",
-      "title": "교육부, 제17회 학생 건강증진 교육활동 우수학교 10개교 선정",
+      "title": "내신시험 스마트기기 적발 시 당일 전과목 0점…최대 퇴학 처리",
       "desc": "",
       "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790454&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
+      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976387&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "중등학교 내신평가 스마트기기 활용 부정행위 대응 방안 발표",
+      "desc": "",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790527&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "교육부 '수능 부정행위 대응팀(TF)' 본격 가동",
+      "desc": "",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790528&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "「학술진흥법 시행령」 일부개정령안 국무회의 통과",
+      "desc": "",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790526&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "태양전지 안정성 향상, 핵심 광물 소재 국산화 등 나노기술 성과 선보여",
+      "desc": "- 과기정통부 &middot; 산업부 공동 , 「 2026 나노 융합 성과전 」 개최 - - 나노기술 연구 및 산업 발전 유공 표창 , 우수 성과사례 공유 -",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790593&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "호기심이 실험이 되는 공간, 과학탐구관이 새롭게 문을 엽니다!",
+      "desc": "- 11 월 24 일 개관 … 직접 실험하며 배우는 7 개 주제 , 전시물 79 점 - - 한국전력과 협력해 전자파 등 생활 속 과학과 사회적 현안을 탐구하는 공간 조성 -",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790598&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "K-소비재와 해외 소비자&middot;바이어 만남의 場 - 2026 K-Brand GLOW WEEK 개막 -",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 중소벤처기업진흥공단(이사장 박재호)은 11월 24일(화), 외국인 관광객들의 필수 방문 코스로 자리 잡은 서울 성수에 위치한 앤더슨씨에서 '2026 K-브랜드 글로우 위크(K-Brand GLOW WEEK)' 개막식을 개최했다고 밝혔다. 'K-브랜드 글로우 위...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790574&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "동반성장주간(11.23~27) 시리즈 ③ 중기부, 동반성장주간 맞아 '윈윈 아너스' 상생협력 우수 사례 10건 선정",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 동반성장주간을 맞아 11월 24일(화) 「2026년도 제2차 윈윈 아너스 수여식」을 개최하고, 대기업&middot;공공기관과 중소기업이 함께 이룬 상생협력 우수사례 10건에 기념패를 수여했다고 밝혔다. '윈윈 아너스'는 대기업&middot;공공기관 등이 협력...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790565&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "중기부",
+      "title": "2026년 소상공인협동조합 성과공유 컨퍼런스 개최",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 24일(화) 라한셀렉트 경주에서 소상공인 협업활성화 사업의 성과를 공유하고 협동조합 간 협력 네트워크를 강화하기 위해 「2026년 소상공인협동조합 성과공유 컨퍼런스」를 개최했다. &lt; 2026년 소상공인협동조합 컨퍼런스 행사 개요 &gt; &mi...",
+      "date": "2026-11-24",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790564&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
     },
     {
       "dept": "기획예산처",
@@ -273,14 +290,6 @@
       "desc": "",
       "date": "2026-11-23",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976292&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "제13회 교육 공적개발원조(ODA) 학술대회 개최",
-      "desc": "",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790349&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -313,14 +322,6 @@
       "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 ' 제 7 회 김치의 날 (11 월 22 일 )' 을 맞아 지난 11 월 20 일 ( 금 , 현지시간 ) 미국 뉴욕한국문화원에서 ' 글로벌 김치 비전 선포식 ' 을 성황리에 개최했다고 밝혔다 ....",
       "date": "2026-11-22",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790299&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "민간 소독시설 활용 확대로 축산차량 방역체계 현장 중심으로 개선",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 축산차량 방역 편의성을 높이고 , 민간 거점소독시설의 활용도를 확대하기 위해 「 민간 거점소독시설 지정 및 운영 지침 」 을 개정 &middot; 시행한다고 밝혔다 . 이번 개정은 공공 거점소독시설이 원거리에 위...",
-      "date": "2026-11-22",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790157&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -489,22 +490,6 @@
       "desc": "",
       "date": "2026-11-11",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975496&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "국공립어린이집 의무 설치 기준, 지역 여건 따라 조정",
-      "desc": "",
-      "date": "2026-11-10",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975370&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "수능 당일 '스마트안경' 착용하면 내년까지 시험자격 박탈",
-      "desc": "",
-      "date": "2026-11-09",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975290&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
