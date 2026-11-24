@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-23T12:10:32.702Z",
+  "generatedAt": "2026-11-24T02:06:09.077Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "skku-142201",
-      "school": "성균관대",
-      "title": "「2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유회」 참여 학생 모집",
-      "category": "산학협력",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201&article.offset=0&articleLimit=10",
-      "date": "2026-11-23",
+      "id": "hyu-1027130",
+      "school": "한양대",
+      "title": "[한양에 이런 일이?!] 2026년 5급 공채 기계직 수석 합격, 박도현 동문을 찾아서",
+      "category": "대외협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027130",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +18,7 @@
       "title": "[한양인의 커리어를 묻다] 38만 유튜버 '페이퍼로지', 한양대 강단에 서다… 김도균 동문의 새로운 도전",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027001",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,17 +28,7 @@
       "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
-      "date": "2026-11-23",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026499",
-      "school": "한양대",
-      "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +38,17 @@
       "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027148",
+      "school": "한양대",
+      "title": "한양대 생체의공학과 김우섭 대표 창업기업 '뉴브리즈', CES 2027 '최고혁신상' 수상",
+      "category": "산학협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027148",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,17 +58,7 @@
       "title": "대학 창업생태계 구축 성과 인정… 한양대 류창완 창업지원단장 중기부 장관표창 수상",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027121",
-      "date": "2026-11-23",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027065",
-      "school": "한양대",
-      "title": "한양대학교 예술·체육대학–강동문화재단, 지역 문화예술 발전을 위한 업무협약 체결",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027065",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,7 +68,7 @@
       "title": "[연합뉴스] 한양대 예술체육대, 강동문화재단과 협약",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027131",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -88,7 +78,7 @@
       "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
@@ -98,28 +88,18 @@
       "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1027119",
-      "school": "한양대",
-      "title": "[동아일보] 김남조 교수, 외국인 지방관광 숙박 인프라 관련 코멘트",
+      "id": "ewha-368130",
+      "school": "이화여대",
+      "title": "이화, 창립 140주년 맞아 글로벌 학술협력 및 북미 동창 네트워크 강화",
       "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027119",
-      "date": "2026-11-23",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027118",
-      "school": "한양대",
-      "title": "[서울경제] 김진수 교수, 핵심광물 해외 확보 전략 관련 코멘트",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027118",
-      "date": "2026-11-23",
-      "owner": "서원석",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=368130&article.offset=0&articleLimit=10",
+      "date": "2026-11-24",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -128,8 +108,18 @@
       "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
       "category": "국제",
       "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "skku-142201",
+      "school": "성균관대",
+      "title": "「2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유회」 참여 학생 모집",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201&article.offset=0&articleLimit=10",
+      "date": "2026-11-23",
+      "owner": "서원석",
       "status": "신규"
     },
     {
@@ -179,26 +169,6 @@
       "category": "국제",
       "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51314",
       "date": "2026-11-12",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "dgu-26766856",
-      "school": "동국대",
-      "title": "'Dongguk International Week 2026' 개최 안내",
-      "category": "국제",
-      "url": "https://www.dongguk.edu/article/INTEXNOTICE/detail/26766856",
-      "date": "2026-11-03",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "cau-51306",
-      "school": "중앙대",
-      "title": "[입학장학금 추가서류] 2027학년도 전반기(3월 입학) 장학금 관련 한국어능력기준 증빙서류 추가 제출 안내",
-      "category": "국제",
-      "url": "https://oias.cau.ac.kr/cauoie/under/notice.do?mode=view&articleNo=51306",
-      "date": "2026-11-03",
       "owner": "정주원",
       "status": "신규"
     }
