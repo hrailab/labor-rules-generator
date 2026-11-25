@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T12:04:13.908Z",
+  "generatedAt": "2026-11-25T23:27:32.185Z",
   "windowDays": 21,
   "items": [
     {
@@ -185,32 +185,17 @@
       "strategy": null,
       "aiGenerated": false,
       "actionable": false
-    },
-    {
-      "id": "A00033-148975126",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "내년 '기초연구' 2조 9102억 투자…지역·청년 연구 지원 확대",
-      "desc": "",
-      "date": "2026-11-05",
-      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975126&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "중간",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": true
     }
   ],
   "excludedItems": [
+    {
+      "dept": "교육부",
+      "title": "교육부&middot;한국교육과정평가원, 2026년 고교학점제 성과공유회 개최",
+      "desc": "",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790874&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "(보도설명) 폭력피해여성 지원 사업 국고보조율 조정에 따른 영향을 면밀히 점검하고 공백이 발생하지 않도록 적극 관리해 나가겠습니다.",
@@ -308,6 +293,14 @@
       "reason": "relevance"
     },
     {
+      "dept": "농식품부",
+      "title": "시설채소류 가격상승은 일시적겨울철 생육 특성을 감안 관리 강화",
+      "desc": "",
+      "date": "2026-11-25",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976515&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "과기정통부",
       "title": "초격차 소버린 에너지 기술 확보를 위한 국가연구소 개소(성균관대)",
       "desc": "- 세계적 수준의 대학 연구소 육성을 위한 국가연구소 (NRL 2.0) 사업 '26 년 선정 대학 - - 인공지능 ・ 인공지능 전환 시대 국가에너지주권을 실현하는 세계적 지능화 에너지 연구 거점 구축 목표 -",
@@ -329,14 +322,6 @@
       "desc": "",
       "date": "2026-11-24",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976387&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "교육부 '수능 부정행위 대응팀(TF)' 본격 가동",
-      "desc": "",
-      "date": "2026-11-24",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790528&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -417,14 +402,6 @@
       "desc": "",
       "date": "2026-11-18",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976002&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "전통주 업계의 현장 애로사항을 해소하고 산업 경쟁력 강화를 위한 지원을 지속하겠습니다.",
-      "desc": "",
-      "date": "2026-11-18",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976138&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
