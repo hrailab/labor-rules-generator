@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-25T23:27:32.185Z",
+  "generatedAt": "2026-11-26T11:51:19.787Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "A00002-156790655",
-      "dept": "교육부",
+      "id": "A00032-156790994",
+      "dept": "중기부",
       "category": "정책예고",
-      "title": "전국 인공지능(AI) 인재가 한자리에, 인공지능(AI) 부트캠프 학생 교류의 장 마련",
-      "desc": "",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790655&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "정주원",
+      "title": "역대 최대 규모 '컴업(COMEUP) 2026'의 시작을 알리다",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 26일(목) 스타트업벤처 캠퍼스 서울(SVC)에서 '컴업 2026 미디어데이'를 개최하고, 오는 12월 9일(수)부터 11일(금)까지 3일간 서울 코엑스 C홀에서 열리는 글로벌 스타트업 축제인 '컴업(COMEUP) 2026'의 미래상과 개최 계획을 공식 발표했...",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790994&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
       "status": "신규",
-      "priority": "낮음",
+      "priority": "중간",
       "due": null,
       "deadline": null,
       "bg": null,
@@ -23,7 +23,7 @@
       "implication": null,
       "strategy": null,
       "aiGenerated": false,
-      "actionable": false
+      "actionable": true
     },
     {
       "id": "A00033-148976498",
@@ -34,52 +34,6 @@
       "date": "2026-11-25",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976498&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00033-156790735",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "2026 인공지능&middot;소프트웨어 인재 축제 개최",
-      "desc": "- 11.25~26, 서울 드래곤시티에서 학생 우수작품 전시 &middot; 시상 및 기업 &middot; 명사 특강 등 진행 - - 인공지능 중심대학 출범 원년 , 전국 60 개 인공지능 &middot; 소프트웨어 중심대학의 우수 교육성과 한자리에 -",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790735&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00008-156790836",
-      "dept": "농식품부",
-      "category": "정책예고",
-      "title": "그린바이오, 화장품 기업과 손잡고 소재 산업화에 속도 낸다!",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 농식품부 ) 는 11 월 25 일 ( 수 ) 전북 남원시 바이오산업연구원에서 그린바이오 소재의 활용 분야를 화장품 산업으로 넓히고 산업화를 촉진하기 위한 &#xFF62; K- 뷰티 x 그린바이오 기업 네트워크 &#xFF63; ...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790836&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "서원석",
       "status": "신규",
       "priority": "낮음",
       "due": null,
@@ -189,11 +143,107 @@
   ],
   "excludedItems": [
     {
-      "dept": "교육부",
-      "title": "교육부&middot;한국교육과정평가원, 2026년 고교학점제 성과공유회 개최",
+      "dept": "기획예산처",
+      "title": "(보도설명자료) 친환경차 개별소비세 감면을 재정(예산) 지원방식으로 전환하여 국내 친환경차 생태계 육성을 적극 지원하겠습니다.",
       "desc": "",
       "date": "2026-11-26",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790874&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976540&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "기획예산처",
+      "title": "(보도설명) 내년 지방교부세는 '26년 대비 7.8조원 증가하는 등 지방이 쓸 수 있는 재원이 확대됩니다.",
+      "desc": "",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976534&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "아이들의 상처 난 마음, 현장의 세심한 손길로 보듬다",
+      "desc": "",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790959&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "수업을 바꾸는 교사들, 교실 너머로 변화를 나누다",
+      "desc": "",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790957&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "&quot;아이의 성장 속도를 지켜주세요&quot; 영유아 사교육 개선을 위한 공동 실천 약속",
+      "desc": "\"아이의 성장 속도를 지켜주세요\" 영유아 사교육 개선을 위한 공동 실천 약속",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790958&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "[설명자료] 교육부는 수행평가 시 인공지능(AI) 사용 지침을 안내한 바 있으며, 올바른 인공지능(AI) 활용 교육을 지원하고 있습니다",
+      "desc": "",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976558&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "교육부",
+      "title": "[설명자료] 학교가 시험 관리에 필요한 사항을 잘 준비할 수 있도록 지원하겠습니다",
+      "desc": "",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976557&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "과기정통부, 2026년 적극 행정 우수사례 경진대회 대상(대통령상) 수상",
+      "desc": "- 사기 전화범의 음성정보를 활용한 인공지능 탐지 서비스로 국민 안전 보호 - - 관계부처 &middot; 민간기업 등과 협력하여 기술과 제도의 벽을 넘어 국민이 체감하는 통신 안전 실현 -",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791057&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "『5세대 이동통신 단독 모드 전국망』 시대, 국민과 산업을 위한 통신서비스 혁신 본격 추진",
+      "desc": "- K T 에 이어 LGU+ (11.30) 와 SKT (12.1) 의 5 세대 이동통신 단독 모드 전국망 상용화 계기로 , 차세대 통신서비스 발전 위한 민관 공동행사 개최 - - ' 속 도 경쟁 ' 너머 , 공공 &middot; 안전 , 산업 , 국민생활 ...",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790996&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "과기정통부",
+      "title": "인공지능 시대, 우리 사회가 마주한 쟁점을 논하는&#xFF62;인공지능 사회정책포럼&#xFF63; 공개 발표회 개최",
+      "desc": "- 지난 4 월 인공지능 사회정책포럼 출범 이후 논의 결과를 국민과 공유 - - 각계 전문가 종합토론으로 인공지능 사회정책 대응 방향과 과제 논의 -",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790997&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "송미령 농림축산식품부 장관, 토마토갈색주름과실바이러스(ToBRFV) 피해농가 현장 방문 및 총력대응 요청",
+      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 11 월 26 일 ( 목 ) 오후 전북 익산시 춘포면 소재 토마토갈색주름과실바이러스 피해농가를 방문 &middot; 시찰하며 지역 피해 농가의 의견을 청취하고 , 농촌진흥청 , 농림축산검역본부 , 전북특별자...",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791062&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "돼지유행성설사(PED) 방어항체 보유율 하락, 양돈농가 방역 강화 필요",
+      "desc": "농림축산검역본부 ( 본부장 직무대리 정승교 , 이하 ' 검역본부 ') 는 올겨울 돼지유행성설사 (Porcine Epidemic Diarrhea, 이하 'PED') 유행에 대비하여 전국 양돈농가의 모돈 ( 母豚 ) 방어항체 보유율을 조사한 결과 , 전국 평균 9.9% ...",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790932&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
+      "dept": "농식품부",
+      "title": "찬 바람 속에서도 따뜻한 마음으로, 반려동물과 겨울 동행",
+      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 본격적인 겨울철을 맞아 반려동물 건강관리 , 생활 속 안전수칙과 함께 추운 날씨 속 우리 주변의 동물을 위한 배려 방법을 안내했다 . 먼저 , 겨울철에는 실내 생활 시간이 길어지는 만큼 온도와 습도 관리가 중요하다 ...",
+      "date": "2026-11-26",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790933&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -205,35 +255,11 @@
       "reason": "relevance"
     },
     {
-      "dept": "기획예산처",
-      "title": "(보도설명) 우리 경제의 전체적인 부채 부담은 개선되는 모습입니다.",
-      "desc": "",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976509&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "교육부",
       "title": "수능 시험지 5년 보관 추진…\"부정행위 끝까지 추적\"",
       "desc": "",
       "date": "2026-11-25",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976496&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "교육부, 수능 부정행위 끝까지 추적 시험지 보관기간 5년으로 연장 추진",
-      "desc": "",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790669&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "과기정통부, 개정 정보통신망법&middot;시행령의 현장 안착을 위한 기업 대상 설명회 개최",
-      "desc": "- 정보보호 최고책임자 임원 지정 , 정보보호 관리체계 강화인증 , 반복적 침해사고에 대한 과징금 신설 등 10 월 1 일 시행된 정보보호 제도 개편 내용 안내 - - 정보통신기술 &middot; 금융회사 등 담당자 120 여 명 참석 , 현장 질의응답으로 궁금증 해소 ...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790736&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -261,14 +287,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "중기부",
-      "title": "100년 기업, 세대를 넘어 성장합니다. - 2026년 명문장수기업 수여식 개최 -",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 25일(수) 서울 중소기업 DMC타워에서 '2026년 명문장수기업 수여식'을 개최했다고 밝혔다. &lt;수여식 개요&gt; &middot; (일시&middot;장소) '26.11.25.(수) 10:30 / 중소기업 DMC타워 4층 컨벤션홀 &middot;...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790690&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "국산 차 생산량 2031년 4500톤으로…수출 3500만 달러 목표",
       "desc": "",
@@ -278,35 +296,11 @@
     },
     {
       "dept": "농식품부",
-      "title": "농촌 재능나눔 우수 활동자 포상&middot;격려",
-      "desc": "농림축산식품부 ( 장관 송미령 , 이하 ' 농식품부 ') 는 2026 년 11 월 25 일 세종컨벤션센터에서 ' 제 11 회 대한민국 농촌재능나눔 대상 ' 시상식을 개최하였다 . 농촌재능나눔 대상 시상식은 농촌지역에서 다양한 재능나눔 활동을 펼치고 있는 개인과 단...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790812&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
-      "title": "송미령 농식품부 장관, 콩기름 등 국산 콩 소비 확대 주제로 선재스님과 함께하는 차담회 참석",
-      "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 2026 년 11 월 25 일 ( 수 ) 오후 , 서울특별시 영등포구 소재 ' 카페 꼼마 ' 를 방문하여 ㈜ 네츄르먼트의 국산 콩기름 개발 제품 전시장을 방문하였다 . 현장에서는 유전자변형식품 (GMO...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790813&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "농식품부",
       "title": "시설채소류 가격상승은 일시적겨울철 생육 특성을 감안 관리 강화",
       "desc": "",
       "date": "2026-11-25",
       "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976515&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "초격차 소버린 에너지 기술 확보를 위한 국가연구소 개소(성균관대)",
-      "desc": "- 세계적 수준의 대학 연구소 육성을 위한 국가연구소 (NRL 2.0) 사업 '26 년 선정 대학 - - 인공지능 ・ 인공지능 전환 시대 국가에너지주권을 실현하는 세계적 지능화 에너지 연구 거점 구축 목표 -",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790734&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "confirmed_outcome"
     },
     {
       "dept": "교육부",
@@ -322,14 +316,6 @@
       "desc": "",
       "date": "2026-11-24",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976387&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "기획예산처",
-      "title": "(보도설명) 올해 초과세수 활용방안 등은 아직 결정된 바 없습니다.",
-      "desc": "",
-      "date": "2026-11-23",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976339&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -354,14 +340,6 @@
       "desc": "기획예산처와 중장기전략위원회는 '26.11.20일(금) 미래사회전략반, 거버넌스개혁반 분과회의를 개최하였습니다. 자세한 내용은 붙임파일을 참고하시기 바랍니다.",
       "date": "2026-11-20",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790111&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "[설명자료] 교육부는 수능 부정 예방 및 적발에 최선을 다하고 있습니다",
-      "desc": "",
-      "date": "2026-11-20",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148976185&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -426,14 +404,6 @@
       "desc": "□ 기획예산처는 미래대응기금의 취지와 목적, 구조, 투자방향 등을 외국정부,국제기구, 신평사, 학계 등에 상세히 알리기 위해 영문 Policy Brief를 발간합니다. ㅇ 자세한 내용은 첨부파일을 참고하시기 바랍니다. &lt;붙임&gt; Policy Brief: \"The Future Fund: A F...",
       "date": "2026-11-16",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156789307&repCode=A00040&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "교육부",
-      "title": "[설명자료] 교육부는 초소형 카메라 등을 활용한 수능 부정행위에 대해 철저히 대응하겠습니다",
-      "desc": "",
-      "date": "2026-11-16",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975819&repCode=A00002&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
