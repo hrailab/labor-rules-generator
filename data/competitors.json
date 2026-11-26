@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-25T23:32:29.491Z",
+  "generatedAt": "2026-11-26T12:10:49.389Z",
   "windowDays": 21,
   "items": [
     {
-      "id": "skku-142375",
+      "id": "skku-142201",
       "school": "성균관대",
-      "title": "글로벌바이오메디컬공학과 자연모사생체재료공학 연구실 대학원생/박사후연구원 모집",
-      "category": "국제",
-      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142375&article.offset=0&articleLimit=10",
-      "date": "2026-11-25",
+      "title": "&lt;&lt;&lt; 2026 인공지능혁신융합대학사업단 산학협력 학생 성과 공유 행사 참여 학생 모집 &gt;&gt;&gt;",
+      "category": "산학협력",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142201&article.offset=0&articleLimit=10",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
@@ -18,7 +18,7 @@
       "title": "[인공지능혁신융합대학사업] 2026학년도 인공지능혁신융합대학사업 겨울 계절학기 학점교류 수강 안내 (상시 업데이트)",
       "category": "국제",
       "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=140482&article.offset=0&articleLimit=10",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
@@ -28,7 +28,7 @@
       "title": "[한양에 이런 일이?!] 2026년 5급 공채 기계직 수석 합격, 박도현 동문을 찾아서",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027130",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
@@ -38,7 +38,7 @@
       "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
@@ -48,7 +48,17 @@
       "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
       "category": "국제",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027187",
+      "school": "한양대",
+      "title": "한양대, 베트남 유학생 동문회 창립 …25년 교류 잇는 현지 동문 네트워크 구축",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027187",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
@@ -58,17 +68,7 @@
       "title": "한양대 서울캠퍼스, ‘2026 중앙일보 대학평가’ 종합 5위… 창업·산학협력 경쟁력 입증",
       "category": "산학협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027171",
-      "date": "2026-11-25",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027148",
-      "school": "한양대",
-      "title": "한양대 생체의공학과 김우섭 대표 창업기업 '뉴브리즈', CES 2027 '최고혁신상' 수상",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027148",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
@@ -78,28 +78,48 @@
       "title": "[연합뉴스] 한양대 예술체육대, 강동문화재단과 협약",
       "category": "대외협력",
       "url": "https://www.newshyu.com/news/articleView.html?idxno=1027131",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "owner": "서원석",
       "status": "신규"
     },
     {
-      "id": "hyu-1026917",
-      "school": "한양대",
-      "title": "[전자신문] 한양대 ERICA 기술지주, 딥테크 창업기업 이끌고 ‘SWITCH 2026’ 참가",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026917",
-      "date": "2026-11-25",
-      "owner": "서원석",
+      "id": "khu-323667",
+      "school": "경희대",
+      "title": "[공통] 2026 대학혁신지원사업 참여학생 사례영상 경진대회 개최 안내",
+      "category": "재정지원",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323667&menuNo=200316",
+      "date": "2026-11-26",
+      "owner": "이수연",
       "status": "신규"
     },
     {
-      "id": "hyu-1026841",
-      "school": "한양대",
-      "title": "[한국경제] 한양대, 2025년 신규 학생창업기업 67개로 국내 대학 4위",
-      "category": "산학협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026841",
-      "date": "2026-11-25",
-      "owner": "서원석",
+      "id": "khu-323666",
+      "school": "경희대",
+      "title": "[공통] 2026년 대학혁신지원사업 학생참여 수기공모전 개최(~12.06.)",
+      "category": "재정지원",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323666&menuNo=200316",
+      "date": "2026-11-26",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-368130",
+      "school": "이화여대",
+      "title": "이화, 창립 140주년 맞아 글로벌 학술협력 및 북미 동창 네트워크 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=368130&article.offset=0&articleLimit=10",
+      "date": "2026-11-26",
+      "owner": "정주원",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-367629",
+      "school": "이화여대",
+      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
+      "date": "2026-11-26",
+      "owner": "정주원",
       "status": "신규"
     },
     {
@@ -113,51 +133,11 @@
       "status": "신규"
     },
     {
-      "id": "ewha-368130",
-      "school": "이화여대",
-      "title": "이화, 창립 140주년 맞아 글로벌 학술협력 및 북미 동창 네트워크 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=368130&article.offset=0&articleLimit=10",
-      "date": "2026-11-25",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-367629",
-      "school": "이화여대",
-      "title": "이화글로벌사회공헌원, 세계적 환경역학 석학 안데르센 교수 초청 특강 개최",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=367629&article.offset=0&articleLimit=10",
-      "date": "2026-11-25",
-      "owner": "정주원",
-      "status": "신규"
-    },
-    {
       "id": "khu-323083",
       "school": "경희대",
       "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
       "category": "국제",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
-      "date": "2026-11-20",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323616",
-      "school": "경희대",
-      "title": "[국제교육원(국제)] 2026학년도 온라인 모의 TOEIC Speaking 무료 응시 이벤트 안내",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323616&menuNo=200316",
-      "date": "2026-11-20",
-      "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "khu-323615",
-      "school": "경희대",
-      "title": "[국제교육원(국제)] 11월 29일 정기토익 대비 PART 5 집중 공략 무료특강 안내",
-      "category": "국제",
-      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323615&menuNo=200316",
       "date": "2026-11-20",
       "owner": "이수연",
       "status": "신규"
