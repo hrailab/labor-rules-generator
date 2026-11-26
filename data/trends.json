@@ -1,7 +1,53 @@
 {
-  "generatedAt": "2026-11-26T11:51:19.787Z",
+  "generatedAt": "2026-11-26T23:28:12.477Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "A00033-156791097",
+      "dept": "과기정통부",
+      "category": "정책예고",
+      "title": "땅속 광섬유로 '작은 지진'의 파열 순간을 1000분의 1초 단위로 포착",
+      "desc": "- 0.042 초 간격 두 차례로 나뉜 ' 조각난 파열 ', 작은 지진의 복잡한 발생 과정 규명 - - 서울대 김영희 교수 연구팀 , 사이언스 (Science) 誌 게재 … 대도시 지진 모니터링 새 지평 -",
+      "date": "2026-11-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791097&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "이수연",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00032-156791117",
+      "dept": "중기부",
+      "category": "정책예고",
+      "title": "중기부&middot;국조실, 창업&middot;벤처 규제애로 전담 자문기구 '창업벤처규제혁신위원회' 출범",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)와 국무조정실(실장 임기근, 이하 국조실)는 신산업&middot;신기술 분야 규제 전문성을 강화하고, 관계부처 개선 권고 및 이견 조정 권한을 확보하기 위해 대통령 직속 규제합리화위원회 산하에 창업&middot;벤처 규제 전담 자문기구로 '창업벤처규제혁신위원회' ...",
+      "date": "2026-11-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791117&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "서원석",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
     {
       "id": "A00032-156790994",
       "dept": "중기부",
@@ -143,6 +189,14 @@
   ],
   "excludedItems": [
     {
+      "dept": "중기부",
+      "title": "중기부, 더 나은 의료서비스를 위한 비대면진료 스타트업 간담회 개최",
+      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 26일(목) 비대면진료의 세부 기준을 정하는 의료법 하위규정(시행규칙․고시)에 대하여 비대면진료 플랫폼을 운영 중인 벤처&middot;스타트업의 현장 의견을 청취하는 간담회를 개최했다고 밝혔다. 이번 간담회는 그간 시범사업으로 운영되었던 비대면진료 서비스의 ...",
+      "date": "2026-11-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791116&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
+    {
       "dept": "기획예산처",
       "title": "(보도설명자료) 친환경차 개별소비세 감면을 재정(예산) 지원방식으로 전환하여 국내 친환경차 생태계 육성을 적극 지원하겠습니다.",
       "desc": "",
@@ -215,14 +269,6 @@
       "reason": "relevance"
     },
     {
-      "dept": "과기정통부",
-      "title": "인공지능 시대, 우리 사회가 마주한 쟁점을 논하는&#xFF62;인공지능 사회정책포럼&#xFF63; 공개 발표회 개최",
-      "desc": "- 지난 4 월 인공지능 사회정책포럼 출범 이후 논의 결과를 국민과 공유 - - 각계 전문가 종합토론으로 인공지능 사회정책 대응 방향과 과제 논의 -",
-      "date": "2026-11-26",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790997&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
       "dept": "농식품부",
       "title": "송미령 농림축산식품부 장관, 토마토갈색주름과실바이러스(ToBRFV) 피해농가 현장 방문 및 총력대응 요청",
       "desc": "송미령 농림축산식품부 ( 이하 ' 농식품부 ') 장관은 11 월 26 일 ( 목 ) 오후 전북 익산시 춘포면 소재 토마토갈색주름과실바이러스 피해농가를 방문 &middot; 시찰하며 지역 피해 농가의 의견을 청취하고 , 농촌진흥청 , 농림축산검역본부 , 전북특별자...",
@@ -268,22 +314,6 @@
       "desc": "",
       "date": "2026-11-25",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976469&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "고령&middot;밀양 지역특화특구 신규지정… 역사문화&middot;스마트농산업 거점 육성",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 25일(수) 제61차 지역특화발전특구위원회(이하 특구위원회)를 열고 '고령 대가야 역사문화특구'와 '밀양 스마트농산업특구'의 지역특화발전특구(이하 특구) 신규지정안을 심의&middot;의결했다고 밝혔다. 【제61차 지역특화발전특구위원회 개최 개요】 ○ 일시...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790847&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "중기부",
-      "title": "중기부, 한경협과 함께 '도약(Jump-up) 기업' 현장 찾아 중견기업으로 도약 지원 의지 밝혀",
-      "desc": "중소벤처기업부(장관 이소영, 이하 중기부)는 11월 25일(수), 인천 서구에 위치한 자동차 실내램프 전문기업 ㈜에이아이티(대표 이용호)를 방문해 '도약(Jump-up) 프로그램' 참여기업들의 스케일업 성과를 점검했다. 한경협이 소속 전담디렉터의 자문 성과를 확인하고 참여기업을 격려하기 위해 마련한 이날...",
-      "date": "2026-11-25",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156790846&repCode=A00032&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
@@ -468,14 +498,6 @@
       "desc": "",
       "date": "2026-11-11",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148975496&repCode=A00008&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "[보도반박] 과기정통부가 바이러스토탈 사이트 이용을 권장했다는 내용은 전혀 사실이 아닙니다.",
-      "desc": "",
-      "date": "2026-11-06",
-      "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148975175&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     }
   ]
