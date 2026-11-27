@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T11:43:55.302Z",
+  "generatedAt": "2026-11-27T23:11:30.661Z",
   "windowDays": 21,
   "items": [
     {
@@ -33,6 +33,29 @@
       "desc": "",
       "date": "2026-11-27",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976671&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "owner": "이수연",
+      "status": "신규",
+      "priority": "낮음",
+      "due": null,
+      "deadline": null,
+      "bg": null,
+      "body": null,
+      "eligibility": null,
+      "budget": null,
+      "period": null,
+      "implication": null,
+      "strategy": null,
+      "aiGenerated": false,
+      "actionable": false
+    },
+    {
+      "id": "A00033-156791248",
+      "dept": "과기정통부",
+      "category": "정책예고",
+      "title": "제5회 K-디지털 그랜드 챔피언십 개최… 대한민국 대표 인공지능 창업 초기 기업 발굴&middot;육성",
+      "desc": "제5회 K-디지털 그랜드 챔피언십 개최… 대한민국 대표 인공지능 창업 초기 기업 발굴&middot;육성 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
+      "date": "2026-11-27",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791248&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
       "status": "신규",
       "priority": "낮음",
@@ -287,14 +310,6 @@
       "desc": "",
       "date": "2026-11-27",
       "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148976651&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "reason": "relevance"
-    },
-    {
-      "dept": "과기정통부",
-      "title": "대한민국, 국제전기통신연합 전권회의에서 디지털 의제 주도 및 세계적 지도력 강화",
-      "desc": "국제전기통신연합 이사국 10 선 연임 &middot; 전파규칙위원회 24 년만 진출 - - 한국 주도 기고 채택 및 주요 의제 논의에서 국제적 영향력 확대 -",
-      "date": "2026-11-27",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791175&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "reason": "relevance"
     },
     {
