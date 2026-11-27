@@ -1,7 +1,17 @@
 {
-  "generatedAt": "2026-11-27T11:58:44.958Z",
+  "generatedAt": "2026-11-27T23:20:21.639Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "skku-142441",
+      "school": "성균관대",
+      "title": "2026학년도 국제동계학기(WISE) 기숙사 조교(HA) 추가 모집 안내",
+      "category": "국제",
+      "url": "https://www.skku.edu/skku/campus/skk_comm/notice01.do?mode=view&articleNo=142441&article.offset=0&articleLimit=10",
+      "date": "2026-11-27",
+      "owner": "서원석",
+      "status": "신규"
+    },
     {
       "id": "skku-142438",
       "school": "성균관대",
@@ -179,6 +189,16 @@
       "category": "산학협력",
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323660&menuNo=200316",
       "date": "2026-11-25",
+      "owner": "이수연",
+      "status": "신규"
+    },
+    {
+      "id": "khu-323083",
+      "school": "경희대",
+      "title": "[교수학습개발원] 국제C 학부생을 위한 학습컨설팅 신청 안내(11월)",
+      "category": "국제",
+      "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323083&menuNo=200316",
+      "date": "2026-11-20",
       "owner": "이수연",
       "status": "신규"
     },
