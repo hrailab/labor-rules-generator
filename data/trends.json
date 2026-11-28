@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T23:11:30.661Z",
+  "generatedAt": "2026-11-28T11:19:15.123Z",
   "windowDays": 21,
   "items": [
     {
@@ -79,29 +79,6 @@
       "desc": "- 디 지털 &middot; 아날로그 &middot; 혼성신호부터 인공지능 연산 &middot; 메모리까지 다양한 칩 성과 공유 - - 학생들이 직접 설계해 공공 나노팹에서 제작한 실물 칩 현장 전시 - - 대상 2 개 팀 등 본선 진출 14 개 팀 시상 , 반도체 원...",
       "date": "2026-11-27",
       "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791247&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
-      "owner": "이수연",
-      "status": "신규",
-      "priority": "낮음",
-      "due": null,
-      "deadline": null,
-      "bg": null,
-      "body": null,
-      "eligibility": null,
-      "budget": null,
-      "period": null,
-      "implication": null,
-      "strategy": null,
-      "aiGenerated": false,
-      "actionable": false
-    },
-    {
-      "id": "A00033-156791196",
-      "dept": "과기정통부",
-      "category": "정책예고",
-      "title": "함께 쓰는 연구 장비, 함께 여는 연구개발 미래 공동활용 우수성과 한자리에",
-      "desc": "함께 쓰는 연구 장비, 함께 여는 연구개발 미래 공동활용 우수성과 한자리에 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다. ※ 대용량 첨부파일은 바로보기가 지원되지 않으니, 첨부파일명을 클릭하여 확인하시기 바랍니다.",
-      "date": "2026-11-27",
-      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791196&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
       "owner": "이수연",
       "status": "신규",
       "priority": "낮음",
@@ -280,6 +257,14 @@
     }
   ],
   "excludedItems": [
+    {
+      "dept": "과기정통부",
+      "title": "[보도참고] 초대형 사업 인공지능 데이터센터, 동해에서 떠오르다",
+      "desc": "- 동해 1.2GW 급 GS 인공지능 데이터센터 착공식 개최 - - GS, 동해 인공지능 데이터센터 구축 및 지역상생 계획 공개 - - 과기정통부 , 인공지능 데이터센터 생태계 활성화를 위한 정책적 지원 본격화 -",
+      "date": "2026-11-28",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156791260&repCode=A00033&repCodeType=정부부처&pWiseMinistry=ministryNews",
+      "reason": "relevance"
+    },
     {
       "dept": "기획예산처",
       "title": "연기금투자풀 출범 25주년 기념행사 개최",
