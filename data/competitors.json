@@ -1,7 +1,97 @@
 {
-  "generatedAt": "2026-11-27T23:20:21.639Z",
+  "generatedAt": "2026-11-28T11:35:36.200Z",
   "windowDays": 21,
   "items": [
+    {
+      "id": "hyu-1027130",
+      "school": "한양대",
+      "title": "[한양에 이런 일이?!] 2026년 5급 공채 기계직 수석 합격, 박도현 동문을 찾아서",
+      "category": "대외협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027130",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026499",
+      "school": "한양대",
+      "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1026997",
+      "school": "한양대",
+      "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027199",
+      "school": "한양대",
+      "title": "[포토뉴스] 한양대, ‘2026 베트남 유학생 동문회 창립식’ 개최",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027199",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027187",
+      "school": "한양대",
+      "title": "한양대, 베트남 유학생 동문회 창립 …25년 교류 잇는 현지 동문 네트워크 구축",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027187",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027199",
+      "school": "한양대",
+      "title": "[포토뉴스] 한양대, ‘2026 베트남 유학생 동문회 창립식’ 개최",
+      "category": "국제",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027199",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027198",
+      "school": "한양대",
+      "title": "[포토뉴스] 한양대-CityUHK, 양교 연구협력 협약식 개최",
+      "category": "대외협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027198",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "hyu-1027131",
+      "school": "한양대",
+      "title": "[연합뉴스] 한양대 예술체육대, 강동문화재단과 협약",
+      "category": "대외협력",
+      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027131",
+      "date": "2026-11-28",
+      "owner": "서원석",
+      "status": "신규"
+    },
+    {
+      "id": "ewha-368130",
+      "school": "이화여대",
+      "title": "이화, 창립 140주년 맞아 글로벌 학술협력 및 북미 동창 네트워크 강화",
+      "category": "국제",
+      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=368130&article.offset=0&articleLimit=10",
+      "date": "2026-11-28",
+      "owner": "정주원",
+      "status": "신규"
+    },
     {
       "id": "skku-142441",
       "school": "성균관대",
@@ -53,86 +143,6 @@
       "status": "신규"
     },
     {
-      "id": "hyu-1027130",
-      "school": "한양대",
-      "title": "[한양에 이런 일이?!] 2026년 5급 공채 기계직 수석 합격, 박도현 동문을 찾아서",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027130",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026499",
-      "school": "한양대",
-      "title": "[동행한대] 소비자가 인정하는 글로벌 웰니스 브랜드",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026499",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1026997",
-      "school": "한양대",
-      "title": "대상 포함 3관왕, 코리아국제현대무용콩쿠르를 제패한 한양대 무용학과",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1026997",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027199",
-      "school": "한양대",
-      "title": "[포토뉴스] 한양대, ‘2026 베트남 유학생 동문회 창립식’ 개최",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027199",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027187",
-      "school": "한양대",
-      "title": "한양대, 베트남 유학생 동문회 창립 …25년 교류 잇는 현지 동문 네트워크 구축",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027187",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027199",
-      "school": "한양대",
-      "title": "[포토뉴스] 한양대, ‘2026 베트남 유학생 동문회 창립식’ 개최",
-      "category": "국제",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027199",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027198",
-      "school": "한양대",
-      "title": "[포토뉴스] 한양대-CityUHK, 양교 연구협력 협약식 개최",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027198",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
-      "id": "hyu-1027131",
-      "school": "한양대",
-      "title": "[연합뉴스] 한양대 예술체육대, 강동문화재단과 협약",
-      "category": "대외협력",
-      "url": "https://www.newshyu.com/news/articleView.html?idxno=1027131",
-      "date": "2026-11-27",
-      "owner": "서원석",
-      "status": "신규"
-    },
-    {
       "id": "khu-323468",
       "school": "경희대",
       "title": "(~11.29) ★ [국제교류팀] 2026학년도 동계 SDGs 국제화연수 (Oxford Conso...",
@@ -140,16 +150,6 @@
       "url": "https://www.khu.ac.kr/kor/user/bbs/BMSR00040/list.do?mode=view&articleNo=323468&menuNo=200316",
       "date": "2026-11-27",
       "owner": "이수연",
-      "status": "신규"
-    },
-    {
-      "id": "ewha-368130",
-      "school": "이화여대",
-      "title": "이화, 창립 140주년 맞아 글로벌 학술협력 및 북미 동창 네트워크 강화",
-      "category": "국제",
-      "url": "https://www.ewha.ac.kr/ewha/news/ewha-news.do?mode=view&articleNo=368130&article.offset=0&articleLimit=10",
-      "date": "2026-11-27",
-      "owner": "정주원",
       "status": "신규"
     },
     {
